@@ -1,0 +1,4 @@
+source	object	parent	x	y	width	height	sortingOrder
+bg2	Background_Distant	Backgrounds	76.5067	25.52686	153.0404	55.07429	-90
+bg1	Background_Midground	Backgrounds	77.30134	36.03611	96.69324	76.09281	-80
+bg0	Terrain_Artwork	Foreground	77.46387	36.03611	154.9548	76.09281	-70

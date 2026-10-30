@@ -1,0 +1,8 @@
+MEASURE short jump=2.9996
+PASS Tap jump to three cells
+MEASURE long jump=4.9998
+PASS Held jump to five cells
+PASS Mouse-aim diagonal dash distance=5.0000
+PASS Second air dash rejected
+PASS Actual yellow trigger activates checkpoint
+PASS Actual red-cell trigger kills player

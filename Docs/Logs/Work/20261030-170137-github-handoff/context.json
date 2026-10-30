@@ -1,0 +1,12 @@
+{
+  "root": "D:\\UnityProjects\\Demo",
+  "backup": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-170137-github-handoff",
+  "work": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261030-170137-github-handoff",
+  "stamp": "20261030-170137-github-handoff",
+  "new_files_before": {
+    ".gitattributes": false,
+    "CONTRIBUTING.md": false,
+    "Figures/README.md": false,
+    "Figures/Source/README.md": false
+  }
+}

@@ -1,0 +1,861 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 5912)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 15648)
+VBCSCompiler prewarm took 18.34 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.7f1 (b22767f04f04) revision 11675495'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-27T09:33:56Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-10-27T09:33:56.3184815Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15292, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              4276cc9574754bc6910fc32166416400
+  Correlation Id:          06eec184259d680afb59ea62f62b5ce5
+  External correlation Id: 3498000386215648469
+  Machine Id:              ZFwzWaW/sukllSN81qeQTq98vpY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.05s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-10-27T09:33:56.4187212Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 15669784159753-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.03
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.16s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:\UnityProjects\Demo\Project
+-executeMethod
+SeasideArtSetup.CreatePreview
+-logFile
+D:\UnityProjects\Demo\Docs\Logs\Work\20261027-demo-migration-seaside-art\art-setup-retry.log
+Successfully changed project path to: D:\UnityProjects\Demo\Project
+D:/UnityProjects/Demo/Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [48460]  Target information:
+
+Player connection [48460]  * "[IP] 114.212.84.66 [Port] 55504 [Flags] 2 [Guid] 1768241826 [EditorId] 1768241826 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [48460]  * "[IP] 192.168.96.1 [Port] 55504 [Flags] 2 [Guid] 1768241826 [EditorId] 1768241826 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [48460] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [48460] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-20940" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Rebuilding Library because the asset database could not be found!
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/UnityProjects/Demo/ProjectUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.7f1 (b22767f04f04)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=262144, entitiesPerBlock=1024, blocksPerSlotPage=0, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Project/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003237 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.698 seconds
+Domain Reload Profiling: 1176ms
+	BeginReloadAssembly (121ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (110ms)
+		TypeCache.Refresh (189ms)
+			TypeCache.ScanAssembly (177ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (699ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (74ms)
+			ProcessInitializeOnLoadMethodAttributes (300ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.modules.physicscore2d@1.0.0
+  com.unity.modules.tetgen@1.0.0
+  com.unity.modules.timelinefoundation@1.0.0
+[Package Manager] Done resolving packages in 3.21 seconds
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Lock file was modified
+[Package Manager] Registered 9 packages:
+  Built-in packages:
+    com.unity.modules.audio@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.tetgen@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\UnityProjects\Demo\Project\Library\PackageCache\com.unity.modules.timelinefoundation)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+AcceleratorClientConnectionCallback - disconnected - :0
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Project
+ExitCode: 4 Duration: 0s87ms
+[             ] Require frontend run.  Library/Bee/1900b0aE.dag couldn't be loaded
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/UnityProjects/Demo/Project
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 11s
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Project
+ExitCode: 0 Duration: 3s774ms
+Finished compiling graph: 185 nodes, 666 flattened edges (658 ToBuild, 4 ToUse), maximum node priority 20
+[  1/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderBuildSettingsModule.dll_0B0277D67EE111F0.mvfrm
+[  2/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PropertiesModule.dll_2894D26058331CA3.mvfrm
+[  3/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IdentifiersModule.dll_1D7D8E0FFA821613.mvfrm
+[  4/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.MathematicsModule.dll_6442E4649A472EAA.mvfrm
+[  5/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_CEADF71C917F1C8C.mvfrm
+[  6/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_1347BE3A8F26C487.mvfrm
+[  7/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.MediaModule.dll_86160F14C9B2BEC8.mvfrm
+[  8/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PhysicsModule.dll_22F4D7B578764C4B.mvfrm
+[  9/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderPreprocessorModule.dll_E07194F83C5C9E44.mvfrm
+[ 10/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SketchUpModule.dll_F968378AF6319367.mvfrm
+[ 11/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.MultiplayerModule.dll_BED65317DE96C4EE.mvfrm
+[ 12/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PlayModeModule.dll_574743F449C906B7.mvfrm
+[ 13/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Physics2DModule.dll_788D396B2500DEDD.mvfrm
+[ 14/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_51F7A14284499195.mvfrm
+[ 15/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GenericRemoteModule.dll_2065D2D8659B4A21.mvfrm
+[ 16/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.PhysicsCore2DModule.dll_782854A8629C160C.mvfrm
+[ 17/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.HierarchyModule.dll_00BBC5164D060349.mvfrm
+[ 18/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridModule.dll_8CF33788CA69ED06.mvfrm
+[ 19/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderCompilationModule.dll_C583F2F84EFFCC02.mvfrm
+[ 20/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickInstallModule.dll_47909DB87D31165E.mvfrm
+[ 21/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SceneTemplateModule.dll_E400038D7C797CAA.mvfrm
+[ 22/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ProjectAuditorModule.dll_49F8D931D511BAF5.mvfrm
+[ 23/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.LightingModule.dll_0B5AC9B6FDEBC07C.mvfrm
+[ 24/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GridAndSnapModule.dll_7FB4389D0030539F.mvfrm
+[ 25/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ShaderFoundryModule.dll_22DFD3D09F28F938.mvfrm
+[ 26/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SafeModeModule.dll_1153523AAAFFF750.mvfrm
+[ 27/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_010AD328D5A29309.mvfrm
+[ 28/182    1s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphToolkitModule.dll_848E34242C59D6B0.mvfrm
+[ 29/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GIModule.dll_6401BB0DA63C0DD2.mvfrm
+[ 30/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EmbreeModule.dll_33D4828A7C5EC738.mvfrm
+[ 31/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_C06092CF7D8CD272.mvfrm
+[ 32/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_75FB521B7CCB96B0.mvfrm
+[ 33/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_192BB73D740C6CE2.mvfrm
+[ 34/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.BurstModule.dll_234DE6DB72BC4E24.mvfrm
+[ 35/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ContentLoadModule.dll_D8448FCBF451DF63.mvfrm
+[ 36/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreBusinessMetricsModule.dll_82C72AA7D2290FA8.mvfrm
+[ 37/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_514AE0FE5B168DF0.mvfrm
+[ 38/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_B9E417F047CEB128.mvfrm
+[ 39/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConsentModule.dll_22F0782A68212440.mvfrm
+[ 40/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AssetComplianceModule.dll_5206C72BEEC8510F.mvfrm
+[ 41/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TimelineFoundationModule.dll_3E3185B4EB83EFAF.mvfrm
+[ 42/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.ClothModule.dll_213E527E2583151E.mvfrm
+[ 43/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_E0785C1E255D89D1.mvfrm
+[ 44/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_6CB4FF45B97BA858.mvfrm
+[ 45/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.U2DRuntimeModule.dll_20BE2A22A79EC54C.mvfrm
+[ 46/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_83D43D19E0B54396.mvfrm
+[ 47/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Scripting.dll_AC866E6F80C3CAF9.mvfrm
+[ 48/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AIModule.dll_CBC572000A8D25B8.mvfrm
+[ 49/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AccessibilityModule.dll_8A647CFD03F72122.mvfrm
+[ 50/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_14E9DB94D9978B1A.mvfrm
+[ 51/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_3BEC06A851318A78.mvfrm
+[ 52/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AdaptivePerformanceModule.dll_02DC312DABE1E0AE.mvfrm
+[ 53/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_6B9B2517B3D7AF57.mvfrm
+[ 54/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.BuildAnalysisModule.dll_E2ADBA7FA5D1293E.mvfrm
+[ 55/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.BuildProfileModule.dll_68B14F793BAAA82B.mvfrm
+[ 56/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.AnimationWindowModule.dll_B48FAB15A99A5D98.mvfrm
+[ 57/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TetgenModule.dll_83D47A8ED6DBCF68.mvfrm
+[ 58/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.dll_43C5F3A12EEE923B.mvfrm
+[ 59/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_AF821B9AB215570F.mvfrm
+[ 60/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_5F99C3AF4EF02064.mvfrm
+[ 61/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_966227B3B90B506B.mvfrm
+[ 62/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_5E553374EDAB8005.mvfrm
+[ 63/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ShaderVariantAnalyticsModule.dll_31750A1754F03901.mvfrm
+[ 64/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_76BCF8607C2B04D1.mvfrm
+[ 65/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_D6392138CFFAFDEC.mvfrm
+[ 66/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_730D3BFD045E4E79.mvfrm
+[ 67/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_7D4ADF992D52858B.mvfrm
+[ 68/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsCore2DModule.dll_046946CFDB949931.mvfrm
+[ 69/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_21D49C57A9925304.mvfrm
+[ 70/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InsightsModule.dll_A630DD4BB9481E56.mvfrm
+[ 71/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.GraphicsStateCollectionSerializerModule.dll_C5E2B9EE3403BDCA.mvfrm
+[ 72/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_2E732A540A8090C2.mvfrm
+[ 73/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_D05C67D399EF10F9.mvfrm
+[ 74/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MultiplayerModule.dll_C49C22A6F0D0D573.mvfrm
+[ 75/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsBackendPhysXModule.dll_9D7FAD70C9E37672.mvfrm
+[ 76/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_6315F86944B6B4AF.mvfrm
+[ 77/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScriptingModule.dll_F8EE9329E90B47E0.mvfrm
+[ 78/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MathematicsModule.dll_6A08B3F3AC813F2F.mvfrm
+[ 79/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RenderAs2DModule.dll_6A7B022E39D18025.mvfrm
+[ 80/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_E53472FA08FB672C.mvfrm
+[ 81/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_90A4A5E590973133.mvfrm
+[ 82/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ManagedKernelModule.dll_395BA7A96C24D355.mvfrm
+[ 83/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_E6F87997F31B8B83.mvfrm
+[ 84/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_B8E2514E4314FAC0.mvfrm
+[ 85/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_8ACA775F65EC325A.mvfrm
+[ 86/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_29433FA85A7735EE.mvfrm
+[ 87/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputForUIModule.dll_FEBA5A8347AC6E6E.mvfrm
+[ 88/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.MarshallingModule.dll_ED5CA4AF1C31754D.mvfrm
+[ 89/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_B0140ADB726F5831.mvfrm
+[ 90/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_FC080069E78BD1B2.mvfrm
+[ 91/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GraphicsStateCollectionSerializerModule.dll_CED686DE0103072F.mvfrm
+[ 92/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_A2704C9D11B9419D.mvfrm
+[ 93/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_11BB7624A12B9FF8.mvfrm
+[ 94/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_6756471B2E53FE12.mvfrm
+[ 95/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_D2A2EEED5A1AC23A.mvfrm
+[ 96/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_DE0A5F5B068BEFE8.mvfrm
+[ 97/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VideoModule.dll_DF5F79EE0DF851DF.mvfrm
+[ 98/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.XRModule.dll_4CC9F9B791C8FE3A.mvfrm
+[ 99/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt
+[100/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2
+[101/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp
+[102/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[103/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UmbraModule.dll_352AA19BD88CE1AD.mvfrm
+[104/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_E387D2051216600B.mvfrm
+[105/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_1ED879AEE3C77A66.mvfrm
+[106/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.BurstModule.dll_E97AA33FA4397EC9.mvfrm
+[107/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.dll_1121ACC8D07B0556.mvfrm
+[108/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TilemapModule.dll_DC37BAA565F17642.mvfrm
+[109/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_C3A6C892D327B84C.mvfrm
+[110/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TimelineFoundationModule.dll_BFD20A61D88630E4.mvfrm
+[111/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TreeModule.dll_0D2E10A939DAEC4E.mvfrm
+[112/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextRenderingModule.dll_2DA325C8CED62E03.mvfrm
+[113/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_67D06B5701DF3DBB.mvfrm
+[114/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VectorGraphicsModule.dll_968B6501127F6BDE.mvfrm
+[115/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UnityConnectModule.dll_63EB5CEF608E8D45.mvfrm
+[116/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_8082B1E77CE366DF.mvfrm
+[117/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_5371CD7BD82B71EB.mvfrm
+[118/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.VFXModule.dll_D456B9CAB5AD7BCC.mvfrm
+[119/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_0574C1C6CDB784CB.mvfrm
+[120/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIToolkitAuthoringModule.dll_F0E31FE25CBA4F6D.mvfrm
+[121/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.U2DModule.dll_002F64ADEB49DC2B.mvfrm
+[122/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIAutomationModule.dll_19523E69D81E70EB.mvfrm
+[123/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_B9B590806BFBD732.mvfrm
+[124/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SyntaxTreeModule.dll_A0C2CBF4310337F1.mvfrm
+[125/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_BD8C8B553E33CBAD.mvfrm
+[126/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.TerrainModule.dll_3D3B53244E349539.mvfrm
+[127/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteShapeModule.dll_588F63E5DB716F80.mvfrm
+[128/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SubstanceModule.dll_BD274B141EDE9C94.mvfrm
+[129/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.SpriteMaskModule.dll_E48605B206B74DE1.mvfrm
+[130/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_D1BAB64F214AE0C1.mvfrm
+[131/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AdaptivePerformanceModule.dll_C36BC5E3E72733B3.mvfrm
+[132/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_4858BBB22059DB91.mvfrm
+[133/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_0A34038F760A5983.mvfrm
+[134/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_842D0E3AA8F49E72.mvfrm
+[135/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_CEB2734FCB005D87.mvfrm
+[136/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_FB575E000A0A1252.mvfrm
+[137/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AMDModule.dll_610A004A27BFA511.mvfrm
+[138/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_2FB60BCEB3437C7E.mvfrm
+[139/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp
+[140/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp2
+[141/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt
+[142/182    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[143/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_9C697F0970E0CCD9.mvfrm
+[144/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_DA080131488CDB9C.mvfrm
+[145/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_9A0BA39EFFB21241.mvfrm
+[146/182    0s] WriteResponseFile Library/Bee/artifacts/rsp/2781082588993088484.rsp
+[147/182    0s] WriteResponseFile Library/Bee/artifacts/rsp/10678863128556690338.rsp
+[148/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_70BAEC66A923FD86.mvfrm
+[149/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.WebGL.Extensions.dll_EB76A00FE4C89E11.mvfrm
+[150/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.WindowsStandalone.Extensions.dll_338BE8FB353FA281.mvfrm
+[151/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_BAE3393AB5A8842D.mvfrm
+[152/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_D753D6A2F4A0536D.mvfrm
+[153/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_8B388B46FD463205.mvfrm
+[154/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_4FE1D95BD7434F3F.mvfrm
+[155/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_A58C36523F758284.mvfrm
+[156/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_156F905FDD853390.mvfrm
+[157/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_16A56F247CEFA447.mvfrm
+[158/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_05A7A1BCD2515F2F.mvfrm
+[159/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_48F1CA15EB5140A3.mvfrm
+[160/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_4E968275D0750002.mvfrm
+[161/182    0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm
+[162/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_54203AC3DA6F8B36.mvfrm
+[163/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VectorGraphicsModule.dll_51AFC69C2E6BFFE9.mvfrm
+[164/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyModule.dll_B6A1B5FF3285B52E.mvfrm
+[165/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HierarchyCoreModule.dll_8DC00BFEEB9CFD3D.mvfrm
+[166/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_BA6890679C6589A0.mvfrm
+[167/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_E1CD3A636983992D.mvfrm
+[168/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_8BE59A71D9FBE1E6.mvfrm
+[169/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_0C6A14BB2ECACED7.mvfrm
+[170/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_E76B0EE2570045C3.mvfrm
+[171/182    0s] MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_44F4061A380947FB.mvfrm
+[172/182    0s] MovedFromExtractor-Combine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm
+[173/182    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\RouteDisplay.cs(7,78): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\SeasideCell.cs(16,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\CameraPreview.cs(12,75): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\TrailVisualPreview.cs(17,13): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\SeasideMotor.cs(41,102): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\SeasideSession.cs(37,46): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\SeasideHUD.cs(31,17): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\SeasideSession.cs(47,66): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\SeasideSession.cs(47,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\SeasideSession.cs(54,97): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\StandaloneCalibration.cs(25,58): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\StandaloneCalibration.cs(25,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\SeasideSession.cs(58,66): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\SeasideSession.cs(58,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\SeasideSession.cs(67,69): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Scripts\PlaytestRuntimeChecks.cs(48,56): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\PlaytestRuntimeChecks.cs(48,25): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\PlaytestRuntimeChecks.cs(54,28): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+[174/182    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[175/182    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\PlaytestFixBuild.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestFixBuild.cs(15,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideFeelUpgrade.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\WallJumpEditorChecks.cs(13,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(52,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(55,9): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(74,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(80,63): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideArtSetup.cs(80,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\PlaytestRegression.cs(24,32): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestRegression.cs(25,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestRegression.cs(84,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\PlaytestRegression.cs(84,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\SeasideTests.cs(30,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideTests.cs(79,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideTests.cs(79,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\SeasideTests.cs(90,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideTests.cs(94,69): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideTests.cs(94,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\SeasideBuilder.cs(162,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideBuilder.cs(170,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideBuilder.cs(171,77): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideBuilder.cs(171,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[176/182    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 148 defines and 257 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[177/182    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 146 defines and 296 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[178/182    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[179/182    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[180/182    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[181/182    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (3.74 seconds), 181 items updated, 182 evaluated
+Assets\Scripts\RouteDisplay.cs(7,78): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\SeasideCell.cs(16,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\CameraPreview.cs(12,75): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\TrailVisualPreview.cs(17,13): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\SeasideMotor.cs(41,102): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\SeasideSession.cs(37,46): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\SeasideHUD.cs(31,17): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\SeasideSession.cs(47,66): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\SeasideSession.cs(47,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\SeasideSession.cs(54,97): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\StandaloneCalibration.cs(25,58): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\StandaloneCalibration.cs(25,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\SeasideSession.cs(58,66): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\SeasideSession.cs(58,35): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\SeasideSession.cs(67,69): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Scripts\PlaytestRuntimeChecks.cs(48,56): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\PlaytestRuntimeChecks.cs(48,25): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\PlaytestRuntimeChecks.cs(54,28): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestFixBuild.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestFixBuild.cs(15,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideFeelUpgrade.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\WallJumpEditorChecks.cs(13,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(52,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(55,9): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(74,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(80,63): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideArtSetup.cs(80,13): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\PlaytestRegression.cs(24,32): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestRegression.cs(25,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestRegression.cs(84,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\PlaytestRegression.cs(84,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\SeasideTests.cs(30,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideTests.cs(79,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideTests.cs(79,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\SeasideTests.cs(90,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideTests.cs(94,69): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideTests.cs(94,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\SeasideBuilder.cs(162,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideBuilder.cs(170,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideBuilder.cs(171,77): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideBuilder.cs(171,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 25.955146s
+Begin MonoManager ReloadAssembly
+Importing 'GUID: 00000000000000001000000000000000 - Path: Assets' with importer (DefaultImporter)
+Imported 'GUID: 00000000000000001000000000000000' -> (Import Result ID: '2740a6f043b2b326bdd7512375e96e57') in 0.013 seconds [static dependencies only]. Details - ImportResultOutputID=0bd79294e96b4d95e7775c04af3ef4c2 DependenciesID=5ddfff5767c8d340f2421f4cedfc88ba StaticDependenciesID=3cc2fb38edf9553804fe976b0521b786 
+Importing 'GUID: 00000000000000002000000000000000 - Path: ProjectSettings/InputManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000002000000000000000' -> (Import Result ID: 'd54c3b22344f5659d8f1231ca12dc27f') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=6ef5aadfef77827e2c23b904de4fe67c DependenciesID=230c3dc4decdcee345236da146e5ad56 StaticDependenciesID=121b9d84da6e41ec4ab375ad60d25101 
+Importing 'GUID: 00000000000000003000000000000000 - Path: ProjectSettings/TagManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000003000000000000000' -> (Import Result ID: 'a5251bb841397a971603b337d0971c1c') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=f000288eab4d423778547d37d97a06b9 DependenciesID=c359bc7dbdec9cc69f21a712fc2cbc58 StaticDependenciesID=e59c78132a1052aad8408a2ed774237e 
+Importing 'GUID: 00000000000000004000000000000000 - Path: ProjectSettings/ProjectSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000004000000000000000' -> (Import Result ID: '0601052ff8be70927560ee8d57bc17b4') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=054c890a8f4b6dddbea933bc5e4b7df4 DependenciesID=8adc8b087a1693bfff68accfdd64dae2 StaticDependenciesID=0f699d8e3a28c2a92ee51411adaa5072 
+Importing 'GUID: 00000000000000006000000000000000 - Path: ProjectSettings/AudioManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000006000000000000000' -> (Import Result ID: '0f7614d2b61231e66ee7f08dc4ae9926') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=d41ed101cdcb18327994de285944fd39 DependenciesID=971e702b08573c691c2dabd97b908d9f StaticDependenciesID=78bf59eed39219d4e919165573f8eef1 
+Importing 'GUID: 00000000000000007000000000000000 - Path: ProjectSettings/TimeManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000007000000000000000' -> (Import Result ID: 'bf2e2a9cfa639675d0a710526cf985f8') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=888360dbe4cb337dfbc4897083ee474b DependenciesID=6162935f23cb736e9398fba5fb4c9c85 StaticDependenciesID=171ef3a997d421de85362cf987648ece 
+Importing 'GUID: 00000000000000008000000000000000 - Path: ProjectSettings/DynamicsManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000008000000000000000' -> (Import Result ID: '9493700df472abca2a820bafbc32c9f3') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=f4e5ea74158efa9a7415a6abc5cfeedf DependenciesID=7d5968fdce4d7d722b61f5c0b68d5d2d StaticDependenciesID=21507cdfc0a65c4808b86b12b21aefe4 
+Importing 'GUID: 00000000000000009000000000000000 - Path: ProjectSettings/QualitySettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000009000000000000000' -> (Import Result ID: 'cfacddb94c7f35942200be5b26936a31') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=2a108b3da874f726c62fbe5f12be4a8a DependenciesID=ce94357f9d985fee94e420676a2fe093 StaticDependenciesID=5474af2cf0fa33f587753d1e75f2c1c8 
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: 'b048722ecd09312fa49ab408bfa370df') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=38e4d6520933cc9a1f341b053223b2a3 StaticDependenciesID=b474493a611f396807695d77b320ab0f 
+Importing 'GUID: 0000000000000000c000000000000000 - Path: ProjectSettings/EditorSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000c000000000000000' -> (Import Result ID: '7accca93d09daefaeed5b8e81e63658c') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=9bf1f3a6d7407228d033acb548d88253 DependenciesID=bc4c53b07f334e9aed4fc8a6b2b20eb3 StaticDependenciesID=9a7e26774b15e451372fdac32a2057e2 
+Importing 'GUID: 00000000000000004100000000000000 - Path: ProjectSettings/NavMeshAreas.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000004100000000000000' -> (Import Result ID: '6d45cdfeb1bfb40d77eb18bc05170f5d') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=431705ea786ba1fb0433b092fce391ed DependenciesID=006428ac89fa115e63b6f00fffd937e0 StaticDependenciesID=afafb33f82de12e3a954cd98f4797c04 
+Importing 'GUID: 00000000000000005100000000000000 - Path: ProjectSettings/Physics2DSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000005100000000000000' -> (Import Result ID: '7f5b9b69a45761867e088db9168f3847') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=d4b28e6b7b96fa6bea7060628c401421 DependenciesID=1ea400f43d48dcc17ede48b1d4c51542 StaticDependenciesID=cf3b35dd8b386b1100bf0f82ff0b5438 
+Importing 'GUID: 00000000000000006100000000000000 - Path: ProjectSettings/GraphicsSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000006100000000000000' -> (Import Result ID: 'c599a7efcf337672840db783ad5bf7b9') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=a2dcdb8bc9503711bc0f2e2d72cfd36c DependenciesID=74994a1d661f4c5000e56079d21929c7 StaticDependenciesID=9f0e2987a3d890a43d16c60085bea988 
+Importing 'GUID: 00000000000000007100000000000000 - Path: ProjectSettings/ClusterInputManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000007100000000000000' -> (Import Result ID: '8b2639835f617a8cc4a6d5700c2d349c') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=588fc89fed83f51a5c1aa7c8db0cdfd8 DependenciesID=d1cf642007960b4b48fd712639d5e706 StaticDependenciesID=8551dfd6d84e41d9986952666a9ba359 
+Importing 'GUID: 0000000000000000a100000000000000 - Path: ProjectSettings/UnityConnectSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000a100000000000000' -> (Import Result ID: '3f70f0fa4518a353310841306654c108') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=a2c5944bc70168a38041609ba26dc022 DependenciesID=4a1c82e6ee69c790c3d447b2cb828ce9 StaticDependenciesID=3264ecc4596833ddf5aa4a17ebcd63ad 
+Importing 'GUID: 0000000000000000b100000000000000 - Path: ProjectSettings/PresetManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b100000000000000' -> (Import Result ID: 'a96645bc3dfaaa3fd6624b6af3cbf7ad') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=6bbf2909d22cca2bf12a4801b098b013 DependenciesID=21947c2b285f338af91358dbec501674 StaticDependenciesID=3deada782f54d913ad057dcb2a298072 
+Importing 'GUID: 0000000000000000c100000000000000 - Path: ProjectSettings/VFXManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000c100000000000000' -> (Import Result ID: '24a33246316b2fddd6099fa803f97af9') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=f89698b22875eebc454842245beb374c DependenciesID=9da8b6c83b37b731cc389856294f3abf StaticDependenciesID=1b02c5a3d2845a5bde49ce6c8b8930d6 
+Importing 'GUID: 0000000000000000d100000000000000 - Path: ProjectSettings/VersionControlSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000d100000000000000' -> (Import Result ID: '3e83132be3119f6d54f790f3f2e69c30') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=fe7ea0ac71117227a6d09fba509747a9 DependenciesID=7d2bdc5d73a279af664e1fab02935448 StaticDependenciesID=84a73b2c199e7b6cd4d5a5a807690cd5 
+Importing 'GUID: 0000000000000000f100000000000000 - Path: ProjectSettings/MemorySettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000f100000000000000' -> (Import Result ID: 'fc36e0db6e989b6f25ae6898ecfff883') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=bc4e563a9c6fd2d5b4495e4db9c0cc0a DependenciesID=cc7d9d682380a14b7b0342dcde3083bd StaticDependenciesID=e608b92ed6cddde5e3df880828ba68b3 
+Importing 'GUID: 00000000000000000200000000000000 - Path: ProjectSettings/MultiplayerManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000000200000000000000' -> (Import Result ID: '5b5943cb4a11ab72910d7931aaf05e46') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=0f99ec37a18b74b8746d5bfd6ca7ca98 DependenciesID=0e1c97a4c87c44737f4f23290fb8e810 StaticDependenciesID=cd3757497757525a8124603ae764a6a2 
+Importing 'GUID: 00000000000000001200000000000000 - Path: ProjectSettings/PhysicsCoreProjectSettings2D.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000001200000000000000' -> (Import Result ID: '990209b38044adfcfcf62e5b91ce1492') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=fdcbf67861d1bc63eeeff8a918d0a8f1 DependenciesID=36b714542e13086a81b86f10149adff5 StaticDependenciesID=60cad0a1014b5338d21435bab7167415 
+Importing 'GUID: 00000000000000002300000000000000 - Path: Library/BuildInstructions' with importer (DefaultImporter)
+Imported 'GUID: 00000000000000002300000000000000' -> (Import Result ID: 'a80670de179e9c16064fd8e990e76876') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=f125fbf11ce4ab979114dbed2f4fa98b DependenciesID=767c01dfc0924be3719004476dc4df22 StaticDependenciesID=e445e0bffc1e4a1d2bd6a79525da9468 
+Importing 'GUID: 1061208384e94804babf285a93d4f88f - Path: Assets/Editor' with importer (DefaultImporter)
+Imported 'GUID: 1061208384e94804babf285a93d4f88f' -> (Import Result ID: '2a0672c3209af1903a94ff2952cdfe5f') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=3e6a40beed799a849b66e081a631d5c8 DependenciesID=3e7e8c143c390618a49d9dd9052b7202 StaticDependenciesID=7166f54b4c21b1e615cd6fb957670fb4 
+Importing 'GUID: c060426bfd6e82575228df6656368eaa - Path: Packages/com.unity.modules.imgui' with importer (DefaultImporter)
+Imported 'GUID: c060426bfd6e82575228df6656368eaa' -> (Import Result ID: '682d49718337f9e8ad0c1953342b952a') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=f5fc001a1ad129788ee2159d776db60d DependenciesID=6764ce33a9e0cede05d0ddf1e96d75b9 StaticDependenciesID=2e56775f807a7b7fbf419a5f33245a15 
+Importing 'GUID: 2197cea32f00f8540a3b68a5461c37e0 - Path: Assets/Scenes' with importer (DefaultImporter)
+Imported 'GUID: 2197cea32f00f8540a3b68a5461c37e0' -> (Import Result ID: '3fc1571edf45f7164b61e39d84fe61aa') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=a54342079ca9349dc3ba2730dc907d6d DependenciesID=e0bebda54b53142252d82d8dc74d049d StaticDependenciesID=60b5489cc63d46a50e88de1c5caae50a 
+Importing 'GUID: 5469ef0820152a4ae45d400fdc4626e4 - Path: Packages/com.unity.modules.screencapture' with importer (DefaultImporter)
+Imported 'GUID: 5469ef0820152a4ae45d400fdc4626e4' -> (Import Result ID: 'e0014a8d499b436e2e372ff968958bc9') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=93e2e0095437a3f0b6c6f329c875f5e8 DependenciesID=836be4a1c8e0478ac67837d8b35ecfc4 StaticDependenciesID=9fea1899b8e13368a8f75cb958effa91 
+Importing 'GUID: 25151ed74dce0c18857ead186416ac0c - Path: Packages/com.unity.modules.tetgen' with importer (DefaultImporter)
+Imported 'GUID: 25151ed74dce0c18857ead186416ac0c' -> (Import Result ID: 'ad3d3ff065b099f3d3d989c01a95b76e') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=7135452d37129296f8f5f522edc0cf0e DependenciesID=e34149d0dd79a755583c28b3d97cab01 StaticDependenciesID=fca226df487fba45a034e6c70bc853ff 
+Importing 'GUID: 850c54ee0b9e1aa740b1c67792eb1f26 - Path: Packages/com.unity.modules.imageconversion' with importer (DefaultImporter)
+Imported 'GUID: 850c54ee0b9e1aa740b1c67792eb1f26' -> (Import Result ID: 'af90ed7476409e3905a496d14f73b0b3') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=25e734cd17db43fca0a5646b579b21a1 DependenciesID=90c0129b19f84391f2419c00975c86bf StaticDependenciesID=b48e8f51d07b36dd8eb41f52bf2ba024 
+Importing 'GUID: d6f94acb509c9fd448fe5ee94d2af0de - Path: Assets/Prefabs' with importer (DefaultImporter)
+Imported 'GUID: d6f94acb509c9fd448fe5ee94d2af0de' -> (Import Result ID: '1253e1b1a4f0cd25ce01e67e63018494') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=46e4ff1003927ff9fa3283a793a777dd DependenciesID=cacd3fb398d3efbb90a5d651209adc97 StaticDependenciesID=bcc98ab46d0d6509d23765a49403b3db 
+Importing 'GUID: 376c84ea405e0f2b80562c23bb977216 - Path: Packages/com.unity.modules.physics2d' with importer (DefaultImporter)
+Imported 'GUID: 376c84ea405e0f2b80562c23bb977216' -> (Import Result ID: '46fcc1a3300c8fe45a973eefc3817c4d') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=76abd9b5f9d9723c46af1bb476315b64 DependenciesID=c7cdb6995e1fd6f8bb262dc47a15263a StaticDependenciesID=9eb03461e036054c251ca5627068ed0b 
+Importing 'GUID: 87f53c0af1c55c64baed671c322b100b - Path: Assets/Settings' with importer (DefaultImporter)
+Imported 'GUID: 87f53c0af1c55c64baed671c322b100b' -> (Import Result ID: 'f53b571add8bddd341b960537ef23bbb') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=07ec4ebdc8750468569396fe78c1e758 DependenciesID=4f9fc33cea1eeabc639bc6f6f941b230 StaticDependenciesID=4a5fbdf48b27a7a5b937c895c9107e4f 
+Importing 'GUID: cae78bb88f8c8675e30d16908805e79d - Path: Packages/com.unity.modules.timelinefoundation' with importer (DefaultImporter)
+Imported 'GUID: cae78bb88f8c8675e30d16908805e79d' -> (Import Result ID: 'ea0e075dc8747fa2dad92aa60a98d1eb') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=35905693e3216167cee053e3e1b8184e DependenciesID=8f823fd19bdbf3d450ef6f4a3159c9b1 StaticDependenciesID=b16c0b43e2d1595a5fdf54aaaf0e3f3e 
+Importing 'GUID: da7ab796fa5ed2e4381e176c158dd92c - Path: Assets/Resources' with importer (DefaultImporter)
+Imported 'GUID: da7ab796fa5ed2e4381e176c158dd92c' -> (Import Result ID: '026b4904507ee615938d4ce918ada410') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=9d203669a3097c1b52ee784773ad0d0d DependenciesID=ad69fd2a6465bbbcda9eacffd33eefe1 StaticDependenciesID=a1a027b8c0ba4d2e2eb75954d8bbaae3 
+Importing 'GUID: fc3a810351931f5e6183e16b9beb5563 - Path: Packages/com.unity.modules.jsonserialize' with importer (DefaultImporter)
+Imported 'GUID: fc3a810351931f5e6183e16b9beb5563' -> (Import Result ID: '4c717e052ed35040b01181b8aeeabdce') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=3becf28e3d8c6fcaad27baf9eff49eb7 DependenciesID=848cd90e9b19286877089217404f8606 StaticDependenciesID=36176ea3334c5c247398aca84b71bb81 
+Importing 'GUID: 2d6ba5cbe47e6ad3c87474c56174d4e0 - Path: Packages/com.unity.modules.audio' with importer (DefaultImporter)
+Imported 'GUID: 2d6ba5cbe47e6ad3c87474c56174d4e0' -> (Import Result ID: 'b5aa5d11b09542a046a40d1b9836ff98') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=e6811b686232d75db22bc2980b93bbaf DependenciesID=6751c7af021b92ac82702bc31f5cbdd7 StaticDependenciesID=c2d0f4358e023c44cf92941866870ca5 
+Importing 'GUID: 5e22a8d6e557a1b3cae09054b0b5f9d8 - Path: Packages/com.unity.modules.physicscore2d' with importer (DefaultImporter)
+Imported 'GUID: 5e22a8d6e557a1b3cae09054b0b5f9d8' -> (Import Result ID: '07edaf449a0a9b117acb9569ab2afb59') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=e63105581d85229110be56a07ce9b194 DependenciesID=e74a20b9f862d58818230d53b786679c StaticDependenciesID=1a6acdd98d030a9eaa3796880b97de04 
+Importing 'GUID: 8f1e21a5b99b4e04881ef32fd3a99884 - Path: Assets/Scripts' with importer (DefaultImporter)
+Imported 'GUID: 8f1e21a5b99b4e04881ef32fd3a99884' -> (Import Result ID: 'acc2d2d5ce05e877e48b35df6fe89184') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=6c15f8ce1534017baf3ab59117e54a27 DependenciesID=0c5933479242de390dcc1d0e7718a911 StaticDependenciesID=29df284163e2063269481b46a3e13a98 
+Importing 'GUID: bf7485b7c2ab1ba4ea476ddea892a58c - Path: Assets/Art' with importer (DefaultImporter)
+Imported 'GUID: bf7485b7c2ab1ba4ea476ddea892a58c' -> (Import Result ID: 'f0f37300164a6a108f357d7ba7a780e3') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=4e236cf473b8743beae6d5ab5949af9e DependenciesID=a86183403e4c76b7531cd2272ff07b7b StaticDependenciesID=4e02a204b7ea4e603677300d72775e4a 
+Importing 'GUID: 71e7167b55a3448b38774a3bb6e05bac - Path: Packages/com.unity.modules.timelinefoundation/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: 71e7167b55a3448b38774a3bb6e05bac' -> (Import Result ID: 'a6bec22fa10db9f7f35c7bd13e010a27') in 0.019 seconds [static dependencies only]. Details - ImportResultOutputID=c5890c0237407de11fec9407c846284f DependenciesID=36a0517f4d644b89cbe480485858a8bb StaticDependenciesID=25f461b927f097c38d0dbd784655af32 
+Importing 'GUID: 830a36a23cf3ab1e61fa47940a6dc35e - Path: Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: 830a36a23cf3ab1e61fa47940a6dc35e' -> (Import Result ID: 'be0b67b432003b038cf0bb92e1d77b13') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=76d29ea8d45d8514b9b32b4ce101e77e DependenciesID=7f550e29dfcaa81d6d67cc4988f0b7c8 StaticDependenciesID=7f600a175e09c6006f9088f92f2c1098 
+Importing 'GUID: 042dc296246916648e55a43d0eeb2036 - Path: Packages/com.unity.modules.audio/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: 042dc296246916648e55a43d0eeb2036' -> (Import Result ID: 'eb5c5d20fc9656beee57de382516913d') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=db7c8acc5ec18f8d94381a817bd4639b DependenciesID=f2e5ad5e1d5d153fc84b7341a3ca872f StaticDependenciesID=987edeb86285dfb2f2b949491eb5ed6c 
+Importing 'GUID: 14e86f88e9a8c9c448d7e7df92f2aeec - Path: Packages/com.unity.modules.physicscore2d/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: 14e86f88e9a8c9c448d7e7df92f2aeec' -> (Import Result ID: '2c973c246328c75cfbee9b147c533aec') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=4f921d24b7de923e48844f6cc629c5fc DependenciesID=5c2b2ed5b2c80f68f171a4ee31fd57d0 StaticDependenciesID=b0c4b38fa6509f6aac786da76715b668 
+Importing 'GUID: e6a135e3ea9cb46795d1b0e05ac3e1e5 - Path: Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: e6a135e3ea9cb46795d1b0e05ac3e1e5' -> (Import Result ID: 'c71f379f57b8b9297518a0ca2d221294') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=fe2252d2af7741e3b7227eed79d28422 DependenciesID=4d9d5a211e60a1a74167fb8bdba07a36 StaticDependenciesID=b0b22eccfcc75550cfd5416b8ccadc34 
+Importing 'GUID: 4bf139fc5e9d9240edc107e25d67d398 - Path: Packages/com.unity.modules.tetgen/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: 4bf139fc5e9d9240edc107e25d67d398' -> (Import Result ID: '32c0a5c247b7d4630e34dc8a23b68bbe') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=65cbec6ab1d9e8bebe15b1d11261c757 DependenciesID=f8e401a0bd87c3dc127a91c1ab3cd02f StaticDependenciesID=bcf844a6408d7a7017ee86bb65031aa6 
+Importing 'GUID: cd561f5f687aed43bf280c27a84f79e3 - Path: Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: cd561f5f687aed43bf280c27a84f79e3' -> (Import Result ID: '44b7856086d9635bc03bb42d4968c411') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=c0a8303c6754efb32cd09ffd146f4f49 DependenciesID=c0c206a2785c8acb2042240a2f88798b StaticDependenciesID=ffe48f33e27a5f63f50b47fe4620e5e4 
+Importing 'GUID: be13c398521e3c1ad21fb9da30ab2ab6 - Path: Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: be13c398521e3c1ad21fb9da30ab2ab6' -> (Import Result ID: 'f88617f8755f3cc7c522b80bad4b2bff') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=bbfcda24188a78ea8f934cd6f1d77d47 DependenciesID=1676049d7bfc560c2876453352831559 StaticDependenciesID=1484f2e44d4504480cf87fd155816ecc 
+Importing 'GUID: fe6a6957b37b61417b457a1e0541791d - Path: Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger' with importer (DefaultImporter)
+Imported 'GUID: fe6a6957b37b61417b457a1e0541791d' -> (Import Result ID: '277c9d9c9443fa4d20de51563b0d83a5') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=0029339c38fd9ee58145f1e3cabdd15e DependenciesID=adeb826391ab9c6ccdea71424fa76aa4 StaticDependenciesID=a2616f4ea2d94c01ce1fa3af66244439 
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.373 seconds
+Domain Reload Profiling: 878ms
+	BeginReloadAssembly (328ms)
+		DisableScriptedObjects (19ms)
+		CreateAndSetChildDomain (159ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (106ms)
+		LoadAssemblies (96ms)
+		TypeCache.Refresh (8ms)
+		AnalyzeDomain (4ms)
+	FinalizeReload (374ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (52ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Starting new worker id: 0 with log in D:/UnityProjects/Demo/Project/Logs/AssetImportWorkerHW0.log
+Importing 'GUID: 00000000000000005000000000000000 - Path: Library/BuildPlayer.prefs' with importer (DefaultImporter)
+Imported 'GUID: 00000000000000005000000000000000' -> (Import Result ID: 'e7fde0b61ad1bb905306708466de98ff') in 0.009 seconds [static dependencies only]. Details - ImportResultOutputID=5acc0d65895b3924819acc0f7e0e29d2 DependenciesID=59ca58ea3aedb06da41e45fbc07180ca StaticDependenciesID=37539b702cdc10d1395751c96f99732e 
+Importing 'GUID: ea091664a40a02b4f92eb8e06bde00c1 - Path: Assets/Scenes/Seaside01.unity' with importer (DefaultImporter)
+Imported 'GUID: ea091664a40a02b4f92eb8e06bde00c1' -> (Import Result ID: 'a22256f772bc374a1013740df025dfff') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=e51c2e7b6af51a746070a3f74db5d5ca DependenciesID=d936c19df154f9a2b1315933141d96e1 StaticDependenciesID=d3617da6afcd615cfc7bc2d33612564d 
+Importing 'GUID: e0832c1f3ed1ebf498d07fba2f43adc3 - Path: Assets/Art/Spike.png' with importer (TextureImporter)
+Imported 'GUID: e0832c1f3ed1ebf498d07fba2f43adc3' -> (Import Result ID: '6ee562c7283eb05b286966ae8ba0ba3a') in 0.022 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=69072bc22245bbc8b38607b9195c935d DependenciesID=de6d4cf764abd59a9b7b9918d1e45be9 StaticDependenciesID=5dfe60d051b28edf740ef8a1994fe9fe 
+Importing 'GUID: e01acf108eb65ff44ad90b2e4664f324 - Path: Assets/Art/Ground.png' with importer (TextureImporter)
+Imported 'GUID: e01acf108eb65ff44ad90b2e4664f324' -> (Import Result ID: 'b0bfcca3946850bb9863ff181ff62449') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3558651add2a68f9574d896ef082836d DependenciesID=720dfa383a6e3cdc103fb074d085d719 StaticDependenciesID=bd9a85abd38f0e7a2c780910eb9a9461 
+Importing 'GUID: e1afd21be78fc3e458db6ae79eaff159 - Path: Assets/Art/Player2x2.png' with importer (TextureImporter)
+Imported 'GUID: e1afd21be78fc3e458db6ae79eaff159' -> (Import Result ID: '5806ed0b9d9696055e81d71238b2d6da') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=49682a3554959ae76cbea6ef74499f1e DependenciesID=7b16af5ac6b5c8df2ab9ac9469c58998 StaticDependenciesID=59cd23192fdee4643379bca26f733538 
+Importing 'GUID: 04d7d3913184c694f86c92073f879523 - Path: Assets/Art/Route.png' with importer (TextureImporter)
+Imported 'GUID: 04d7d3913184c694f86c92073f879523' -> (Import Result ID: 'ad354780e9b7b70f696786be0c87a0f9') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0d6185379a6becea20723188027f58fb DependenciesID=e7fda994b87ab527979009c492e6ac9c StaticDependenciesID=3b7bb4d1d4cbf214f056d7522e7d110f 
+Importing 'GUID: e4ac0f10bd50e7e43bf3752e384bf777 - Path: Assets/Art/Checkpoint.png' with importer (TextureImporter)
+Imported 'GUID: e4ac0f10bd50e7e43bf3752e384bf777' -> (Import Result ID: 'acf14aea0802a8ea1bcba64f924eae31') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6203289acf9901de8312dfe04d29907a DependenciesID=b79624744bcc0c0f4b31280d23dd35fb StaticDependenciesID=e3a79414fdf565cb5dafc376dec0095e 
+Importing 'GUID: 96dd7bef992144f4dafe1bc4a6b9ba9a - Path: Assets/Art/Player.png' with importer (TextureImporter)
+Imported 'GUID: 96dd7bef992144f4dafe1bc4a6b9ba9a' -> (Import Result ID: '6eb42282d2ca3b3a411621f86b88bbe7') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5411fc5941459c31662c0f97ced0dff3 DependenciesID=2ce97f5aca8358bb8ba0bdc1eb9a6098 StaticDependenciesID=832a992b28ca0436412cedb79353335e 
+Importing 'GUID: a6c9991025b86d74295acbdb8adb173c - Path: Assets/Settings/NoFriction.physicsMaterial2D' with importer (NativeFormatImporter)
+Imported 'GUID: a6c9991025b86d74295acbdb8adb173c' -> (Import Result ID: 'd27645032e2301caf7c4d4423e4057a9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=4d7578b0130b3266120d308287815f17 DependenciesID=bd3601d6421fc3de74e65db399265943 StaticDependenciesID=b04f4009b391a47b4438c1aecabb8888 
+Importing 'GUID: 5032a02bcdef9934dbac1a99073e9f81 - Path: Assets/Settings/Movement.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 5032a02bcdef9934dbac1a99073e9f81' -> (Import Result ID: '99ce0bfba46449276c582679bec0a2ce') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b5983d2dca4a45cbf0950065eb940aa1 DependenciesID=3298de54ddb803313ee48e6ea7fdfd68 StaticDependenciesID=71a7148a9a6d26c4265d7b121608fca4 
+Importing 'GUID: 40bf3cec17fa0b49fe04443c8332d638 - Path: Packages/com.unity.modules.jsonserialize/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 40bf3cec17fa0b49fe04443c8332d638' -> (Import Result ID: '062926dc2f811d5fa649e1a6cf35b2be') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d715bb69eb97158ae78ee98bcdc249c8 DependenciesID=4e6f9b5b81636b56298af5228107b3cb StaticDependenciesID=0fc633a2d442bf1460b6d27ccd581959 
+Importing 'GUID: 80beef77cb19e713c7c2d481b65ed485 - Path: Packages/com.unity.modules.screencapture/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 80beef77cb19e713c7c2d481b65ed485' -> (Import Result ID: '43371bca79999413678980d6fc470d9b') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=b4ffc84b5928a9d8fa48bb1ab9ca0965 DependenciesID=c066d8070b2f6fb0d766951c3eb71b2b StaticDependenciesID=39cc6ec39bb1615df8637c27727a4672 
+Importing 'GUID: 42fe78c8fe682715a2cb531422e6ccb3 - Path: Packages/com.unity.modules.imgui/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 42fe78c8fe682715a2cb531422e6ccb3' -> (Import Result ID: '38d3bb719d37ec99f8a9f6c14d39c414') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=a5346159d22bce0395fd3c3cfff1d1a1 DependenciesID=bb3e0f71c194a791f04bcb82e59b0e77 StaticDependenciesID=fcba81c59960cbb5fd08016f128ba1a0 
+Importing 'GUID: 939b89fc6b924ea2e821fc1be1b09f56 - Path: Packages/com.unity.modules.tetgen/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 939b89fc6b924ea2e821fc1be1b09f56' -> (Import Result ID: '11768157ac485b2639961b8822c46966') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=29fa5e06454fd7d4a3de4ebaad1b9fb3 DependenciesID=c1b4948256745152fc2049e828600095 StaticDependenciesID=85fe6b83da180efd3b8a71f4f73ea1d2 
+Importing 'GUID: 2479a4656ed89570ebd1de1fdda3dae5 - Path: Packages/com.unity.modules.timelinefoundation/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 2479a4656ed89570ebd1de1fdda3dae5' -> (Import Result ID: '0302208327ef60b38a6c6ef73efb8e67') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=46a2b4bb43d4824a41d6c5129c0be0e9 DependenciesID=da2ed76247ab9d845fc0bddff5663209 StaticDependenciesID=89e750f67239ef258d2e24cbb0e9b393 
+Importing 'GUID: 953fab16d15d5885b3600fcd6388b2ad - Path: Packages/com.unity.modules.imageconversion/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: 953fab16d15d5885b3600fcd6388b2ad' -> (Import Result ID: 'f429bdfb79f913ce8c501a82d8358497') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=0e4995c3f3dd5769464d8a543795eb59 DependenciesID=65c452b17df9a2ed2f86b3ad31f5fd59 StaticDependenciesID=3a87574dc1bf2139ab2e833c570d41ac 
+Importing 'GUID: b5930dbc378b45d406aeb881f06b6dfa - Path: Packages/com.unity.modules.physicscore2d/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: b5930dbc378b45d406aeb881f06b6dfa' -> (Import Result ID: '2a94add01761f8fc65c922a501319370') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=af44914a33c884dc4608f0447aad1ab8 DependenciesID=bbce0d58c26795613a52965175925ea9 StaticDependenciesID=920f07d595124003c9dbccbb35574a76 
+Importing 'GUID: f7a8357347c80dc69c08d0b1a05e2122 - Path: Packages/com.unity.modules.physics2d/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: f7a8357347c80dc69c08d0b1a05e2122' -> (Import Result ID: '8e18bbb66b2b3d8f7842ee3a260e5e45') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=ffdd5cf71990097dc8e67f888e336b27 DependenciesID=68187d32eb6aebb86cb290844636b6d9 StaticDependenciesID=f56b4961831f9b23bfaa0e5ff6985f7e 
+Importing 'GUID: e9df95f53f1c1d0c9199e235d6c42b50 - Path: Packages/com.unity.modules.audio/package.json' with importer (PackageManifestImporter)
+Imported 'GUID: e9df95f53f1c1d0c9199e235d6c42b50' -> (Import Result ID: '3da0abae5321bad105734fca4c4bca28') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=9e7a8ca17c9ada176ee8f9feaacb145a DependenciesID=b61383e346dbc8a029c6c7d93da0c63e StaticDependenciesID=a6ba264de710eb848c1def723963e3cc 
+Importing 'GUID: 3e8bffbb10b465146a92785cd544c2d4 - Path: Assets/Resources/SeasideMap.json' with importer (TextScriptImporter)
+Imported 'GUID: 3e8bffbb10b465146a92785cd544c2d4' -> (Import Result ID: '900f0a479617be5de617e36a32a91f5e') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=23b5bcc36e15d89e016929b483aa2c8d DependenciesID=16ee67febce228785e8855f7bf4af1a2 StaticDependenciesID=6cae8cbaab845f3bb2f0efb35348076c 
+Importing 'GUID: 64a88a3543f5cbd4f9c60529333b177c - Path: Assets/Prefabs/Ground.prefab' with importer (PrefabImporter)
+Imported 'GUID: 64a88a3543f5cbd4f9c60529333b177c' -> (Import Result ID: '3bf14eb779c3c3fb9797033c1899f336') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=798dfcd24fb191ababc46b1c4c9355d4 DependenciesID=fc27a6a75b6ce03cee26bbc7837c1327 StaticDependenciesID=32b8ca8d2c56830be81e615b3e782873 
+Importing 'GUID: 7c9bca1587a2d484b9c0e104a738b326 - Path: Assets/Prefabs/Checkpoint.prefab' with importer (PrefabImporter)
+Imported 'GUID: 7c9bca1587a2d484b9c0e104a738b326' -> (Import Result ID: '7807c02954d76ea93c588793e7a8068a') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bd1a938d6466d37378625cc72855cc2e DependenciesID=93294a2b404664382805c97d7f20075f StaticDependenciesID=fe91ea91de54ed4699f4cf861b54e86f 
+Importing 'GUID: be03ed66e5b21b8479b1a40c5f5ac4eb - Path: Assets/Prefabs/Spike.prefab' with importer (PrefabImporter)
+Imported 'GUID: be03ed66e5b21b8479b1a40c5f5ac4eb' -> (Import Result ID: '63cf188c487da3adba2c2f95cab1aedb') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2028e5d1162a4fb1073ddf7d835ad36 DependenciesID=bcd08f17fd4445418d9001c9a78715f9 StaticDependenciesID=0b77a9a631f0515aed1d99cf941dd1ab 
+Loading style catalogs (6)
+	StyleSheets/Extensions/base/common.uss
+	UIPackageResources/StyleSheets/Default/Variables/Public/common.uss
+	StyleSheets/Northstar/common.uss
+	StyleSheets/Extensions/fonts/inter.uss
+	StyleSheets/Extensions/base/dark.uss
+	UIPackageResources/StyleSheets/Default/Northstar/Palette/dark.uss
+
+Asset Pipeline Refresh (id=3b92820637db2ee4d81344e73a249a16): Total: 30.665 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=70 (actual=70, local cache=0, cache server=0)
+		Asset DB Process Time: managed=6 ms, native=644 ms
+		Asset DB Callback time: managed=119 ms, native=3395 ms
+		Scripting: domain reloads=1, domain reload time=535 ms, compile time=25958 ms, other=5 ms
+		Project Asset Count: scripts=47, non-scripts=23
+		Asset File Changes: new=102, changed=102, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 3278.673ms
+	ApplyChangesToAssetFolders: 0.188ms
+	Scan: 65.561ms
+	Collect global state as custom dependencies: 9.046ms
+	OnSourceAssetsModified: 0.594ms
+	CategorizeScriptCompilationAssets: 0.119ms
+	ProcessAssetsWithTransientArtifactChanges: 1.081ms
+	CategorizeAssets: 0.455ms
+	CompileScripts: 25957.967ms
+	ImportOutOfDateAssets: 517.227ms (380.795ms without children)
+		ImportManagerImport: 120.235ms (5.222ms without children)
+			UpdateCategorizedAssets: 0.121ms
+		UnloadImportedAssets: 1.413ms
+		ImportSchedulerStart: 14.759ms
+	PostProcessAllAssets: 242.904ms
+		VersionControlSettings.HiddenFilePostprocess 0.507ms
+		PostProcessCallbackCreateDeferredMaterials 0.117ms
+		VCAutoAddAssetPostprocess 0.106ms
+		ShaderAssetModifiedCallback 0.093ms
+		RaytracingShaderImportPostprocess 0.077ms
+		ComputeShaderImportPostprocess 0.069ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 0.068ms
+		SpeedTreeImporter.PostprocessAllAssets 0.053ms
+		MonoPostProcessAllAssets: 118.554ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 73.851ms
+			AssetPostprocessor.OnPostprocessAllAssets 11.143ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.466ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.817ms
+			SyncVS.PostprocessSyncProject 2.624ms
+			AssetChangedListener.OnPostprocessAllAssets 2.169ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 1.679ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.049ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.024ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.711ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.608ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.296ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.283ms
+			AssetEvents.OnPostprocessAllAssets 0.246ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.241ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.221ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.209ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.109ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.103ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.098ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.088ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.081ms
+	PostAssetChangesProfiler: 1.537ms
+	UnloadStreamsBegin: 1.188ms
+	PersistCurrentRevisions: 0.233ms
+	UnloadStreamsEnd: 0.159ms
+	Untracked: 587.329ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 7.161ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Seaside Whitebox
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (496.3 KB). Loaded Objects now: 776.
+Memory consumption went from 221.6 MB to 221.1 MB.
+Total: 5.359600 ms (FindLiveObjects: 0.132200 ms CreateObjectMapping: 0.021300 ms MarkObjects: 4.744600 ms  DeleteObjects: 0.183600 ms)
+
+Importing 'GUID: f2818926fc1fd004aa05b0460602ee6f - Path: Assets/Art/Backgrounds' with importer (DefaultImporter)
+Imported 'GUID: f2818926fc1fd004aa05b0460602ee6f' -> (Import Result ID: '9a056328b8fde1d09e86b889fb1a5165') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f1efc7baa6243f95c680fc3ebb507c05 DependenciesID=d05f2cc49d09729d1d79637995909e52 StaticDependenciesID=dfe1c8b1373d2910520a4f6e7ddb57b6 
+Importing 'GUID: d611cd09419b08e4c8f44b061674e515 - Path: Assets/Art/Backgrounds/Seaside.png' with importer (TextureImporter)
+Imported 'GUID: d611cd09419b08e4c8f44b061674e515' -> (Import Result ID: 'b4dd244f8e15a8b89f4cdc30b3e42bf7') in 0.565 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ad902cb1327828f82bbeb0c1c61af2ff DependenciesID=ff5107c5f6f2878b5931e847e4113373 StaticDependenciesID=08c40d29b847f3e190eb248451e5da92 
+
+Asset Pipeline Refresh (id=c72bb65f8c5a8c042a5c03a07b27f3d2): Total: 0.627 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=621 ms
+		Asset DB Callback time: managed=4 ms, native=0 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=48, non-scripts=24
+		Asset File Changes: new=2, changed=2, moved=0, deleted=0
+		Scan Filter Count: 0
+	Scan: 17.594ms
+	Collect global state as custom dependencies: 0.656ms
+	OnSourceAssetsModified: 0.563ms
+	CategorizeAssets: 0.070ms
+	ImportOutOfDateAssets: 566.947ms (0.081ms without children)
+		ImportManagerImport: 566.588ms (0.136ms without children)
+		UnloadImportedAssets: 0.117ms
+		ImportSchedulerStart: 0.148ms
+	PostProcessAllAssets: 3.474ms
+		MonoPostProcessAllAssets: 3.372ms
+			AssetPostprocessor.OnPostprocessAllAssets 3.086ms
+	PostAssetChangesProfiler: 0.363ms
+	Untracked: 35.497ms
+
+Importing 'GUID: d611cd09419b08e4c8f44b061674e515 - Path: Assets/Art/Backgrounds/Seaside.png' with importer (TextureImporter)
+Worker ready: AssetImportWorkerHW0 0
+Imported 'GUID: d611cd09419b08e4c8f44b061674e515' -> (Import Result ID: '64ccbad1e7b0b9f8b853f38844df102d') in 0.916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cfda98fef348846255bb2fe9eb4fc32 DependenciesID=d87b7e918f4224bca36433692076bc6d StaticDependenciesID=973848654a895acd362b73ad79580cf0 
+
+Asset Pipeline Refresh (id=6cd2d6f8a807d6d4fbcebabec7af7e20): Total: 0.927 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=924 ms
+		Asset DB Callback time: managed=1 ms, native=0 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=48, non-scripts=24
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 4
+	Scan: 5.068ms
+	Collect global state as custom dependencies: 0.261ms
+	CategorizeAssets: 0.051ms
+	ImportOutOfDateAssets: 918.194ms (0.061ms without children)
+		ImportManagerImport: 917.666ms (0.553ms without children)
+		UnloadImportedAssets: 0.287ms
+		ReloadImportedAssets: 0.951ms
+		ImportSchedulerStart: 0.155ms
+	PostProcessAllAssets: 1.367ms
+		MonoPostProcessAllAssets: 0.976ms
+			AssetChangedListener.OnPostprocessAllAssets 0.345ms
+			SyncVS.PostprocessSyncProject 0.191ms
+			AssetPostprocessor.OnPostprocessAllAssets 0.154ms
+	PostAssetChangesProfiler: 0.612ms
+	Untracked: 1.144ms
+
+Importing 'GUID: 5996f87f9713fcf43b8dca78b2d112e4 - Path: Assets/Scenes/SeasideArtPreview.unity' with importer (DefaultImporter)
+Imported 'GUID: 5996f87f9713fcf43b8dca78b2d112e4' -> (Import Result ID: '60b05784a592854c6a9056b45b6f0a26') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=3bf617936081ee5e4502f31f886682a6 DependenciesID=bbe8e04c92d60c7e70eb2615ca6a6e1c StaticDependenciesID=7fa5d5a1200d0dabb76dcb8a2209c7a4 
+Asset Pipeline Refresh (id=241954ff231126243990fc6056eb687b): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Opening scene 'Assets/Scenes/SeasideArtPreview.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/SeasideArtPreview.unity'
+	Deserialize:            34.201 ms
+	Integration:            95.093 ms
+	Integration of assets:  0.152 ms
+	Thread Wait Time:       -0.085 ms
+	Total Operation Time:   129.360 ms
+Unloading 3 unused Assets / (9.1 KB). Loaded Objects now: 2819.
+Memory consumption went from 227.9 MB to 227.9 MB.
+Total: 7.852500 ms (FindLiveObjects: 0.274700 ms CreateObjectMapping: 0.024100 ms MarkObjects: 7.286800 ms  DeleteObjects: 0.033900 ms)
+
+Importing 'GUID: 5996f87f9713fcf43b8dca78b2d112e4 - Path: Assets/Scenes/SeasideArtPreview.unity' with importer (DefaultImporter)
+Imported 'GUID: 5996f87f9713fcf43b8dca78b2d112e4' -> (Import Result ID: '0933ebadeaad8831c08381478a3f2aae') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=3bf617936081ee5e4502f31f886682a6 DependenciesID=64a2a15b2e9f5b574581effb141276b3 StaticDependenciesID=8ecb22f9dc873d1069632f5c57037522 
+Asset Pipeline Refresh (id=fdab78dc48ebf6042baa1f0d9c89e9dd): Total: 0.007 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+AcceleratorClientConnectionCallback - disconnected - :0
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: '52b837f4172cabafb7eeaa28aa172e67') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=1d7624f7fcf3cecba423dc1296d806ae StaticDependenciesID=a9d1795a7a41ac82e5ab430102ba3828 
+Asset Pipeline Refresh (id=74faf39e271f94d419ccd98d9b99a6f3): Total: 0.006 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+SEASIDE_ART_PREVIEW_CREATED origin=(0.00, -5.00) width=155 height=83.92265
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+SeasideArtSetup:CreatePreview () (at Assets/Editor/SeasideArtSetup.cs:63)
+
+(Filename: Assets/Editor/SeasideArtSetup.cs Line: 63)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-user-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-user channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

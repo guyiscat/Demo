@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-30",
+  "scene": "Project6.4/Assets/Scenes/SeasideArtPreview.unity",
+  "buildFolder": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Build\\20261030-114533-165",
+  "build": {
+    "started": "2026-10-30T11:45:33.1737968+08:00",
+    "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project": "D:\\UnityProjects\\Demo\\Project6.4",
+    "phase": "runtime-calibration",
+    "result": "PASS",
+    "editorExit": 0,
+    "regressionExit": 0,
+    "calibrationExit": 0,
+    "finished": "2026-10-30T11:45:55.1751269+08:00"
+  },
+  "reports": [
+    {
+      "report": "physics-tests.txt",
+      "pass": 40,
+      "fail": 0
+    },
+    {
+      "report": "playtest-regression.txt",
+      "pass": 203,
+      "fail": 0
+    },
+    {
+      "report": "standalone-playtest-regression.txt",
+      "pass": 159,
+      "fail": 0
+    },
+    {
+      "report": "standalone-calibration.txt",
+      "pass": 7,
+      "fail": 0
+    },
+    {
+      "report": "hierarchy-checks.txt",
+      "pass": 5,
+      "fail": 0
+    },
+    {
+      "report": "art-preview-checks.txt",
+      "pass": 4,
+      "fail": 0
+    }
+  ],
+  "backgroundChecks": [
+    "PASS All three remaining bg images placed exactly once",
+    "PASS Existing bg3 renderer and transform unchanged",
+    "PASS Gameplay world geometry and checkpoint data unchanged",
+    "PASS Artwork has no colliders",
+    "PASS Scene saved"
+  ],
+  "protectedFiles": [
+    {
+      "file": "Assets\\Scenes\\Seaside01.unity",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Settings\\Movement.asset",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Art\\Seasidepart1\\bg3.png",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Art\\Seasidepart1\\bg3.png.meta",
+      "unchanged": true
+    }
+  ],
+  "previewSmokeExit": 0,
+  "manualWholeLevelCompletion": false,
+  "scope": "bg0/bg1/bg2 scene objects only; existing bg3 preserved; no runtime script changes."
+}

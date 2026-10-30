@@ -1,0 +1,494 @@
+{
+  "source": "D:\\UnityProjects\\Demo\\Figures\\part1",
+  "layout_canvas": {
+    "width": 4288,
+    "height": 2107
+  },
+  "layout_file_sha256": "dd178fe9a0602b764f68bd80beed36a92b5d8de27f3e9ff0d4aaa38f7b9084e5",
+  "image_count": 20,
+  "all_layout_images_exist": true,
+  "width_155_initial_candidate_height": 76.16254664179104,
+  "records": [
+    {
+      "file": "bg3.png",
+      "layout": {
+        "name": "bg3",
+        "x": 0,
+        "y": 0,
+        "width": 4292,
+        "height": 2109
+      },
+      "png_size": [
+        6438,
+        3163
+      ],
+      "png_to_layout_ratio": [
+        1.5,
+        1.4997629208155523
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "9b5749fee5a0e0bd0182154fe27883566a97c1109fc2c0a1091578fc51ebc483"
+    },
+    {
+      "file": "bg2.png",
+      "layout": {
+        "name": "bg2",
+        "x": 0,
+        "y": 582,
+        "width": 4237,
+        "height": 1525
+      },
+      "png_size": [
+        6356,
+        2288
+      ],
+      "png_to_layout_ratio": [
+        1.5001180080245458,
+        1.500327868852459
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "31057472654139fb4bd0836036ebb476d208114c5c52d75db51476b522952bdf"
+    },
+    {
+      "file": "bg1.png",
+      "layout": {
+        "name": "bg1",
+        "x": 802,
+        "y": 0,
+        "width": 2677,
+        "height": 2107
+      },
+      "png_size": [
+        4015,
+        3161
+      ],
+      "png_to_layout_ratio": [
+        1.499813223757938,
+        1.5002373042240151
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1c208957fbf47639b51a97e44eab9d5069d040b0b0dcc0306429615225add54c"
+    },
+    {
+      "file": "thorn1.png",
+      "layout": {
+        "name": "thorn1",
+        "x": 2194,
+        "y": 399,
+        "width": 97,
+        "height": 56
+      },
+      "png_size": [
+        145,
+        84
+      ],
+      "png_to_layout_ratio": [
+        1.4948453608247423,
+        1.5
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f1f9a4e7378f0a82b39d5f16bfd5bada2feb48010af2bdb9a611dedea029dc76"
+    },
+    {
+      "file": "thorn2.png",
+      "layout": {
+        "name": "thorn2",
+        "x": 2334,
+        "y": 546,
+        "width": 87,
+        "height": 55
+      },
+      "png_size": [
+        130,
+        82
+      ],
+      "png_to_layout_ratio": [
+        1.4942528735632183,
+        1.490909090909091
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "52cfb2a0c47678af5ec95436cd125c55d185df1465e967590be1b570891053b6"
+    },
+    {
+      "file": "thorn3.png",
+      "layout": {
+        "name": "thorn3",
+        "x": 2202,
+        "y": 696,
+        "width": 87,
+        "height": 55
+      },
+      "png_size": [
+        130,
+        82
+      ],
+      "png_to_layout_ratio": [
+        1.4942528735632183,
+        1.490909090909091
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "e5ebf243768515f468dddcbc351dd71c8d5e31ac2d62939f6c351d9aeb5f0d5d"
+    },
+    {
+      "file": "thorn4.png",
+      "layout": {
+        "name": "thorn4",
+        "x": 2330,
+        "y": 844,
+        "width": 98,
+        "height": 56
+      },
+      "png_size": [
+        146,
+        83
+      ],
+      "png_to_layout_ratio": [
+        1.489795918367347,
+        1.4821428571428572
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "4980ab734a59448c4d71678cda6af90abcd98e07c1b3ae0ddc1865c7c429ce37"
+    },
+    {
+      "file": "thorn5.png",
+      "layout": {
+        "name": "thorn5",
+        "x": 2704,
+        "y": 822,
+        "width": 105,
+        "height": 252
+      },
+      "png_size": [
+        157,
+        377
+      ],
+      "png_to_layout_ratio": [
+        1.4952380952380953,
+        1.496031746031746
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1b4414bfa1f57469bfea2d7b352d4f69b5f140df4cdaf881bc5f94461542aa48"
+    },
+    {
+      "file": "thorn6.png",
+      "layout": {
+        "name": "thorn6",
+        "x": 3121,
+        "y": 869,
+        "width": 85,
+        "height": 205
+      },
+      "png_size": [
+        127,
+        307
+      ],
+      "png_to_layout_ratio": [
+        1.4941176470588236,
+        1.497560975609756
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "1e1798de6d61d9a95aba6bcb6b0fc0d299cc85b63030c4ff0812444bf86d8ae4"
+    },
+    {
+      "file": "bridge1.png",
+      "layout": {
+        "name": "bridge1",
+        "x": 445,
+        "y": 1858,
+        "width": 115,
+        "height": 249
+      },
+      "png_size": [
+        173,
+        375
+      ],
+      "png_to_layout_ratio": [
+        1.5043478260869565,
+        1.5060240963855422
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "298903b7c93092808d4982e8be494636cad906a67cf0fced279d832c11e3bcf5"
+    },
+    {
+      "file": "bridge2.png",
+      "layout": {
+        "name": "bridge2",
+        "x": 643,
+        "y": 1760,
+        "width": 113,
+        "height": 347
+      },
+      "png_size": [
+        169,
+        521
+      ],
+      "png_to_layout_ratio": [
+        1.4955752212389382,
+        1.5014409221902016
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "f7cddc8d29bf2a60f7f1d523e52af026124f0c4282fdf2c278ac612786f8762d"
+    },
+    {
+      "file": "water.png",
+      "layout": {
+        "name": "water",
+        "x": 203,
+        "y": 874,
+        "width": 3200,
+        "height": 1233
+      },
+      "png_size": [
+        4799,
+        1851
+      ],
+      "png_to_layout_ratio": [
+        1.4996875,
+        1.5012165450121655
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "93f6d552b0607b83aef810cade04c635256e39a420fe0a37566a27bdc20e62ea"
+    },
+    {
+      "file": "pillar1.png",
+      "layout": {
+        "name": "pillar1",
+        "x": 1678,
+        "y": 1067,
+        "width": 191,
+        "height": 669
+      },
+      "png_size": [
+        286,
+        1003
+      ],
+      "png_to_layout_ratio": [
+        1.4973821989528795,
+        1.499252615844544
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "513bd317191f559bdc76bae0c63ab5280b3f87f5dc6d36f2320cc00e13a4d037"
+    },
+    {
+      "file": "pillar2.png",
+      "layout": {
+        "name": "pillar2",
+        "x": 2374,
+        "y": 1044,
+        "width": 660,
+        "height": 1063
+      },
+      "png_size": [
+        990,
+        1595
+      ],
+      "png_to_layout_ratio": [
+        1.5,
+        1.5004703668861712
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "d4d52fa54309415d6668b38ab0437380a0ae08db9f33ae9fc0518b2e18012191"
+    },
+    {
+      "file": "bg0.png",
+      "layout": {
+        "name": "bg0",
+        "x": 0,
+        "y": 0,
+        "width": 4290,
+        "height": 2107
+      },
+      "png_size": [
+        6434,
+        3161
+      ],
+      "png_to_layout_ratio": [
+        1.4997668997668998,
+        1.5002373042240151
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "0e57d7ee87e166f332554898018f487d8318494f5f87cd26c3c540a953ba59e6"
+    },
+    {
+      "file": "light.png",
+      "layout": {
+        "name": "light",
+        "x": 0,
+        "y": 0,
+        "width": 2414,
+        "height": 1726
+      },
+      "png_size": [
+        3620,
+        2588
+      ],
+      "png_to_layout_ratio": [
+        1.4995857497928748,
+        1.4994206257242177
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        51
+      ],
+      "sha256": "35898462793437af77e2cda33066d9614c813a32d956617a342813ba5ba141c4"
+    },
+    {
+      "file": "lightspot.png",
+      "layout": {
+        "name": "lightspot",
+        "x": 302,
+        "y": 17,
+        "width": 2068,
+        "height": 1794
+      },
+      "png_size": [
+        3102,
+        2690
+      ],
+      "png_to_layout_ratio": [
+        1.5,
+        1.499442586399108
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "ccc05a84d25282fef2da08b1bd3808e44fac84da99d3f41d18f21634ce32e34a"
+    },
+    {
+      "file": "lighthouse.png",
+      "layout": {
+        "name": "lighthouse",
+        "x": 3971,
+        "y": 341,
+        "width": 214,
+        "height": 629
+      },
+      "png_size": [
+        320,
+        944
+      ],
+      "png_to_layout_ratio": [
+        1.4953271028037383,
+        1.5007949125596185
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "468adadcb762b7bc6b3a5e71b2e06582c269a38a4662253204e302149a48e254"
+    },
+    {
+      "file": "checkpoint_on.png",
+      "layout": {
+        "name": "checkpoint_on",
+        "x": 3522,
+        "y": 772,
+        "width": 142,
+        "height": 199
+      },
+      "png_size": [
+        212,
+        298
+      ],
+      "png_to_layout_ratio": [
+        1.4929577464788732,
+        1.4974874371859297
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "b99936404a293d5869be58fe6fe9a3b2d629c234ee9fab9e56d24f66313c9945"
+    },
+    {
+      "file": "checkpoint_off.png",
+      "layout": {
+        "name": "checkpoint_off",
+        "x": 3522,
+        "y": 926,
+        "width": 142,
+        "height": 44
+      },
+      "png_size": [
+        212,
+        66
+      ],
+      "png_to_layout_ratio": [
+        1.4929577464788732,
+        1.5
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "sha256": "3f5de9ee5b36c50affca486525af88559d1b6283b5f77ec9375a904dcde7aae2"
+    }
+  ],
+  "scope": "Read-only asset review. No Unity import, scene changes, new build, or manual gameplay test."
+}

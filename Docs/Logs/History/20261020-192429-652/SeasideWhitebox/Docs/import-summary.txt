@@ -1,0 +1,6 @@
+SOURCE Sheet1 155x73
+Ground cells=1619 (expected 1619)
+Spike cells=189; red END text=35; total red=224 (expected 224)
+Checkpoints=12 (48 yellow cells)
+Blue route markers=21 (84 blue cells)
+One cell = one logical map pixel / 1 world unit; display scaling does not alter map distances.

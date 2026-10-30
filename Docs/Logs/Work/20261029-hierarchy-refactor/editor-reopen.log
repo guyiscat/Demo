@@ -1,0 +1,441 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-10-30T02:45:20.8458405Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-30T02:45:20Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15292, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              08e5847a6e5a473c88a7be6d0bf50cb5
+  Correlation Id:          06eec184259d680afb59ea62f62b5ce5
+  External correlation Id: 4549127433026896598
+  Machine Id:              ZFwzWaW/sukllSN81qeQTq98vpY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.00s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-10-30T02:45:20.9117585Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 15669784159753-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.08s
+
+COMMAND LINE ARGUMENTS:
+D:\Development\Unity\6000.4.12f1\Editor\Unity.exe
+-projectPath
+D:\UnityProjects\Demo\Project6.4
+-openfile
+D:\UnityProjects\Demo\Project6.4\Assets\Scenes\SeasideArtPreview.unity
+-logFile
+D:\UnityProjects\Demo\Docs\Logs\Work\20261029-hierarchy-refactor\editor-reopen.log
+Successfully changed project path to: D:\UnityProjects\Demo\Project6.4
+D:/UnityProjects/Demo/Project6.4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [30212]  Target information:
+
+Player connection [30212]  * "[IP] 114.212.84.66 [Port] 55504 [Flags] 2 [Guid] 462685094 [EditorId] 462685094 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [30212]  * "[IP] 192.168.96.1 [Port] 55504 [Flags] 2 [Guid] 462685094 [EditorId] 462685094 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [30212] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [30212] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-45784" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/Development/Unity/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Project6.4/Assets
+[D3D12 Device Filter] Vendor Name: Intel
+[D3D12 Device Filter] Device Name: Intel(R) UHD Graphics 770
+[D3D12 Device Filter] Driver Version: 32.0.101.7077
+[D3D12 Device Filter] Feature Level: 12.1
+[D3D12 Device Filter] Graphics Memory: 8026 MB
+[D3D12 Device Filter] Processor Count: 28
+[D3D12 Device Filter] Device Type: Integrated
+[D3D12 Device Filter] D3D12 API denied by user filter: {"Vendor": "Intel", "Device Type:": Integrated}
+GfxDevice: creating device client; kGfxThreadingModeThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 770 (ID=0xa780)
+    Vendor:   Intel
+    VRAM:     8026 MB
+    Driver:   32.0.101.7077
+Initialize mono
+Mono path[0] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Development/Unity/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000788 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.400 seconds
+Domain Reload Profiling: 813ms
+	BeginReloadAssembly (127ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (195ms)
+		LoadAssemblies (111ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (163ms)
+	FinalizeReload (401ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 6 packages:
+  Built-in packages:
+    com.unity.modules.audio@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityProjects\Demo\Project6.4\Library\PackageCache\com.unity.modules.screencapture)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Project6.4
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\netcorerun\netcorerun.exe "D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/UnityProjects/Demo/Project6.4
+ExitCode: 4 Duration: 0s65ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+*** Tundra requires additional run (0.02 seconds), 0 items updated, 158 evaluated
+ExitCode: 0 Duration: 0s440ms
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Project6.4
+ExitCode: 0 Duration: 0s49ms
+Finished compiling graph: 161 nodes, 580 flattened edges (570 ToBuild, 4 ToUse), maximum node priority 18
+*** Tundra build success (0.02 seconds), 0 items updated, 158 evaluated
+AssetDatabase: script compilation time: 0.907487s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.442 seconds
+Domain Reload Profiling: 827ms
+	BeginReloadAssembly (297ms)
+		DisableScriptedObjects (17ms)
+		CreateAndSetChildDomain (156ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (14ms)
+		LoadAssemblies (96ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (4ms)
+	FinalizeReload (442ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (118ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=fd064c47fe1adf84cabf159e3ae9a3aa): Total: 1.832 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=513 ms
+		Asset DB Callback time: managed=15 ms, native=5 ms
+		Scripting: domain reloads=1, domain reload time=385 ms, compile time=910 ms, other=2 ms
+		Project Asset Count: scripts=42, non-scripts=43
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 6.587ms
+	ApplyChangesToAssetFolders: 0.264ms
+	Scan: 13.313ms
+	CategorizeScriptCompilationAssets: 0.094ms
+	ProcessAssetsWithTransientArtifactChanges: 1.241ms
+	CategorizeAssets: 0.581ms
+	CompileScripts: 909.516ms
+	ImportOutOfDateAssets: 443.259ms (442.929ms without children)
+		UnloadImportedAssets: 0.085ms
+		OnDemandSchedulerStart: 0.224ms
+	PostProcessAllAssets: 15.290ms
+		MonoPostProcessAllAssets: 15.138ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.923ms
+			SyncVS.PostprocessSyncProject 1.628ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.655ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.222ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.175ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.110ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.054ms
+	UnloadStreamsBegin: 1.839ms
+	Untracked: 436.912ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 6.150ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Seaside Whitebox
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/SeasideArtPreview.unity'
+	Deserialize:            30.339 ms
+	Integration:            123.978 ms
+	Integration of assets:  0.069 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   154.394 ms
+Unloading 51 unused Assets / (481.6 KB). Loaded Objects now: 2747.
+Memory consumption went from 189.1 MB to 188.6 MB.
+Total: 3.558500 ms (FindLiveObjects: 0.138000 ms CreateObjectMapping: 0.010400 ms MarkObjects: 3.229700 ms  DeleteObjects: 0.178100 ms)
+
+[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+[LAYOUT] About to save layout D:\UnityProjects\Demo\Project6.4\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/user/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
+<RI> Initializing input.
+<RI> Input initialized.
+[Project] Loading completed in 5.991 seconds
+	Project init time: 				3.920 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.223 seconds
+		Asset Database init time: 		0.301 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			0.847 seconds
+		Unity extensions init time: 	0.001 seconds
+		Asset Database refresh time: 	1.833 seconds
+	Scene opening time: 			1.631 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1793328326824,"processId":45784,"projectLoad":5.9914786,"projectInit":3.920277,"templateInit":0.0,"packageManagerInit":0.22292,"assetDatabaseInit":0.300782,"globalIlluminationInit":0.0041055,"assembliesLoad":0.8473148,"unityExtensionsInit":0.0006381,"assetDatabaseRefresh":1.8327621,"sceneOpening":1.6308386}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1793328326824,"processId":45784,"editorVersion":"6000.4.12f1 (3ca267ce8005)","branch":"6000.4/respin/6000.4.12f1-6df48370b9ce","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=18600606f4a7ce142b3612f4ad26d9ce): Total: 0.025 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at C:/Users/user/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.008s, timestamps: [9.833 - 9.841]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated access token: "MC7yFXS5"... (expires: 2026-10-30T03:44:26Z)
+Starting new worker id: 0 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker0.log
+Starting new worker id: 1 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker1.log
+Starting new worker id: 2 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker2.log
+Starting new worker id: 3 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker3.log
+Starting new worker id: 4 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker4.log
+Starting new worker id: 5 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker5.log
+Starting new worker id: 6 with log in D:/UnityProjects/Demo/Project6.4/Logs/AssetImportWorker6.log
+Worker ready: AssetImportWorker3 3
+Worker ready: AssetImportWorker0 0
+Worker ready: AssetImportWorker6 6
+Worker ready: AssetImportWorker1 1
+Worker ready: AssetImportWorker2 2
+Worker ready: AssetImportWorker5 5
+Worker ready: AssetImportWorker4 4
+[Worker0] Start importing Assets/Art/Seasidepart1/bg2.png using Guid(d630ccd0e001c3742bed4ae6177bdbcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] Start importing Assets/Art/Seasidepart1/bridge1.png using Guid(afe0018e412bb214e95019887f71113b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker6] Start importing Assets/Art/Seasidepart1/water.png using Guid(88f22b4455e47bf48a603d76c4a11906) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] Start importing Assets/Art/Seasidepart1/light.png using Guid(40a616e724c9add46a7fdfef63820fdb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] Start importing Assets/Art/Seasidepart1/thorn6.png using Guid(5999f2f265b338a4b8e4eaea1faf06af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] Start importing Assets/Art/Seasidepart1/thorn4.png using Guid(3d9691e89f3fbd94992f35a48b3a3e26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker5] Start importing Assets/Art/Seasidepart1/thorn3.png using Guid(5cea0876f970fc14893ea5eb7d9f1216) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker6] (ScriptedImporter)
+[Worker4] (ScriptedImporter)
+[Worker3] (ScriptedImporter)
+[Worker0] (ScriptedImporter)
+[Worker1] (ScriptedImporter)
+[Worker2] (ScriptedImporter)
+[Worker5] (ScriptedImporter)
+[Worker6] d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 35539456.
+[Worker0]  -> (Import Result ID: 'e5eef2190baa7532c78c54f6e6891a9a') in 0.7066538 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01dea8f45509bf115387e0815489c465 DependenciesID=491a04f9c0b6e8cc3b5354b75d0207ef StaticDependenciesID=a09922cb91452f1a13e87b9d05e0cdc6 
+[Worker3]  -> (Import Result ID: '1ea6d4d6ba6b8990fab6f43c858bbe29') in 0.7093826 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9801524273ba788ec0138afe593d18b DependenciesID=c8775eb284134f95fd531e9aa39970b2 StaticDependenciesID=74200d7a5cbd446912c05debb71d3d40 
+[Worker2]  -> (Import Result ID: 'c1782b1f220eb8f8ec1e99d24b883add') in 0.7095853 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=af939791f8b69a2e593af95c4d81ec31 DependenciesID=65e8d925cb236e21626f47631227d66e StaticDependenciesID=b5dd4c5361439a80643b5b3f1518c5d5 
+[Worker5]  -> (Import Result ID: 'd6ffdcb4f1264c0da3eca5be427f024a') in 0.7100419 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36b4de3368a51667823aba25d7485c7e DependenciesID=a29ee551d9e991df5f20c7a3c2b3946c StaticDependenciesID=3fe0d51af0b29e43c8121451803d73c3 
+[Worker4]  -> (Import Result ID: '741cffe9459028d72e3b260f9142c4a3') in 0.7101986 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55fd84bc945da2d75bf04a8878cee172 DependenciesID=751ebf98e5d7b57bc022abb4c13685f2 StaticDependenciesID=8ae3c6abc8932163a0b5af0990e10b75 
+[Worker3] Start importing Assets/Art/Seasidepart1 using Guid(08e7dffedc8de9d45a6fbc446f71bd0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] Start importing Assets/Art/Seasidepart1/lighthouse.png using Guid(f40f81038cda1b44ab3ccfaf10e22d6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1]  -> (Import Result ID: 'ccefce03f9b07cde509e4433c1802eed') in 0.7109707 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9a4c77f4d3a40978322cda44ed9c9b7 DependenciesID=e838317f8192016d223b711f833028e6 StaticDependenciesID=c65eb5905bc56f23eb22f1d175b3a0ce 
+[Worker5] Start importing Assets/Art/Seasidepart1/pillar1.png using Guid(48512714189f24d46bc5857a3b2fbd65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker2] (ScriptedImporter)
+[Worker5] (ScriptedImporter)
+[Worker4] Start importing Assets/Art/Seasidepart1/checkpoint_off.png using Guid(6987339570a585f4f85ff7ba2e77d450) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker1] Start importing Assets/Art/Seasidepart1/bg3.png using Guid(926ed4517fe940a4b95f931b8246ab82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker0] Start importing Assets/Art/Seasidepart1/pillar2.png using Guid(f7cde7746b0a22c42ac349059cc6ed29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker4]  -> (Import Result ID: 'b34655bbda26622dc1d79e137ae4a175') in 0.0672065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=51bdcfdffdcb05df34c83fa1fed37b70 DependenciesID=3b32d891c5ac376869b5f17d00e302dd StaticDependenciesID=59b781b1451e6dd80be25b3250d57461 
+[Worker4] Start importing Assets/Art/Seasidepart1/lightspot.png using Guid(3d383517b27431f429581b3ba13872c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker6]  -> (Import Result ID: '228149bf32181b969f43e461870335a2') in 0.7825014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4818dce081ba5318108336d556447e73 DependenciesID=a9210d27615a99e3f9cc9915aab03acb StaticDependenciesID=9a9d8ec2c6aacd5afd250bd8971ddd21 
+[Worker6] Start importing Assets/Art/Seasidepart1/bg1.png using Guid(00883d77f5d8900449e969a1f8f7f918) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker6] (ScriptedImporter)
+[Worker2]  -> (Import Result ID: '6137cbf5dcbbfe393332ec2b9d3bf98c') in 0.0858382 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b46eea3fa1a06092d10a533f895e9445 DependenciesID=044ffd36a5aaaa49b4022d1856f19299 StaticDependenciesID=760546f65837a07513d37683ad16ba52 
+[Worker2] Start importing Assets/Scenes/SeasideArtPreview.unity using Guid(5996f87f9713fcf43b8dca78b2d112e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker3]  -> (Import Result ID: '36c4c774ab8880fc134827fd644c3f3c') in 0.2397118 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a19cceff311670021e128cdf1b12716 DependenciesID=553a1d90fc7763bb88ed223483e331b3 StaticDependenciesID=bc6e5d47515b5dc37c996e483900d8a3 
+[Worker5]  -> (Import Result ID: 'a515a7589ec5f7f3d59048dec49e5870') in 0.240545 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=47e7296505149633f6c2090105f9963c DependenciesID=394b96c059e3e74d7e6c86d27a216af0 StaticDependenciesID=6e7cde67661c9cc2edea8e12324f8642 
+[Worker3] Start importing Assets/Art/Seasidepart1/thorn2.png using Guid(3f9ea6bbbdf17164e9fa40602a460e3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker5] Start importing Assets/Art/Seasidepart1/part1.json.ps using Guid(9b28c708537d9b548a30283d5b26b3b5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker5] (ScriptedImporter)
+[Worker3] (ScriptedImporter)
+[Worker5]  -> (Import Result ID: '67658e47601532a281565c2e45bb3195') in 0.0060725 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed492663aa7e25a01e1c04bd36ab4d7f DependenciesID=8f84310e61b9f1c4a7ec781e83893ac4 StaticDependenciesID=0632f385d4d49eb662165ed1c241b8a1 
+[Worker5] Start importing Assets/Art/Seasidepart1/bg0.png using Guid(1e20c1d228a75e14198f1eed0bedccad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker5] (ScriptedImporter)
+[Worker0]  -> (Import Result ID: 'b18725520f47e72c8ae03584c52df3b4') in 0.2306723 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d634b73d51238396f097d67ecffffc83 DependenciesID=82df32ac2e93a739a59fba0b21226d0e StaticDependenciesID=1e3fbd31113e1cde89bc78b19b3e4aaf 
+[Worker0] Start importing Assets/Art/Seasidepart1/checkpoint_on.png using Guid(ab17530ca12ce3a45b4c978c204e3a8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker3]  -> (Import Result ID: '915293cc1611092a1790da2fa23d7b60') in 0.0590484 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97370e551f991fe12a6e2fe532e3d833 DependenciesID=08114e9e903d420d94cbc1a67fe550f1 StaticDependenciesID=5bbb3b24e353c871217690d0eaff6cdb 
+[Worker3] Start importing Assets/Art/Seasidepart1/bridge2.png using Guid(3858e8c1099bccc4cb599419fee36766) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0]  -> (Import Result ID: '019761655ba5fbe76da5a836b9ca4474') in 0.0468636 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f19ff4d9dd8a7174e328dab4a42e13a3 DependenciesID=9b02719a1c514772b4abd8811701e9c6 StaticDependenciesID=de74a250113483b66ed07e5884716235 
+[Worker3] (ScriptedImporter)
+[Worker0] Start importing Assets/Art/Seasidepart1/thorn5.png using Guid(ea482c19156e2b24ab7b51f02e08a6c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker6] d3d12: upload buffer was too small for the requested resource! Size: 35651584. Requested: 50980864.
+[Worker6]  -> (Import Result ID: '80b0e1103822367f51a2459b192936fa') in 0.7852691 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=398458b9057a501e941f36e502aa5df9 DependenciesID=a66519891e9228ed4a4c8ae71b43210d StaticDependenciesID=72a4a5a4454aad7b07916e9c2179370d 
+[Worker6] Start importing Assets/Art/Seasidepart1/thorn1.png using Guid(0a54811c679549740ac17c61222d9c8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker6] (ScriptedImporter)
+[Worker1] d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 81782784.
+[Worker1]  -> (Import Result ID: 'a8ab3c354e46383e9d829b798d1b0d87') in 1.3190063 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e71555def3ff6cc842be7465aee1fc19 DependenciesID=0a4f5957a809203eda635e8c288a4383 StaticDependenciesID=79d3b8f7e8a20d870f73940eeef739e6 
+[Worker5] d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 81731072.
+[Worker0]  -> (Import Result ID: '273dd1ea3d81b9bdffc23e23c4dc6198') in 1.6106513 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86ac917263800088673bf45d444a50e4 DependenciesID=db7d659afb393616d5d8f39686bbd444 StaticDependenciesID=56706b3dda2046e5bbc6911918b6f75c 
+[Worker3]  -> (Import Result ID: '716a2ad9bfd48d7eddaeffaa4c13c884') in 1.6115978 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ea5e831aa23974f589ba23d2ef27eec4 DependenciesID=14e92e814d81d716df8226309bfe9e61 StaticDependenciesID=aace7afaed1f75d6b0ed299d2fd8cd53 
+[Worker4] d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 33743360.
+[Worker2]  -> (Import Result ID: 'edf6c988c34c1f15469f91301540412f') in 1.763064 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=939dac505b1ca2128583a66f73442462 DependenciesID=233f9c3c17043648487aad823a3b5bb6 StaticDependenciesID=be2f55b609600807288750150a0137b7 
+[Worker5]  -> (Import Result ID: '08e712633453b0246a33ca166c7e8e97') in 1.6963404 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=294cb3fabfaabbfdf4b8fb88b2b1d4e1 DependenciesID=4f212e45e95f3c3d01ab14e63a7df8ca StaticDependenciesID=e9781e8acb1194bbee46dd4faf8f2669 
+[Worker6]  -> (Import Result ID: 'c731dd055621d30810e4d2d5d244aa23') in 1.0785835 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33d2d14f0978b74cafb24a23cae63d99 DependenciesID=25de4c23a958c6d46e54231322da6b7e StaticDependenciesID=907bcf36ab1cd5aefb91928cbc4e6c77 
+[Worker4]  -> (Import Result ID: '92adf50f14ef829ee41e341c6e8736a1') in 1.8977887 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9d45c4a24d4a9ccee0a8a0d265dcee2c DependenciesID=e15b0bb1d6f11b9a76bb7cff30115963 StaticDependenciesID=ba82bbfcbbc9c56cb2226078c6ddd90a 
+TrimDiskCacheJob: Current cache size 0mb
+Asset Pipeline Refresh (id=a54ba5db400caa54182ad091ac2695e9): Total: 0.029 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=05d0272f29335cf4ab8d07f279ab7bc1): Total: 0.004 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.923 seconds
+Domain Reload Profiling: 1427ms
+	BeginReloadAssembly (409ms)
+		ExecutionOrderSort (8ms)
+		DisableScriptedObjects (134ms)
+		CreateAndSetChildDomain (129ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (29ms)
+		LoadAssemblies (101ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+	FinalizeReload (924ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (69ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+		AwakeInstancesAfterBackupRestoration (460ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=e86473ec2e9e7314cbf43651e14636bb): Total: 1.778 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=941 ms
+		Asset DB Callback time: managed=15 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=819 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=42, non-scripts=43
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 1.003ms
+	ApplyChangesToAssetFolders: 0.065ms
+	CategorizeAssets: 0.351ms
+	CompileScripts: 1.348ms
+	ImportOutOfDateAssets: 925.885ms (924.007ms without children)
+		UnloadImportedAssets: 1.063ms
+		OnDemandSchedulerStart: 0.774ms
+	PostProcessAllAssets: 15.652ms
+		MonoPostProcessAllAssets: 15.645ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.290ms
+			SyncVS.PostprocessSyncProject 2.157ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.568ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.250ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.124ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.119ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.060ms
+	UnloadStreamsBegin: 1.092ms
+	GenerateScriptTypeHashes: 0.071ms
+	GenerateScriptTypeSerializationHashes: 0.071ms
+	Untracked: 830.062ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            7.945 ms
+	Integration:            57.075 ms
+	Integration of assets:  0.008 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   65.037 ms
+[Licensing::Client] Successfully resolved entitlement details

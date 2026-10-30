@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "packages": {
+    "Project": {
+      "result": "PASS",
+      "MiB": 93.91,
+      "entries": 770,
+      "compared_asset_or_player_files": 162,
+      "forbidden": [],
+      "missing": [],
+      "mismatches": [],
+      "crc_failure": null
+    },
+    "Windows": {
+      "result": "PASS",
+      "MiB": 82.26,
+      "entries": 715,
+      "compared_asset_or_player_files": 147,
+      "forbidden": [],
+      "missing": [],
+      "mismatches": [],
+      "crc_failure": null
+    }
+  },
+  "game_binary_rebuilt": false,
+  "new_manual_playthrough": false
+}

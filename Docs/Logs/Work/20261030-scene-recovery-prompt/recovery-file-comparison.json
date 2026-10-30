@@ -1,0 +1,22 @@
+[
+  {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-scene-recovery-prompt\\0.backup",
+    "bytes": 459204,
+    "sha256": "8E48208A2E18DF577EE13C61EEDA462DFED1030A0EFE9015212EFE0274DBF8BB",
+    "yaml": false,
+    "gameObjects": 0,
+    "hasNewHierarchy": false,
+    "hasUserBackground": false,
+    "hasOldRoot": false
+  },
+  {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-scene-recovery-prompt\\SeasideArtPreview.unity",
+    "bytes": 1702842,
+    "sha256": "0526B502024C61F8857341F0928837DFB8218C68E6C98901102F3F201423523C",
+    "yaml": true,
+    "gameObjects": 432,
+    "hasNewHierarchy": true,
+    "hasUserBackground": true,
+    "hasOldRoot": false
+  }
+]

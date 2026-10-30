@@ -1,0 +1,11 @@
+{
+  "started": "2026-10-30T10:03:51.7996930+08:00",
+  "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+  "project": "D:\\UnityProjects\\Demo\\Project6.4",
+  "phase": "runtime-calibration",
+  "result": "PASS",
+  "editorExit": 0,
+  "regressionExit": 0,
+  "calibrationExit": 0,
+  "finished": "2026-10-30T10:05:04.2475216+08:00"
+}

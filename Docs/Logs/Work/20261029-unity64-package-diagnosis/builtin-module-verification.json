@@ -1,0 +1,32 @@
+[
+  {
+    "package": "com.unity.modules.audio",
+    "requested": "1.0.0",
+    "exists": true
+  },
+  {
+    "package": "com.unity.modules.physics2d",
+    "requested": "1.0.0",
+    "exists": true
+  },
+  {
+    "package": "com.unity.modules.imgui",
+    "requested": "1.0.0",
+    "exists": true
+  },
+  {
+    "package": "com.unity.modules.imageconversion",
+    "requested": "1.0.0",
+    "exists": true
+  },
+  {
+    "package": "com.unity.modules.jsonserialize",
+    "requested": "1.0.0",
+    "exists": true
+  },
+  {
+    "package": "com.unity.modules.screencapture",
+    "requested": "1.0.0",
+    "exists": true
+  }
+]

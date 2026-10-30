@@ -1,0 +1,5 @@
+PASS All three remaining bg images placed exactly once
+PASS Existing bg3 renderer and transform unchanged
+PASS Gameplay world geometry and checkpoint data unchanged
+PASS Artwork has no colliders
+PASS Scene saved

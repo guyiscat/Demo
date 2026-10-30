@@ -1,0 +1,36 @@
+PASS SHORT_JUMP measured=2.9996 cells target=3 tolerance=0.08
+PASS LONG_JUMP measured=4.9998 cells target=5 tolerance=0.08
+PASS Long press produces higher jump than tap
+PASS Progressive fall speed=1.23,4.37,10.73,22.20,24.00
+PASS Terminal fall speed capped at 24
+PASS Dash (1.00, 0.00) measured=5.0000 cells target=5
+PASS Dash (0.00, 1.00) measured=5.0000 cells target=5
+PASS Dash (0.00, -1.00) measured=5.0000 cells target=5
+PASS Dash (1.00, 1.00) measured=5.0000 cells target=5
+PASS Dash (-2.00, 0.70) measured=5.0000 cells target=5
+PASS Second air dash rejected before contact
+PASS Post-dash neutral hover removes residual speed
+PASS Fall resumes after short dash hover
+PASS Hold toward wall stays stationary, no climbing
+PASS Wall attachment resets dash and reserved teleport state
+PASS Moving away releases wall attachment
+PASS Space kicks away from attached wall
+PASS Click can dash away from attached wall
+PASS Ground contact resets dash
+PASS Per-wall attachable toggle is respected
+PASS Imported all twelve yellow checkpoint groups
+PASS Checkpoint 4 safe respawn at (37.00, 20.65)
+PASS Checkpoint 11 safe respawn at (114.00, 39.65)
+PASS Checkpoint 10 safe respawn at (96.00, 39.65)
+PASS Checkpoint 5 safe respawn at (47.00, 21.65)
+PASS Checkpoint 9 safe respawn at (80.00, 65.65)
+PASS Checkpoint 3 safe respawn at (37.00, 2.65)
+PASS Checkpoint 12 safe respawn at (134.00, 42.65)
+PASS Checkpoint 8 safe respawn at (68.00, 38.65)
+PASS Checkpoint 7 safe respawn at (61.00, 13.65)
+PASS Checkpoint 2 safe respawn at (26.00, 10.65)
+PASS Checkpoint 6 safe respawn at (57.00, 36.65)
+PASS Checkpoint 1 safe respawn at (18.00, 6.65)
+PASS Checkpoint respawn uses draggable anchor world position
+PASS Source cell counts exactly preserved
+PASS End goal exists on final deck

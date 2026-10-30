@@ -1,0 +1,34 @@
+# Generated Unity content (Project6.4 is the current Unity project root)
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/UserSettings/
+**/MemoryCaptures/
+**/Recordings/
+**/[Bb]uilds/
+/Project/Logs/
+/Project/Builds/
+*.csproj
+*.sln
+*.slnx
+.vs/
+.idea/
+~$*
+
+# Local deliveries, duplicated backups, and large archives
+/Play/
+/Play64/
+/Project6.4/Logs/
+/Docs/Backups/
+/Docs/Logs/Packaging/
+*.zip
+*.7z
+*.unitypackage
+# Keep historical work/build logs; live play sessions are local.
+/Docs/Logs/Runtime/
+
+# Keep recovery data locally until compared with the saved scenes.
+/Project6.4/Assets/_Recovery/
+/Project6.4/Assets/_Recovery.meta
+**/.DS_Store
+**/Thumbs.db

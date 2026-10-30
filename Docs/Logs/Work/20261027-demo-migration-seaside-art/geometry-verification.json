@@ -1,0 +1,22 @@
+{
+  "source_cells": 381,
+  "source_geometry_sha256": "16b2c9c85c74b10c690745879123ae84b5ac71a3c73499420cefd01a89d58427",
+  "comparisons": [
+    {
+      "scene": "Seaside01",
+      "cells": 381,
+      "geometry_sha256": "16b2c9c85c74b10c690745879123ae84b5ac71a3c73499420cefd01a89d58427",
+      "different_objects": 0,
+      "examples": []
+    },
+    {
+      "scene": "SeasideArtPreview",
+      "cells": 381,
+      "geometry_sha256": "16b2c9c85c74b10c690745879123ae84b5ac71a3c73499420cefd01a89d58427",
+      "different_objects": 0,
+      "examples": []
+    }
+  ],
+  "json_byte_identical": true,
+  "image_byte_identical": true
+}

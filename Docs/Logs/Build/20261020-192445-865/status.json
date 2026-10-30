@@ -1,0 +1,10 @@
+﻿{
+    "started":  "2026-10-20T19:24:45.8704146+08:00",
+    "unity":  "E:\\Unity\\Editors\\6000.4.12f1\\Editor\\Unity.exe",
+    "project":  "D:\\SeasideWhitebox-PlaytestFix-v3\\Project",
+    "phase":  "build",
+    "result":  "FAIL",
+    "editorExit":  null,
+    "error":  "Editor build/tests failed",
+    "finished":  "2026-10-20T19:24:45.9234206+08:00"
+}

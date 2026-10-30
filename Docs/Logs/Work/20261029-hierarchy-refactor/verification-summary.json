@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-30",
+  "project": "D:\\UnityProjects\\Demo\\Project6.4",
+  "scene": "Assets/Scenes/SeasideArtPreview.unity",
+  "buildFolder": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Build\\20261030-104306-496",
+  "build": {
+    "started": "2026-10-30T10:43:06.5018409+08:00",
+    "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project": "D:\\UnityProjects\\Demo\\Project6.4",
+    "phase": "runtime-calibration",
+    "result": "PASS",
+    "editorExit": 0,
+    "regressionExit": 0,
+    "calibrationExit": 0,
+    "finished": "2026-10-30T10:43:18.50108+08:00"
+  },
+  "reports": [
+    {
+      "file": "physics-tests.txt",
+      "pass": 40,
+      "fail": 0
+    },
+    {
+      "file": "playtest-regression.txt",
+      "pass": 203,
+      "fail": 0
+    },
+    {
+      "file": "standalone-playtest-regression.txt",
+      "pass": 159,
+      "fail": 0
+    },
+    {
+      "file": "standalone-calibration.txt",
+      "pass": 7,
+      "fail": 0
+    },
+    {
+      "file": "hierarchy-checks.txt",
+      "pass": 5,
+      "fail": 0
+    },
+    {
+      "file": "art-preview-checks.txt",
+      "pass": 4,
+      "fail": 0
+    }
+  ],
+  "unchangedFiles": [
+    {
+      "file": "Assets\\Scenes\\Seaside01.unity",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Settings\\Movement.asset",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Resources\\SeasideMap.json",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Art\\Seasidepart1\\bg3.png",
+      "unchanged": true
+    },
+    {
+      "file": "Assets\\Art\\Seasidepart1\\bg3.png.meta",
+      "unchanged": true
+    }
+  ],
+  "objectsPreserved": 426,
+  "worldSnapshotHash": "B49EE12640564F24A7C8CA8E99EF2DBA3CFB9793FC8EB6F95E5EA9A0F99219D4",
+  "worldSnapshotsEqual": true,
+  "previewRuntime": [
+    {
+      "case": "preview-regression",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-regression.log"
+    },
+    {
+      "case": "preview-calibration",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-calibration.log"
+    },
+    {
+      "case": "original-camera-smoke",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\original-camera-smoke.log"
+    },
+    {
+      "case": "preview-camera-smoke",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-camera-smoke.log"
+    },
+    {
+      "case": "original-trail-smoke",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\original-trail-smoke.log"
+    },
+    {
+      "case": "preview-trail-smoke",
+      "exit": 0,
+      "result": "PASS",
+      "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-trail-smoke.log"
+    }
+  ],
+  "manualWholeLevelCompletion": false,
+  "githubPushed": false
+}

@@ -1,0 +1,50 @@
+PASS Continuous initial hold grips right wall
+PASS Release smoothly enters wall slide on side 1
+PASS Slow slide descent=3.257 cells in 1.2 s
+PASS Slide velocity smooth; max fixed-step delta=0.0899
+PASS Repeated 1-tick press/release cannot rehang, side 1 descent=6.056
+PASS Repeated 3-tick press/release cannot rehang, side 1 descent=6.056
+PASS Repeated 10-tick press/release cannot rehang, side 1 descent=6.056
+PASS Short rendered-frame release cannot be swallowed by physics sampling, side 1
+PASS Moving away exits slow slide, side 1
+PASS Real separation and return allows a new attachment, side 1
+PASS Continuous initial hold grips left wall
+PASS Release smoothly enters wall slide on side -1
+PASS Slow slide descent=3.257 cells in 1.2 s
+PASS Slide velocity smooth; max fixed-step delta=0.0899
+PASS Repeated 1-tick press/release cannot rehang, side -1 descent=6.056
+PASS Repeated 3-tick press/release cannot rehang, side -1 descent=6.056
+PASS Repeated 10-tick press/release cannot rehang, side -1 descent=6.056
+PASS Short rendered-frame release cannot be swallowed by physics sampling, side -1
+PASS Moving away exits slow slide, side -1
+PASS Real separation and return allows a new attachment, side -1
+PASS Right-wall diagonal up terminates entire dash at impact, tick=20
+PASS Right-wall diagonal up no residual tangential dash momentum
+PASS Right-wall diagonal up next-tick velocity=(0.00, -0.37)
+PASS Right-wall diagonal up does not dash-slide vertically up/down the wall
+PASS Right-wall diagonal down terminates entire dash at impact, tick=20
+PASS Right-wall diagonal down no residual tangential dash momentum
+PASS Right-wall diagonal down next-tick velocity=(0.00, -0.37)
+PASS Right-wall diagonal down does not dash-slide vertically up/down the wall
+PASS Left-wall diagonal up terminates entire dash at impact, tick=20
+PASS Left-wall diagonal up no residual tangential dash momentum
+PASS Left-wall diagonal up next-tick velocity=(0.00, -0.37)
+PASS Left-wall diagonal up does not dash-slide vertically up/down the wall
+PASS Left-wall diagonal down terminates entire dash at impact, tick=20
+PASS Left-wall diagonal down no residual tangential dash momentum
+PASS Left-wall diagonal down next-tick velocity=(0.00, -0.37)
+PASS Left-wall diagonal down does not dash-slide vertically up/down the wall
+PASS Ceiling diagonal terminates entire dash at impact, tick=20
+PASS Ceiling diagonal no residual tangential dash momentum
+PASS Ceiling diagonal next-tick velocity=(0.00, -0.37)
+PASS Floor diagonal terminates entire dash at impact, tick=23
+PASS Floor diagonal no residual tangential dash momentum
+PASS Floor diagonal next-tick velocity=(0.00, 0.00)
+PASS Older and same checkpoint do not overwrite latest spawn
+PASS Respawn still uses latest checkpoint after backtracking
+PASS Progression only advances to a later checkpoint
+PASS Full restart permits fresh checkpoint progression
+PASS Camera 30/60/120 FPS common-time max deviations=0.436/0.144 cells
+PASS Dead zone rejects idle micro-jitter
+PASS Overview transition smooth and convergent; largest step=0.603
+PASS Respawn snap clears velocity and stale lookahead

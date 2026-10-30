@@ -1,0 +1,50 @@
+PASS Switch + SPACE: side=-1 delay=0 dt=0.005 v=(8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.005 v=(8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.04 dt=0.005 v=(8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+FAIL Switch + SPACE: side=-1 delay=0.06 dt=0.005 v=(5.20, -2.73)
+FAIL Switch + SPACE: side=-1 delay=0.08 dt=0.005 v=(6.80, -3.74)
+PASS Expired wall grace rejects air jump; side=-1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0 dt=0.005 v=(-8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.005 v=(-8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.04 dt=0.005 v=(-8.00, 34.49)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+FAIL Switch + SPACE: side=1 delay=0.06 dt=0.005 v=(-5.20, -2.73)
+FAIL Switch + SPACE: side=1 delay=0.08 dt=0.005 v=(-6.80, -3.74)
+PASS Expired wall grace rejects air jump; side=1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0 dt=0.01 v=(8.00, 34.34)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.01 v=(8.00, 34.34)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+FAIL Switch + SPACE: side=-1 delay=0.04 dt=0.01 v=(4.00, -2.05)
+FAIL Switch + SPACE: side=-1 delay=0.06 dt=0.01 v=(5.60, -3.01)
+FAIL Switch + SPACE: side=-1 delay=0.08 dt=0.01 v=(7.20, -4.05)
+PASS Expired wall grace rejects air jump; side=-1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0 dt=0.01 v=(-8.00, 34.34)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.01 v=(-8.00, 34.34)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+FAIL Switch + SPACE: side=1 delay=0.04 dt=0.01 v=(-4.00, -2.05)
+FAIL Switch + SPACE: side=1 delay=0.06 dt=0.01 v=(-5.60, -3.01)
+FAIL Switch + SPACE: side=1 delay=0.08 dt=0.01 v=(-7.20, -4.05)
+PASS Expired wall grace rejects air jump; side=1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0 dt=0.02 v=(8.00, 34.04)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.02 v=(8.00, 34.04)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+FAIL Switch + SPACE: side=-1 delay=0.04 dt=0.02 v=(4.80, -2.58)
+FAIL Switch + SPACE: side=-1 delay=0.06 dt=0.02 v=(6.40, -3.60)
+FAIL Switch + SPACE: side=-1 delay=0.08 dt=0.02 v=(8.00, -4.70)
+PASS Expired wall grace rejects air jump; side=-1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0 dt=0.02 v=(-8.00, 34.04)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.02 v=(-8.00, 34.04)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+FAIL Switch + SPACE: side=1 delay=0.04 dt=0.02 v=(-4.80, -2.58)
+FAIL Switch + SPACE: side=1 delay=0.06 dt=0.02 v=(-6.40, -3.60)
+FAIL Switch + SPACE: side=1 delay=0.08 dt=0.02 v=(-8.00, -4.70)
+PASS Expired wall grace rejects air jump; side=1 dt=0.02

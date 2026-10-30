@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "checks": {
+    "only_expected_asset_code_changes": true,
+    "only_expected_archived_project_files": true,
+    "Project6.4/Assets/Scenes/unchanged": true,
+    "Project6.4/Assets/Art/unchanged": true,
+    "Project6.4/Assets/_Recovery/unchanged": true,
+    "Project6.4/ProjectSettings/unchanged": true,
+    "Play64/unchanged": true,
+    "modules_png_and_meta_unchanged": true,
+    "all_layout_images_exist": true,
+    "legacy_root_entries_archived": true,
+    "local_only_paths_ignored": true,
+    "historical_logs_not_ignored": true,
+    "no_generated_or_archived_visible": true,
+    "no_remaining_figures_tool_dependency": true,
+    "current_entry_links_exist": true,
+    "isolated_unity_import_compile_pass": true
+  },
+  "changed_project_files": [
+    "Project6.4/Assets/Editor/SeasideArtSetup.cs",
+    "Project6.4/Assets/Editor/SeasidePart1Backgrounds.cs"
+  ],
+  "archived_project_files": [
+    "Project6.4/Assets/Art/Seasidepart1/part1.json.log",
+    "Project6.4/Assets/Art/Seasidepart1/part1.json.log.meta",
+    "Project6.4/Packages/packages-lock.json.6.6.bak"
+  ],
+  "missing_links": [],
+  "unity_exit_evidence": "Unity log explicitly reports return code 0; GUI launcher returned before child completion; OS exit code not captured",
+  "scope": "No main-project scene save, gameplay build or manual playthrough"
+}

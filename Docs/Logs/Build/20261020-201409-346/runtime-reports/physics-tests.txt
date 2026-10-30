@@ -1,0 +1,40 @@
+PASS Player collider is a 2x2-cell square
+PASS Player artwork matches 2x2 collider
+PASS SHORT_JUMP measured=4.0000 cells target=4 map pixels / 2 bodies
+PASS LONG_JUMP measured=7.9996 cells target=8 map pixels / 4 bodies
+PASS Long press produces higher jump than tap
+PASS Progressive fall speed=2.05,7.65,19.50,32.00,32.00
+PASS Terminal fall speed capped at 32
+PASS Dash (1.00, 0.00) measured=8.0000 cells target=8 map pixels / 4 bodies
+PASS Dash (0.00, 1.00) measured=8.0000 cells target=8 map pixels / 4 bodies
+PASS Dash (0.00, -1.00) measured=8.0000 cells target=8 map pixels / 4 bodies
+PASS Dash (1.00, 1.00) measured=7.9999 cells target=8 map pixels / 4 bodies
+PASS Dash (-2.00, 0.70) measured=7.9999 cells target=8 map pixels / 4 bodies
+PASS Second air dash rejected before contact
+PASS Post-dash neutral hover removes residual speed
+PASS Fall resumes after short dash hover
+PASS Post-dash hover shortened to 0.03 seconds
+PASS Full-jump apex reached in 0.53 s (previous about 0.75 s)
+PASS Hold toward wall stays stationary, no climbing
+PASS Wall attachment resets dash and reserved teleport state
+PASS Moving away releases wall attachment
+PASS Space kicks away from attached wall
+PASS Click can dash away from attached wall
+PASS Ground contact resets dash
+PASS Per-wall attachable toggle is respected
+PASS Imported all twelve yellow checkpoint groups
+PASS Checkpoint 8 safe respawn at (68.00, 39.20)
+PASS Checkpoint 9 safe respawn at (80.00, 66.20)
+PASS Checkpoint 3 safe respawn at (37.00, 3.20)
+PASS Checkpoint 11 safe respawn at (114.00, 40.20)
+PASS Checkpoint 7 safe respawn at (61.00, 14.20)
+PASS Checkpoint 5 safe respawn at (47.00, 22.20)
+PASS Checkpoint 10 safe respawn at (96.00, 40.20)
+PASS Checkpoint 6 safe respawn at (57.00, 37.20)
+PASS Checkpoint 1 safe respawn at (18.00, 7.20)
+PASS Checkpoint 4 safe respawn at (37.00, 21.20)
+PASS Checkpoint 12 safe respawn at (134.00, 43.20)
+PASS Checkpoint 2 safe respawn at (26.00, 11.20)
+PASS Checkpoint respawn uses draggable anchor world position
+PASS Source cell counts exactly preserved
+PASS End goal exists on final deck

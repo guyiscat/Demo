@@ -1,0 +1,38 @@
+[
+  {
+    "case": "preview-regression",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-regression.log"
+  },
+  {
+    "case": "preview-calibration",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-calibration.log"
+  },
+  {
+    "case": "original-camera-smoke",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\original-camera-smoke.log"
+  },
+  {
+    "case": "preview-camera-smoke",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-camera-smoke.log"
+  },
+  {
+    "case": "original-trail-smoke",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\original-trail-smoke.log"
+  },
+  {
+    "case": "preview-trail-smoke",
+    "exit": 0,
+    "result": "PASS",
+    "log": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261029-hierarchy-refactor\\preview-trail-smoke.log"
+  }
+]

@@ -1,0 +1,61 @@
+Mono path[0] = 'D:/UnityWallDashPrototype/Play/FirstAscent_Data/Managed'
+Mono config path = 'D:/UnityWallDashPrototype/Play/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 1 interfaces on host : 0) 114.212.87.67
+Player connection [18168]  Target information:
+
+Player connection [18168]  * "[IP] 114.212.87.67 [Port] 55000 [Flags] 2 [Guid] 1190653852 [EditorId] 2917263626 [Version] 1048832 [Id] WindowsPlayer(2,DESKTOP-NOO8UA2) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] First Ascent" 
+
+Player connection [18168] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/UnityWallDashPrototype/Play/FirstAscent_Data/UnitySubsystems
+[D3D12 Device Filter] Vendor Name: Intel
+[D3D12 Device Filter] Device Name: Intel(R) UHD Graphics 770
+[D3D12 Device Filter] Driver Version: 32.0.101.7077
+[D3D12 Device Filter] Feature Level: 12.1
+[D3D12 Device Filter] Graphics Memory: 8026 MB
+[D3D12 Device Filter] Processor Count: 28
+[D3D12 Device Filter] Device Type: Integrated
+[D3D12 Device Filter] D3D12 API denied by user filter: {"Vendor": "Intel", "Device Type:": Integrated}
+GfxDevice: creating device client; kGfxThreadingModeClientWorkerJobs
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 770 (ID=0xa780)
+    Vendor:   Intel
+    VRAM:     8026 MB
+    Driver:   32.0.101.7077
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.015 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+Direct3D: detected that IDXGISwapChain::GetFrameStatistics is broken (it does not return proper timestamps). Delta time will now be calculated using cpu-side time stampling until the game window is moved.
+UnloadTime: 5.525900 ms
+SMOKE_TEST_PASS scene loaded, player=Player, checkpoint=0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+WallDash.GameSession:Update () (at D:/UnityWallDashPrototype/Project/Assets/Scripts/GameSession.cs:44)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1792126255006,"processId":19092,"allocatedMemory":57778,"memoryLabels":[{"Default":3712},{"NewDelete":136},{"Thread":256},{"Manager":15572},{"Shader":8},{"GfxDevice":72},{"GfxThread":768},{"Audio":752},{"Serialization":520},{"JobScheduler":32768},{"String":446},{"PoolAlloc":96},{"CloudService":144},{"VR":1928},{"Video":144},{"Subsystems":96},{"Gui":336},{"CoreBusinessMetrics":128}]}

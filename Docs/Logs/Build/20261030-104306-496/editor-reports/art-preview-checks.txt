@@ -1,0 +1,4 @@
+PASS Original and preview geometry signatures match
+PASS Art sprite exists and has no collider
+PASS Whitebox visibility toggle preserves all geometry
+PASS Whitebox can be restored

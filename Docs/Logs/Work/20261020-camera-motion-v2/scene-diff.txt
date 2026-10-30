@@ -1,0 +1,73 @@
+﻿diff --git "a/D:\\SeasideWhitebox-PlaytestFix-v3\\Docs\\Backups\\20261020-camera-motion-v2\\Project\\Assets\\Scenes\\Seaside01.unity" "b/D:\\SeasideWhitebox-PlaytestFix-v3\\Project\\Assets\\Scenes\\Seaside01.unity"
+index 13a31b2..cd272ff 100644
+--- "a/D:\\SeasideWhitebox-PlaytestFix-v3\\Docs\\Backups\\20261020-camera-motion-v2\\Project\\Assets\\Scenes\\Seaside01.unity"
++++ "b/D:\\SeasideWhitebox-PlaytestFix-v3\\Project\\Assets\\Scenes\\Seaside01.unity"
+@@ -21406,21 +21406,23 @@ MonoBehaviour:
+   overview: 0
+   mapSize: {x: 155, y: 73}
+   tuning:
+-    followSize: 9
+-    horizontalSmooth: 0.18
+-    verticalSmooth: 0.24
+-    fastVerticalSmooth: 0.13
+-    dashSmooth: 0.1
+-    horizontalDeadZone: 0.8
+-    verticalDeadZone: 1.5
+-    wallVerticalDeadZone: 0.7
+-    lookAheadDistance: 2.2
+-    lookAheadSmooth: 0.22
+-    velocityPrediction: 0.1
++    followSize: 10
++    horizontalSmooth: 0.22
++    verticalSmooth: 0.3
++    fastVerticalSmooth: 0.12
++    dashSmooth: 0.22
++    horizontalDeadZone: 2
++    verticalDeadZone: 4.2
++    wallVerticalDeadZone: 4.2
++    lookAheadDistance: 0.6
++    lookAheadSmooth: 0.45
++    velocityPrediction: 0
+     verticalBias: 1.1
+-    fallLookAhead: 1.3
+-    zoomSmooth: 0.32
+-    overviewMoveSmooth: 0.32
++    fallLookAhead: 0.35
++    zoomSmooth: 0.4
++    overviewMoveSmooth: 0.4
++    directionHold: 0.2
++    zoneSmooth: 0.3
+ --- !u!81 &784573705
+ AudioListener:
+   m_ObjectHideFlags: 0
+@@ -28877,6 +28879,7 @@ GameObject:
+   - component: {fileID: 1048488003}
+   - component: {fileID: 1048488002}
+   - component: {fileID: 1048488001}
++  - component: {fileID: 1048488006}
+   m_Layer: 8
+   m_Name: Player
+   m_TagString: Untagged
+@@ -29048,6 +29051,22 @@ Transform:
+   m_Children: []
+   m_Father: {fileID: 0}
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!114 &1048488006
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1048488000}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: 5a737cdb042db9142953b363727a8df9, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: Assembly-CSharp::Seaside.DashAfterimage
++  lifetime: 0.18
++  spacing: 0.65
++  opacity: 0.42
++  tint: {r: 0.25, g: 0.88, b: 1, a: 1}
+ --- !u!1 &1063923474
+ GameObject:
+   m_ObjectHideFlags: 0

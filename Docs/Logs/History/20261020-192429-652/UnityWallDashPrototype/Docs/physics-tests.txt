@@ -1,0 +1,15 @@
+PASS Ground detection and stable idle
+PASS Acceleration and horizontal movement
+PASS Jump impulse
+PASS Air dash and charge consumption
+PASS Second air dash rejected before refill
+PASS Normalized diagonal dash
+PASS Wall contact and upward climbing
+PASS Wall jump kicks away
+PASS Controlled wall slide
+PASS Landing resets dash
+PASS Checkpoint activates
+PASS Death counter and checkpoint respawn
+PASS Finish state freezes player
+PASS Full restart resets session
+PASS Four checkpoints in scene

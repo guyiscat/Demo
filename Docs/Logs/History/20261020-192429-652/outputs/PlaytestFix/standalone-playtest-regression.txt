@@ -1,0 +1,8 @@
+PASS Initial held key attaches
+PASS Alternating press/release cannot hang on wall
+PASS Released-wall descent settles smoothly near 3.5 cells/s
+PASS Moving away and returning restores attachment
+PASS Diagonal dash stops at wall without vertical dash slide
+PASS Old checkpoints cannot replace latest respawn
+PASS Higher progression retained after touching older checkpoint
+PASS Camera respawn framing finite and near player

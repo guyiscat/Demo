@@ -1,0 +1,38 @@
+Mono path[0] = 'D:/UnityProjects/Demo/Play/SeasideWhitebox_Data/Managed'
+Mono config path = 'D:/UnityProjects/Demo/Play/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.6.7f1 (b22767f04f04)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=262144, entitiesPerBlock=1024, blocksPerSlotPage=0, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Play/SeasideWhitebox_Data/UnitySubsystems
+Forcing GfxDevice: Direct3D 11
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 770 (ID=0xa780)
+    Vendor:   Intel
+    VRAM:     8026 MB
+    Driver:   32.0.101.7077
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.005 seconds
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+UnloadTime: 0.405100 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.906700 ms
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2165.
+Total: 0.672100 ms (FindLiveObjects: 0.068100 ms CreateObjectMapping: 0.013400 ms MarkObjects: 0.556500 ms  DeleteObjects: 0.004200 ms)
+
+SEASIDE_ART_CAPTURE_PASS scene=SeasideArtPreview whitebox=True path=D:\UnityProjects\Demo\Docs\Logs\Work\20261027-demo-migration-seaside-art\art-overlay-final.png
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed

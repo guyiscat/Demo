@@ -1,0 +1,25 @@
+PASS Stable floor contact
+PASS Horizontal acceleration
+PASS Ground jump
+PASS Dash charge and velocity
+PASS Second airborne dash rejected
+PASS Eight-way diagonal dash
+PASS Holding UP at a wall never climbs
+PASS Left wall kick launches right/up
+PASS Alternating wall contact 1
+PASS Wall kick away 1
+PASS Alternating wall contact 2
+PASS Wall kick away 2
+PASS Alternating wall contact 3
+PASS Wall kick away 3
+PASS Alternating wall contact 4
+PASS Wall kick away 4
+PASS Repeated alternating wall jumps gain height without climbing
+PASS Wall slide limits descent
+PASS Landing refills dash
+PASS Checkpoint death and respawn
+PASS Finish state
+PASS Restart state reset
+PASS Only two invisible checkpoints, no added platform geometry
+PASS No unrequested dash-refill diamonds
+PASS Nine traced terrain polygons

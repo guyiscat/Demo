@@ -1,0 +1,113 @@
+{
+  "json": {
+    "sheet": "Sheet1",
+    "source": "副本海边地图.xlsx",
+    "originColumn": 85,
+    "originBottomRow": 120,
+    "width": 155,
+    "height": 73,
+    "kinds": {
+      "ground": 1619,
+      "checkpoint": 48,
+      "route": 84,
+      "spike": 224
+    }
+  },
+  "json_to_seaside_workbook": {
+    "checked": 1975,
+    "different": 0,
+    "examples": []
+  },
+  "workbooks": [
+    {
+      "name": "森林地图.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "range": "A1:MC138",
+          "solid_fills": {
+            "theme:4": 60,
+            "theme:1": 4365,
+            "theme:0": 70,
+            "theme:7": 316,
+            "FFFF0000": 697,
+            "theme:8": 24
+          }
+        },
+        {
+          "name": "Sheet2",
+          "range": "A1:A1",
+          "solid_fills": {}
+        },
+        {
+          "name": "Sheet3",
+          "range": "A1:A1",
+          "solid_fills": {}
+        }
+      ]
+    },
+    {
+      "name": "海边地图.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "range": "A1:IE120",
+          "solid_fills": {
+            "theme:4": 128,
+            "theme:1": 1683,
+            "theme:6": 48,
+            "FFFF0000": 224
+          }
+        },
+        {
+          "name": "Sheet2",
+          "range": "A1:A1",
+          "solid_fills": {}
+        },
+        {
+          "name": "Sheet3",
+          "range": "A1:A1",
+          "solid_fills": {}
+        }
+      ]
+    },
+    {
+      "name": "矿洞地图.xlsx",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "range": "A1:GS287",
+          "solid_fills": {
+            "theme:1": 5550,
+            "theme:8": 6,
+            "theme:4": 28,
+            "FFFF0000": 584,
+            "FFFFC000": 14,
+            "theme:0": 578,
+            "theme:7": 221,
+            "FF7030A0": 18,
+            "FF0070C0": 4,
+            "FF00BAF0": 24
+          }
+        },
+        {
+          "name": "Sheet2",
+          "range": "A1:A1",
+          "solid_fills": {}
+        },
+        {
+          "name": "Sheet3",
+          "range": "A1:A1",
+          "solid_fills": {}
+        }
+      ]
+    }
+  ],
+  "art": {
+    "size": [
+      7783,
+      4214
+    ],
+    "mode": "RGBA"
+  }
+}

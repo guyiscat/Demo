@@ -1,0 +1,5 @@
+PASS Original scene resolves without name lookup
+PASS Refactored scene resolves by marker
+PASS Map rename does not affect resolution
+PASS Original and preview world geometry match
+PASS User artwork remains present

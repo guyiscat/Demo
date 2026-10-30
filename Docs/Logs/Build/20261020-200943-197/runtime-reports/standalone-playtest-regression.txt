@@ -1,0 +1,150 @@
+PASS Initial held key attaches
+PASS Released key smoothly slides on wall
+PASS Released-wall descent settles smoothly near 3.5 cells/s
+PASS Same-wall repress hovers immediately and stays still
+PASS Second release restarts smooth slow slide
+PASS Moving away and returning restores attachment
+PASS Diagonal dash stops at wall without vertical dash slide
+PASS Edge grace delay=0.02s dt=0.005 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.02 dt=0.005
+PASS Edge grace delay=0.1s dt=0.005 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.1 dt=0.005
+PASS Edge grace delay=0.12s dt=0.005 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.12 dt=0.005
+PASS Edge grace delay=0.16s dt=0.005 expectedJump=False
+PASS Edge grace delay=0.2s dt=0.005 expectedJump=False
+PASS Active takeoff cannot rearm grace / second air jump; dt=0.005
+PASS Repeated airborne taps cannot grant extra jumps; dt=0.005
+PASS Pre-landing jump buffer fires once on contact; dt=0.005
+PASS Expired landing buffer does not auto-jump; dt=0.005
+PASS Dash leaving platform cannot inherit ground grace; dt=0.005
+PASS Edge grace delay=0.02s dt=0.01 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.02 dt=0.01
+PASS Edge grace delay=0.1s dt=0.01 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.1 dt=0.01
+PASS Edge grace delay=0.12s dt=0.01 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.12 dt=0.01
+PASS Edge grace delay=0.16s dt=0.01 expectedJump=False
+PASS Edge grace delay=0.2s dt=0.01 expectedJump=False
+PASS Active takeoff cannot rearm grace / second air jump; dt=0.01
+PASS Repeated airborne taps cannot grant extra jumps; dt=0.01
+PASS Pre-landing jump buffer fires once on contact; dt=0.01
+PASS Expired landing buffer does not auto-jump; dt=0.01
+PASS Dash leaving platform cannot inherit ground grace; dt=0.01
+PASS Edge grace delay=0.02s dt=0.02 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.02 dt=0.02
+PASS Edge grace delay=0.1s dt=0.02 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.1 dt=0.02
+PASS Edge grace delay=0.12s dt=0.02 expectedJump=True
+PASS Successful edge jump consumes grace once; delay=0.12 dt=0.02
+PASS Edge grace delay=0.16s dt=0.02 expectedJump=False
+PASS Edge grace delay=0.2s dt=0.02 expectedJump=False
+PASS Active takeoff cannot rearm grace / second air jump; dt=0.02
+PASS Repeated airborne taps cannot grant extra jumps; dt=0.02
+PASS Pre-landing jump buffer fires once on contact; dt=0.02
+PASS Expired landing buffer does not auto-jump; dt=0.02
+PASS Dash leaving platform cannot inherit ground grace; dt=0.02
+PASS A+D overlap uses newest direction and keeps SPACE; side=-1
+PASS SPACE edge consumed once; side=-1
+PASS Short SPACE tap between physics steps is buffered; side=-1
+PASS A+D overlap uses newest direction and keeps SPACE; side=1
+PASS SPACE edge consumed once; side=1
+PASS Short SPACE tap between physics steps is buffered; side=1
+PASS Switch + SPACE: side=-1 delay=0 dt=0.005 v=(8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.005 v=(8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.04 dt=0.005 v=(8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.06 dt=0.005 v=(8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0.08 dt=0.005 v=(8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.005
+PASS Expired wall grace rejects air jump; side=-1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0 dt=0.005 v=(-8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.005 v=(-8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.04 dt=0.005 v=(-8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.06 dt=0.005 v=(-8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Switch + SPACE: side=1 delay=0.08 dt=0.005 v=(-8.00, 30.83)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.005
+PASS Expired wall grace rejects air jump; side=1 dt=0.005
+PASS Switch + SPACE: side=-1 delay=0 dt=0.01 v=(8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.01 v=(8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0.04 dt=0.01 v=(8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0.06 dt=0.01 v=(8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0.08 dt=0.01 v=(8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.01
+PASS Expired wall grace rejects air jump; side=-1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0 dt=0.01 v=(-8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.01 v=(-8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0.04 dt=0.01 v=(-8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0.06 dt=0.01 v=(-8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Switch + SPACE: side=1 delay=0.08 dt=0.01 v=(-8.00, 30.68)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.01
+PASS Expired wall grace rejects air jump; side=1 dt=0.01
+PASS Switch + SPACE: side=-1 delay=0 dt=0.02 v=(8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Switch + SPACE: side=-1 delay=0.02 dt=0.02 v=(8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Switch + SPACE: side=-1 delay=0.04 dt=0.02 v=(8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Switch + SPACE: side=-1 delay=0.06 dt=0.02 v=(8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Switch + SPACE: side=-1 delay=0.08 dt=0.02 v=(8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=-1 dt=0.02
+PASS Expired wall grace rejects air jump; side=-1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0 dt=0.02 v=(-8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0.02 dt=0.02 v=(-8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0.04 dt=0.02 v=(-8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0.06 dt=0.02 v=(-8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Switch + SPACE: side=1 delay=0.08 dt=0.02 v=(-8.00, 30.38)
+PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
+PASS Expired wall grace rejects air jump; side=1 dt=0.02
+PASS rapid_reverse camera travel reduced: old=28.493 new=0.873 fps=30
+PASS rapid_reverse vertical safety framing fps=30 gap=1.100
+PASS rapid_reverse camera travel reduced: old=26.812 new=0.892 fps=60
+PASS rapid_reverse vertical safety framing fps=60 gap=1.100
+PASS rapid_reverse camera travel reduced: old=26.055 new=0.884 fps=120
+PASS rapid_reverse vertical safety framing fps=120 gap=1.100
+PASS repeated_short_jump camera travel reduced: old=8.410 new=0.228 fps=30
+PASS repeated_short_jump vertical safety framing fps=30 gap=2.966
+PASS repeated_short_jump camera travel reduced: old=8.502 new=0.241 fps=60
+PASS repeated_short_jump vertical safety framing fps=60 gap=2.970
+PASS repeated_short_jump camera travel reduced: old=8.473 new=0.243 fps=120
+PASS repeated_short_jump vertical safety framing fps=120 gap=2.973
+PASS wall_mode_toggle camera travel reduced: old=3.781 new=0.071 fps=30
+PASS wall_mode_toggle vertical safety framing fps=30 gap=2.186
+PASS wall_mode_toggle camera travel reduced: old=3.846 new=0.070 fps=60
+PASS wall_mode_toggle vertical safety framing fps=60 gap=2.186
+PASS wall_mode_toggle camera travel reduced: old=3.869 new=0.072 fps=120
+PASS wall_mode_toggle vertical safety framing fps=120 gap=2.187
+PASS fast_fall vertical safety framing fps=30 gap=6.700
+PASS fast_fall vertical safety framing fps=60 gap=6.700
+PASS fast_fall vertical safety framing fps=120 gap=6.700
+PASS dash_stop vertical safety framing fps=30 gap=1.100
+PASS dash_stop vertical safety framing fps=60 gap=1.100
+PASS dash_stop vertical safety framing fps=120 gap=1.100
+PASS Player has pooled dash afterimage component
+PASS Dash emits visible spaced afterimages
+PASS Afterimage pool bounded to twelve sprites
+PASS Afterimages fade completely without post-dash emission
+PASS Respawn/reset clears afterimages immediately
+PASS Old checkpoints cannot replace latest respawn
+PASS Higher progression retained after touching older checkpoint
+PASS Camera respawn framing finite and near player

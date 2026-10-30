@@ -1,0 +1,767 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-10-16T06:11:01.7511558Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-16T06:11:01Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 5344, path: "E:/Unity/Editors/6000.4.12f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              f1527d447d8b465b9d5a45197f780635
+  Correlation Id:          3d3a65081af38f8e758c6abc31feea25
+  External correlation Id: 7668151879634414117
+  Machine Id:              BLuVGE8f6/0AuSqijn8AgsStMaQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.00s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-10-16T06:11:01.7914168Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-DX36-2UZV-B9AX-DB6R-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: 2026-10-26T07:09:41Z
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.05s
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\Editors\6000.4.12f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:\UnityWallDashPrototype\Project
+-executeMethod
+RouteVerifier.Verify
+-logFile
+D:\UnityWallDashPrototype\route-v03-build.log
+Successfully changed project path to: D:\UnityWallDashPrototype\Project
+D:/UnityWallDashPrototype/Project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [18800]  Target information:
+
+Player connection [18800]  * "[IP] 114.212.87.67 [Port] 55504 [Flags] 2 [Guid] 3921778986 [EditorId] 3921778986 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18800] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18800] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-22712" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path E:/Unity/Editors/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityWallDashPrototype/Project/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'E:/Unity/Editors/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Editors/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/Editors/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Editors/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000649 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.271 seconds
+Domain Reload Profiling: 586ms
+	BeginReloadAssembly (108ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (133ms)
+		LoadAssemblies (83ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (116ms)
+	FinalizeReload (272ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (80ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 6 packages:
+  Built-in packages:
+    com.unity.modules.audio@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityWallDashPrototype\Project\Library\PackageCache\com.unity.modules.screencapture)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: E:\Unity\Editors\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityWallDashPrototype/Project
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s205ms
+[155/158    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\PrototypeBuilder.cs(62,99): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\RouteVerifier.cs(104,11): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PrototypeBuilder.cs(102,31): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PrototypeBuilder.cs(133,25): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PrototypeBuilder.cs(134,80): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\PrototypeBuilder.cs(134,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\PrototypeBuilder.cs(140,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\PrototypeBuilder.cs(140,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\PrototypeBuilder.cs(141,75): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\PrototypeBuilder.cs(141,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[156/158    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[157/158    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (0.18 seconds), 3 items updated, 158 evaluated
+Total cache size 0
+Assets\Editor\PrototypeBuilder.cs(62,99): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\RouteVerifier.cs(104,11): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PrototypeBuilder.cs(102,31): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PrototypeBuilder.cs(133,25): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PrototypeBuilder.cs(134,80): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\PrototypeBuilder.cs(134,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\PrototypeBuilder.cs(140,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\PrototypeBuilder.cs(140,20): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\PrototypeBuilder.cs(141,75): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\PrototypeBuilder.cs(141,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Total cache size after purge 0, took 00:00:00.0048484
+AssetDatabase: script compilation time: 0.441532s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.288 seconds
+Domain Reload Profiling: 590ms
+	BeginReloadAssembly (142ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (28ms)
+		LoadAssemblies (82ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (6ms)
+	FinalizeReload (289ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=3c8001541da26da4c9d9ca1ae62d4d9d): Total: 1.140 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=349 ms
+		Asset DB Callback time: managed=34 ms, native=7 ms
+		Scripting: domain reloads=1, domain reload time=303 ms, compile time=443 ms, other=1 ms
+		Project Asset Count: scripts=40, non-scripts=49
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 6.878ms
+	ApplyChangesToAssetFolders: 0.195ms
+	Scan: 21.708ms
+	OnSourceAssetsModified: 0.686ms
+	CategorizeScriptCompilationAssets: 0.051ms
+	ProcessAssetsWithTransientArtifactChanges: 0.429ms
+	CategorizeAssets: 0.304ms
+	CompileScripts: 442.808ms
+	ImportOutOfDateAssets: 289.208ms (289.023ms without children)
+		UnloadImportedAssets: 0.063ms
+		OnDemandSchedulerStart: 0.111ms
+	PostProcessAllAssets: 35.493ms
+		VCAutoAddAssetPostprocess 0.919ms
+		MonoPostProcessAllAssets: 34.287ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.273ms
+			AssetPostprocessor.OnPostprocessAllAssets 6.877ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.887ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.986ms
+			AssetChangedListener.OnPostprocessAllAssets 1.056ms
+			SyncVS.PostprocessSyncProject 0.995ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.806ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.517ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.448ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.353ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.307ms
+			AssetEvents.OnPostprocessAllAssets 0.171ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.159ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.156ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.112ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.105ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.075ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.075ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.063ms
+	PostAssetChangesProfiler: 0.294ms
+	UnloadStreamsBegin: 1.071ms
+	Untracked: 339.427ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 1.678ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-First Ascent
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (0.5 MB). Loaded Objects now: 654.
+Memory consumption went from 92.3 MB to 91.8 MB.
+Total: 3.851200 ms (FindLiveObjects: 0.035000 ms CreateObjectMapping: 0.004000 ms MarkObjects: 3.639400 ms  DeleteObjects: 0.170800 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (2.2 KB). Loaded Objects now: 656.
+Memory consumption went from 90.0 MB to 90.0 MB.
+Total: 2.948400 ms (FindLiveObjects: 0.027200 ms CreateObjectMapping: 0.002900 ms MarkObjects: 2.915600 ms  DeleteObjects: 0.002000 ms)
+
+Asset Pipeline Refresh (id=bc0e5a513f1f61e48b9ba82bf796d200): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Square.png using Guid(03dedfa7a5df4a54d9374407973e9be5) (TextureImporter) -> (Import Result ID: '659ee59e180c6a284d430f5bff310b09') in 0.0063322 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=190a04c6371a158e2c4a73ea64aafcaf DependenciesID=3e981f195664ef4786e67ef36750ecbb StaticDependenciesID=f34ca53f216ac03e8070a3160086ab5e 
+Asset Pipeline Refresh (id=2bbc94db87906554cb42b0454831fb06): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Art/Square.png using Guid(03dedfa7a5df4a54d9374407973e9be5) (TextureImporter) -> (Import Result ID: '659ee59e180c6a284d430f5bff310b09') in 0.0010965 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=190a04c6371a158e2c4a73ea64aafcaf DependenciesID=3e981f195664ef4786e67ef36750ecbb StaticDependenciesID=f34ca53f216ac03e8070a3160086ab5e 
+Asset Pipeline Refresh (id=e6012f57b9fb8f44ab5ec31f8ea32d34): Total: 0.005 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+CONFIG_LOADED gravity=32 speed=7.5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:33)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+(Filename: Assets/Editor/PrototypeBuilder.cs Line: 33)
+
+CONFIG_FACTORY_ENTRY Movement-v02 20752 gravity=32
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WallDash.LevelFactory:Build (WallDash.MovementSettings) (at Assets/Scripts/LevelFactory.cs:24)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:48)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+(Filename: Assets/Scripts/LevelFactory.cs Line: 24)
+
+Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
+WallDash.LevelFactory:Build (WallDash.MovementSettings) (at Assets/Scripts/LevelFactory.cs:43)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:48)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Scripts/LevelFactory.cs line 43]
+
+CONFIG_MOTOR_ASSIGNED Movement-v02 20752 gravity=32
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+WallDash.LevelFactory:Build (WallDash.MovementSettings) (at Assets/Scripts/LevelFactory.cs:47)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:48)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+(Filename: Assets/Scripts/LevelFactory.cs Line: 47)
+
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) (LibraryAssetImporter) -> (Import Result ID: 'a61c34eac2b54c1230ebc71f1598d463') in 0.0011928 seconds [static dependencies only]. Details - ImportResultOutputID=d3ca6db29495033f6ec6c171ea098da8 DependenciesID=32840c39a2fcda7220cf2a2ae2b21c81 StaticDependenciesID=f39a27a7439e9c6417bead59d1e3e00c 
+Start importing ProjectSettings/Physics2DSettings.asset using Guid(00000000000000005100000000000000) (LibraryAssetImporter) -> (Import Result ID: 'f16963958c4c7d9a5df0fbea19140f44') in 0.0007391 seconds [static dependencies only]. Details - ImportResultOutputID=60a9f21390cae772c5464d780d2e2601 DependenciesID=b5fc44863391190827b6e8b0a5697642 StaticDependenciesID=368e7cd489928e5298fc8bb284c020f7 
+Start importing Assets/Art/BlueprintMeshes/Narrowchuterightspikesupper.asset using Guid(611ebdc4f1ed2fe44a1c372bc387a8fd) (NativeFormatImporter)Main Object Name 'Narrow chute right spikes upper' does not match filename 'Narrowchuterightspikesupper'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '18fee14d41fb87b346f9ab6fd45360f9') in 0.0009827 seconds [static dependencies only]. Details - ImportResultOutputID=11ae4ce32d86306a78f26e6d9f477986 DependenciesID=d72f5d1b523d5c6a62f9c0c2fd2d9d11 StaticDependenciesID=e33c2a5c146a32be96650473b0998fc4 
+Start importing Assets/Art/BlueprintMeshes/Archrightouter.asset using Guid(91c6cfc8081635c49b0029befa823605) (NativeFormatImporter)Main Object Name 'Arch right outer' does not match filename 'Archrightouter'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'e29578a5fcd8e7ad7968476dd6bdb04e') in 0.0007988 seconds [static dependencies only]. Details - ImportResultOutputID=28c5e907e056afdc683c80646e9f0357 DependenciesID=9a79cb4a262b601256858934b3fbfaed StaticDependenciesID=a805ce78bc7fbb5e8517f942aec9a324 
+Start importing Assets/Art/BlueprintMeshes/Terrain0.asset using Guid(2283925dc3ef9464081f5b01405e236c) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain0'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'c8c0ea51e61bbd5e8e07b3139f08afe6') in 0.0007311 seconds [static dependencies only]. Details - ImportResultOutputID=3f06eef5176d410edbc9db019c763e21 DependenciesID=781bdebf1b0b12425e836a9c249932fc StaticDependenciesID=fe312492f63e63ecb6ed28fdeef142b7 
+Start importing Assets/Art/BlueprintMeshes/Mainfacemiddle.asset using Guid(228b3a3394cf24f44b2b5f79000778a0) (NativeFormatImporter)Main Object Name 'Main face middle' does not match filename 'Mainfacemiddle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'f5cd856040008ffc1faf5e81bca913c2') in 0.0007493 seconds [static dependencies only]. Details - ImportResultOutputID=900683bb100c9025d0a6bdc990a8e917 DependenciesID=764865c52a568122535460b81467965e StaticDependenciesID=41b14c84883d68fb2bbee09728188d25 
+Start importing Assets/Art/BlueprintMeshes/Blockleftspikes.asset using Guid(7217dd017f76bd94d8b97f25554b0a28) (NativeFormatImporter)Main Object Name 'Block left spikes' does not match filename 'Blockleftspikes'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '9dfd15b6d128b3986657e77a65361178') in 0.0006627 seconds [static dependencies only]. Details - ImportResultOutputID=d884eb5b3409d4f5f90c16a5211aefef DependenciesID=b5cf45cd7f4aa5bf38ffc2470b96b440 StaticDependenciesID=ea4953e7e7de09f862cb1fffb8aa183c 
+Start importing Assets/Art/BlueprintMeshes/Terrain3.asset using Guid(c2bb1416e1bf1dc4196d0931e1b2c834) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain3'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '1caf3bd8250a47197da091fa0c6cb5e5') in 0.0006866 seconds [static dependencies only]. Details - ImportResultOutputID=f493da36a2e5c04c9f9eff88d2999e64 DependenciesID=9dc1f0cbc1d946292c2d6418e4423993 StaticDependenciesID=88945f79f3f9abd83a5d95cf229ca9ac 
+Start importing Assets/Art/BlueprintMeshes/Narrowchuterightspikeslower.asset using Guid(1340ae1d194c4f04895c1f368d7b40dc) (NativeFormatImporter)Main Object Name 'Narrow chute right spikes lower' does not match filename 'Narrowchuterightspikeslower'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'dfc7f48b5ee91acf87067f82de8b0ee0') in 0.000659 seconds [static dependencies only]. Details - ImportResultOutputID=939924332d6f0ec1a7dad2046b0f10df DependenciesID=b84d6e65f6154c03ddb7942a8c84e815 StaticDependenciesID=2ffd80a595dd893b16de87413f015c70 
+Start importing Assets/Art/BlueprintMeshes/Terrain4.asset using Guid(8380aae714255ca498a3324e50bd0261) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain4'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'a42b2faac41eb8ef30f8aa4b11a041df') in 0.0006442 seconds [static dependencies only]. Details - ImportResultOutputID=252462dd02830615dc10242bfef13a2e DependenciesID=2431937491b1fa5c0092741dae1b1c5b StaticDependenciesID=35ac2aaffa66dbbb1295c7d1f12b2ff1 
+Start importing Assets/Art/BlueprintMeshes/Terrain7.asset using Guid(b4b6a4c4967153a45aabcfa78c6f9fb3) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain7'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '76fed00fbb074eb6306d268ceaeb3e19') in 0.0006131 seconds [static dependencies only]. Details - ImportResultOutputID=ed82d3bcd40be179a00b57b5ccc365c6 DependenciesID=afbf6cd4c15173002522ef073b459c68 StaticDependenciesID=74be6b3307eb695666f245e51e40c855 
+Start importing Assets/Art/BlueprintMeshes/Terrain6.asset using Guid(b4c7265c0a3c4d545b013e34c2e86fe5) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain6'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '4acf21d3f6a48c6c93d2d24c74f73135') in 0.0006316 seconds [static dependencies only]. Details - ImportResultOutputID=5f93cffa1fb6786fcd9e81d6c48556fd DependenciesID=ec3e02fc6a35acd5e2c37f92e240f563 StaticDependenciesID=a8fcd696039213073afc2e11ef9fcd6a 
+Start importing Assets/Art/BlueprintMeshes/Startfloorspikes.asset using Guid(05adcf1433a4624419c25707eae57d79) (NativeFormatImporter)Main Object Name 'Start floor spikes' does not match filename 'Startfloorspikes'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '25b36e3feeb756da0c23e437d8edaa99') in 0.0006338 seconds [static dependencies only]. Details - ImportResultOutputID=1ca1d54423bcb61f324c65ac1535be17 DependenciesID=0e2beaf4228a50aaf8bfdee61380a4aa StaticDependenciesID=e9d54b72db1f21d75e7d2848c6401670 
+Start importing Assets/Art/BlueprintMeshes/Archleftouter.asset using Guid(e70612f0db5a3a04e89b1055ece3753a) (NativeFormatImporter)Main Object Name 'Arch left outer' does not match filename 'Archleftouter'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '935515c1d6d2b1e74d1623fede952e99') in 0.0006345 seconds [static dependencies only]. Details - ImportResultOutputID=5c2508e48232dd9dfc740b5d33673549 DependenciesID=d1e4bf99cae78f6719a77627f26b366b StaticDependenciesID=7f73924588dbf084e9f22f34aa8d9b76 
+Start importing Assets/Art/BlueprintMeshes/Archinnerroof.asset using Guid(e818ba5d976f97c48af855293a7ad0bc) (NativeFormatImporter)Main Object Name 'Arch inner roof' does not match filename 'Archinnerroof'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'a3ba24f21328ce2409bd9f704923859c') in 0.0006235 seconds [static dependencies only]. Details - ImportResultOutputID=9a33f24b480d86742aaf18d1632c248c DependenciesID=512698012011fed33197bf3302be80cc StaticDependenciesID=2866e1951e6a47fe141ff87cbba78d8b 
+Start importing Assets/Art/BlueprintMeshes/Firstshaftrightspikes.asset using Guid(49476d9020f27a0469f0803321b301d9) (NativeFormatImporter)Main Object Name 'First shaft right spikes' does not match filename 'Firstshaftrightspikes'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'e8848f92602cb2133145324cef32c6f5') in 0.000622 seconds [static dependencies only]. Details - ImportResultOutputID=b86e43ee5fa6e84cd7de7134d0d1383e DependenciesID=06c9ea15fdb0a170164d9c1a9d9e7543 StaticDependenciesID=38215afca1d9e06921b832da7ee6de44 
+Start importing Assets/Art/BlueprintMeshes/Terrain1.asset using Guid(5954031d839b328418e3ae85623098a6) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain1'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '5aaba0543f8b3c7524a4d4ece60902be') in 0.0006028 seconds [static dependencies only]. Details - ImportResultOutputID=7267ff0405a17c0deb815d6b7443961e DependenciesID=e5e1638d0b102dc45c775eff127d70f2 StaticDependenciesID=e05568fa89e6271a4dc0a403a036255d 
+Start importing Assets/Art/BlueprintMeshes/Bottomcorner.asset using Guid(fadf1d6d6cefccf4b9f608fa8e34c10f) (NativeFormatImporter)Main Object Name 'Bottom corner' does not match filename 'Bottomcorner'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '9a0bb6204914179aed375cfe91106cb8') in 0.0006561 seconds [static dependencies only]. Details - ImportResultOutputID=69800ad9be0f550733e5b8fd1641b8fa DependenciesID=145256879cd8611dd44892eacabfca62 StaticDependenciesID=ce7211de1adb7325943107f1d3b036c3 
+Start importing Assets/Art/BlueprintMeshes/Terrain2.asset using Guid(5b7cdb1a677365a4a85628ba34588e05) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain2'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '4855a0fa4281c5e087460b3f308a6162') in 0.0006253 seconds [static dependencies only]. Details - ImportResultOutputID=9c8dfadc6b63820d679867829369050d DependenciesID=0b8589dd53063d111d542deba06bac1b StaticDependenciesID=fa988b9cd19c4d134e93e9af277519c9 
+Start importing Assets/Art/BlueprintMeshes/Descentleftmiddle.asset using Guid(cbe33b5aec1d7be42a7b9ba236ddd1e8) (NativeFormatImporter)Main Object Name 'Descent left middle' does not match filename 'Descentleftmiddle'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '4666f74d69cc913f05a2f95bea23d230') in 0.0006699 seconds [static dependencies only]. Details - ImportResultOutputID=b5f8a92f060f2d2bf9ce0fb6c0b3d0db DependenciesID=a7cd6c67a666e9923bb14c19db3f2b1a StaticDependenciesID=54c86ca8d78a51a653be348b5782ab78 
+Start importing Assets/Art/BlueprintMeshes/Maintowerfootspikes.asset using Guid(3c66921212ff8034b928435efccc1d25) (NativeFormatImporter)Main Object Name 'Main tower foot spikes' does not match filename 'Maintowerfootspikes'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '34de99e1b82d51e59088cb4df296daa9') in 0.0006735 seconds [static dependencies only]. Details - ImportResultOutputID=2f0acdc5188cbfeb692330e120175c29 DependenciesID=1d9060c41f10b18f942b56537342d3b6 StaticDependenciesID=74f25606fb34b5e01c59a9dcec37bacf 
+Start importing Assets/Art/BlueprintMeshes/Archinnerleft.asset using Guid(5cf6e5245f86f4646b796b592c371c0f) (NativeFormatImporter)Main Object Name 'Arch inner left' does not match filename 'Archinnerleft'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'd2506235f4e17969d3a701168cbe973b') in 0.0006404 seconds [static dependencies only]. Details - ImportResultOutputID=eb928a55e40cabb8a8de2cb480d93d1f DependenciesID=d74f3e0ec18c14ed957011d012840bcc StaticDependenciesID=7f1f889f371e099dbffbbe7b3075c0c1 
+Start importing Assets/Art/BlueprintMeshes/Hangingwalltop.asset using Guid(8c42fb4f6e7ac5a40aab7439bb6999e5) (NativeFormatImporter)Main Object Name 'Hanging wall top' does not match filename 'Hangingwalltop'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '97ce6700edc6c7fce8e1aaa492b579dc') in 0.0005947 seconds [static dependencies only]. Details - ImportResultOutputID=3bb801890cf2d34da3492e2f2b0b0ae4 DependenciesID=72f7c526df63d8d9996785c65edea27b StaticDependenciesID=ac03ebf136ef4f86a20d40c491467206 
+Start importing Assets/Art/BlueprintMeshes/Mainfaceupper.asset using Guid(ac2ad0c1da4449e4dbf9311e7a756946) (NativeFormatImporter)Main Object Name 'Main face upper' does not match filename 'Mainfaceupper'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '9b9171a7b3f83d86dd7c3e28ff5229f7') in 0.0006142 seconds [static dependencies only]. Details - ImportResultOutputID=28f085262828ac12d2b26a79cb9f8287 DependenciesID=eda06ecc3e31fae9eb232c4f9a7df940 StaticDependenciesID=26191055b6605a1a3fd4a42b405b22f7 
+Start importing Assets/Art/BlueprintMeshes/Terrain5.asset using Guid(8deaa5439f8e9d049879eb3870b17dc9) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain5'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '30aaa9e354138bf3b2382032cb8f9795') in 0.0006782 seconds [static dependencies only]. Details - ImportResultOutputID=3adab7fe0e3e92001b1a7fb5328d4c3e DependenciesID=ac5a855ca7723d52df8c34b0f22edbab StaticDependenciesID=73e9928fe743e7ce24fec606b8ec758c 
+Start importing Assets/Settings/Movement-v02.asset using Guid(cd69dac25f28d854bb9693b508aec3b3) (NativeFormatImporter) -> (Import Result ID: '59a2a550ffa0f20ccb9a25845e4f846a') in 0.0006623 seconds [static dependencies only]. Details - ImportResultOutputID=b2a41996daaad9a89ca6ced64c87bea6 DependenciesID=acc8a9440ad9ffbe7e2c3d65931ab337 StaticDependenciesID=7b36656caf79d38d110924bf22dbc6de 
+Start importing Assets/Art/BlueprintMeshes/Descentleftbottom.asset using Guid(fd8bc8ad7abbe8f43a851940c875026a) (NativeFormatImporter)Main Object Name 'Descent left bottom' does not match filename 'Descentleftbottom'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'c4bdc0c66fe2c39ab80703eff36040d5') in 0.0006826 seconds [static dependencies only]. Details - ImportResultOutputID=21d0568e7eaf688637b2a7c4a5679788 DependenciesID=a4c11e477dc9e38829e7e5973bb819f0 StaticDependenciesID=86bc1cbb7b73ff54abf0ee4b506b04f6 
+Start importing Assets/Art/BlueprintMeshes/Mainfacelower.asset using Guid(1e50ffb0c6e15e845ab5b249ec35ce9c) (NativeFormatImporter)Main Object Name 'Main face lower' does not match filename 'Mainfacelower'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'f93a50382af3e60a683014ed8ac29fca') in 0.0006064 seconds [static dependencies only]. Details - ImportResultOutputID=ad5e4434e998eef7c4534d485ec742ba DependenciesID=ecf2bb89faa6676c0f91b8c0577d15a9 StaticDependenciesID=b3bba0fdef4d396713cede6f61f9c5ce 
+Start importing Assets/Art/BlueprintMeshes/Descentlefttop.asset using Guid(1e1c7c9cb0c4b1e42aab61a2cea918d1) (NativeFormatImporter)Main Object Name 'Descent left top' does not match filename 'Descentlefttop'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'f55f30420a682a04a520f26ca7882b0b') in 0.0006082 seconds [static dependencies only]. Details - ImportResultOutputID=36cec99ab287dcb41323a20435372e15 DependenciesID=02c559604ceac55e13232a7f0996a9f3 StaticDependenciesID=1c7f91a8cbbc4fde01fa56c5850cfe37 
+Start importing Assets/Art/BlueprintMeshes/Descentrightlower.asset using Guid(2e3a68dfc15e6e841a62d2d16016e606) (NativeFormatImporter)Main Object Name 'Descent right lower' does not match filename 'Descentrightlower'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '339279cb4ca5ca9d4a0ba466776bddae') in 0.0006107 seconds [static dependencies only]. Details - ImportResultOutputID=80b1a39e86ff20ec883ccb51e12d5386 DependenciesID=aca162ce1c1eac61047ee40e6f1c24ce StaticDependenciesID=ae95a76e25138442962afdec3747f86d 
+Start importing Assets/Art/BlueprintMeshes/Descentrightfoot.asset using Guid(4e437a2a74eec574cbeeafc3d12870f8) (NativeFormatImporter)Main Object Name 'Descent right foot' does not match filename 'Descentrightfoot'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '48d40f65a10cdde1fff440345dc69401') in 0.0006116 seconds [static dependencies only]. Details - ImportResultOutputID=7fb287d73144097673a260881d52e7ed DependenciesID=d57c963be06b7b1e3f5eefb1cd3a93d0 StaticDependenciesID=2d1405480003518f168268877c5c0232 
+Start importing Assets/Art/BlueprintMeshes/Archinnerright.asset using Guid(6e6cd845a432a2d4f86908d0754a861f) (NativeFormatImporter)Main Object Name 'Arch inner right' does not match filename 'Archinnerright'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'eab2b87f0434c90c5617e9623e34a9d2') in 0.0005906 seconds [static dependencies only]. Details - ImportResultOutputID=312f779a2c779dd4899251995413c8aa DependenciesID=b90be9340c00723566697f177bf2e0f7 StaticDependenciesID=f5c586f45ec4b2ee06dcdd35f7a2ef20 
+Start importing Assets/Art/BlueprintMeshes/Finalpitfloor.asset using Guid(7e9f002f78bb56a41b7a095c5355fa69) (NativeFormatImporter)Main Object Name 'Final pit floor' does not match filename 'Finalpitfloor'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '5ec5b7d45e2fc272cc650393f009f753') in 0.000686 seconds [static dependencies only]. Details - ImportResultOutputID=c9610d1e0078dccc354160808b616595 DependenciesID=0d13b1df140313b2ce8633598514d900 StaticDependenciesID=640ef4c58f22d59460cdc6bf497ece78 
+Start importing Assets/Art/BlueprintMeshes/Terrain8.asset using Guid(ae8055631ec7cc440a4aacec6b60a90a) (NativeFormatImporter)Main Object Name '' does not match filename 'Terrain8'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: 'fbc24b574003df5a50d022f42530b228') in 0.0006672 seconds [static dependencies only]. Details - ImportResultOutputID=f1a8d30490dbbbf77f22eca611b37931 DependenciesID=c72cda20816cbf169c0f2344d934a729 StaticDependenciesID=e0c848aa329863a7ea53b05daab9b7e2 
+Start importing Assets/Art/BlueprintMeshes/Lowerbasincorner.asset using Guid(2fc168adc4db2134b80c33bd4cac9ff0) (NativeFormatImporter)Main Object Name 'Lower basin corner' does not match filename 'Lowerbasincorner'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '206b8ba02315fc6cd4e4f5068aaaaf14') in 0.0006883 seconds [static dependencies only]. Details - ImportResultOutputID=74afbac87672a46f0ba58b8d0f69293e DependenciesID=26eeb4a3695abd99918a0e2fe575a104 StaticDependenciesID=053bd9f7bbe42368e100d93fe9f41633 
+Start importing Assets/Art/BlueprintMeshes/Descentrightupper.asset using Guid(9f17f6ced7737d041a96203e95307cb9) (NativeFormatImporter)Main Object Name 'Descent right upper' does not match filename 'Descentrightupper'
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:SaveSceneInternal (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string,bool)
+UnityEditor.SceneManagement.EditorSceneManager:SaveScene (UnityEngine.SceneManagement.Scene,string)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:60)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+[Assets/Editor/PrototypeBuilder.cs line 60]
+
+ -> (Import Result ID: '5cccb353220b88d7412aa444098c6c7d') in 0.0006225 seconds [static dependencies only]. Details - ImportResultOutputID=6fee1a7a74e615b6d96f11d330eef31e DependenciesID=1a4a9c1fd5269fa6a56ebbebb4c93f2c StaticDependenciesID=263ef0c210f712d7f3fc15550902e7a9 
+Asset Pipeline Refresh (id=9c2f08126b8bc15459618618854c6b90): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Scenes/Level01.unity using Guid(8d9d723d35aea434691f8c5559684df6) (DefaultImporter) -> (Import Result ID: '002d12beefe01246fa6709534acba075') in 0.0005688 seconds [static dependencies only]. Details - ImportResultOutputID=b7dd77a6da5b2d85db4f4cc9e0a69f2a DependenciesID=33aa195d7103dc90ede8eec1110d2f2f StaticDependenciesID=be55897fad0beb64911bdfe443ac1c8f 
+Asset Pipeline Refresh (id=7ac7db472710ca14b9f881c49b338742): Total: 0.010 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+BLUEPRINT_SCENE_GENERATED Movement-v02 20752 gravity=32 source=32
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+PrototypeBuilder:CreateScene () (at Assets/Editor/PrototypeBuilder.cs:62)
+RouteVerifier:Verify () (at Assets/Editor/RouteVerifier.cs:103)
+
+(Filename: Assets/Editor/PrototypeBuilder.cs Line: 62)
+
+Start importing Assets/Resources/VerificationRoute.json using Guid(6d65e0919f3362c4eacad87cb60ef9f4) (TextScriptImporter) -> (Import Result ID: 'd6aa2a41a631e89d7425f0b132579939') in 0.0016121 seconds [static dependencies only]. Details - ImportResultOutputID=c3a9bdb4eeff84fff76ea942e6579a6d DependenciesID=c5afbc5d2755529cf518e9d55cddcc93 StaticDependenciesID=23356d522196202270517b6d12e4dc09 
+Asset Pipeline Refresh (id=2d56e38997bec8142a95b0d895775a6f): Total: 0.014 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Batchmode quit successfully invoked - shutting down!
+Start importing ProjectSettings/Physics2DSettings.asset using Guid(00000000000000005100000000000000) (LibraryAssetImporter) -> (Import Result ID: 'f16963958c4c7d9a5df0fbea19140f44') in 0.0010534 seconds [static dependencies only]. Details - ImportResultOutputID=60a9f21390cae772c5464d780d2e2601 DependenciesID=b5fc44863391190827b6e8b0a5697642 StaticDependenciesID=368e7cd489928e5298fc8bb284c020f7 
+Asset Pipeline Refresh (id=c3e36077056bb8e479f279479f172f2b): Total: 0.007 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-user-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-user channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

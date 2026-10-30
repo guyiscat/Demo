@@ -1,0 +1,5 @@
+PASS Existing objects checked: 426
+PASS World transforms, tags/layers, active state, existing components and references unchanged
+PASS Cell geometry and checkpoint data unchanged
+PASS Name-independent map resolver
+PASS Scene saved

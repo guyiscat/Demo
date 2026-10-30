@@ -1,0 +1,9 @@
+PASS Player is a four-cell 2x2 square
+MEASURE short jump=5.9997
+PASS Tap jump to three bodies / six cells
+MEASURE long jump=9.9996
+PASS Held jump to five bodies / ten cells
+PASS Mouse-aim diagonal dash distance=9.9999 cells / 5.0000 bodies
+PASS Second air dash rejected
+PASS Actual yellow trigger activates checkpoint
+PASS Actual red-cell trigger kills player

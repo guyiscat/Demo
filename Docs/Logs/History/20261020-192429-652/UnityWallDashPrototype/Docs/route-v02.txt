@@ -1,0 +1,11 @@
+v0.3 ALL 40 BLUE SQUARES - original coordinates, tolerance +/-8 source pixels per axis
+PASS source sample 1 at (2.85, 0.73)
+PASS source sample 2 at (4.78, 1.29)
+PASS source sample 3 at (6.92, 1.95)
+PASS source sample 4 at (8.22, 0.86)
+PASS source sample 5 at (10.57, 0.32)
+PASS source sample 6 at (10.57, 2.16)
+PASS source sample 7 at (11.07, 3.24)
+PASS source sample 8 at (9.73, 4.06)
+PASS source sample 9 at (11.66, 4.64)
+PASS source sample 10 at (13.28, 3.11)
