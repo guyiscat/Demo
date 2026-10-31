@@ -1,0 +1,9 @@
+LOG_FOLDER=D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Docs\Logs\Build\20261030-222524-623
+Editor build/tests failed
+At D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Tools\BuildAndTest.p
+s1:27 char:27
++     if($editorExit -ne 0){throw 'Editor build/tests failed'}
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Editor build/tests failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : Editor build/tests failed
+ 

@@ -10,7 +10,7 @@ public static class WallJumpEditorChecks
     public static void Run()
     {
         EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
-        var player=UnityEngine.Object.FindFirstObjectByType<SeasideMotor>();player.externalInput=true;
+        var player=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();player.externalInput=true;
         var old=Physics2D.simulationMode;Physics2D.simulationMode=SimulationMode2D.Script;
         var lines=new List<string>();
         try{WallJumpRegression.Run(player,(ok,label)=>lines.Add((ok?"PASS ":"FAIL ")+label));}

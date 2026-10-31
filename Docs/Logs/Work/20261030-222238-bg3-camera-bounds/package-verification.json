@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "packages": {
+    "Project": {
+      "result": "PASS",
+      "MiB": 102.23,
+      "comparedFiles": 231,
+      "forbidden": [],
+      "missing": [],
+      "mismatches": [],
+      "crcError": null
+    },
+    "Windows": {
+      "result": "PASS",
+      "MiB": 89.18,
+      "comparedFiles": 148,
+      "forbidden": [],
+      "missing": [],
+      "mismatches": [],
+      "crcError": null
+    }
+  },
+  "optional_figures_directory_absent": true
+}

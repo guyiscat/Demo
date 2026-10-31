@@ -1,0 +1,418 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-10-31T03:18:25.1866549Z"
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-31T03:18:25Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15292, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              39d58faed96e497c919ec0ad26ba7a16
+  Correlation Id:          06eec184259d680afb59ea62f62b5ce5
+  External correlation Id: 5348925918745196366
+  Machine Id:              ZFwzWaW/sukllSN81qeQTq98vpY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.01s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-10-31T03:18:25.2504437Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 15669784159753-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.08s
+
+COMMAND LINE ARGUMENTS:
+D:\Development\Unity\6000.4.12f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4
+-executeMethod
+RecoverySceneExporter.Run
+-logFile
+D:\UnityProjects\Demo\Docs\Logs\Work\20261031-111631-recover-unsaved-scene\binary-export.log
+Successfully changed project path to: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4
+D:/UnityProjects/Demo/Docs/Backups/20261031-110419-camera-follow-size/validation/Demo/Project6.4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [54592]  Target information:
+
+Player connection [54592]  * "[IP] 114.212.84.66 [Port] 55505 [Flags] 2 [Guid] 939266397 [EditorId] 939266397 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [54592]  * "[IP] 192.168.96.1 [Port] 55505 [Flags] 2 [Guid] 939266397 [EditorId] 939266397 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [54592] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [54592] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-27832" after 0.7 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/Development/Unity/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Docs/Backups/20261031-110419-camera-follow-size/validation/Demo/Project6.4/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Development/Unity/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013013 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.611 seconds
+Domain Reload Profiling: 2471ms
+	BeginReloadAssembly (372ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (121ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (259ms)
+		LoadAssemblies (295ms)
+		AnalyzeDomain (241ms)
+			TypeCache.Refresh (236ms)
+				TypeCache.ScanAssembly (188ms)
+			BuildScriptInfoCaches (3ms)
+	FinalizeReload (1624ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (203ms)
+			ProcessInitializeOnLoadMethodAttributes (1094ms)
+			EditorAssembliesLoaded (16ms)
+		ExecutionOrderSort2 (13ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 7 packages:
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.2d.sprite@3a9210fbfba9)
+    com.unity.modules.audio@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261031-110419-camera-follow-size\validation\Demo\Project6.4\Library\PackageCache\com.unity.modules.screencapture)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Docs/Backups/20261031-110419-camera-follow-size/validation/Demo/Project6.4
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\netcorerun\netcorerun.exe "D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/UnityProjects/Demo/Docs/Backups/20261031-110419-camera-follow-size/validation/Demo/Project6.4
+ExitCode: 4 Duration: 0s162ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+*** Tundra requires additional run (0.07 seconds), 0 items updated, 167 evaluated
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 2s11ms
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Docs/Backups/20261031-110419-camera-follow-size/validation/Demo/Project6.4
+ExitCode: 0 Duration: 2s586ms
+Finished compiling graph: 170 nodes, 755 flattened edges (735 ToBuild, 6 ToUse), maximum node priority 31
+[154/167    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[164/167    2s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\Editor\SeasideFeelUpgrade.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(51,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(54,9): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(73,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(74,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideArtSetup.cs(79,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideArtSetup.cs(79,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\WallJumpEditorChecks.cs(13,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasidePart1Backgrounds.cs(100,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestRegression.cs(24,32): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestRegression.cs(25,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\PlaytestRegression.cs(84,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\PlaytestRegression.cs(84,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\CameraBackgroundBoundsChecks.cs(48,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\CameraBackgroundBoundsChecks.cs(101,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideTests.cs(30,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideTests.cs(79,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideTests.cs(79,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\SeasideTests.cs(90,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideTests.cs(94,69): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideTests.cs(94,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Editor\SeasideHierarchyRefactor.cs(35,47): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\SeasideHierarchyRefactor.cs(93,126): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\SeasideHierarchyRefactor.cs(157,23): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+
+Assets\Editor\SeasideBuilder.cs(162,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideBuilder.cs(170,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Assets\Editor\SeasideBuilder.cs(171,77): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Editor\SeasideBuilder.cs(171,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[165/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[166/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (2.56 seconds), 4 items updated, 167 evaluated
+Assets\Editor\SeasideFeelUpgrade.cs(14,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(51,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(54,9): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(73,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(74,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideArtSetup.cs(79,72): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideArtSetup.cs(79,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\WallJumpEditorChecks.cs(13,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasidePart1Backgrounds.cs(100,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestRegression.cs(24,32): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestRegression.cs(25,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\PlaytestRegression.cs(84,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\PlaytestRegression.cs(84,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\CameraBackgroundBoundsChecks.cs(48,24): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\CameraBackgroundBoundsChecks.cs(101,20): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideTests.cs(30,23): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideTests.cs(79,71): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideTests.cs(79,21): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\SeasideTests.cs(90,22): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideTests.cs(94,69): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideTests.cs(94,19): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Editor\SeasideHierarchyRefactor.cs(35,47): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\SeasideHierarchyRefactor.cs(93,126): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\SeasideHierarchyRefactor.cs(157,23): warning CS0618: 'Object.GetInstanceID()' is obsolete: 'GetInstanceID is deprecated. Use GetEntityId instead. This will be removed in a future version.'
+Assets\Editor\SeasideBuilder.cs(162,19): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideBuilder.cs(170,18): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets\Editor\SeasideBuilder.cs(171,77): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Editor\SeasideBuilder.cs(171,27): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 6.452119s
+Begin MonoManager ReloadAssembly
+Total cache size 188501536
+Total cache size after purge 188501536, took 00:00:00.1353814
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Start importing Assets/_RecoveryCandidates using Guid(0dc36ea3662321a43a3bbb98dccf3cea) (DefaultImporter) -> (Import Result ID: 'fa5e1b4683045105f18c8824a2bf8034') in 0.0569029 seconds [static dependencies only]. Details - ImportResultOutputID=9d78cf626d446a8cc5216326a934078f DependenciesID=20fbcda5a1854aaacfaaaa7645819bb1 StaticDependenciesID=cec844252f9a17f9c199eb436cdf2246 
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.293 seconds
+Domain Reload Profiling: 648ms
+	BeginReloadAssembly (263ms)
+		DisableScriptedObjects (54ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (16ms)
+		LoadAssemblies (76ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (6ms)
+	FinalizeReload (295ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (63ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Start importing Assets/_RecoveryCandidates/TempSource1058.unity using Guid(5917b10eb73945158c4c57ad66774b03) (DefaultImporter) -> (Import Result ID: 'f25dab7caeeb4587cd5319ad7f49413d') in 0.000829 seconds [static dependencies only]. Details - ImportResultOutputID=6f8f5c8e996fc37e42ba71e3d7bf8a07 DependenciesID=229aed93c20c7eef8704cee9d0dbd181 StaticDependenciesID=d0a8a31fbe81744edb61e4244865e03f 
+Opening scene 'Assets/_RecoveryCandidates/TempSource1058.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/_RecoveryCandidates/TempSource1058.unity'
+	Deserialize:            54.640 ms
+	Integration:            2216.926 ms
+	Integration of assets:  0.049 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   2271.630 ms
+Unloading 100 unused Assets / (0.6 MB). Loaded Objects now: 2973.
+Memory consumption went from 377.7 MB to 377.1 MB.
+Total: 26.280400 ms (FindLiveObjects: 0.180200 ms CreateObjectMapping: 0.013100 ms MarkObjects: 3.394900 ms  DeleteObjects: 22.688700 ms)
+
+Unloading 28 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.478 ms
+	Integration:            2.267 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   2.753 ms
+Unloading 71 unused Assets / (44.6 KB). Loaded Objects now: 701.
+Memory consumption went from 374.6 MB to 374.5 MB.
+Total: 2.629400 ms (FindLiveObjects: 0.031800 ms CreateObjectMapping: 0.005900 ms MarkObjects: 2.493200 ms  DeleteObjects: 0.098100 ms)
+
+Start importing Assets/_RecoveryCandidates/TempSource1058.unity using Guid(5917b10eb73945158c4c57ad66774b03) (DefaultImporter) -> (Import Result ID: 'c540f0469692095586e2e09a3bd45187') in 0.0007064 seconds [static dependencies only]. Details - ImportResultOutputID=6f8f5c8e996fc37e42ba71e3d7bf8a07 DependenciesID=6d1432d44f3dbbaf240b54480c623697 StaticDependenciesID=9fb3657d06098b820da746252d624893 
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=cd3e1e183137cac43a8aa19f7f87e7fa): Total: 9.980 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=3 (actual=3, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=3034 ms
+		Asset DB Callback time: managed=93 ms, native=40 ms
+		Scripting: domain reloads=1, domain reload time=353 ms, compile time=6454 ms, other=2 ms
+		Project Asset Count: scripts=68, non-scripts=113
+		Asset File Changes: new=3, changed=4, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 40.952ms
+	ApplyChangesToAssetFolders: 0.231ms
+	Scan: 62.753ms
+	OnSourceAssetsModified: 1.417ms
+	CategorizeScriptCompilationAssets: 0.209ms
+	ProcessAssetsWithTransientArtifactChanges: 9.062ms
+	CategorizeAssets: 2.131ms
+	CompileScripts: 6453.503ms
+	ImportOutOfDateAssets: 2833.826ms (2770.814ms without children)
+		ImportManagerImport: 62.461ms (3.348ms without children)
+		UnloadImportedAssets: 0.248ms
+		OnDemandSchedulerStart: 0.255ms
+	PostProcessAllAssets: 91.356ms
+		MonoPostProcessAllAssets: 90.903ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 27.371ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 21.234ms
+			AssetPostprocessor.OnPostprocessAllAssets 16.250ms
+			SyncVS.PostprocessSyncProject 9.866ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.800ms
+			AssetChangedListener.OnPostprocessAllAssets 1.142ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.860ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.576ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.542ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.443ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.428ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.378ms
+			AssetEvents.OnPostprocessAllAssets 0.295ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.228ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.157ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.132ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.109ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.089ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.087ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.075ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.070ms
+	PostAssetChangesProfiler: 1.256ms
+	UnloadStreamsBegin: 0.955ms
+	GenerateScriptTypeHashes: 1.080ms
+	GenerateScriptTypeSerializationHashes: 1.980ms
+	Untracked: 477.554ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 15.160ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Seaside Whitebox
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (508.3 KB). Loaded Objects now: 745.
+Memory consumption went from 96.4 MB to 95.9 MB.
+Total: 4.018100 ms (FindLiveObjects: 0.109500 ms CreateObjectMapping: 0.013500 ms MarkObjects: 3.721100 ms  DeleteObjects: 0.172600 ms)
+
+Opening scene 'Assets/_RecoveryCandidates/TempSource1058.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/_RecoveryCandidates/TempSource1058.unity'
+	Deserialize:            21.874 ms
+	Integration:            146.557 ms
+	Integration of assets:  0.047 ms
+	Thread Wait Time:       0.009 ms
+	Total Operation Time:   168.486 ms
+Unloading 1 unused Assets / (0.5 KB). Loaded Objects now: 3017.
+Memory consumption went from 400.9 MB to 400.9 MB.
+Total: 3.301300 ms (FindLiveObjects: 0.126100 ms CreateObjectMapping: 0.010000 ms MarkObjects: 3.150400 ms  DeleteObjects: 0.014200 ms)
+
+Start importing Assets/_RecoveryCandidates/Recovered1058_Text.unity using Guid(dc12880b6c6406a49978e71757009369) (DefaultImporter) -> (Import Result ID: '1e610449cc3cd9d4f4aee23d053140ca') in 0.0011231 seconds [static dependencies only]. Details - ImportResultOutputID=54f1900110f62ba235089af6b91ce87e DependenciesID=be1d0d0b51fd8a8b1cb7f739b5b3d01b StaticDependenciesID=cb870e455bbfe53e093b6acf7ecbb16f 
+Asset Pipeline Refresh (id=f4d6b5b79c85664439ed81e3aad496a9): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+RECOVERY_BINARY_EXPORT_PASS objects=480
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+RecoverySceneExporter:Run () (at Assets/Editor/RecoverySceneExporter.cs:18)
+
+(Filename: Assets/Editor/RecoverySceneExporter.cs Line: 18)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-user-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-user channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "checks": {
+    "only_two_scene_parameters_changed": true,
+    "only_follow_size_changed": true,
+    "built_scene_files_match": true,
+    "camera_checks_pass": true,
+    "build_pass": true,
+    "runtime_checks_pass": true
+  },
+  "changed_engine_files": [
+    "Project6.4/Assets/Scenes/Seaside01.unity",
+    "Project6.4/Assets/Scenes/SeasideArtPreview.unity"
+  ],
+  "unsaved_editor_changes_preserved": true,
+  "full_scene_save_or_reload": false
+}

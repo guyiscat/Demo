@@ -1,0 +1,8 @@
+Startup runtime checks failed
+ËùÔÚÎ»ÖÃ D:\UnityProjects\Demo\Docs\Backups\20261031-161909-startup-page\validation\Demo\Project6.4\Tools\BuildAndTest.
+ps1:37 ×Ö·û: 32
++         if($startupExit -ne 0){throw 'Startup runtime checks failed'}
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Startup runtime checks failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : Startup runtime checks failed
+ 

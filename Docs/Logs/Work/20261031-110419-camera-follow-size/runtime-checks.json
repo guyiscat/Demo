@@ -1,0 +1,17 @@
+[
+  {
+    "name": "regression",
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "name": "calibration",
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "name": "preview-smoke",
+    "exitCode": 0,
+    "timedOut": false
+  }
+]

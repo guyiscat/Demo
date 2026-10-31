@@ -1,0 +1,22 @@
+PASS Assets/Scenes\Seaside01.unity session uniqueness
+PASS Assets/Scenes\Seaside01.unity player uniqueness
+PASS Assets/Scenes\Seaside01.unity follow camera uniqueness
+PASS Assets/Scenes\Seaside01.unity new lookup resolves saved session
+PASS Assets/Scenes\SeasideArtPreview.unity session uniqueness
+PASS Assets/Scenes\SeasideArtPreview.unity player uniqueness
+PASS Assets/Scenes\SeasideArtPreview.unity follow camera uniqueness
+PASS Assets/Scenes\SeasideArtPreview.unity new lookup resolves saved session
+PASS Assets/Scenes\SeasideArtPreview_Recovered_20261031_1058.unity session uniqueness
+PASS Assets/Scenes\SeasideArtPreview_Recovered_20261031_1058.unity player uniqueness
+PASS Assets/Scenes\SeasideArtPreview_Recovered_20261031_1058.unity follow camera uniqueness
+PASS Assets/Scenes\SeasideArtPreview_Recovered_20261031_1058.unity new lookup resolves saved session
+PASS Assets/Scenes\StartGame.unity session uniqueness
+PASS Assets/Scenes\StartGame.unity player uniqueness
+PASS Assets/Scenes\StartGame.unity follow camera uniqueness
+PASS Assets/Scenes\TheFirstScene_Seaside.unity session uniqueness
+PASS Assets/Scenes\TheFirstScene_Seaside.unity player uniqueness
+PASS Assets/Scenes\TheFirstScene_Seaside.unity follow camera uniqueness
+PASS Assets/Scenes\TheFirstScene_Seaside.unity new lookup resolves saved session
+PASS EntityId lookup survives rename and reparent
+PASS Refactor snapshot preserves world transform and component data after regrouping
+PASS Existing movement, checkpoint, respawn, camera and background framing checks completed

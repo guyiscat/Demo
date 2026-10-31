@@ -1,4 +1,4 @@
-param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe')
+param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe',[switch]$StartupPage,[switch]$GenerateStartupScene)
 $ErrorActionPreference='Stop'
 $release=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $project=Split-Path $PSScriptRoot -Parent
@@ -21,11 +21,23 @@ function Snapshot([string]$name) {
 }
 try {
     if(!(Test-Path -LiteralPath $Unity)){throw "Unity editor not found; supply -Unity with the installed Unity.exe path: $Unity"}
-    $editorExit=RunProcess $Unity @('-batchmode','-nographics','-quit','-projectPath',('"'+$project+'"'),'-executeMethod','PlaytestFixBuild.Build','-logFile',('"'+(Join-Path $run 'editor-build.log')+'"'))
+    if($GenerateStartupScene -and !$StartupPage){throw 'GenerateStartupScene requires StartupPage and an isolated project.'}
+    $method=if($GenerateStartupScene){'StartGameSetup.GenerateAndBuild'}elseif($StartupPage){'StartGameSetup.ValidateAndBuild'}else{'PlaytestFixBuild.Build'}
+    $editorArguments=@('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod',$method,'-logFile',('"'+(Join-Path $run 'editor-build.log')+'"'))
+    if(!$StartupPage){$editorArguments+='-nographics'}
+    $editorExit=RunProcess $Unity $editorArguments
     $status.editorExit=$editorExit
     Snapshot 'editor-reports'
     if($editorExit -ne 0){throw 'Editor build/tests failed'}
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'StartWithLogs.ps1') -Destination (Join-Path $release 'Play64\StartWithLogs.ps1') -Force
+    if($StartupPage){
+        $status.phase='startup-runtime'
+        $startupExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-force-d3d11','-screen-fullscreen','0','-screen-width','1280','-screen-height','720','-startupSmoke','-logFile',('"'+(Join-Path $run 'startup-runtime.log')+'"'))
+        $status.startupExit=$startupExit
+        if($startupExit -ne 0){throw 'Startup runtime checks failed'}
+        $status.result='PASS'
+        return
+    }
     $status.phase='runtime-regression'
     $runtimeExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-regression','-logFile',('"'+(Join-Path $run 'runtime-regression.log')+'"'))
     $status.regressionExit=$runtimeExit

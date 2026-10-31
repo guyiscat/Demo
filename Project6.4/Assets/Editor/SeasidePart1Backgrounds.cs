@@ -97,7 +97,7 @@ public static class SeasidePart1Backgrounds
 
     static void Capture()
     {
-        var follow=UnityEngine.Object.FindFirstObjectByType<SeasideCamera>();var camera=follow.GetComponent<Camera>();
+        var follow=UnityEngine.Object.FindAnyObjectByType<SeasideCamera>();var camera=follow.GetComponent<Camera>();
         camera.aspect=16f/9;follow.overview=true;follow.Snap();
         var target=new RenderTexture(1920,1080,24);var pixels=new Texture2D(1920,1080,TextureFormat.RGB24,false);
         var previous=camera.targetTexture;var active=RenderTexture.active;

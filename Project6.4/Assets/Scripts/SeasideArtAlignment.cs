@@ -40,9 +40,9 @@ namespace Seaside
         System.Collections.IEnumerator CaptureArtwork(string path, bool artOnly)
         {
             yield return null;
-            var session = FindFirstObjectByType<SeasideSession>();
+            var session = FindAnyObjectByType<SeasideSession>();
             session.player.frozen = true;
-            var follow = FindFirstObjectByType<SeasideCamera>();
+            var follow = FindAnyObjectByType<SeasideCamera>();
             follow.overview = true;
             follow.GetComponent<Camera>().aspect = 16f / 9;
             follow.Snap();

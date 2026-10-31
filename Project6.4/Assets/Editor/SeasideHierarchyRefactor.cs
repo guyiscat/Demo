@@ -32,7 +32,8 @@ public static class SeasideHierarchyRefactor
         var original=scene.GetRootGameObjects().SelectMany(r=>r.GetComponentsInChildren<Transform>(true)).Select(t=>t.gameObject).ToArray();
         var before=Snapshot(original);
         string geometry=SeasideSceneGeometry.Signature(scene);
-        var oldPaths=original.ToDictionary(o=>o.GetInstanceID(),o=>PathOf(o.transform));
+        // Session-local identity survives object renaming and reparenting.
+        var oldPaths=original.ToDictionary(o=>o.GetEntityId(),o=>PathOf(o.transform));
         Directory.CreateDirectory(Work);
         File.WriteAllLines(Path.Combine(Work,"before-world-state.txt"),before.OrderBy(k=>k.Key).Select(k=>k.Key+"|"+k.Value));
         Undo.IncrementCurrentGroup();int undo=Undo.GetCurrentGroup();Undo.SetCurrentGroupName("Normalize Seaside preview hierarchy");
@@ -90,7 +91,7 @@ public static class SeasideHierarchyRefactor
             if(SeasideMapRoot.FindInScene(scene)!=map)throw new Exception("Map resolver did not return the marked Map.");
             EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
             File.WriteAllLines(Path.Combine(Work,"after-world-state.txt"),after.OrderBy(k=>k.Key).Select(k=>k.Key+"|"+k.Value));
-            File.WriteAllLines(Path.Combine(Work,"rename-map.tsv"),new[]{"Before\tAfter"}.Concat(original.Select(o=>oldPaths[o.GetInstanceID()]+"\t"+PathOf(o.transform))));
+            File.WriteAllLines(Path.Combine(Work,"rename-map.tsv"),new[]{"Before\tAfter"}.Concat(original.Select(o=>oldPaths[o.GetEntityId()]+"\t"+PathOf(o.transform))));
             File.WriteAllLines(Path.Combine(Work,"hierarchy.txt"),root.GetComponentsInChildren<Transform>(true).Select(t=>PathOf(t)));
             File.WriteAllText(Path.Combine(Work,"refactor-result.txt"),"PASS Existing objects checked: "+original.Length+
                 "\nPASS World transforms, tags/layers, active state, existing components and references unchanged\nPASS Cell geometry and checkpoint data unchanged\nPASS Name-independent map resolver\nPASS Scene saved\n");
@@ -154,7 +155,7 @@ public static class SeasideHierarchyRefactor
         var rows=new Dictionary<string,string>();
         foreach(var go in objects)
         {
-            string id=go.GetInstanceID().ToString();var q=go.transform.rotation;
+            string id=go.GetEntityId().ToString();var q=go.transform.rotation;
             rows[id+"/Object"]=Vec(go.transform.position)+"|"+Vec(go.transform.lossyScale)+"|"+Float(q.x)+","+Float(q.y)+","+Float(q.z)+","+Float(q.w)+"|"+go.layer+"|"+go.tag+"|"+go.activeInHierarchy;
             var components=go.GetComponents<Component>();
             for(int i=0;i<components.Length;i++)

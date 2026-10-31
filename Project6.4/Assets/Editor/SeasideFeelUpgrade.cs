@@ -11,7 +11,7 @@ public static class SeasideFeelUpgrade
     public static void ApplyAndBuild()
     {
         EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
-        var player=UnityEngine.Object.FindFirstObjectByType<SeasideMotor>();
+        var player=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();
         var settings=player.settings;
         settings.ascentGravity=60;settings.fallGravityStart=35;settings.fallGravityEnd=85;
         settings.fallRampTime=.25f;settings.terminalFallSpeed=32;settings.dashHoverDuration=.03f;

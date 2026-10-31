@@ -1,0 +1,2797 @@
+{
+  "recovered_objects": 480,
+  "disk_objects": 471,
+  "added_in_backup": [
+    "Seaside_Terrain_Modules_9 (1)",
+    "water_multiple_4",
+    "thorn2 (1)",
+    "water_multiple_3",
+    "water_multiple_0",
+    "water_multiple_2",
+    "thorn6 (1)",
+    "water_multiple_1",
+    "water_multiple_6",
+    "water_multiple_5"
+  ],
+  "absent_in_backup": [
+    "water"
+  ],
+  "changed_existing_objects": [
+    {
+      "name": "Spike_DN110",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB116_ED116",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_3",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 52.2, y: 34.7, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.4, y: 1, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB113_ED113",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH77_FP77",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY58_GC58",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB115_ED115",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "thorn6",
+      "changes": [
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.4, y: 1.2058, z: 1}",
+          "disk": "{x: 1.2087, y: 1.2058, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH65",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DD119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA110",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HH88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY59_GC59",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DH119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB114_ED114",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA102_ED102",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FR82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 89.52, y: 37.82, z: 0}",
+          "disk": "{x: 89.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DI119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH67_FP67",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH58",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FV74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DM119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY51_GC51",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI74_FP74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DF119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI81_FP81",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CX119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH80",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY50_GC50",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA100_ED100",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN107",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HF88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FS56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DP119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_10",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 98.43, y: 58.16, z: 0}",
+          "disk": "{x: 98.4, y: 62.8, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.1, y: 1.34, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY60_GC60",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT70_HD70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI64_FP64",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_4",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 47.76, y: 12.67, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.3, y: 1.32, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY67_HD67",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH75_FP75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY75_GC75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FW82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 94.52, y: 37.82, z: 0}",
+          "disk": "{x: 94.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP55_EU55",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN104",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FR69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA117",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA105_ED105",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA107",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI72_FP72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_5",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 43.94, y: 0.15, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.35, y: 1, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY71_GC71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GZ88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI60_FP60",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FV82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 93.52, y: 37.82, z: 0}",
+          "disk": "{x: 93.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CZ119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP49_GC49",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_11",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 122.8, y: 56.7, z: 0}",
+          "disk": "{x: 122.6, y: 59.33, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.22, y: 1.2, z: 1}",
+          "disk": "{x: 1.22, y: 1.505, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI71_FP71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY74_GC74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB107_ED107",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE66",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY73_GC73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GX88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI59_FP59",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FR57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DA119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CW119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN106",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI62_FP62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB118_ED118",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "pillar2",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 108, y: 18.5, z: 0}",
+          "disk": "{x: 108, y: 18.4, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.34, y: 1.28, z: 1}",
+          "disk": "{x: 1.32, y: 1.28, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FV63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY56_GC56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY55_GC55",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI82_FP82",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FW62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DG119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW86_GW86",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_9",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 108.9, y: 72.5, z: 0}",
+          "disk": "{x: 31.1, y: 57.8, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.3, y: 0.4, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HA88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH69_FP69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH81",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FQ56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP58_EU58",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI63_FP63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DK119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP50_EU50",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FR68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA106_ED106",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN101",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP52_EU52",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH68_FP68",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 83.46, y: 52.5, z: 0}",
+          "disk": "{x: 83.5, y: 52.5, z: 0}"
+        },
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA111",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA112",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH66_FP66",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 83.46, y: 54.5, z: 0}",
+          "disk": "{x: 83.5, y: 54.5, z: 0}"
+        },
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 70.7, y: 40.23, z: 0}",
+          "disk": "{x: 114.2, y: 40.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_6",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: -5.7, y: 25.2, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH78_FP78",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA108",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FW75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN103",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA101_ED101",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN108",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI58_FP58",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB117_ED117",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FS82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 90.52, y: 37.82, z: 0}",
+          "disk": "{x: 90.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FR56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_1",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 35.6, y: 15.1, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.22, y: 1.3, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI65_FP65",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DB119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA113",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DC119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY66_HD66",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA114",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_0",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 7.77, y: 0.82, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.28, y: 0.88, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI73_FP73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH76_FP76",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FV75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FW74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY57_GC57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW89_HQ89",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_12",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 109, y: 62.1, z: 0}",
+          "disk": "{x: 108.8, y: 62.1, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.6, y: 1.366, z: 1}",
+          "disk": "{x: 1.56, y: 1.366, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY69_GC69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE65",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP57_EU57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY68_GC68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI79_FP79",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FV62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DJ119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY64_GC64",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FT82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 91.52, y: 37.82, z: 0}",
+          "disk": "{x: 91.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB111_ED111",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 48.47, y: 9.43, z: 0}",
+          "disk": "{x: 48.5, y: 9.5, z: 0}"
+        },
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY65_HD65",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FS57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA103_ED103",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FX63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN102",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HD88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI83_GW83",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH79",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CY119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FW63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "thorn5 (1)",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 100.29, y: 49.66, z: 0}",
+          "disk": "{x: 100.5, y: 49.66, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FQ82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 88.52, y: 37.82, z: 0}",
+          "disk": "{x: 88.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA109",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI80_FP80",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FX74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DL119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FQ68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FX75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB110_ED110",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 48.47, y: 10.43, z: 0}",
+          "disk": "{x: 48.5, y: 10.5, z: 0}"
+        },
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP54_EU54",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI61_FP61",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP48_GC48",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "thorn5 (2)",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 117.7, y: 49.58, z: 0}",
+          "disk": "{x: 117.53, y: 49.58, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT69_HD69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI70_FP70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW88_GW88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT71_HD71",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CU119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY72_GC72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH59",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FH56_FP56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH60",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DE119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EA104_ED104",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE67",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB112_ED112",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HI88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY54_GC54",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP53_EU53",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HG88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP56_EU56",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY70_GC70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE70",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FS68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HC88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_2",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 55.5, y: 22.9, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT74_HD74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH64",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Seaside_Terrain_Modules_8",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 64.1, y: 68.07, z: 0}",
+          "disk": "{x: 0, y: 0, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.25, y: 0.87, z: 1}",
+          "disk": "{x: 1, y: 1, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FS69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA115",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FQ69",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY52_GC52",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY53_GC53",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FX62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GD72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY63_GC63",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT72_HD72",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH82",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW84_GW84",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA118",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT73_HD73",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_EA116",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DO119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HE68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FQ57",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_HB88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FI57_FP57",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 83.96, y: 63.5, z: 0}",
+          "disk": "{x: 84, y: 63.5, z: 0}"
+        },
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN105",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY62_GC62",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "pillar1",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 70.46, y: 24.32, z: 0}",
+          "disk": "{x: 70.6, y: 24.7, z: 0}"
+        },
+        {
+          "field": "m_LocalScale",
+          "backup": "{x: 1.26, y: 1.35, z: 1}",
+          "disk": "{x: 1.2061, y: 1.2044, z: 1}"
+        }
+      ]
+    },
+    {
+      "name": "Spike_CV119",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW87_GW87",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_DN109",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS75",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EW85_GW85",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_GT68_HD68",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FU82",
+      "changes": [
+        {
+          "field": "m_LocalPosition",
+          "backup": "{x: 92.52, y: 37.82, z: 0}",
+          "disk": "{x: 92.5, y: 38.5, z: 0}"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EB108_ED108",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GY88",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_FH61",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_EP51_EU51",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Terrain_FY61_GC61",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    },
+    {
+      "name": "Spike_GS74",
+      "changes": [
+        {
+          "component": "212",
+          "field": "m_Enabled",
+          "backup": "0",
+          "disk": "1"
+        }
+      ]
+    }
+  ],
+  "water_sprite_reference_checks": [
+    {
+      "name": "water_multiple_4",
+      "fileID": "1437940975",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_3",
+      "fileID": "1211140595",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_0",
+      "fileID": "1832764560",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_2",
+      "fileID": "-545388734",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_1",
+      "fileID": "444431460",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_6",
+      "fileID": "1421165181",
+      "present_in_current_meta": true
+    },
+    {
+      "name": "water_multiple_5",
+      "fileID": "156819576",
+      "present_in_current_meta": true
+    }
+  ],
+  "later_known_difference": {
+    "object": "water_multiple_1",
+    "backup1058_localPosition": "(-9.4, -15.3, 0)",
+    "before_operation_ui_localPosition": "(-64.9, 57.3, 0)",
+    "note": "UI screenshot before change differs from 10:58 backup; do not claim every later unsaved edit is recovered."
+  }
+}

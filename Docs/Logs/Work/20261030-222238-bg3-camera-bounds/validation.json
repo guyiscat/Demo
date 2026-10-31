@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "checks": {
+    "only_expected_existing_engine_file_changed": true,
+    "scenes_unchanged": true,
+    "art_and_collisions_unchanged": true,
+    "project_settings_packages_unchanged": true,
+    "tested_sources_and_saved_scenes_match_main": true,
+    "focused_build_pass": true,
+    "runtime_checks_pass": true,
+    "camera_assertions_pass": true
+  },
+  "changed_existing_engine_files": [
+    "Project6.4/Assets/Scripts/SeasideCamera.cs"
+  ],
+  "standard_pipeline_result": "FAIL: existing preview-vs-original map geometry mismatch; preserved",
+  "manual_full_playthrough": false,
+  "package_verification": "PASS",
+  "additional_tool_change": "PackageRelease.ps1 skips absent optional Figures; mandatory project content still required"
+}

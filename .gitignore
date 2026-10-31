@@ -16,6 +16,7 @@
 ~$*
 
 # Local deliveries, duplicated backups, and large archives
+/build/
 /Play/
 /Play64/
 /Project6.4/Logs/

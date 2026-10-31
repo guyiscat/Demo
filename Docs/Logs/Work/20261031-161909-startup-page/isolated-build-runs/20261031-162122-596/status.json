@@ -1,0 +1,11 @@
+﻿{
+    "started":  "2026-10-31T16:21:22.6018662+08:00",
+    "unity":  "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project":  "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-161909-startup-page\\validation\\Demo\\Project6.4",
+    "phase":  "startup-runtime",
+    "result":  "FAIL",
+    "editorExit":  0,
+    "startupExit":  1,
+    "error":  "Startup runtime checks failed",
+    "finished":  "2026-10-31T16:22:41.6232950+08:00"
+}

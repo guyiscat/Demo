@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "completed": "2026-10-31T16:28:04.9515614+08:00",
+  "editor": "6000.4.12f1",
+  "runtimeAssertions": 24,
+  "unchangedOriginalSceneAndMetaFiles": 8,
+  "copiedPlayerFilesVerified": 150,
+  "startupScene": "Assets/Scenes/StartGame.unity",
+  "target": "Assets/Scenes/TheFirstScene_Seaside.unity",
+  "projectPackageEntries": 914,
+  "packages": [
+    {
+      "bytes": 103978485,
+      "sha256": "A6E6E0B952BF95D361D73B1FBEB678AED7B9D249F771BC419D8C6214FE2F44C4",
+      "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Windows.zip"
+    },
+    {
+      "bytes": 114898676,
+      "sha256": "DD613B3CD1660DFBDDDCC2C8907885BC3D6ED48716C7A2B5E61E41081ADC4552",
+      "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Project.zip"
+    }
+  ],
+  "unsavedSceneStatus": "Not inspected or saved; no original scene files modified",
+  "limits": [
+    "No full-level manual completion",
+    "No physical input manual test",
+    "No fullscreen toggle test",
+    "No settings-panel screenshot validation"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "isolate": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-163523-api-deprecation-cleanup\\validation\\Demo\\Project6.4",
+  "stamp": "20261031-163523-api-deprecation-cleanup",
+  "changedScripts": [
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\CameraBackgroundBoundsChecks.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\PlaytestRegression.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideArtAlignment.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\CameraPreview.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\PlaytestRuntimeChecks.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\RouteDisplay.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\WallJumpEditorChecks.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCell.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideHUD.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCamera.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasidePart1Backgrounds.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideBuilder.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideArtSetup.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideFeelUpgrade.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideHierarchyRefactor.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideSession.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideMotor.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideTests.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\StandaloneCalibration.cs",
+    "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\TrailVisualPreview.cs"
+  ],
+  "work": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Work\\20261031-163523-api-deprecation-cleanup",
+  "backup": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-163523-api-deprecation-cleanup"
+}

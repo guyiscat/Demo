@@ -95,7 +95,315 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 606
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a157527ffa33cf742af301f791183327
+      internalID: 1163040550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_1
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 503
+        width: 261
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa5f46f4bfc8d94b9a2e17c3fe74f97
+      internalID: 1800701745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_4
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 225
+        width: 281
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101f6e2168e7bf947a095a4abc0ddc89
+      internalID: -757857981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_5
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 0
+        width: 766
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1472bb588df79468128943750524a7
+      internalID: 1268468537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_2
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 793
+        width: 235
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20da6543b2b7a1945bd05bc8952b6867
+      internalID: -2140766991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_3
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 1288
+        width: 583
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687408d22cbba0646845490189d1b415
+      internalID: -74614070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_6
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 0
+        width: 589
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a788b186748b694d8dc8358b29dcdf1
+      internalID: 1083418817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_7
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 1257
+        width: 386
+        height: 1349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d37ed5f3af8a4aa7f4f6e921ee1f8
+      internalID: -2116089361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_8
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 2471
+        width: 250
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb8c17e573fba44cbfed127744718f7
+      internalID: 1750250382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_9
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 2783
+        width: 1589
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d42764ac1f44d47b89b8c1c40e8226
+      internalID: -800033979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_10
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 1813
+        width: 248
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1177da77d1dde9b4997f15af1fb1396d
+      internalID: 651523956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_11
+      rect:
+        serializedVersion: 2
+        x: 4335
+        y: 1803
+        width: 495
+        height: 976
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f704782c7ec1bb84c971cdb686ceeaba
+      internalID: 1460389840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_12
+      rect:
+        serializedVersion: 2
+        x: 3837
+        y: 2093
+        width: 498
+        height: 684
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25088b6017930c42a3e6c22fa5da4cd
+      internalID: -834012194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seaside_Terrain_Modules_13
+      rect:
+        serializedVersion: 2
+        x: 4979
+        y: 0
+        width: 1455
+        height: 1781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1eac288680b6446968607bd8892f9d
+      internalID: -2142576922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -109,7 +417,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Seaside_Terrain_Modules_0: 1163040550
+      Seaside_Terrain_Modules_1: 1800701745
+      Seaside_Terrain_Modules_10: 651523956
+      Seaside_Terrain_Modules_11: 1460389840
+      Seaside_Terrain_Modules_12: -834012194
+      Seaside_Terrain_Modules_13: -2142576922
+      Seaside_Terrain_Modules_2: -2140766991
+      Seaside_Terrain_Modules_3: -74614070
+      Seaside_Terrain_Modules_4: -757857981
+      Seaside_Terrain_Modules_5: 1268468537
+      Seaside_Terrain_Modules_6: 1083418817
+      Seaside_Terrain_Modules_7: -2116089361
+      Seaside_Terrain_Modules_8: 1750250382
+      Seaside_Terrain_Modules_9: -800033979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,7 @@ namespace Seaside
         void OnTriggerEnter2D(Collider2D c)
         {
             var player=c.GetComponent<SeasideMotor>();if(player==null)return;
-            var game=FindFirstObjectByType<SeasideSession>();if(game==null)return;
+            var game=FindAnyObjectByType<SeasideSession>();if(game==null)return;
             if(kind==CellKind.Spike)game.Die();
             if(kind==CellKind.Checkpoint)game.Checkpoint(this);
             if(kind==CellKind.Finish)game.Complete();

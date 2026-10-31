@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "completed": "2026-10-31T16:42:03.7768389+08:00",
+  "scriptsChanged": 20,
+  "deprecatedCallsMigrated": 40,
+  "warningsResolved": 50,
+  "csharpWarnings": 0,
+  "csharpErrors": 0,
+  "identityAndLookupChecks": 22,
+  "physicsChecks": 40,
+  "gameplayChecks": 203,
+  "cameraAssertions": 41143,
+  "startupRuntimeChecks": 24,
+  "existingSceneAndMetaFilesUnchanged": 10,
+  "copiedPlayerFilesVerified": 150,
+  "packages": [
+    {
+      "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Windows.zip",
+      "bytes": 109906043,
+      "sha256": "F0C252F51AEC4EDA4A670F7346B39CFF661B28317A58EDEA65DE397E908C571D",
+      "entries": 855
+    },
+    {
+      "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Project.zip",
+      "bytes": 120826197,
+      "sha256": "D91BD612FA2D249ECA902869E093C0EF6564EAE8AA4ECC548539CD27BD488E37",
+      "entries": 961
+    }
+  ],
+  "mainEditorStatus": "Awaiting focus/Assets Refresh; existing assemblies predate the migrated source",
+  "inputManagerAndPipelineMigration": "Not part of the 50 CS0618 warnings"
+}

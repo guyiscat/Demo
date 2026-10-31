@@ -69,3 +69,7 @@ SeasideArtRoot标识分层美术根；原SeasideArtAlignment方式仍可被预�
 Project6.4/Tools/BuildAndTest.ps1使用6.4并输出Play64，修复了复制工程后脚本误指向Project/和6.6的问题。旧版Play仅在本地归档，不作为构建入口。构建不再强制设置动作预设或保存未编辑的原关卡。
 
 回滚前先保存后续自己的改动，然后从Docs/Backups/20261029-hierarchy-refactor/Project6.4恢复对应场景、脚本与工具；旧副本中的Library/Temp等缓存不需要恢复。备份保留了重构前已保存的bg3，而不是最初的旧合成图版本。脚本改动与场景改动宜一起回滚，防止识别组件缺失。
+
+## bg3 镜头边界（2026-10-30）
+
+SeasideCamera 默认在运行时自动定位 SeasideArtRoot 下的 bg3，以其世界矩形限制完整视野；Tab 全图补黑边。没有 bg3 的旧关卡沿用原逻辑。本次不保存或改动现有场景，详细设置及验证见 [CameraBounds.md](CameraBounds.md)。

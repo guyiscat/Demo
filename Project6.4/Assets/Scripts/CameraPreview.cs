@@ -9,7 +9,7 @@ namespace Seaside
         string phase;
         void Start()
         {
-            game=GetComponent<SeasideSession>();player=game.player;follow=FindFirstObjectByType<SeasideCamera>();
+            game=GetComponent<SeasideSession>();player=game.player;follow=FindAnyObjectByType<SeasideCamera>();
             var map=SeasideMapRoot.FindInScene(gameObject.scene);if(map!=null){map.SetActive(false);Debug.Log("SEASIDE_PREVIEW_MAP_HIDDEN mode=camera scene="+gameObject.scene.name);}
             else throw new System.InvalidOperationException("Preview map root could not be resolved.");
             var sprite=player.GetComponent<SpriteRenderer>().sprite;

@@ -1,0 +1,6 @@
+PASS Existing camera comfort checks
+FAIL Camera viewport escaped the background: (0.57, -2.08, 0.00) / (154.43, 74.08, 0.00) bounds=Center: (77.50, 36.00, 0.00), Extents: (77.51, 38.08, 0.10)
+FAIL System.Exception: Camera viewport escaped the background: (0.57, -2.08, 0.00) / (154.43, 74.08, 0.00) bounds=Center: (77.50, 36.00, 0.00), Extents: (77.51, 38.08, 0.10)
+  at CameraBackgroundBoundsChecks.Check (System.Boolean condition, System.String message) [0x00024] in D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Assets\Editor\CameraBackgroundBoundsChecks.cs:22 
+  at CameraBackgroundBoundsChecks.CheckProjection (UnityEngine.Camera camera, UnityEngine.Bounds bounds) [0x0004e] in D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Assets\Editor\CameraBackgroundBoundsChecks.cs:30 
+  at CameraBackgroundBoundsChecks.Run () [0x003c9] in D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Assets\Editor\CameraBackgroundBoundsChecks.cs:82 

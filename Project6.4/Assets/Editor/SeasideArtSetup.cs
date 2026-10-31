@@ -48,10 +48,10 @@ public static class SeasideArtSetup
         var renderer = art.AddComponent<SpriteRenderer>();
         renderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(ArtPath);
         // Match the existing scene's built-in sprite shader.
-        renderer.sharedMaterial = UnityEngine.Object.FindFirstObjectByType<SeasideMotor>().GetComponent<SpriteRenderer>().sharedMaterial;
+        renderer.sharedMaterial = UnityEngine.Object.FindAnyObjectByType<SeasideMotor>().GetComponent<SpriteRenderer>().sharedMaterial;
         var alignment = art.AddComponent<SeasideArtAlignment>();
         alignment.Apply();
-        UnityEngine.Object.FindFirstObjectByType<SeasideCamera>().overview = true;
+        UnityEngine.Object.FindAnyObjectByType<SeasideCamera>().overview = true;
         EditorSceneManager.MarkSceneDirty(art.scene);
         EditorSceneManager.SaveOpenScenes();
         EditorBuildSettings.scenes = new[] {
@@ -70,13 +70,13 @@ public static class SeasideArtSetup
         EditorSceneManager.OpenScene(PreviewScene);
         var after = GeometrySignature();
         if (before != after) throw new Exception("Preview geometry differs from original scene.");
-        var art = UnityEngine.Object.FindFirstObjectByType<SeasideArtAlignment>();
-        var layered = UnityEngine.Object.FindFirstObjectByType<SeasideArtRoot>();
+        var art = UnityEngine.Object.FindAnyObjectByType<SeasideArtAlignment>();
+        var layered = UnityEngine.Object.FindAnyObjectByType<SeasideArtRoot>();
         if (art == null && layered == null) throw new Exception("Preview artwork root missing.");
         var visualRoot = art != null ? art.gameObject : layered.gameObject;
         if (!visualRoot.GetComponentsInChildren<SpriteRenderer>(true).Any(r => r.sprite != null)) throw new Exception("Preview sprites missing.");
         if (visualRoot.GetComponentsInChildren<Collider2D>(true).Length != 0) throw new Exception("Art must have no collider.");
-        var ground = UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsSortMode.None)
+        var ground = UnityEngine.Object.FindObjectsByType<SeasideCell>()
             .Where(c => c.kind == CellKind.Ground).Select(c => c.GetComponent<SpriteRenderer>()).Where(r => r != null).ToArray();
         var visibility = ground.Select(r => r.enabled).ToArray();
         foreach(var renderer in ground)renderer.enabled=false;

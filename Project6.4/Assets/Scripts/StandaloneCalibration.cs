@@ -22,7 +22,7 @@ namespace Seaside
                 for(int i=0;i<32;i++)Step(new SeasideInput{dashDown=i==0,aim=new Vector2(1,1)});
                 float distance=Vector2.Distance(p,motor.Body.position);Check(Mathf.Abs(distance-8)<.02f,"Mouse-aim diagonal dash distance="+distance.ToString("F4")+" map pixels / "+(distance/2).ToString("F4")+" bodies");
                 int uses=motor.DashUses;Step(new SeasideInput{dashDown=true,aim=Vector2.left});Check(motor.DashUses==uses,"Second air dash rejected");
-                var cells=FindObjectsByType<SeasideCell>(FindObjectsSortMode.None);
+                var cells=FindObjectsByType<SeasideCell>();
                 var checkpoint=Array.Find(cells,c=>c.kind==CellKind.Checkpoint);
                 motor.ResetAt(checkpoint.transform.position);Physics2D.SyncTransforms();Step(new SeasideInput());
                 Check(game.CheckpointId==checkpoint.checkpointId,"Actual yellow trigger activates checkpoint");

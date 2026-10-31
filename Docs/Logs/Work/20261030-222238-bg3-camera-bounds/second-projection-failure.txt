@@ -1,0 +1,6 @@
+PASS Existing camera comfort checks
+PASS Projection at (800, 600), corners/outside targets, translated/scaled/tiny background, transitions and pause
+FAIL Overview does not show full background height
+FAIL System.Exception: Overview does not show full background height
+  at CameraBackgroundBoundsChecks.Check (System.Boolean condition, System.String message) [0x00024] in D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Assets\Editor\CameraBackgroundBoundsChecks.cs:22 
+  at CameraBackgroundBoundsChecks.Run () [0x00323] in D:\UnityProjects\Demo\Docs\Backups\20261030-222238-bg3-camera-bounds\validation\Demo\Project6.4\Assets\Editor\CameraBackgroundBoundsChecks.cs:75 

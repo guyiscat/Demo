@@ -159,7 +159,7 @@ public static class SeasideBuilder
     public static void UpdateCharacterAndBuild()
     {
         var scene=EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
-        var motor=UnityEngine.Object.FindFirstObjectByType<SeasideMotor>();
+        var motor=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();
         var collider=motor.GetComponent<BoxCollider2D>();float previousHalf=collider.size.y*.5f;
         var cfg=motor.settings;cfg.bodySide=2;cfg.shortJumpHeight=6;cfg.longJumpHeight=10;cfg.dashDistance=10;
         EditorUtility.SetDirty(cfg);
@@ -167,8 +167,8 @@ public static class SeasideBuilder
         motor.transform.localScale=Vector3.one;collider.size=new Vector2(2,2);
         var picture=motor.GetComponent<SpriteRenderer>();picture.sprite=SpriteAsset("Player2x2",2);picture.drawMode=SpriteDrawMode.Sliced;picture.size=collider.size;
         motor.transform.position+=Vector3.up*lift;
-        var game=UnityEngine.Object.FindFirstObjectByType<SeasideSession>();game.startPoint+=Vector2.up*lift;
-        foreach(var cp in UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsSortMode.None))if(cp.kind==CellKind.Checkpoint)
+        var game=UnityEngine.Object.FindAnyObjectByType<SeasideSession>();game.startPoint+=Vector2.up*lift;
+        foreach(var cp in UnityEngine.Object.FindObjectsByType<SeasideCell>())if(cp.kind==CellKind.Checkpoint)
         {
             cp.respawn+=Vector2.up*lift;
             if(cp.respawnAnchor!=null)cp.respawnAnchor.position+=Vector3.up*lift;

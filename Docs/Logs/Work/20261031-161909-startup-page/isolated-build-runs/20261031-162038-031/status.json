@@ -1,0 +1,10 @@
+﻿{
+    "started":  "2026-10-31T16:20:38.0466823+08:00",
+    "unity":  "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project":  "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-161909-startup-page\\validation\\Demo\\Project6.4",
+    "phase":  "build",
+    "result":  "FAIL",
+    "editorExit":  1,
+    "error":  "Editor build/tests failed",
+    "finished":  "2026-10-31T16:21:07.3180379+08:00"
+}

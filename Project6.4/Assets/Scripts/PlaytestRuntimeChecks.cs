@@ -45,13 +45,13 @@ namespace Seaside
                 string reportFolder=Path.GetFullPath(Path.Combine(Application.dataPath,"../..","Docs"));
                 Directory.CreateDirectory(reportFolder);File.WriteAllLines(Path.Combine(reportFolder,"runtime-camera-comfort.csv"),comfort);
                 AfterimageChecks.Run(player,Check);
-                var cps=FindObjectsByType<SeasideCell>(FindObjectsSortMode.None).Where(c=>c.kind==CellKind.Checkpoint).OrderBy(c=>c.checkpointId).ToArray();
+                var cps=FindObjectsByType<SeasideCell>().Where(c=>c.kind==CellKind.Checkpoint).OrderBy(c=>c.checkpointId).ToArray();
                 game.Restart();game.Checkpoint(cps[5]);var p=game.RespawnPoint;
                 game.Checkpoint(cps[0]);game.Checkpoint(cps[2]);game.Respawn();
                 Check(game.CheckpointId==cps[5].checkpointId&&Vector2.Distance(player.Body.position,p)<.01f,"Old checkpoints cannot replace latest respawn");
                 game.Checkpoint(cps.Last());game.Checkpoint(cps[3]);
                 Check(game.CheckpointId==cps.Last().checkpointId,"Higher progression retained after touching older checkpoint");
-                var camera=FindFirstObjectByType<SeasideCamera>();
+                var camera=FindAnyObjectByType<SeasideCamera>();
                 // This assertion measures follow-mode framing, regardless of whether the
                 // authored scene starts in overview mode (the art preview deliberately does).
                 bool wasOverview=camera.overview;camera.overview=false;camera.Snap();Vector3 snap=camera.transform.position;

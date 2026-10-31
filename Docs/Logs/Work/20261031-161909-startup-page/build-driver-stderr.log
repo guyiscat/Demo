@@ -1,0 +1,8 @@
+Editor build/tests failed
+ËùÔÚÎ»ÖÃ D:\UnityProjects\Demo\Docs\Backups\20261031-161909-startup-page\validation\Demo\Project6.4\Tools\BuildAndTest.
+ps1:30 ×Ö·û: 27
++     if($editorExit -ne 0){throw 'Editor build/tests failed'}
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Editor build/tests failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : Editor build/tests failed
+ 

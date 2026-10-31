@@ -1,0 +1,137 @@
+[
+  {
+    "path": "Assets/Scenes/StartGame.unity",
+    "sha256": "F5D941AB2C41F8E83ED6FAA953C7D686D2C99D083C01AF339B10B851F269407E",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scenes/StartGame.unity.meta",
+    "sha256": "EDEDE2D7B683B8201384DFB8BBD1BB919CFDEB190C48C9F9EE80A712FB043654",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameMenu.cs",
+    "sha256": "9BA30A75F51027A66DA69435AFDD689970C3B4EB94C071C75B5CA014C5A16DCF",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameMenu.cs.meta",
+    "sha256": "3DB46F82AA04129D4E540722156E0174D7DDFB54560F1BA7946785D32F53EA65",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameButton.cs",
+    "sha256": "8A0CB53D28607FF2B18E7032101BB1D21C2AF3389C622F168B613214D8D07D0B",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameButton.cs.meta",
+    "sha256": "C72C67FA48A576B56607C0ECA303E1F0D282A33A42E0F51801902D9E28C481D7",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameMenuSmoke.cs",
+    "sha256": "98E71C24EC946E24B699DA8C7C1C073AAF8F11180FD64BC24C5127CE2164D028",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Scripts/StartGameMenuSmoke.cs.meta",
+    "sha256": "183ABA31F851B892364B189613479ADC4B23318617481361B9A99CF8B80336C5",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Editor/StartGameSetup.cs",
+    "sha256": "337C198DD18E7B92CA9D3F0E63E07C18580A6E1263936377277869A84F3D18DB",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Editor/StartGameSetup.cs.meta",
+    "sha256": "E419A80771BFC47C5DA8D154E12AA01DA50FBC4D730991B5A23C3DA439B5FFA2",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "ProjectSettings/EditorBuildSettings.asset",
+    "sha256": "119A860E86C7C8C418C234007FC0344EFDF1538E385E8D509BD00D9938260905",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Tools/BuildAndTest.ps1",
+    "sha256": "87FA6F349DB010A02E35EBC71AD028470AC5B5C969E86EB65EA0FCCA75E28CF3",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Tools/PackageRelease.ps1",
+    "sha256": "39D63F6F6F1227B70778528B1FC84D8E3B0BB28C631258F0317A20BBC099BCFE",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_bg.png.meta",
+    "sha256": "DACDC3646B40EDA45FAF9EC44547F732A33F9C4343EA218E963B02EBD1384C8F",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_demo.png.meta",
+    "sha256": "E375C779A912FDA4BB9E81BCCDF99FB65363CB7016F08C6C888230B14E841492",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_demoshadow.png.meta",
+    "sha256": "068D0697F82CB9FA4589C8EBB02E6E6997643B4C323C60617B3F1D98654DBBB6",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_exit_off.png.meta",
+    "sha256": "D2D7E84B152FA011B58EF59A55EFE8B3173C6562E1966446CA2F456B42660131",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_exit_on.png.meta",
+    "sha256": "29627D1F555F39D66F330BC8B9082525356CDD805631FDF44FA39E7B7EB1C516",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_light.png.meta",
+    "sha256": "9A123583527BEA3C5B0A79C6A540AFBB3D367576BE395AEA274EF7EF8019A945",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_line.png.meta",
+    "sha256": "BAD310961FAACC9A4008CA333C7F7098C8CF4960D8FF79D471EFAACFDD169893",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_logo.png.meta",
+    "sha256": "10BE8F62C12873625854469B49E74EE01BF0EFE972AEE08C682F61042BAB748B",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_mb.png.meta",
+    "sha256": "93F3D7FFE5728B0B59FE9BFF60DA80FA4DEDFE80E309F5EA5DEF4CCB877D712A",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_ring.png.meta",
+    "sha256": "28D125607B151130564DC5A60B0AA5AA9F512847047F1BB4BFAE5F15883D4830",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_set_off.png.meta",
+    "sha256": "30630561B7C4C95F0328AA71FA0A94A5DBB28E4C32249BA5C9519F33CAC17716",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_set_on.png.meta",
+    "sha256": "B7C3B2261D133668E687B5ECADA5C13AEC07C88BB5E062E5A657CEFABA2FF23C",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_start_off.png.meta",
+    "sha256": "C0D88301F90097A6426A4A5490A536E6640E542C007F634845314A9905B273E8",
+    "matchesValidatedCopy": true
+  },
+  {
+    "path": "Assets/Art/startgame/startgame_start_on.png.meta",
+    "sha256": "13EB135539BDCAEEF18BFAC80ECC3495BDA3211A2378A4587EBAEB4B641AB8EB",
+    "matchesValidatedCopy": true
+  }
+]

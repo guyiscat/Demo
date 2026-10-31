@@ -38,7 +38,7 @@ namespace Seaside
         Vector2 dashDirection;
         SpriteRenderer picture;
         SeasideSession session;
-        void Awake(){Body=GetComponent<Rigidbody2D>();picture=GetComponent<SpriteRenderer>();session=FindFirstObjectByType<SeasideSession>();}
+        void Awake(){Body=GetComponent<Rigidbody2D>();picture=GetComponent<SpriteRenderer>();session=FindAnyObjectByType<SeasideSession>();}
         void Update()
         {
             if(!externalInput)

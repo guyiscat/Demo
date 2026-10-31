@@ -21542,7 +21542,7 @@ MonoBehaviour:
   overview: 0
   mapSize: {x: 155, y: 73}
   tuning:
-    followSize: 10
+    followSize: 12
     horizontalSmooth: 0.22
     verticalSmooth: 0.3
     fastVerticalSmooth: 0.12

@@ -28,7 +28,7 @@ namespace Seaside
             var hint=new GUIStyle(small);hint.normal.textColor=new Color(.06f,.25f,.32f);
             GUI.Label(new Rect(35,613,1130,23),"HOLD TOWARD WALL  ATTACH + REFILL     TAB  MAP     B  BLUE ROUTE     R  RESPAWN     CTRL+R  RESTART     H  HELP",hint);
             GUI.Label(new Rect(1000,652,230,30),game.player.Attached?"ATTACHED / REFILLED":game.player.WallSliding?"SLOW WALL SLIDE":game.player.DashReady?"DASH READY":"DASH USED",center);
-            if(!FindFirstObjectByType<SeasideCamera>().overview)
+            if(!FindAnyObjectByType<SeasideCamera>().overview)
             {
                 Vector2 mouse=Input.mousePosition;mouse.y=Screen.height-mouse.y;mouse=new Vector2(mouse.x*1280/Screen.width,mouse.y*720/Screen.height);
                 GUI.Label(new Rect(mouse.x-8,mouse.y-13,24,26),"+",body);

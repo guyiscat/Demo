@@ -1,0 +1,8 @@
+PASS Seven water_multiple SpriteRenderers resolve to the existing Multiple asset
+water_multiple_0 -> water_multiple_0 at (25.170, 1.280, 0.000)
+water_multiple_1 -> water_multiple_1 at (-9.400, -15.300, 0.000)
+water_multiple_2 -> water_multiple_2 at (127.450, 15.830, 0.000)
+water_multiple_3 -> water_multiple_3 at (-11.000, 1.800, 0.000)
+water_multiple_4 -> water_multiple_4 at (-12.800, -7.000, 0.000)
+water_multiple_5 -> water_multiple_5 at (85.080, 18.180, 0.000)
+water_multiple_6 -> water_multiple_6 at (114.400, 18.700, 0.000)

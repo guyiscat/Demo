@@ -15,7 +15,7 @@ namespace Seaside
             var map=SeasideMapRoot.FindInScene(gameObject.scene);if(map!=null){map.SetActive(false);Debug.Log("SEASIDE_PREVIEW_MAP_HIDDEN mode=trail scene="+gameObject.scene.name);}
             else throw new System.InvalidOperationException("Preview map root could not be resolved.");
             player.ResetAt(new Vector2(55,30));
-            FindFirstObjectByType<SeasideCamera>().Snap();
+            FindAnyObjectByType<SeasideCamera>().Snap();
             var ground=new GameObject("Temporary visual calibration floor");ground.transform.position=new Vector3(70,26,0);
             var sr=ground.AddComponent<SpriteRenderer>();sr.sprite=player.GetComponent<SpriteRenderer>().sprite;
             Vector2 native=sr.sprite.bounds.size;

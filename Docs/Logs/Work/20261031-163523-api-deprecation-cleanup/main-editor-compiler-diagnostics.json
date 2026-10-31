@@ -1,0 +1,10 @@
+{
+  "scope": "Last script compilation marker to current editor log end",
+  "errorCount": 0,
+  "readOnly": true,
+  "warningCount": 100,
+  "status": "AWAITING_MAIN_EDITOR_REFRESH",
+  "interpretation": "The running main editor assemblies predate the migrated scripts. Counts refer to its previous compilation, not the validated migrated source.",
+  "runtimeAssemblyLastWriteTime": "2026-10-31T16:40:05.8941950+08:00",
+  "migratedSourceLastWriteTime": "2026-10-31T16:35:25.2182765+08:00"
+}

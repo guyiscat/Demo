@@ -1,0 +1,5 @@
+2026-10-30 first PackageRelease attempt failed after the Windows ZIP was created.
+Get-Item: Cannot find path D:\UnityProjects\Demo\Figures because it does not exist.
+PackageRelease.ps1 line 13 required Figures even though runtime assets are in Assets/Art.
+Figures was absent at packaging time; no attempt was made to recreate or restore it.
+The script now treats only the Figures source-art directory as optional. Required project content still fails if missing.

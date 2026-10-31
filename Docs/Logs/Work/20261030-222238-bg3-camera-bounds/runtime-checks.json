@@ -1,0 +1,14 @@
+[
+  {
+    "name": "regression",
+    "exitCode": 0
+  },
+  {
+    "name": "calibration",
+    "exitCode": 0
+  },
+  {
+    "name": "preview-smoke",
+    "exitCode": 0
+  }
+]

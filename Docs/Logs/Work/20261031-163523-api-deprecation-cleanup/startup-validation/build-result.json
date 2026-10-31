@@ -1,0 +1,10 @@
+{
+    "result": "Succeeded",
+    "bytes": 422640752,
+    "errors": 0,
+    "scenes": [
+        "Assets/Scenes/StartGame.unity",
+        "Assets/Scenes/TheFirstScene_Seaside.unity",
+        "Assets/Scenes/SeasideArtPreview_Recovered_20261031_1058.unity"
+    ]
+}

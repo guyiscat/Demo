@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using Seaside;
+
+// Temporary validation entry point, kept only in the isolated copy and work log.
+public static class ApiMigrationValidation
+{
+    static readonly List<string> results = new List<string>();
+    static void Check(bool condition, string message)
+    {
+        results.Add((condition ? "PASS " : "FAIL ") + message);
+        if (!condition) throw new Exception(message);
+    }
+
+    public static void Run()
+    {
+        if (!Application.isBatchMode) throw new Exception("Isolated batch use only");
+        string output = Path.Combine(SeasidePaths.ReleaseRoot, "Docs/api-migration-checks.txt");
+        Directory.CreateDirectory(Path.GetDirectoryName(output));
+        try
+        {
+            foreach (string path in Directory.GetFiles("Assets/Scenes", "*.unity"))
+            {
+                var scene = EditorSceneManager.OpenScene(path);
+                var all = scene.GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<MonoBehaviour>(true)).ToArray();
+                bool menu = all.OfType<StartGameMenu>().Any();
+                Check(all.OfType<SeasideSession>().Count(s => s.gameObject.activeInHierarchy) == (menu ? 0 : 1), path + " session uniqueness");
+                Check(all.OfType<SeasideMotor>().Count(s => s.gameObject.activeInHierarchy) == (menu ? 0 : 1), path + " player uniqueness");
+                Check(all.OfType<SeasideCamera>().Count(s => s.gameObject.activeInHierarchy) == (menu ? 0 : 1), path + " follow camera uniqueness");
+                if (!menu)
+                    Check(UnityEngine.Object.FindAnyObjectByType<SeasideSession>() == all.OfType<SeasideSession>().Single(), path + " new lookup resolves saved session");
+            }
+            EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            var a = new GameObject("BeforeRename");
+            var b = new GameObject("ExistingParent"); b.transform.position = new Vector3(5, 7, 0);
+            a.transform.position = new Vector3(1, 2, 0); a.AddComponent<BoxCollider2D>();
+            var objects = new[] { a, b };
+            var identities = objects.ToDictionary(o => o.GetEntityId(), o => o.name);
+            var snapshotMethod = typeof(SeasideHierarchyRefactor).GetMethod("Snapshot", BindingFlags.Static | BindingFlags.NonPublic);
+            var before = (Dictionary<string, string>)snapshotMethod.Invoke(null, new object[] { objects });
+            var id = a.GetEntityId(); a.name = "AfterRename"; a.transform.SetParent(b.transform, true);
+            var after = (Dictionary<string, string>)snapshotMethod.Invoke(null, new object[] { objects });
+            Check(a.GetEntityId() == id && identities[a.GetEntityId()] == "BeforeRename", "EntityId lookup survives rename and reparent");
+            Check(before.Count == after.Count && before.All(k => after.TryGetValue(k.Key, out var value) && value == k.Value), "Refactor snapshot preserves world transform and component data after regrouping");
+            EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
+            SeasideTests.Run();
+            EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
+            PlaytestRegression.Run();
+            CameraBackgroundBoundsChecks.Run();
+            Check(true, "Existing movement, checkpoint, respawn, camera and background framing checks completed");
+            Debug.Log("API_MIGRATION_CHECKS_PASS assertions=" + results.Count);
+        }
+        catch (Exception ex) { results.Add("FAIL " + ex); throw; }
+        finally { File.WriteAllLines(output, results); }
+    }
+}

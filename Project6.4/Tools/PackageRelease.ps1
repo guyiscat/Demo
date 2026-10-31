@@ -1,3 +1,4 @@
+param([switch]$StartupPage)
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -10,7 +11,13 @@ function Pack([string]$name,[string[]]$parts) {
     $zip=New-Object IO.Compression.ZipArchive($stream,[IO.Compression.ZipArchiveMode]::Create)
     try {
         foreach($part in $parts) {
-            $source=Join-Path $release $part;$item=Get-Item -LiteralPath $source
+            $source=Join-Path $release $part
+            # Art source files are optional; the playable PNGs are versioned in Assets.
+            if($part -eq 'Figures' -and !(Test-Path -LiteralPath $source)){
+                Write-Warning 'Figures source-art directory is absent; packaging canonical Assets only.'
+                continue
+            }
+            $item=Get-Item -LiteralPath $source
             $files=if($item.PSIsContainer){Get-ChildItem -LiteralPath $source -Recurse -File}else{@($item)}
             foreach($f in $files) {
                 if($f.Name -like '~$*'){continue} # Excel lock files are not map source files.
@@ -50,5 +57,11 @@ function Pack([string]$name,[string[]]$parts) {
     Write-Output $path
 }
 $projectName=Split-Path (Split-Path $PSScriptRoot -Parent) -Leaf
-Pack 'Seaside-Unity64-Hierarchy-Windows.zip' @('Play64','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
-Pack 'Seaside-Unity64-Hierarchy-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','Figures','maps','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
+if($StartupPage){
+    # Current checkout intentionally removed the legacy launcher .cmd files.
+    Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','README.md','CONTRIBUTING.md','Docs')
+    Pack 'Seaside-Unity64-Startup-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs')
+}else{
+    Pack 'Seaside-Unity64-Hierarchy-Windows.zip' @('Play64','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
+    Pack 'Seaside-Unity64-Hierarchy-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','Figures','maps','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
+}

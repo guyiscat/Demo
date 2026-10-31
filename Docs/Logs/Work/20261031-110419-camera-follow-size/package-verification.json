@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "packages": {
+    "Project": {
+      "result": "PASS",
+      "comparedFiles": 231,
+      "followSizes": {
+        "Seaside01": [
+          "12"
+        ],
+        "SeasideArtPreview": [
+          "12"
+        ]
+      },
+      "forbidden": [],
+      "mismatches": [],
+      "crcError": null
+    },
+    "Windows": {
+      "result": "PASS",
+      "comparedFiles": 148,
+      "followSizes": {},
+      "forbidden": [],
+      "mismatches": [],
+      "crcError": null
+    }
+  }
+}

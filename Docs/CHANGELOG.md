@@ -1,5 +1,49 @@
 # 项目工作与优化总日志
 
+## 2026-11-01：修复构建产物导致的 GitHub 大文件推送拒绝
+
+根目录 build 被误纳入最后一个未推送提交，两个 resS 超过 GitHub 普通 Git 单文件限制。补充 /build/ 忽略规则，仅取消构建产物的 Git 跟踪，保留全部本地游戏与 statgame.cmd。备份完整 Git 历史后修正该本地提交，再以正常快进方式推送；源码、美术、地图及现有场景不改写，不清理缓存或旧备份，不重建或重新打包游戏。
+
+完整记录：[工作日志](Logs/Work/20261101-121507-exclude-build-push/work-log.md)。回滚备份位于 Backups/20261101-121507-exclude-build-push/。
+
+
+## 2026-10-31：新增手动构建的快捷启动入口
+
+新增 Demo 根目录 statgame.cmd，使用相对脚本路径启动 build/FirstScene_Seaside/Seaside Whitebox.exe，支持含空格路径和缺失文件提示。README 增加入口说明；只读核对两个 Startup ZIP，分别为 Play64 Windows 成品快照和 Unity 源工程快照。本次未改场景、重建或新运行游戏，也未更新 ZIP。
+
+记录：[工作日志](Logs/Work/20261031-170614-statgame-launcher/work-log.md)。文档备份在 Backups/20261031-170614-statgame-launcher/。
+
+
+## 2026-10-31：统一迁移弃用的 Unity 对象查找和标识接口
+
+修改 20 个脚本的 40 处调用，消除用户列出的 50 条 CS0618：FindAnyObjectByType 替代旧单对象查找，批量查找移除弃用排序参数，层级日志标识改为 GetEntityId。保留非活动对象选项和明确的检查点排序；未屏蔽警告或改变序列化字段，原有关卡不重存。
+
+独立副本 C# 编译 0 warning/0 error；22 项查找与标识检查、40 项基础、203 项玩法回归、41,143 次镜头断言和 24 项启动页运行检查通过。Windows 构建成功，更新 Play64 及 Startup 两个交付包。Input Manager/渲染管线弃用提示不在本次迁移范围，未执行人工全关通关。
+
+详细记录：[工作日志](Logs/Work/20261031-163523-api-deprecation-cleanup/work-log.md)。原脚本、文档与试玩备份在 Backups/20261031-163523-api-deprecation-cleanup/。
+
+
+## 2026-10-31：配置独立游戏启动页
+
+新增 StartGame.unity，按 startgame.json.ps 还原 14 张素材，配置开始/选项/退出的鼠标与键盘操作；开始进入 TheFirstScene_Seaside。支持主音量、全屏及窗口等比取景，Build Scene List 以启动页为首并保留原启用场景。
+
+独立副本 Windows 构建成功（0 errors），启动页 24 项运行检查通过，生成 16:9/4:3/超宽预览并检查实际美术渲染。未重存现有地图，未保存或切换主编辑器场景；切换启动页前需用户自行保存当前关卡。Play64 更新为启动页构建，交付包名称带 Startup，工具增加 -StartupPage 模式。未执行全关通关或迁移输入系统。
+
+使用说明见 [StartupPage.md](StartupPage.md)，完整记录及失败日志见 [本次日志](Logs/Work/20261031-161909-startup-page/work-log.md)，备份位于 Backups/20261031-161909-startup-page/。
+
+
+## 2026-10-31：将跟随镜头适当拉远
+
+按用户要求将SeasideArtPreview及Seaside01的Follow Size从10调至12，普通可见宽高各增加约20%，保留bg3边界和全图适配。当前Unity原本有未保存修改，通过Inspector只调整此字段、不整体保存或重载；磁盘两场景各只修改一个数值。手动入口为MainCamera → Seaside Camera → Tuning → Follow Size，说明更新在CameraBounds.md。
+
+备份：Backups/20261031-110419-camera-follow-size/；日志、隔离构建及实际验证结果：Logs/Work/20261031-110419-camera-follow-size/。构建不包含用户尚未保存的其他编辑，未执行新人工全关通关。
+
+## 2026-10-30：按 bg3 背景矩形限制镜头可见范围
+
+用户明确选择 Background_Far/bg3 作为边界。SeasideCamera 自动读取背景实际位置和缩放，限制完整视野；Tab 全图及过渡按比例补黑边，加入像素对齐与实际投影校正。原 CameraMotion 跟随平滑参数不改，无 bg3 的场景保持原逻辑；没有保存用户场景或调整碰撞/玩法。
+
+镜头专项41143项断言与渲染检查通过。标准构建仍被用户当前预览地图与原白盒不一致的历史检查阻止，保留失败结果；专项已保存场景构建与运行检查结果以 Logs/Work/20261030-222238-bg3-camera-bounds/ 为准。说明见 CameraBounds.md，回滚快照在 Backups/20261030-222238-bg3-camera-bounds/。没有新人工全关通关或 Git 推送。
+
 ## 2026-10-30：整理 GitHub 协作目录与美术资源入口
 
 按用户确认开始整理：主目录只保留 Project6.4，旧 Project/、Play/、旧入口和重复 Figures 导出资源移至本地备份归档；恢复场景保留原位并排除提交，保留地形 Multiple 副本。统一 README、新增 CONTRIBUTING 和 Figures/Source 说明，配置 Git LFS 和文本属性。两个编辑器美术工具改读 Assets 中的统一资源；打包包含协作文档并排除恢复/重复压缩文件。历史日志和失败报告保留。

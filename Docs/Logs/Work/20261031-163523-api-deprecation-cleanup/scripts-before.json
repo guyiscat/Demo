@@ -1,0 +1,82 @@
+[
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\CameraBackgroundBoundsChecks.cs",
+    "Hash": "E666285B05F30D7C62371C8E75677E9F726656CA2D066CB8029E69F86CDEDF89"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\PlaytestRegression.cs",
+    "Hash": "8A2F2D87373CB60B5B51BF74BF6F45F54CFA3B1BFB2B1A2E6BC6001BBA46D831"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideArtAlignment.cs",
+    "Hash": "55B6624CE8B6E43A59146391B95768D9B29220373BF0A9A1561D6D4F4E9FE75F"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\CameraPreview.cs",
+    "Hash": "E4C5CA24B8E1C697232560B10C3E77687AE4CBF8DE6FACDD262A41768F085D63"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\PlaytestRuntimeChecks.cs",
+    "Hash": "798B205366A953B18877813A9D6F023721A01ADD7F9B051910D3D92A84455406"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\RouteDisplay.cs",
+    "Hash": "4F219A45CD5665E594C83BFFD96C762125AD86B1829FD9421958B033F6AB1CDD"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\WallJumpEditorChecks.cs",
+    "Hash": "2CAAF6C07502DF36FB5E62EF5D052B3E3C5323EAACFB9D695AD1699F21355CD3"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCell.cs",
+    "Hash": "9A0DDCF944F5DD31E758088AABBE7945852F9848C7AAE344BCBA56529A70EB5A"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideHUD.cs",
+    "Hash": "9488166F4F84078AACAD6A7F1C07D4F95E782293B630DC5592F984BA41E91BC9"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCamera.cs",
+    "Hash": "6D502BAB6DC59D4631B9B0D9151AD99246DEE7F0CD9C05F7071E7D5FAA5B3540"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasidePart1Backgrounds.cs",
+    "Hash": "E8A7FBE5D4E1D45BD26747FF2C521D9DCE4D9AB0F0C49894F80BCB2709D64D4D"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideBuilder.cs",
+    "Hash": "D19C54C04DC9D2B418953E45EE24E9D23EFEFEC27798832221A58BCB6907E96D"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideArtSetup.cs",
+    "Hash": "AF97C3118958EA214107972A709012384B9DFFAA96C21DF711741203EDB6D355"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideFeelUpgrade.cs",
+    "Hash": "A0A2985A0047B9D99F7B28131F70832270C428D0B499F9D677FF9715B97B62C4"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideHierarchyRefactor.cs",
+    "Hash": "FE689F4CCA27EB2B0E54D2689D5DF6B4517A6D0DB10C18BCC836019281AA7DE0"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideSession.cs",
+    "Hash": "F4DCBABFBB2B7525586307A2E43D4CE945D6BF5C460239DC445F8263395B166D"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideMotor.cs",
+    "Hash": "66E3A3A9884F05B1681E21EABC875DF78FE9606D72ADC42E5087DB7D640CA5C7"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Editor\\SeasideTests.cs",
+    "Hash": "4B9F637D1C52D0F19F06113A88F79F9E3779DEF998F32E97152218F6FEFC1608"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\StandaloneCalibration.cs",
+    "Hash": "7A891F84FAC34FF1F1B1DE11FAED8AC8C853C707F91FE91D24BB0B6C9233C163"
+  },
+  {
+    "Path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\TrailVisualPreview.cs",
+    "Hash": "8CC88D1F54E96CAF081972BE5EB2300F74D643420BE728BACEB18F4AB7B225A1"
+  }
+]

@@ -34,7 +34,7 @@ namespace Seaside
             if(!InputBlocked)Timer+=Time.deltaTime;
             if(Input.GetKeyDown(KeyCode.Escape)){Paused=!Paused;Time.timeScale=Paused?0:1;}
             if(Input.GetKeyDown(KeyCode.H))ShowHelp=!ShowHelp;
-            if(Input.GetKeyDown(KeyCode.Tab))FindFirstObjectByType<SeasideCamera>().overview^=true;
+            if(Input.GetKeyDown(KeyCode.Tab))FindAnyObjectByType<SeasideCamera>().overview^=true;
             if(Input.GetKeyDown(KeyCode.B))ShowRoute=!ShowRoute;
             if(Input.GetKeyDown(KeyCode.R)){if(Input.GetKey(KeyCode.LeftControl)||Won)Restart();else Respawn();}
         }
@@ -44,18 +44,18 @@ namespace Seaside
             if(cell.checkpointId<=CheckpointId)return;
             CheckpointId=cell.checkpointId;RespawnPoint=cell.respawnAnchor==null?cell.respawn:(Vector2)cell.respawnAnchor.position;
             SeasideLog.Event("CHECKPOINT","id="+CheckpointId+" spawn="+RespawnPoint);
-            foreach(var marker in FindObjectsByType<SeasideCell>(FindObjectsSortMode.None))if(marker.kind==CellKind.Checkpoint)
+            foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
             {
                 var sr=marker.GetComponent<SpriteRenderer>();if(sr!=null)sr.color=marker==cell?new Color(.3f,1,.65f):new Color(1,.78f,.2f);
             }
         }
         public void Die(){if(InputBlocked)return;Deaths++;SeasideLog.Event("DEATH","count="+Deaths+" position="+player.Body.position);Respawning=true;player.frozen=true;StartCoroutine(Revive());}
         IEnumerator Revive(){yield return new WaitForSeconds(.2f);Respawn();}
-        public void Respawn(){StopAllCoroutines();Respawning=false;player.ResetAt(RespawnPoint);FindFirstObjectByType<SeasideCamera>()?.Snap();}
+        public void Respawn(){StopAllCoroutines();Respawning=false;player.ResetAt(RespawnPoint);FindAnyObjectByType<SeasideCamera>()?.Snap();}
         public void Restart()
         {
             Won=Paused=Respawning=false;Time.timeScale=1;Timer=0;Deaths=CheckpointId=0;RespawnPoint=startPoint;
-            foreach(var marker in FindObjectsByType<SeasideCell>(FindObjectsSortMode.None))if(marker.kind==CellKind.Checkpoint)
+            foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
             {var sr=marker.GetComponent<SpriteRenderer>();if(sr!=null)sr.color=new Color(1,.78f,.2f);}
             Respawn();
         }
@@ -64,7 +64,7 @@ namespace Seaside
         IEnumerator Smoke(){yield return new WaitForSeconds(3);Debug.Log("SEASIDE_SMOKE_PASS player="+player.State+" ground="+player.Grounded);Application.Quit(0);}
         IEnumerator Capture(string path,bool map)
         {
-            yield return new WaitForSeconds(.5f);player.frozen=true;FindFirstObjectByType<SeasideCamera>().overview=map;
+            yield return new WaitForSeconds(.5f);player.frozen=true;FindAnyObjectByType<SeasideCamera>().overview=map;
             yield return new WaitForSeconds(2);yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(path);
             yield return new WaitForSeconds(.5f);Application.Quit();
         }

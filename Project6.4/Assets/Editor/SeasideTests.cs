@@ -27,7 +27,7 @@ public static class SeasideTests
     [MenuItem("Seaside/Run movement and import checks")]
     public static void Run()
     {
-        log.Clear();m=UnityEngine.Object.FindFirstObjectByType<SeasideMotor>();m.externalInput=true;
+        log.Clear();m=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();m.externalInput=true;
         var old=Physics2D.simulationMode;Physics2D.simulationMode=SimulationMode2D.Script;
         var fixture=new GameObject("TEMP calibration fixtures");Box("Calibration floor",new Vector2(-40,-.5f),new Vector2(24,1),fixture.transform);
         var wall=Box("Calibration wall",new Vector2(-20,10),new Vector2(1,20),fixture.transform);
@@ -76,7 +76,7 @@ public static class SeasideTests
             Check(m.DashUses==1&&!m.DashReady&&m.Body.linearVelocity.x< -20,"Click can dash away from attached wall");
             Reset(new Vector2(-40,1.2f));for(int i=0;i<40;i++)Step(new SeasideInput());Check(m.Grounded&&m.DashReady,"Ground contact resets dash");
             wall.GetComponent<SeasideCell>().attachable=false;Reset(new Vector2(-21.51f,8));Step(new SeasideInput{horizontal=1});Check(!m.Attached,"Per-wall attachable toggle is respected");
-            var cps=UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsSortMode.None).Where(c=>c.kind==CellKind.Checkpoint).ToArray();
+            var cps=UnityEngine.Object.FindObjectsByType<SeasideCell>().Where(c=>c.kind==CellKind.Checkpoint).ToArray();
             Check(cps.Length==12,"Imported all twelve yellow checkpoint groups");
             foreach(var cp in cps)
             {
@@ -87,11 +87,11 @@ public static class SeasideTests
                 bool safe=blocking.Length==0;
                 Check(safe,"Checkpoint "+cp.checkpointId+" safe respawn at "+p+(safe?"":" overlaps="+string.Join(";",blocking.Select(c=>c.name+" signedDistance="+Physics2D.Distance(playerCollider,c).distance+" playerBounds="+playerCollider.bounds))));
             }
-            var game=UnityEngine.Object.FindFirstObjectByType<SeasideSession>();game.Restart();game.Checkpoint(cps[0]);game.Respawn();
+            var game=UnityEngine.Object.FindAnyObjectByType<SeasideSession>();game.Restart();game.Checkpoint(cps[0]);game.Respawn();
             Check(Vector2.Distance(m.Body.position,cps[0].respawnAnchor.position)<.01f,"Checkpoint respawn uses draggable anchor world position");
             var map=JsonUtility.FromJson<ExcelMapData>(Resources.Load<TextAsset>("SeasideMap").text);
             Check(map.cells.Count(c=>c.kind=="ground")==1619&&map.cells.Count(c=>c.kind=="route")==84&&map.cells.Count(c=>c.kind=="checkpoint")==48,"Source cell counts exactly preserved");
-            Check(UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsSortMode.None).Count(c=>c.kind==CellKind.Finish)==1,"End goal exists on final deck");
+            Check(UnityEngine.Object.FindObjectsByType<SeasideCell>().Count(c=>c.kind==CellKind.Finish)==1,"End goal exists on final deck");
         }
         finally{UnityEngine.Object.DestroyImmediate(fixture);Physics2D.simulationMode=old;Directory.CreateDirectory(SeasideBuilder.Root+"/Docs");File.WriteAllLines(SeasideBuilder.Root+"/Docs/physics-tests.txt",log);}
         if(log.Any(s=>s.StartsWith("FAIL")))throw new Exception("Calibration failed; read Docs/physics-tests.txt");

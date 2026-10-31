@@ -21,8 +21,8 @@ public static class PlaytestRegression
     }
     public static void Run()
     {
-        results.Clear();player=UnityEngine.Object.FindFirstObjectByType<SeasideMotor>();player.externalInput=true;
-        var game=UnityEngine.Object.FindFirstObjectByType<SeasideSession>();game.Restart();
+        results.Clear();player=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();player.externalInput=true;
+        var game=UnityEngine.Object.FindAnyObjectByType<SeasideSession>();game.Restart();
         var mode=Physics2D.simulationMode;Physics2D.simulationMode=SimulationMode2D.Script;
         var fixture=new GameObject("Temporary playtest regression geometry");
         Solid(fixture.transform,"Right wall",new Vector2(-20,25),new Vector2(1,50));
@@ -81,7 +81,7 @@ public static class PlaytestRegression
             DashImpact(new Vector2(-140,5),new Vector2(1,-1),false,"Floor diagonal");
             MovementGraceChecks.Run(player,Check);
             WallJumpRegression.Run(player,Check);
-            var cps=UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsSortMode.None).Where(c=>c.kind==CellKind.Checkpoint).OrderBy(c=>c.checkpointId).ToArray();
+            var cps=UnityEngine.Object.FindObjectsByType<SeasideCell>().Where(c=>c.kind==CellKind.Checkpoint).OrderBy(c=>c.checkpointId).ToArray();
             game.Restart();game.Checkpoint(cps[0]);game.Checkpoint(cps[5]);
             Vector2 saved=game.RespawnPoint;int selected=game.CheckpointId;
             game.Checkpoint(cps[1]);game.Checkpoint(cps[0]);game.Checkpoint(cps[5]);
