@@ -29,3 +29,11 @@ GitHub 连接工具不提供本地 Git/LFS 推送，因此使用本机 Git 和�
 ## 回滚
 
 可从 repository-before.bundle 检出原提交到单独目录核对。原被拒绝的提交不应再次推送到 main，否则会重新触发大文件限制。若只需重新纳入某个构建，应优先改用 Release 附件，不恢复 /build 的 Git 跟踪。
+
+## 已完成的推送核对
+
+修正提交 cf3dc66067ba1f99aee0afb7fbc141ad7254a30b 已通过普通 git push origin main 成功推送；git ls-remote 确认实际远端 main 与该提交一致。LFS 检查 25 个对象完成，没有 GH001 或超限拒绝，也没有使用强制推送。
+
+修正前后提交树对比确认：除 build 的取消跟踪、.gitignore、CHANGELOG 和本次工作日志外，其余源码、美术、场景及配置完全相同。build 中 295 个本地文件的存在性、大小均保持一致；两个超过 100 MiB 的 resS 的 SHA256 也保持一致。Git 跟踪的 build 文件数为 0。待推送对象中的最大 blob 为 1.81 MiB，超过 100 MiB 的对象数为 0。
+
+结构化验证结果见 push-verification.json；终端推送原始输出留存在本地备份目录的 push-repaired-commit.log。此成功验证记录作为后续文档提交同步，不改变已经上传的游戏源码或本地构建。

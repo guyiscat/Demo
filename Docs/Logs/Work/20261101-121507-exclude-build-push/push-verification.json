@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "verifiedAt": "2026-11-01T12:18:01.0842804+08:00",
+  "originalRejectedCommit": "5231c66912ccf18ace6a48bec2da97431aede392",
+  "previousRemoteCommit": "61f94a2d70cfcd307c6fe7738d805a3e43de172c",
+  "repairedCommit": "cf3dc66067ba1f99aee0afb7fbc141ad7254a30b",
+  "remoteVerifiedCommit": "cf3dc66067ba1f99aee0afb7fbc141ad7254a30b",
+  "forcePush": false,
+  "removedFromGitTracking": 294,
+  "localBuildFilesPreserved": 295,
+  "largeBuildResourceHashesPreserved": true,
+  "oversizedPendingBlobs": 0,
+  "maximumPendingBlobMiB": 1.81,
+  "gameSourceArtAndScenesUnchanged": true,
+  "runtimeBuildPerformed": false,
+  "gitBackup": "Docs/Backups/20261101-121507-exclude-build-push/repository-before.bundle"
+}
