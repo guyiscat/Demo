@@ -155,9 +155,9 @@ PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
 PASS Switch + SPACE: side=1 delay=0.08 dt=0.02 v=(-8.00, 30.38)
 PASS Wall grace consumed once; upward next frames; side=1 dt=0.02
 PASS Expired wall grace rejects air jump; side=1 dt=0.02
-PASS Older and same checkpoint do not overwrite latest spawn
+PASS Revisiting a checkpoint restores its latest-contact spawn
 PASS Respawn still uses latest checkpoint after backtracking
-PASS Progression only advances to a later checkpoint
+PASS Both levels use the last touched checkpoint even after backtracking
 PASS Full restart permits fresh checkpoint progression
 PASS Camera 30/60/120 FPS common-time max deviations=0.253/0.080 cells
 PASS Dead zone rejects idle micro-jitter

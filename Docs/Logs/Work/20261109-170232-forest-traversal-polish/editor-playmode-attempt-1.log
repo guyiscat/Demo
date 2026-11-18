@@ -1,0 +1,2345 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-11-09T09:06:01.9371589Z"
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-09T09:06:01Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15292, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              0188863433b74e039d4f57bc8740e901
+  Correlation Id:          06eec184259d680afb59ea62f62b5ce5
+  External correlation Id: 9098346066325721047
+  Machine Id:              ZFwzWaW/sukllSN81qeQTq98vpY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.00s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-11-09T09:06:01.9750437Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 15669784159753-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.04s
+
+COMMAND LINE ARGUMENTS:
+D:\Development\Unity\6000.4.12f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4
+-executeMethod
+ForestMapRevision.RunPlayModeChecks
+-forestChecks
+-forestReport
+D:\UnityProjects\Demo\Docs\Logs\Work\20261109-170232-forest-traversal-polish\editor-playmode-checks-attempt-1.txt
+-logFile
+D:\UnityProjects\Demo\Docs\Logs\Work\20261109-170232-forest-traversal-polish\editor-playmode-attempt-1.log
+Successfully changed project path to: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4
+D:/UnityProjects/Demo/Docs/Backups/20261109-170232-forest-traversal-polish/Validation/Project6.4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [59336]  Target information:
+
+Player connection [59336]  * "[IP] 114.212.84.66 [Port] 55505 [Flags] 2 [Guid] 754109336 [EditorId] 754109336 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [59336]  * "[IP] 192.168.96.1 [Port] 55505 [Flags] 2 [Guid] 754109336 [EditorId] 754109336 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [59336] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [59336] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-36300" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/Development/Unity/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Docs/Backups/20261109-170232-forest-traversal-polish/Validation/Project6.4/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Development/Unity/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000790 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.263 seconds
+Domain Reload Profiling: 588ms
+	BeginReloadAssembly (110ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (94ms)
+		AnalyzeDomain (132ms)
+			TypeCache.Refresh (130ms)
+				TypeCache.ScanAssembly (120ms)
+	FinalizeReload (264ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 7 packages:
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.2d.sprite@3a9210fbfba9)
+    com.unity.modules.audio@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261109-170232-forest-traversal-polish\Validation\Project6.4\Library\PackageCache\com.unity.modules.screencapture)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Docs/Backups/20261109-170232-forest-traversal-polish/Validation/Project6.4
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s653ms
+[161/167    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[165/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[166/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (0.62 seconds), 3 items updated, 167 evaluated
+AssetDatabase: script compilation time: 1.591800s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.322 seconds
+Domain Reload Profiling: 668ms
+	BeginReloadAssembly (272ms)
+		DisableScriptedObjects (28ms)
+		CreateAndSetChildDomain (139ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (15ms)
+		LoadAssemblies (78ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (6ms)
+	FinalizeReload (323ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (71ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=28cdc35cb5bcdd541b20454a15056862): Total: 2.445 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=386 ms
+		Asset DB Callback time: managed=38 ms, native=78 ms
+		Scripting: domain reloads=1, domain reload time=345 ms, compile time=1593 ms, other=2 ms
+		Project Asset Count: scripts=70, non-scripts=122
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 3.870ms
+	ApplyChangesToAssetFolders: 0.177ms
+	Scan: 20.150ms
+	OnSourceAssetsModified: 0.588ms
+	CategorizeScriptCompilationAssets: 0.234ms
+	ProcessAssetsWithTransientArtifactChanges: 1.612ms
+	CategorizeAssets: 1.794ms
+	CompileScripts: 1593.099ms
+	ImportOutOfDateAssets: 323.491ms (323.268ms without children)
+		UnloadImportedAssets: 0.086ms
+		OnDemandSchedulerStart: 0.114ms
+	PostProcessAllAssets: 113.662ms
+		VCAutoAddAssetPostprocess 74.882ms
+		MonoPostProcessAllAssets: 38.468ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.520ms
+			AssetPostprocessor.OnPostprocessAllAssets 8.133ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 5.058ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.952ms
+			SyncVS.PostprocessSyncProject 1.515ms
+			AssetChangedListener.OnPostprocessAllAssets 1.118ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.805ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.544ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.427ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.405ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.368ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.266ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.178ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.156ms
+			AssetEvents.OnPostprocessAllAssets 0.154ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.127ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.104ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.087ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.085ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.063ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.051ms
+	PostAssetChangesProfiler: 0.315ms
+	UnloadStreamsBegin: 0.972ms
+	GenerateScriptTypeHashes: 0.784ms
+	GenerateScriptTypeSerializationHashes: 1.732ms
+	Untracked: 382.276ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 5.367ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Seaside Whitebox
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 129 unused Assets / (0.5 MB). Loaded Objects now: 755.
+Memory consumption went from 93.5 MB to 92.9 MB.
+Total: 3.580500 ms (FindLiveObjects: 0.041600 ms CreateObjectMapping: 0.007400 ms MarkObjects: 3.355700 ms  DeleteObjects: 0.173400 ms)
+
+Opening scene 'Assets/Scenes/ForestWhitebox.unity'
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/ForestWhitebox.unity'
+	Deserialize:            63.082 ms
+	Integration:            44.764 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   107.906 ms
+Unloading 1 unused Assets / (0.5 KB). Loaded Objects now: 6702.
+Memory consumption went from 100.2 MB to 100.2 MB.
+Total: 3.494000 ms (FindLiveObjects: 0.288400 ms CreateObjectMapping: 0.023700 ms MarkObjects: 3.165100 ms  DeleteObjects: 0.015900 ms)
+
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+[Project] Loading completed in 4.197 seconds
+	Project init time: 				3.670 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.311 seconds
+		Asset Database init time: 		0.100 seconds
+		Global illumination init time: 	0.003 seconds
+		Assemblies load time: 			0.610 seconds
+		Unity extensions init time: 	0.000 seconds
+		Asset Database refresh time: 	2.445 seconds
+	Scene opening time: 			0.195 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1794215166026,"processId":36300,"projectLoad":4.196771,"projectInit":3.6698573,"templateInit":0.0,"packageManagerInit":0.3111699,"assetDatabaseInit":0.0997053,"globalIlluminationInit":0.0032593,"assembliesLoad":0.6098279,"unityExtensionsInit":0.0004303,"assetDatabaseRefresh":2.4454389,"sceneOpening":0.1947356}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1794215166071,"processId":36300,"editorVersion":"6000.4.12f1 (3ca267ce8005)","branch":"6000.4/respin/6000.4.12f1-6df48370b9ce","buildType":"Release","platform":"Windows"}
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.324 seconds
+Domain Reload Profiling: 541ms
+	BeginReloadAssembly (150ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (11ms)
+		LoadAssemblies (68ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+	FinalizeReload (325ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=b6a85b62d5bd5cc4884b1e8cd539c11e): Total: 0.588 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=344 ms
+		Asset DB Callback time: managed=14 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=227 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=70, non-scripts=122
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 0.777ms
+	CategorizeAssets: 1.323ms
+	CompileScripts: 1.234ms
+	ImportOutOfDateAssets: 325.258ms (325.070ms without children)
+		OnDemandSchedulerStart: 0.111ms
+	PostProcessAllAssets: 14.507ms
+		MonoPostProcessAllAssets: 14.502ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.520ms
+			AssetPostprocessor.OnPostprocessAllAssets 8.133ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.393ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 3.952ms
+			SyncVS.PostprocessSyncProject 1.472ms
+			AssetChangedListener.OnPostprocessAllAssets 1.118ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.805ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.524ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.427ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.405ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.368ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.227ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.178ms
+			AssetEvents.OnPostprocessAllAssets 0.154ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.128ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.107ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.104ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.087ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.085ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.054ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.051ms
+	UnloadStreamsBegin: 0.071ms
+	GenerateScriptTypeHashes: 0.637ms
+	GenerateScriptTypeSerializationHashes: 1.344ms
+	Untracked: 242.054ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            43.688 ms
+	Integration:            102.228 ms
+	Integration of assets:  0.067 ms
+	Thread Wait Time:       -0.017 ms
+	Total Operation Time:   145.966 ms
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Start Indexing on Editor startup
+ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+  at System.Collections.Generic.List`1[T].get_Item (System.Int32 index) [0x00009] in <f713e1c3c5f545ce9b1df47230f4f853>:0 
+  at UnityEditor.Search.SearchDatabase+<EnumerateAll>d__80.MoveNext () [0x00089] in <6b9e5fed84e24ba6ad30922f4a0b25b6>:0 
+  at System.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) [0x00045] in <101642b95873440bbf9fec45cfcaa487>:0 
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00000] in <101642b95873440bbf9fec45cfcaa487>:0 
+  at UnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () [0x00005] in <6b9e5fed84e24ba6ad30922f4a0b25b6>:0 
+  at UnityEditor.Search.SearchInit.IndexationOnStartup () [0x0000a] in <6b9e5fed84e24ba6ad30922f4a0b25b6>:0 
+  at UnityEditor.EditorApplication.Internal_CallDelayFunctions () [0x00029] in <b2eb3a993ec44b92abc19c05010e7fa0>:0 
+
+PASS Forest starts with independent teleport charge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:54)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Configured original spawn remains available regardless of editor preview player position
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:56)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Forest ordinary locomotion uses original ground probe
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:61)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Forest tap jump remains 4 cells: 3.999975
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:64)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Forest hold jump remains 8 cells: 7.999607
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:68)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Original dash remains 8 cells
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:71)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Dash does not consume teleport charge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:72)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Remaining on the same ground cannot refill a launched teleport every physics tick
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS First right click emits small fast beacon and spends charge
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:76)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Beacon is smaller than player and faster than dash
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:77)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Teleport launch does not consume dash
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:78)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Second right click teleports to current beacon
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:80)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS No second teleport before renewed terrain contact
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:81)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Range expiry automatically teleports at 10-cell ruler distance
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:84)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Maximum-distance landing and charge remain correct
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:85)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Terrain impact resolves full-body safe landing
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:88)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Player never embeds in hit wall
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:89)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Narrow-beacon passage cannot embed larger player; travelled samples fall back safely
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:95)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Pause blocks beacon progress and second-click teleport
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:100)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Resume continues existing beacon flight
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:101)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS New black-wall contact restores teleport and original wall hover
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:104)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Gray wall forbids attachment without changing Seaside wall behaviour
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:106)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Full body may catch cable from above, without old center-height rejection
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:112)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Body edge plus small padding reaches cable endpoint
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:113)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Expanded catch does not reach a distant cable
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:114)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS W grabs when feet/body overlap the cable from above
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS W grabs when body side touches a cable endpoint
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:118)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS W catches an actually contacted cable
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:123)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Zipline resets both dash and teleport
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:124)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Zipline moves uphill in facing direction without gravity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:126)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Editable ziplineSpeed controls real cable travel in units per second
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Space detaches rail with original full jump launch
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:131)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Jump detach cooldown prevents immediate W recatch
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:132)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Facing left reverses sloped rail travel and allows downhill riding
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:136)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Cable endpoint releases the character rather than trapping it pos=(-119.31, 44.18) rail=False
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:139)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Respawn clears all Forest transient traversal state
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:142)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Respawn removes beacon and trail
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:143)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Original red-cell hazard kills Forest player through the existing trigger
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:146)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Near left approach starts settled
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:183)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Near mode uses camera bounds without black mask
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:184)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Left near view ends at waterfall
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:185)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Partial body crossing keeps original region
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:187)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Full crossing starts smooth transition instead of snapping
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:190)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS First camera step is limited by exposed speed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:191)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Both sides are unmasked during camera motion
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:192)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Waterfall transition eventually arrives
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:SettleCamera () (at Assets/Scripts/ForestRuntimeChecks.cs:176)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:193)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Right near view obeys waterfall boundary after arrival
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:194)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Reverse crossing pans gradually from previous displayed pose
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:197)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Waterfall transition eventually arrives
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:SettleCamera () (at Assets/Scripts/ForestRuntimeChecks.cs:176)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:198)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Settled near boundary holds at aspect 1.333333
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:202)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Settled near boundary holds at aspect 1.777778
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:202)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Settled near boundary holds at aspect 2.333333
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:202)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Left overview hides right side when settled
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:CheckOverviewMask (int,string) (at Assets/Scripts/ForestRuntimeChecks.cs:231)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:205)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Overview partial crossing retains original mask
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:CheckOverviewMask (int,string) (at Assets/Scripts/ForestRuntimeChecks.cs:231)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:207)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Overview full crossing reveals both sides during transition
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:209)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Waterfall transition eventually arrives
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:SettleCamera () (at Assets/Scripts/ForestRuntimeChecks.cs:176)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:210)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Overview masks left side only after arrival
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:CheckOverviewMask (int,string) (at Assets/Scripts/ForestRuntimeChecks.cs:231)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:210)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Reverse overview crossing also reveals both sides
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:212)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Waterfall transition eventually arrives
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:SettleCamera () (at Assets/Scripts/ForestRuntimeChecks.cs:176)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:213)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Reverse overview crossing masks right side after arrival
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:CheckOverviewMask (int,string) (at Assets/Scripts/ForestRuntimeChecks.cs:231)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:213)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Tab return to near disables black mask
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:215)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Settled overview-to-near transition respects boundary
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:216)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Reversing midway does not jump the camera
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:222)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Respawn cancels cross-waterfall transition
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWaterfall () (at Assets/Scripts/ForestRuntimeChecks.cs:224)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:148)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_AS31
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_AS31
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_BM43
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_BM43
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_BM57
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_BM57
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_IE58
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_IE58
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_JK69
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_JK69
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_BD74
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_BD74
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_JK79
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_JK79
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_KV93
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_KV93
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_AV99
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_AV99
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_CB100
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_CB100
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_LE103
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_LE103
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_JR111
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_JR111
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail catches player: Zipline_HZ118
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:243)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Actual saved rail supports forward travel: Zipline_HZ118
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestSavedRails () (at Assets/Scripts/ForestRuntimeChecks.cs:245)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:150)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Normal wheel remains still before both locks
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:254)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Saved left unlock collider activates one puzzle lock
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:256)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Same lock is not counted twice
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:257)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Goal contact completes with one lock instead of silently rejecting player
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:259)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Saved right unlock completes puzzle
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:262)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint respawn preserves wheel unlock progress
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:263)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Waterwheel only turns clockwise
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:266)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Negative speed input cannot reverse rotation
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:268)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Standing finds current physical platform support
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:273)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS A/D walking works on first platform landing
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:275)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Player can reverse direction freely on wheel platform
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:277)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Platform jump uses normal motor instead of locked ride
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:278)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Jumping then landing re-acquires same platform automatically
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:281)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS After a jump, platform still carries the player upwards
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:285)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Jumping on rotating rising wheel can land back on it and restore support
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:297)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Finite traction eventually lets idle player slip off: ticks=57
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:303)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FAIL Active forward input keeps pace longer than idle and climbs real wheel: controlled=569 idle=57 rise=4.61422 end=(172.99, 93.34)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:317)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Boarding and re-landing never reverse the wheel
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:318)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Ordinary jump from clockwise wheel reaches real final platform without forced transfer pos=(176.55, 100.58)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:334)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Right-side platform descends clockwise without boarding reversal
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:340)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Full restart resets real puzzle progress
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:342)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Inspector preview spins clockwise without faking puzzle switches
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:344)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Preview goal contact completes without requiring puzzle switches
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:346)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Paused session cannot complete goal
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:350)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Resuming inside goal completes through trigger stay even with zero locks
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:352)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Real upper-deck goal completes after both locks
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestWheelAndGoal () (at Assets/Scripts/ForestRuntimeChecks.cs:355)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:151)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FAIL Six intermediate checkpoints available
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:361)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint trigger advances ID 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:365)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Death returns to current anchor 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:367)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint spawn clears terrain and spikes 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:368)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint settles safely on floor 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:369)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint trigger advances ID 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:365)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Death returns to current anchor 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:367)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint spawn clears terrain and spikes 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:368)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint settles safely on floor 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:369)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint trigger advances ID 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:365)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Death returns to current anchor 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:367)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint spawn clears terrain and spikes 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:368)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint settles safely on floor 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:369)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint trigger advances ID 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:365)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Death returns to current anchor 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:367)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint spawn clears terrain and spikes 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:368)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint settles safely on floor 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:369)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint trigger advances ID 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:365)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Death returns to current anchor 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:367)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint spawn clears terrain and spikes 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:368)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Checkpoint settles safely on floor 5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:369)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FAIL Revisiting a lower ID becomes the latest checkpoint
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:373)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FAIL Death after backtracking returns to last touched lower ID
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:375)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FAIL Manual respawn uses latest checkpoint
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:376)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+PASS Full restart clears checkpoint and returns to original spawn
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks:Check (bool,string) (at Assets/Scripts/ForestRuntimeChecks.cs:27)
+Forest.ForestRuntimeChecks:TestCheckpoints () (at Assets/Scripts/ForestRuntimeChecks.cs:377)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:152)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 27)
+
+FOREST_RUNTIME_FAIL
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Forest.ForestRuntimeChecks/<Start>d__15:MoveNext () (at Assets/Scripts/ForestRuntimeChecks.cs:161)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Scripts/ForestRuntimeChecks.cs Line: 161)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-user-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-user channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1794215168103,"processId":36300,"allocatedMemory":10948144,"memoryLabels":[{"Default":164677},{"Permanent":15276},{"NewDelete":65395},{"Thread":4230344},{"Manager":37997},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":833520},{"Material":24},{"GfxDevice":55320},{"Animation":392},{"Audio":2632},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":1080},{"Input":9880},{"JobScheduler":33024},{"TextLib":216},{"Mono":32},{"ScriptingNativeRuntime":155052},{"BaseObject":1620304},{"Resource":1184},{"Renderer":3008},{"Transform":4685},{"File":4017},{"WebCam":616},{"Culling":32},{"Terrain":11394},{"Wind":24},{"STL":40},{"String":18426},{"StaticString":6718},{"Utility":2674950},{"Curl":2792},{"PoolAlloc":2072},{"AI":80},{"TypeTree":11341},{"ScriptManager":448},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":120},{"GI":7792},{"Director":8320},{"CloudService":8720},{"WebRequest":808},{"VR":48050},{"SceneManager":504},{"Video":64},{"LazyScriptCache":32},{"Camera":17},{"Secure":2377},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":648},{"Hierarchy":608},{"CoreStats":13112},{"Identifiers":12960},{"Gui":128},{"EditorUtility":81646},{"VersionControl":4},{"Undo":931},{"AssetDatabase":387550},{"EditorGi":328},{"UnityConnect":37777},{"Upm":1912},{"UpmDiagnostics":8},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":258},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2938},{"Windowing":456},{"Licensing":776},{"AssetReference":32},{"IPCStream":32}]}

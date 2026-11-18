@@ -1,0 +1,9 @@
+LOG_FOLDER=D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Docs\Logs\Build\20261106-133105-898
+Forest runtime checks failed
+At D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Tools\Build
+AndTest.ps1:38 char:31
++         if($forestExit -ne 0){throw 'Forest runtime checks failed'}
++                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Forest runtime checks failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : Forest runtime checks failed
+ 

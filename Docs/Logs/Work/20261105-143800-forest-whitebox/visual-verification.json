@@ -1,0 +1,29 @@
+[
+  {
+    "image": "forest-start.png",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "allBlack": false,
+    "sameAsReviewedCameraRender": true
+  },
+  {
+    "image": "forest-overview-left.png",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "allBlack": false,
+    "sameAsReviewedCameraRender": false
+  },
+  {
+    "image": "forest-overview-right.png",
+    "dimensions": [
+      1440,
+      900
+    ],
+    "allBlack": false,
+    "sameAsReviewedCameraRender": true
+  }
+]

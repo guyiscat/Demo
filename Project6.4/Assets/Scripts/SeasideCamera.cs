@@ -19,7 +19,11 @@ namespace Seaside
         Rect originalViewport;
         bool viewportCaptured,lookedForBackground;
         bool ready;
-        void Awake(){EnsureCamera();}
+        void Awake(){EnsureCamera();ApplySystemSettings();}
+        public void ApplySystemSettings()
+        {
+            if(GameSystemSettings.Current!=null)tuning=GameSystemSettings.Current.CopyCameraTuning();
+        }
         void Start(){Snap();}
         void LateUpdate(){UpdateView(Time.deltaTime);}
         public void UpdateView(float deltaTime)

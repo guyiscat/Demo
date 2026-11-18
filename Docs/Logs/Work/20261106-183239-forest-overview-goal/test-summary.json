@@ -1,0 +1,32 @@
+{
+  "buildStatus": {
+    "started": "2026-11-06T18:40:03.2459522+08:00",
+    "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261106-183239-forest-overview-goal\\Validation\\Project6.4",
+    "phase": "forest-runtime",
+    "result": "PASS",
+    "editorExit": 0,
+    "forestExit": 0,
+    "finished": "2026-11-06T18:40:29.2300034+08:00"
+  },
+  "forestEditor": {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261106-183239-forest-overview-goal\\Validation\\Docs\\Logs\\Build\\20261106-184003-242\\editor-reports\\forest-editor-checks.txt",
+    "passed": 1874,
+    "failed": 0
+  },
+  "seasideBasics": {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261106-183239-forest-overview-goal\\Validation\\Docs\\Logs\\Build\\20261106-184003-242\\editor-reports\\physics-tests.txt",
+    "passed": 40,
+    "failed": 0
+  },
+  "seasideRegression": {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261106-183239-forest-overview-goal\\Validation\\Docs\\Logs\\Build\\20261106-184003-242\\editor-reports\\playtest-regression.txt",
+    "passed": 203,
+    "failed": 0
+  },
+  "forestRuntime": {
+    "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261106-183239-forest-overview-goal\\Validation\\Docs\\Logs\\Build\\20261106-184003-242\\forest-runtime-checks.txt",
+    "passed": 106,
+    "failed": 0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "packages": [
+    {
+      "archive": "Seaside-Unity64-Startup-Windows.zip",
+      "entriesVerified": 1575,
+      "allEntryHashesMatch": true
+    },
+    {
+      "archive": "Seaside-Unity64-Startup-Project.zip",
+      "entriesVerified": 1590,
+      "allEntryHashesMatch": true
+    },
+    {
+      "archive": "Forest-Unity64-Whitebox-Windows.zip",
+      "entriesVerified": 147,
+      "allEntryHashesMatch": true
+    },
+    {
+      "archive": "Forest-Unity64-Whitebox-Project.zip",
+      "entriesVerified": 1589,
+      "allEntryHashesMatch": true
+    }
+  ],
+  "shareZipMatches": true,
+  "deliveredBuildFilesVerified": 296,
+  "originalScriptGuidsPreserved": 63,
+  "movedOriginalScripts": 39,
+  "protectedFilesUnchanged": 174,
+  "onlyAllowedAssetChange": "Forest.asset: arrow fields moved to GameSystems.asset",
+  "gameplaySceneAndImageChanges": 0,
+  "firstLevelRuntimeAssertions": 34,
+  "forestRuntimeAssertions": 234,
+  "result": "PASS"
+}

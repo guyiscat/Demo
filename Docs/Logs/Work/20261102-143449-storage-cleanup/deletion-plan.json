@@ -1,0 +1,326 @@
+[
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-170137-github-handoff\\validation",
+    "kind": "directory",
+    "bytes": 634832939,
+    "fileCount": 770
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-222238-bg3-camera-bounds\\validation",
+    "kind": "directory",
+    "bytes": 1447298473,
+    "fileCount": 1871
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-110419-camera-follow-size\\validation",
+    "kind": "directory",
+    "bytes": 1449772376,
+    "fileCount": 1843
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-161909-startup-page\\validation",
+    "kind": "directory",
+    "bytes": 1493899945,
+    "fileCount": 1875
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-163523-api-deprecation-cleanup\\validation",
+    "kind": "directory",
+    "bytes": 1498345653,
+    "fileCount": 1908
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261027-demo-migration-seaside-art\\Play",
+    "kind": "directory",
+    "bytes": 91878752,
+    "fileCount": 145
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-170137-github-handoff\\archived\\Play",
+    "kind": "directory",
+    "bytes": 228381605,
+    "fileCount": 160
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-170137-github-handoff\\before\\Play64",
+    "kind": "directory",
+    "bytes": 317510543,
+    "fileCount": 147
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-222238-bg3-camera-bounds\\replaced-Play64",
+    "kind": "directory",
+    "bytes": 317510543,
+    "fileCount": 147
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-222238-bg3-camera-bounds\\before\\Play64",
+    "kind": "directory",
+    "bytes": 317510543,
+    "fileCount": 147
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-part1-backgrounds\\Play64",
+    "kind": "directory",
+    "bytes": 170847483,
+    "fileCount": 147
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-110419-camera-follow-size\\before\\Play64",
+    "kind": "directory",
+    "bytes": 407925515,
+    "fileCount": 148
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-161909-startup-page\\before\\Play64",
+    "kind": "directory",
+    "bytes": 407925515,
+    "fileCount": 148
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261031-163523-api-deprecation-cleanup\\before\\Play64",
+    "kind": "directory",
+    "bytes": 422641220,
+    "fileCount": 150
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261029-hierarchy-refactor\\Project6.4\\Library",
+    "kind": "directory",
+    "bytes": 840268654,
+    "fileCount": 986
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261030-170137-github-handoff\\archived\\Project\\Library",
+    "kind": "directory",
+    "bytes": 394199572,
+    "fileCount": 1271
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Play64",
+    "kind": "directory",
+    "bytes": 422641220,
+    "fileCount": 150
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\build\\SeasideReview",
+    "kind": "directory",
+    "bytes": 407636447,
+    "fileCount": 144
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175241-686\\Seaside-PlaytestFix-v3-Project.zip",
+    "kind": "file",
+    "bytes": 70991112,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175241-686\\Seaside-PlaytestFix-v3-Windows.zip",
+    "kind": "file",
+    "bytes": 78340976,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175340-082\\previous-Seaside-PlaytestFix-v3-Project.zip",
+    "kind": "file",
+    "bytes": 70991112,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175340-082\\previous-Seaside-PlaytestFix-v3-Windows.zip",
+    "kind": "file",
+    "bytes": 78340976,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175340-082\\Seaside-PlaytestFix-v3-Project.zip",
+    "kind": "file",
+    "bytes": 70991731,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261027-175340-082\\Seaside-PlaytestFix-v3-Windows.zip",
+    "kind": "file",
+    "bytes": 78340976,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-104618-923\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 70781838,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-104726-692\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 209258207,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-104726-692\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 72679956,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-114810-550\\previous-Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 209258207,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-114810-550\\previous-Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 72679956,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-114810-550\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 211055421,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-114810-550\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 87471119,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-171516-196\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 98466918,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-171516-196\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 86256462,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-223349-481\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 93609942,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-223349-481\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 93511082,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-223505-206\\previous-Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 93511082,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-223505-206\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 107190735,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261030-223505-206\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 93511966,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-111134-686\\previous-Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 107190735,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-111134-686\\previous-Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 93511966,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-111134-686\\Seaside-Unity64-Hierarchy-Project.zip",
+    "kind": "file",
+    "bytes": 109839419,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-111134-686\\Seaside-Unity64-Hierarchy-Windows.zip",
+    "kind": "file",
+    "bytes": 96160650,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-162639-523\\Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 114898676,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-162639-523\\Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 103978485,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-163851-078\\previous-Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 114898676,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-163851-078\\previous-Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 103978485,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-163851-078\\Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 120824170,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-163851-078\\Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 109902758,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-164036-392\\previous-Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 120824170,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-164036-392\\previous-Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 109902758,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-164036-392\\Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 120826197,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Docs\\Logs\\Packaging\\20261031-164036-392\\Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 109906043,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Project.zip",
+    "kind": "file",
+    "bytes": 120826197,
+    "fileCount": 1
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Seaside-Unity64-Startup-Windows.zip",
+    "kind": "file",
+    "bytes": 109906043,
+    "fileCount": 1
+  }
+]

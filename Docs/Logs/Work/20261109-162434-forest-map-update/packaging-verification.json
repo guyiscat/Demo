@@ -1,0 +1,47 @@
+{
+  "packages": [
+    {
+      "file": "Forest-Unity64-Whitebox-Windows.zip",
+      "bytes": 34213147,
+      "sha256": "da0d6e05e0a85a86d2ee6a7379f3b8c722bedb3e00b1e82feef7df945ba3289f",
+      "crcFailure": null,
+      "forbiddenEntries": [],
+      "workspaceHashesMatch": {
+        "Play64/Forest/ForestWhitebox.exe": true,
+        "Play64/Forest/ForestWhitebox_Data/Managed/Assembly-CSharp.dll": true,
+        "Play64/Forest/ForestWhitebox_Data/level0": true,
+        "forest.cmd": true,
+        "Docs/ForestWhitebox.md": true
+      }
+    },
+    {
+      "file": "Forest-Unity64-Whitebox-Project.zip",
+      "bytes": 123107923,
+      "sha256": "8445acfbc6728346d7cb5b0204a6fb54c68303f2bcb5951758c739a43ec6050a",
+      "crcFailure": null,
+      "forbiddenEntries": [],
+      "workspaceHashesMatch": {
+        "Project6.4/Assets/Scenes/ForestWhitebox.unity": true,
+        "Project6.4/Assets/Scenes/ForestWhitebox.unity.meta": true,
+        "Project6.4/Assets/Resources/ForestMap.json": true,
+        "Project6.4/Assets/Resources/ForestMap.json.meta": true,
+        "Project6.4/Assets/Editor/ForestMapRevision.cs": true,
+        "Project6.4/Assets/Editor/ForestMapRevision.cs.meta": true,
+        "Project6.4/Assets/Editor/ForestEditorChecks.cs": true,
+        "Project6.4/Assets/Scripts/ForestRuntimeChecks.cs": true,
+        "Project6.4/Assets/Scripts/ForestWaterwheel.cs": true,
+        "Project6.4/Assets/Scripts/ForestWaterfall.cs": true,
+        "Project6.4/Assets/Scripts/ForestGoal.cs": true,
+        "maps/森林地图.xlsx": true,
+        "Docs/ForestWhitebox.md": true,
+        "Docs/CHANGELOG.md": true
+      }
+    }
+  ],
+  "standaloneExecution": "Blocked by Windows Application Control; not verified",
+  "physicsVerificationHost": "Unity Editor Play Mode",
+  "sceneSha256": "d22499ba7b32226781ab8a7468d7fd9d8c00988f3453df36e3b1f9a6ca7db816",
+  "mapSourceSha256": "aba7648201d440e96b2bdc52fab1499900ffe7e4f5e4829b0cb86e7bbb59d3c1",
+  "protectedFilesUnchanged": 242,
+  "status": "PASS (archive integrity and source consistency; standalone launch not verified)"
+}

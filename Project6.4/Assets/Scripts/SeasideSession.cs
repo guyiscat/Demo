@@ -6,6 +6,9 @@ namespace Seaside
     {
         public SeasideMotor player;
         public Vector2 startPoint;
+        [Tooltip("Runtime default comes from Resources/GameSystems for both levels.")]
+        public bool latestCheckpointWins;
+        SeasideCell activeCheckpoint;
         public Vector2 RespawnPoint{get;private set;}
         public int Deaths{get;private set;}
         public int CheckpointId{get;private set;}
@@ -15,11 +18,20 @@ namespace Seaside
         public bool ShowRoute=true,ShowHelp;
         public bool InputBlocked=>Paused||Won||Respawning;
         public float Timer{get;private set;}
-        void Awake(){Application.targetFrameRate=120;}
+        void Awake(){ApplySystemSettings();}
+        public void ApplySystemSettings()
+        {
+            var common=GameSystemSettings.Current;
+            if(common==null){Application.targetFrameRate=120;return;}
+            Application.targetFrameRate=common.targetFrameRate;
+            latestCheckpointWins=common.latestCheckpointWins;ShowRoute=common.showRoute;
+        }
         void Start()
         {
             SeasideLog.Begin();
             RespawnPoint=startPoint;
+            if(!player.externalInput&&player.GetComponent<PlayerAimIndicator>()==null)
+                player.gameObject.AddComponent<PlayerAimIndicator>();
             var args=System.Environment.GetCommandLineArgs();
             if(System.Array.IndexOf(args,"-trailPreview")>=0)gameObject.AddComponent<TrailVisualPreview>();
             if(System.Array.IndexOf(args,"-cameraPreview")>=0)gameObject.AddComponent<CameraPreview>();
@@ -40,8 +52,8 @@ namespace Seaside
         }
         public void Checkpoint(SeasideCell cell)
         {
-            // Checkpoint IDs represent progression; revisiting old ones must never overwrite the spawn.
-            if(cell.checkpointId<=CheckpointId)return;
+            if(latestCheckpointWins?cell==activeCheckpoint:cell.checkpointId<=CheckpointId)return;
+            activeCheckpoint=cell;
             CheckpointId=cell.checkpointId;RespawnPoint=cell.respawnAnchor==null?cell.respawn:(Vector2)cell.respawnAnchor.position;
             SeasideLog.Event("CHECKPOINT","id="+CheckpointId+" spawn="+RespawnPoint);
             foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
@@ -50,11 +62,12 @@ namespace Seaside
             }
         }
         public void Die(){if(InputBlocked)return;Deaths++;SeasideLog.Event("DEATH","count="+Deaths+" position="+player.Body.position);Respawning=true;player.frozen=true;StartCoroutine(Revive());}
-        IEnumerator Revive(){yield return new WaitForSeconds(.2f);Respawn();}
+        IEnumerator Revive(){yield return new WaitForSeconds(GameSystemSettings.Current!=null?GameSystemSettings.Current.respawnDelay:.2f);Respawn();}
         public void Respawn(){StopAllCoroutines();Respawning=false;player.ResetAt(RespawnPoint);FindAnyObjectByType<SeasideCamera>()?.Snap();}
         public void Restart()
         {
             Won=Paused=Respawning=false;Time.timeScale=1;Timer=0;Deaths=CheckpointId=0;RespawnPoint=startPoint;
+            activeCheckpoint=null;
             foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
             {var sr=marker.GetComponent<SpriteRenderer>();if(sr!=null)sr.color=new Color(1,.78f,.2f);}
             Respawn();

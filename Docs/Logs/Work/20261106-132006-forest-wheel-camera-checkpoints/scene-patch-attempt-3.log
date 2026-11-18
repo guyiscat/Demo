@@ -1,0 +1,293 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/respin/6000.4.12f1-6df48370b9ce' branch; Version is '6000.4.12f1 (3ca267ce8005) revision 3973735'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user" at "2026-11-06T05:31:01.5839121Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 16053 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-06T05:31:01Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 15292, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              33f2db4b138d4abb82e77869232de75d
+  Correlation Id:          06eec184259d680afb59ea62f62b5ce5
+  External correlation Id: 2577802048957216626
+  Machine Id:              ZFwzWaW/sukllSN81qeQTq98vpY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-user" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-user-notifications" at "2026-11-06T05:31:01.6318485Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 15669784159753-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.05s
+
+COMMAND LINE ARGUMENTS:
+D:\Development\Unity\6000.4.12f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4
+-executeMethod
+ForestRevisionSetup.Apply
+-logFile
+D:\UnityProjects\Demo\Docs\Logs\Work\20261106-132006-forest-wheel-camera-checkpoints\scene-patch-attempt-3.log
+Successfully changed project path to: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4
+D:/UnityProjects/Demo/Docs/Backups/20261106-132006-forest-wheel-camera-checkpoints/Validation/Project6.4
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [28536]  Target information:
+
+Player connection [28536]  * "[IP] 114.212.84.66 [Port] 55505 [Flags] 2 [Guid] 3566149007 [EditorId] 3566149007 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28536]  * "[IP] 192.168.96.1 [Port] 55505 [Flags] 2 [Guid] 3566149007 [EditorId] 3566149007 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-NOO8UA2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [28536] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [28536] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-36056" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/Development/Unity/6000.4.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Docs/Backups/20261106-132006-forest-wheel-camera-checkpoints/Validation/Project6.4/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Development/Unity/6000.4.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+CodeReloadManager initialized
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Development/Unity/6000.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000694 seconds.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.267 seconds
+Domain Reload Profiling: 582ms
+	BeginReloadAssembly (95ms)
+		CreateAndSetChildDomain (6ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (89ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (123ms)
+	FinalizeReload (268ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (74ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 7 packages:
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.2d.sprite@3a9210fbfba9)
+    com.unity.modules.audio@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.physics2d@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\UnityProjects\Demo\Docs\Backups\20261106-132006-forest-wheel-camera-checkpoints\Validation\Project6.4\Library\PackageCache\com.unity.modules.screencapture)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: D:\Development\Unity\6000.4.12f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/UnityProjects/Demo/Docs/Backups/20261106-132006-forest-wheel-camera-checkpoints/Validation/Project6.4
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s387ms
+[164/167    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[165/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[166/167    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (0.36 seconds), 3 items updated, 167 evaluated
+AssetDatabase: script compilation time: 0.643124s
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.308 seconds
+Domain Reload Profiling: 682ms
+	BeginReloadAssembly (303ms)
+		DisableScriptedObjects (35ms)
+		CreateAndSetChildDomain (166ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (14ms)
+		LoadAssemblies (77ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (6ms)
+	FinalizeReload (309ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+(Values over 0.050ms)
+Asset Pipeline Refresh (id=3ba4a97359262f248883e9b3ca7781ad): Total: 1.440 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=370 ms
+		Asset DB Callback time: managed=43 ms, native=4 ms
+		Scripting: domain reloads=1, domain reload time=373 ms, compile time=644 ms, other=2 ms
+		Project Asset Count: scripts=70, non-scripts=121
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 4.179ms
+	ApplyChangesToAssetFolders: 0.261ms
+	Scan: 16.580ms
+	OnSourceAssetsModified: 0.638ms
+	CategorizeScriptCompilationAssets: 0.223ms
+	ProcessAssetsWithTransientArtifactChanges: 1.447ms
+	CategorizeAssets: 1.854ms
+	CompileScripts: 644.445ms
+	ImportOutOfDateAssets: 309.771ms (309.550ms without children)
+		UnloadImportedAssets: 0.074ms
+		OnDemandSchedulerStart: 0.113ms
+	PostProcessAllAssets: 43.717ms
+		VCAutoAddAssetPostprocess 0.728ms
+		MonoPostProcessAllAssets: 42.710ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 9.449ms
+			AssetPostprocessor.OnPostprocessAllAssets 8.195ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 5.958ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 5.709ms
+			SyncVS.PostprocessSyncProject 1.699ms
+			AssetChangedListener.OnPostprocessAllAssets 1.097ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.876ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.555ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.401ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.387ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.373ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.295ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.285ms
+			AssetEvents.OnPostprocessAllAssets 0.199ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.176ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.149ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.133ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.103ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.101ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.080ms
+	PostAssetChangesProfiler: 0.674ms
+	UnloadStreamsBegin: 1.064ms
+	GenerateScriptTypeHashes: 0.802ms
+	GenerateScriptTypeSerializationHashes: 1.741ms
+	Untracked: 413.009ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 5.066ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Seaside Whitebox
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 127 unused Assets / (0.5 MB). Loaded Objects now: 753.
+Memory consumption went from 93.5 MB to 92.9 MB.
+Total: 3.734400 ms (FindLiveObjects: 0.045900 ms CreateObjectMapping: 0.007700 ms MarkObjects: 3.422200 ms  DeleteObjects: 0.256600 ms)
+
+Opening scene 'Assets/Scenes/ForestWhitebox.unity'
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/ForestWhitebox.unity'
+	Deserialize:            70.095 ms
+	Integration:            46.913 ms
+	Integration of assets:  0.061 ms
+	Thread Wait Time:       0.001 ms
+	Total Operation Time:   117.070 ms
+Unloading 1 unused Assets / (0.5 KB). Loaded Objects now: 7189.
+Memory consumption went from 100.8 MB to 100.8 MB.
+Total: 3.594800 ms (FindLiveObjects: 0.309100 ms CreateObjectMapping: 0.024600 ms MarkObjects: 3.242800 ms  DeleteObjects: 0.017600 ms)
+
+Curl error 35: Cert verify failed. Certificate could not be verified (either omitted or unsupported). UnityTls error code: 7
+Start importing Assets/Scenes/ForestWhitebox.unity using Guid(6bd2e02781545ed47b335dfcb3475e3c) (DefaultImporter) -> (Import Result ID: '6df28a5fd9e35c2235a6c339e943a86b') in 0.0035027 seconds [static dependencies only]. Details - ImportResultOutputID=34b8a617d62d7c315a57e84b4f8fb84b DependenciesID=7d04c8f045ccb856bea8dffe3195e15b StaticDependenciesID=1fcbc426ded8c64306c4143f506c3d4f 
+Asset Pipeline Refresh (id=7633b5a1da40bc140827c29f3acfd9ce): Total: 0.035 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+FOREST_REVISION_APPLIED sameScene=Assets/Scenes/ForestWhitebox.unity checkpoints=5
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ForestRevisionSetup:Apply () (at Assets/Editor/ForestRevisionSetup.cs:48)
+
+(Filename: Assets/Editor/ForestRevisionSetup.cs Line: 48)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-user-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-user channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

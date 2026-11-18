@@ -20,7 +20,7 @@ namespace Seaside
         string loadError;
         Vector2 previousPointer;
         GUIStyle heading, label;
-        Font uiFont;
+        GameUIStyles sharedStyles;
 
         void Awake()
         {
@@ -112,7 +112,7 @@ namespace Seaside
             if (IsLoading) return;
             if (SceneUtility.GetBuildIndexByScenePath(gameScenePath) < 0)
             {
-                loadError = "Target scene is missing from Build Profiles > Scene List.";
+                loadError = "关卡暂时无法加载，请重新启动游戏。";
                 Debug.LogError(loadError + " " + gameScenePath, this);
                 return;
             }
@@ -159,29 +159,28 @@ namespace Seaside
                 Quaternion.identity, new Vector3(scale, scale, 1));
             if (heading == null)
             {
-                uiFont = Font.CreateDynamicFontFromOSFont(new[] { "Microsoft YaHei", "Noto Sans CJK SC", "Arial" }, 24);
-                heading = new GUIStyle(GUI.skin.label) { font = uiFont, fontSize = 26, alignment = TextAnchor.MiddleCenter };
-                label = new GUIStyle(GUI.skin.label) { font = uiFont, fontSize = 18, alignment = TextAnchor.MiddleLeft, wordWrap = true };
+                sharedStyles=new GameUIStyles();
+                heading = new GUIStyle(sharedStyles.title) { alignment = TextAnchor.MiddleCenter };
+                label = new GUIStyle(sharedStyles.text) { alignment = TextAnchor.MiddleLeft };
             }
-            GUI.color = new Color(.015f, .04f, .09f, .93f);
-            GUI.DrawTexture(new Rect(255, 145, 450, 270), Texture2D.whiteTexture);
             GUI.color = Color.white;
+            GameUIStyles.Panel(new Rect(255,145,450,270),true);
             if (SettingsOpen)
             {
                 GUI.Label(new Rect(280, 160, 400, 45), "设置 / SETTINGS", heading);
-                GUI.Label(new Rect(290, 222, 165, 30), "主音量 / Volume", label);
+                GUI.Label(new Rect(290, 222, 165, 30), "主音量", label);
                 float volume = GUI.HorizontalSlider(new Rect(465, 235, 170, 25), AudioListener.volume, 0, 1);
                 if (!Mathf.Approximately(volume, AudioListener.volume)) SetMasterVolume(volume);
                 GUI.Label(new Rect(640, 219, 55, 30), Mathf.RoundToInt(volume * 100) + "%", label);
-                GUI.Label(new Rect(290, 276, 230, 30), "全屏 / Fullscreen", label);
+                GUI.Label(new Rect(290, 276, 230, 30), "全屏", label);
                 bool fullscreen = GUI.Toggle(new Rect(545, 280, 80, 30), Screen.fullScreen, "");
                 if (fullscreen != Screen.fullScreen) SetFullscreen(fullscreen);
-                if (GUI.Button(new Rect(405, 347, 150, 40), "返回 / BACK")) CloseSettings();
+                if (GUI.Button(new Rect(405, 347, 150, 40), "返回",sharedStyles.button)) CloseSettings();
             }
             else
             {
                 GUI.Label(new Rect(285, 190, 390, 140), IsLoading ? "正在加载 / LOADING..." : loadError, label);
-                if (!IsLoading && GUI.Button(new Rect(405, 347, 150, 40), "BACK")) loadError = null;
+                if (!IsLoading && GUI.Button(new Rect(405, 347, 150, 40), "返回",sharedStyles.button)) loadError = null;
             }
             GUI.matrix = oldMatrix;
             GUI.color = oldColor;
@@ -189,7 +188,7 @@ namespace Seaside
 
         void OnDestroy()
         {
-            if (uiFont != null) Destroy(uiFont);
+            sharedStyles?.Dispose();
             SeasideLog.End();
         }
     }

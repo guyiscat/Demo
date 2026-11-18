@@ -1,0 +1,898 @@
+[
+  {
+    "path": "Project6.4\\Assets\\Art.meta",
+    "sha256": "a07f5d6cd77ed5f871f296030f0213cbe82275589bdfe13ca46ebe55ae52ee89"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor.meta",
+    "sha256": "52d081cacd5564eaabf39aabaa4c3e8bca394f3c11d212720bb80553fa936f0e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs.meta",
+    "sha256": "b33db6d475d8cf4729f2a9e655389a8d07b110c5e7b5e2bda4da870ff0fbe88f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Resources.meta",
+    "sha256": "941df6c36e35eb900a92d1c5f77623f26615cc48c4d434e0cfc2d0406a439294"
+  },
+  {
+    "path": "Project6.4\\Assets\\Roles.meta",
+    "sha256": "c6c359636b2d8c7f79cde23c1144c26b700b9889ad685c70d8dca686625e1295"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes.meta",
+    "sha256": "c393a79cf7436afd137f5102d6ec02b36dc57013aa2ca8d882dd250604e7d453"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts.meta",
+    "sha256": "bbff8082b02312611bd31fcb7e10d765724ba6d90694abdbb3a0dd86465c36ed"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings.meta",
+    "sha256": "764bd43a0fa47f043287231b3b10d999c18a7253b1aab91abe938cc149deeddf"
+  },
+  {
+    "path": "Project6.4\\Assets\\_Recovery.meta",
+    "sha256": "4ab3b0e82d8b69fdb46f43d05a8eb740cd4887d64a9e1111e68b8c28ddbe6845"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Backgrounds.meta",
+    "sha256": "6bcbc414bd16359119d6a4cbde0ea741eb7626773261de443c7a39202fc788a2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Checkpoint.png",
+    "sha256": "b169df1fee17538dd6ec869ded2c22bf65602d9945e34fe45e70e90f9a5e2af0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Checkpoint.png.meta",
+    "sha256": "9a4cd35941b09dfed63187f0d97006e8e6f049d681fefcd84866a2a56444cdf2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Ground.png",
+    "sha256": "63f770bfbd7b8a7b92abadeb08c67d0caefa6c5065efed57aa750a516dc123a0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Ground.png.meta",
+    "sha256": "84b59c8679e311e5f09e31b32baf0e0271fa9ee4db9f4e8b2dceeebade43aaa7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Player.png",
+    "sha256": "b28232f7c958b008e8db96cb550b1588a3377b03bfffe5e28669b470b3919c6b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Player.png.meta",
+    "sha256": "1415edd1afceaae4d49f78074e8862dcb6d72181fcd0e719cee577f8e9cfef2f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Player2x2.png",
+    "sha256": "def25c7daed8c9896258ecbfa2a8e0209d868a5ea25d6bc3f7fd83189a56a7a6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Player2x2.png.meta",
+    "sha256": "dd0656bc1229751cdc3513da93d9fb28836a2843c284f8df93cd3043e54dfff6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Route.png",
+    "sha256": "67f1f2dc86f2976bf7796062d06868f5d24f9f005cf7b6d15d572ec6c5e52c3b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Route.png.meta",
+    "sha256": "a463a686e8df10aa30db40d223a61cdaa93a2b683880033e2f6c1b402a035478"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1.meta",
+    "sha256": "77ad6e956270094b445af135b55f01d818442945088bc7997e7183e41b4f80d9"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Spike.png",
+    "sha256": "fbf4f7729731ae56644996a93292871941d90b0dd588f4199a02173463ab3466"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Spike.png.meta",
+    "sha256": "6c30517ccd628eae3bbdf8daa58ad5de4927ce394e3d1bc31cd76df7ac18cebc"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame.meta",
+    "sha256": "dde390496d2184815c926d4c9a36c909870769b14c48047a263e8d0a4641a1dc"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\CameraBackgroundBoundsChecks.cs",
+    "sha256": "8e84589f83195b272fd66cc76f3d05aa5b98c63ad54b744aa297a0149777a605"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\CameraBackgroundBoundsChecks.cs.meta",
+    "sha256": "e6a5bf5972fb157e5d9de99dc7cc4f3673242c8960e56c8b6748144a297382c2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\PlaytestFixBuild.cs",
+    "sha256": "bc73d0bbd2ee94e1f4c2e0ad4f0ed39bf087e3ce59d47a463c7001e8b3ff5b3f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\PlaytestFixBuild.cs.meta",
+    "sha256": "904f9f34d971532aca31078684f24fac113a95b3667b5443941f9ba3501b13e4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\PlaytestRegression.cs",
+    "sha256": "5eeb369e4f9230aa31c8bb31d7d7940250e821b02897832a3035a23403fbf9fb"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\PlaytestRegression.cs.meta",
+    "sha256": "3251775df7286d067c5546dcb207a8e70f2315b7f7968716e474484782a1706c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideArtSetup.cs",
+    "sha256": "c055eb7b1262719e113891cd590d874eb421c7454845c86295e418cd24b8b61d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideArtSetup.cs.meta",
+    "sha256": "9d12a387f1c06687a2bd6a0e64eb27daad6b8ee2c6d615c83230982ad8347156"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideBuilder.cs",
+    "sha256": "96c270fcf8351b8f86f2a1a7ce24453b396f16aac4ae3e2e3e581c52a2adbd87"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideBuilder.cs.meta",
+    "sha256": "6e3d425ebc7972e12b512aab0d2c3258ed6542aa552cf768efefd94c8bd77283"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideFeelUpgrade.cs",
+    "sha256": "056c9fba48682ce44088b76cd3d19da9b069aa7b8f4cfed923669067fee453c1"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideFeelUpgrade.cs.meta",
+    "sha256": "b71b6666176f613ef6c6b3d6257f346596955b119f0322731f62672cee910dfa"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideHierarchyRefactor.cs",
+    "sha256": "c019fa25519f4666f817c419f53ab8d7e7c8bcbdb23653f5a2e35d430ddd93db"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideHierarchyRefactor.cs.meta",
+    "sha256": "ee6d3574b6394f7ff984c6a718f4a8f424dfa74e09794c809bb4ac7ddbbe1a2e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasidePart1Backgrounds.cs",
+    "sha256": "a4a52cd339dd77db33d8f2e89ab60a456a4a12fc8012f400eb3190d3ca27b568"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasidePart1Backgrounds.cs.meta",
+    "sha256": "fdb4a38dce5754bc2e7387eeff44bbb16963a5cc1b0da9b42234686d85812bc4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasidePaths.cs",
+    "sha256": "6c8bb04b13227ee0bbbce7b811be1ab13b4fd83b69ec2b97fa10d792df6c7e60"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasidePaths.cs.meta",
+    "sha256": "19b9355e404f9f01818e67d7fe569b623086873ed03d207be28270f5798a9610"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideSceneGeometry.cs",
+    "sha256": "25ec626ecf8413bb1f9adfb14c356ba44f872b34edc06a5c9d2830ddd70ebdb7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideSceneGeometry.cs.meta",
+    "sha256": "e62e20874d8d6fff9320ade2d0c27bc2f68fc0f10def907a5600f5cb93cf70b5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideTests.cs",
+    "sha256": "899e613d518f503e4e968b89748af937df3c48d84ad0d3c3ed7117706218f5b4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideTests.cs.meta",
+    "sha256": "88a374de5d7337218baaa7dc91d138cc3fbc0bfb656a70174cb081367d1f80b7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideTools.cs",
+    "sha256": "f90d0d60d688b4ca62af95a1a048692f18180cfa8693a8cac98c4890da051953"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\SeasideTools.cs.meta",
+    "sha256": "a68b796c6f547a973e4ce2332cb5fdbdc9a12bc581391a8491042a09e34e5f81"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\StartGameSetup.cs",
+    "sha256": "337c198dd18e7b92ca9d3f0e63e07c18580a6e1263936377277869a84f3d18db"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\StartGameSetup.cs.meta",
+    "sha256": "e419a80771bfc47c5da8d154e12aa01da50fbc4d730991b5a23c3da439b5ffa2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\WallJumpEditorChecks.cs",
+    "sha256": "0f87b14bb0d601f7ae3189b09a4aa613698b2dcefacef2cf038020d74d04b6b6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Editor\\WallJumpEditorChecks.cs.meta",
+    "sha256": "ae4f55bf46dd052c6844ef0b88512206154ee84b21bb28009ce1f381089aad95"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Checkpoint.prefab",
+    "sha256": "774144dbc0c0ec04f68158277ee5a0ab707a626282c40bd95d5a2b61e2edbbb9"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Checkpoint.prefab.meta",
+    "sha256": "ef71e55040b1d49a9c7942a524804238e7105fbee7d1dfdcf11937827057315c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Ground.prefab",
+    "sha256": "3968e4044c94fc9ca40cd0cd360ed69853da7ea3cb5bad375b11c31f86cc95e9"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Ground.prefab.meta",
+    "sha256": "c3a6b4d07e6b3725dcd5c3bfd17346fff626deb3b45c3028ca5dbcaddc7a21fd"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Spike.prefab",
+    "sha256": "4a4048dabcaa1bfaeeb77a65541e2831b2d7c08a60189de390157c935b266d7f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Prefabs\\Spike.prefab.meta",
+    "sha256": "8374f7c28452af98290a87ae82d535a865f4f69f78f699d7b1ffc7979205f6cd"
+  },
+  {
+    "path": "Project6.4\\Assets\\Resources\\SeasideMap.json",
+    "sha256": "55dded0a2f3d5678b879c219376a977050c43957ac3bc1d85ace80dc51f977d8"
+  },
+  {
+    "path": "Project6.4\\Assets\\Resources\\SeasideMap.json.meta",
+    "sha256": "a4537eba5196d978d95124a6ada519afe42137ddb80646aaaa0696a5e51e13fe"
+  },
+  {
+    "path": "Project6.4\\Assets\\Roles\\Role1.jpg",
+    "sha256": "7bde9e852d3772d58a9e06ce751109ca0f24a4418fd3951d5f441c9966e685b1"
+  },
+  {
+    "path": "Project6.4\\Assets\\Roles\\Role1.jpg.meta",
+    "sha256": "67d652036e96022a7a4f15b321328529f673fac64592c9f6c2dd4c98b43619e0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Roles\\Role2.jpg",
+    "sha256": "ce5edb0b2cb5ae61e26380da258ba2b45c0c1106b384cdf2a4169dfe95fc5963"
+  },
+  {
+    "path": "Project6.4\\Assets\\Roles\\Role2.jpg.meta",
+    "sha256": "bacdf01e1fa573c2ca7dff57b3d4e8d7013c43d9c8e83f701f8811aa762815f2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\Seaside01.unity",
+    "sha256": "bc4e59b2cafc9550a6f0554e4c01044d60dae10d97f0898438a2609cf3a3e8a3"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\Seaside01.unity.meta",
+    "sha256": "fe1cb734e6faf8be226831ac029c7259ed807638b75bcaf7df34f5c182ffc536"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\SeasideArtPreview.unity",
+    "sha256": "c8fe9353dcbf6b7414c4456db485e65a81558fbaae93d8590dbf8e048568e814"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\SeasideArtPreview.unity.meta",
+    "sha256": "ae25902d5af419bfb41603403efb5094b21bf3383b494068611969c4ff97f885"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\SeasideArtPreview_Recovered_20261031_1058.unity",
+    "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\SeasideArtPreview_Recovered_20261031_1058.unity.meta",
+    "sha256": "4e0f1c3c5157f0c7e2afd9bd877340a38771f85d38f8bbaf7893fb6be4e66da6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\StartGame.unity",
+    "sha256": "f5d941ab2c41f8e83ed6faa953c7d686d2c99d083c01af339b10b851f269407e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\StartGame.unity.meta",
+    "sha256": "edede2d7b683b8201384dfb8bbd1bb919cfdeb190c48c9f9ee80a712fb043654"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\TheFirstScene_Seaside.unity",
+    "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scenes\\TheFirstScene_Seaside.unity.meta",
+    "sha256": "c339fd4b7385a6627e1be8101a41243998d8b21747b58896970b7aa062b6eb25"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\AfterimageChecks.cs",
+    "sha256": "59350dbebb836211d61bc3dcfcd0f715da9a191d6c9b27780d0afe2eddc08bfe"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\AfterimageChecks.cs.meta",
+    "sha256": "9ea20ac625720272b75b07a1e65dff2019c660691bb0bc673cf2acc1f21bda39"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\BackgroundCameraFrame.cs",
+    "sha256": "fba779d3e856ec2cdb47384f04fff433b294c7f654a318e2f338884c1d6461b4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\BackgroundCameraFrame.cs.meta",
+    "sha256": "51005e9a165a90ac365d2b94553324b72bd425735257c08e40f8f78259c2a18f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraComfortChecks.cs",
+    "sha256": "5d9e5cd806081611741549038f0e05433089472bb00f0154e262747bdd17e415"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraComfortChecks.cs.meta",
+    "sha256": "60451ff452d37bcb6946e8b9c4063ae9d3fb817d1acc2fecec189648aa74f293"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraMotion.cs",
+    "sha256": "19ff6b776f8c7d03f10701acb542fbfff2429b23f8be2cec112d980ab9994f5c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraMotion.cs.meta",
+    "sha256": "009b1ff832f22e3bc8ed0a95d48809212178d82ff2909a8d97983ea27fa7e6d6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraPreview.cs",
+    "sha256": "d5f59d7d3e5c596f7cf601893bbe3cf740a8d773845c0d1073b451d7dd860dba"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CameraPreview.cs.meta",
+    "sha256": "78178b54020cbca60f5b52391d848448acad02c8a67519f7dabfdf2f7a173b05"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CheckpointVisual.cs",
+    "sha256": "ce8d7517faa5c47e781a44ba11a350591864924f502f3718d39d08fa9e483e1e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\CheckpointVisual.cs.meta",
+    "sha256": "28acdd5aa3372390e3de6ba2919ab90c43f1adc8ed8d5360357d5c742e8a41ec"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\DashAfterimage.cs",
+    "sha256": "2a70761e058cc1f6f6406ccc18107602634ff0c6482f82605ab7ecd3a9183bbf"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\DashAfterimage.cs.meta",
+    "sha256": "1533310ca4e385c66429429f4743064a4190079b01fd62470860d74880fb63e2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\ExcelMapData.cs",
+    "sha256": "46af0270b861b65f6a3231066e18e69ee9d18bda0087d8b5ed376d95f66422b8"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\ExcelMapData.cs.meta",
+    "sha256": "a4afa66c37982bdae6ae40e3131288ea0b5e273e6fcef3c95d12ea64df103c89"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\MovementGraceChecks.cs",
+    "sha256": "9e3b108d6a122a4971acae4799d3e5429beeff0a44f1af17ae2597d0f2195f5c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\MovementGraceChecks.cs.meta",
+    "sha256": "996e63239cf53cc2dd5c34193443102ad0101a78e79836359536ebe61f1c2146"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\PlaytestRuntimeChecks.cs",
+    "sha256": "d40dc85644417346da1fe69e61b1d77c1b84fc34780f29354ee1c0e10928b044"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\PlaytestRuntimeChecks.cs.meta",
+    "sha256": "0789b962740582399652c49b87897214dac5da3f2c7bea8bbc6b101cabccb326"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\PreviousCameraMotion.cs",
+    "sha256": "3007b97b4744dd86c712df7b45d1aafd1ebf73bf14d5abd4800fc3e3e23a016b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\PreviousCameraMotion.cs.meta",
+    "sha256": "1655c7d8b065ba8ce5f61506d80bbafb9d0b964d38a4303de81d9c156d3ec5c7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\RouteDisplay.cs",
+    "sha256": "faa2668cf85bb76565c1736ef978984ae4fb1ee4fa8d54195915d50d2b169845"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\RouteDisplay.cs.meta",
+    "sha256": "9437cf29ba8c4a3407249add85d4a6c521a4ff779b8d91d85a3675dc31587ff5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtAlignment.cs",
+    "sha256": "f60fbdc2a484ded74afbe7e1e5bc1373db1923158b681ba45c5087ad7456ec0c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtAlignment.cs.meta",
+    "sha256": "05c6cd7a560019e535db2d7da879e95f96f3c55a00e490f65926dbdfffb70728"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtPreviewLaunch.cs",
+    "sha256": "1397c8806e6e7849d0ada4126190d17f89febbb615ae4a2af0f67d49cf30bd99"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtPreviewLaunch.cs.meta",
+    "sha256": "c92ac6567495547800bc99812c9d525fc98a18a3c19ba382d7f93bd21025c42d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtRoot.cs",
+    "sha256": "38502b47a8602282f8f1f11462249c2888919c118d54229d3a3c934b56ceb2a3"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideArtRoot.cs.meta",
+    "sha256": "0e2ae9ffdedf6daee78b373911bb3fd4c9d7f31f576ee07bfd18fab54c89bfca"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideCamera.cs",
+    "sha256": "80ae0e3965ff4dd783e086e40736304fcf3e9e99b5955a1952cf8aaafb1fd01c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideCamera.cs.meta",
+    "sha256": "b2d86e34aedb9afe9814e22da983b1a8bd90629c3435d558aae606b9721d802f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideCell.cs",
+    "sha256": "bc215d5002d054e5b41dc32fa58d998eda620d53f7b64f1bf57c2a329aa3749a"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideCell.cs.meta",
+    "sha256": "ff97fadf6c3032ed766000ce6cb45ab1ac1a7e27221f644970b8bee495149f0a"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideHUD.cs",
+    "sha256": "90231c54e92b916323443629752c2e216cc52fd0681158ec98fef4e154d56713"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideHUD.cs.meta",
+    "sha256": "e1438a685890c634304b74289e40c96bd4063d7bfeeec47f6251359c68cfea85"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideInputLatch.cs",
+    "sha256": "caa278602a722375e2b99cba007d63b9df603f0fd54b7a4af411b91c881a2e58"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideInputLatch.cs.meta",
+    "sha256": "0b1794396ff20d9510349dbcb4a35f31b56704fef6aa2e8d3d1b7ebf42c8c788"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideLog.cs",
+    "sha256": "de86c6a7a1664e0ac6483fb12c2b7448ea159eeee70ac648d5ac68fb266229c6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideLog.cs.meta",
+    "sha256": "6001f2bcac48a0386740cb567af2cfe25e760615e2d2872ceed17bb2b9158a0e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideMapRoot.cs",
+    "sha256": "dd7d43b5dc7369cdd2680e4c95e0dc5b29c81d747f06b67eff7ba6d39f05cc1c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideMapRoot.cs.meta",
+    "sha256": "1f96e30cc5c509fa9d437c9d317265195ab11017ada801c75e1de41e22b60bc2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideMotor.cs",
+    "sha256": "1791fef7ce9ec92e8ca385fc266c20167612de0c308e2e28beec4be7fb163445"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideMotor.cs.meta",
+    "sha256": "afbf8883874596583908813b77b4037371c947bef08fd1a70b239b23377e5604"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideSession.cs.meta",
+    "sha256": "5f5b071c81cdf578b2bc6c0633cf34533686440665d49c0aae9e45801f1a88e1"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideSettings.cs",
+    "sha256": "788d5971d40349094052603422048b62e4b66fc02270ab0bd270bfce978b5bca"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\SeasideSettings.cs.meta",
+    "sha256": "12fc541fe2b7bd444672d1ae7844f767a2829a9fc92f317966f42144fa815df4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StandaloneCalibration.cs",
+    "sha256": "91dfd537dd71ef4193b9f3dbd77dfd4eeb5dd6617d790f2518fb47b67c9c9690"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StandaloneCalibration.cs.meta",
+    "sha256": "5e26b09a0492f21a4938ef42e0ca80c8972d53d523a9bcc7e223d82847b3cf68"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameButton.cs",
+    "sha256": "8a0cb53d28607ff2b18e7032101bb1d21c2af3389c622f168b613214d8d07d0b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameButton.cs.meta",
+    "sha256": "c72c67fa48a576b56607c0eca303e1f0d282a33a42e0f51801902d9e28c481d7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameMenu.cs",
+    "sha256": "9ba30a75f51027a66da69435afdd689970c3b4eb94c071c75b5ca014c5a16dcf"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameMenu.cs.meta",
+    "sha256": "3db46f82aa04129d4e540722156e0174d7ddfb54560f1ba7946785d32f53ea65"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameMenuSmoke.cs",
+    "sha256": "98e71c24ec946e24b699da8c7c1c073aaf8f11180fd64bc24c5127ce2164d028"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\StartGameMenuSmoke.cs.meta",
+    "sha256": "183aba31f851b892364b189613479adc4b23318617481361b9a99cf8b80336c5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\TrailVisualPreview.cs",
+    "sha256": "27714f9d78037e455a0248895b1cd5ad60a92d2b7fd302e9b60bccc96c384888"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\TrailVisualPreview.cs.meta",
+    "sha256": "7ea4e77404bc06bc2b1c0be6ed9fb9db80e37636564c1adcef3f1bfde0bbc59f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\WallJumpRegression.cs",
+    "sha256": "b8ad30c99b507c16d3b5782fd98927dd0fe645f1f9724ca0860ab6a38f9ea774"
+  },
+  {
+    "path": "Project6.4\\Assets\\Scripts\\WallJumpRegression.cs.meta",
+    "sha256": "524c87fe5a24319e34b6d87593c89ea7f969a04675bf2cc364354ba1912cc01f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\Build Profiles.meta",
+    "sha256": "6be16296c329003496abebf80800b4ba0db7a2519ef50623462777571f703c38"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\Movement.asset",
+    "sha256": "83cd54b2c4dd85630a362fd4be864390e618e872e821ca5c325b096c2019a402"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\Movement.asset.meta",
+    "sha256": "77f617e8ebbeee21cfa3ec927e783381787ae4210a2f436027c5719869debf8b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\NoFriction.physicsMaterial2D",
+    "sha256": "6ca766e106e5b6237c0ddbb1796c9097042ae766a0b7a48ad6f18733f1749931"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\NoFriction.physicsMaterial2D.meta",
+    "sha256": "ee3c9e4928c477c954c34d77b81da1be8a644e574e0d27fc1d9039fc58749416"
+  },
+  {
+    "path": "Project6.4\\Assets\\_Recovery\\0.unity",
+    "sha256": "0526b502024c61f8857341f0928837dfb8218c68e6c98901102f3f201423523c"
+  },
+  {
+    "path": "Project6.4\\Assets\\_Recovery\\0.unity.meta",
+    "sha256": "52b63f037c798d4690f38ea20b0500c0cfc7b778406de43848da116c5a6c313c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Backgrounds\\Seaside.png",
+    "sha256": "6016271364b1f7606b5b2b141de1e4e703ae2965e336ba78d934ba5d75b961ac"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Backgrounds\\Seaside.png.meta",
+    "sha256": "53786ad4c27939b9ca5b6184b0a2e90e3da2f36f1f9c9202287c9fbab47c509a"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg0.png",
+    "sha256": "0e57d7ee87e166f332554898018f487d8318494f5f87cd26c3c540a953ba59e6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg0.png.meta",
+    "sha256": "b6fbc5f3b57953833ed29ae7f29bdeab89fd9ce991f1943562291d67131bc4b5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg1.png",
+    "sha256": "1c208957fbf47639b51a97e44eab9d5069d040b0b0dcc0306429615225add54c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg1.png.meta",
+    "sha256": "772d1a682a8d90937673fa936201b1aa4efe2e395ede0fcf86a972b3197e0468"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg2.png",
+    "sha256": "31057472654139fb4bd0836036ebb476d208114c5c52d75db51476b522952bdf"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg2.png.meta",
+    "sha256": "8096c9adda2a4979e50ab6f299d487ab5e91e720addc3ebc5d241c29fa7908af"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg3.png",
+    "sha256": "9b5749fee5a0e0bd0182154fe27883566a97c1109fc2c0a1091578fc51ebc483"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bg3.png.meta",
+    "sha256": "4531ecfc27d6b5c2e9213542a79e203aa442ee8dc8af43630dffe309291a9397"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bridge1.png",
+    "sha256": "298903b7c93092808d4982e8be494636cad906a67cf0fced279d832c11e3bcf5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bridge1.png.meta",
+    "sha256": "9d874574e69ea524e65e574d789f91361a4989ba82f1b0070a88f6d143b495b3"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bridge2.png",
+    "sha256": "f7cddc8d29bf2a60f7f1d523e52af026124f0c4282fdf2c278ac612786f8762d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\bridge2.png.meta",
+    "sha256": "66a283955351ab2293d8c56aae9fda2f5ab0d89e1dab37bb15653690ba9c4b9b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\checkpoint_off.png",
+    "sha256": "3f5de9ee5b36c50affca486525af88559d1b6283b5f77ec9375a904dcde7aae2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\checkpoint_off.png.meta",
+    "sha256": "f5a418a4356dedb9e5b2c5389abf5396b5a466cfceb87808f2c1e880804dc992"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\checkpoint_on.png",
+    "sha256": "b99936404a293d5869be58fe6fe9a3b2d629c234ee9fab9e56d24f66313c9945"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\checkpoint_on.png.meta",
+    "sha256": "979afa51182716342fc52a53c5aff17724f54113040ed27f1d8b1a7cadfa46ad"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\light.png",
+    "sha256": "35898462793437af77e2cda33066d9614c813a32d956617a342813ba5ba141c4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\light.png.meta",
+    "sha256": "8e14374e832e175ff7e37040b177a6dd0ed790f4520242b64caa5b198e5f15a9"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\lighthouse.png",
+    "sha256": "468adadcb762b7bc6b3a5e71b2e06582c269a38a4662253204e302149a48e254"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\lighthouse.png.meta",
+    "sha256": "0777f1f8ddeebe3bba4ced887af657c51dbead5b88b64825558b75801bc47447"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\lightspot.png",
+    "sha256": "ccc05a84d25282fef2da08b1bd3808e44fac84da99d3f41d18f21634ce32e34a"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\lightspot.png.meta",
+    "sha256": "f292c04b679f73033c3d1d43cc0945c62de6f2642a6c80126d54e4773bc8d14e"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\part1.json.ps",
+    "sha256": "dd178fe9a0602b764f68bd80beed36a92b5d8de27f3e9ff0d4aaa38f7b9084e5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\part1.json.ps.meta",
+    "sha256": "39ca00d3dc7ab3db570e5ae3b216ff3ecd826870a71498104d593f61c61f9bc2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\pillar1.png",
+    "sha256": "513bd317191f559bdc76bae0c63ab5280b3f87f5dc6d36f2320cc00e13a4d037"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\pillar1.png.meta",
+    "sha256": "7ed794c330fdb1b0e469b9a911d4c1fd1da6913d576ff08672c98301066d15bd"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\pillar2.png",
+    "sha256": "d4d52fa54309415d6668b38ab0437380a0ae08db9f33ae9fc0518b2e18012191"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\pillar2.png.meta",
+    "sha256": "966e0404809a47ff9fb77898f9dc6802ddb3c0e79af4a1a7daf47d79d819bd65"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\Seaside_Terrain_Modules.png",
+    "sha256": "0e57d7ee87e166f332554898018f487d8318494f5f87cd26c3c540a953ba59e6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\Seaside_Terrain_Modules.png.meta",
+    "sha256": "c51055565bf545188118a36a170e7a8cca008cbc861c40b64c95017161b3f5b8"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn1.png",
+    "sha256": "f1f9a4e7378f0a82b39d5f16bfd5bada2feb48010af2bdb9a611dedea029dc76"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn1.png.meta",
+    "sha256": "4e2894d37236a4fb4f9353c2cb8f402b5af7ce1a02474ca546231caa66e88fee"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn2.png",
+    "sha256": "52cfb2a0c47678af5ec95436cd125c55d185df1465e967590be1b570891053b6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn2.png.meta",
+    "sha256": "946385139e7711458df4980eb310e117204901bd5141b2b7e79ba973606e84ab"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn3.png",
+    "sha256": "e5ebf243768515f468dddcbc351dd71c8d5e31ac2d62939f6c351d9aeb5f0d5d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn3.png.meta",
+    "sha256": "7b75ac806435a0910d57ea6e16947df81844e0fc1b8d339d5db23f8f11b34387"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn4.png",
+    "sha256": "4980ab734a59448c4d71678cda6af90abcd98e07c1b3ae0ddc1865c7c429ce37"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn4.png.meta",
+    "sha256": "5a117d4a9a10edff820e939627ae621a771b3abbb08f2156b79158b77b2c4569"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn5.png",
+    "sha256": "1b4414bfa1f57469bfea2d7b352d4f69b5f140df4cdaf881bc5f94461542aa48"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn5.png.meta",
+    "sha256": "c61afbbaa4a487183f7089c1379878cf958861b531d5fa595ba4eade2c058cd0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn6.png",
+    "sha256": "1e1798de6d61d9a95aba6bcb6b0fc0d299cc85b63030c4ff0812444bf86d8ae4"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\thorn6.png.meta",
+    "sha256": "c7568445900162f2e7ff4032889d7a9b18b55ec464ab24409b5424c2482ef145"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\water.png",
+    "sha256": "93f6d552b0607b83aef810cade04c635256e39a420fe0a37566a27bdc20e62ea"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\water.png.meta",
+    "sha256": "9b4248741f56ed70625605330ce01f105455a24ad7d23c200fdfacf553662a77"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\water_multiple.png",
+    "sha256": "93f6d552b0607b83aef810cade04c635256e39a420fe0a37566a27bdc20e62ea"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\Seasidepart1\\water_multiple.png.meta",
+    "sha256": "21d050a49b40d69928797c5d50ec3629bde9959707afc11a81220834d8d7ebe6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame.json.ps",
+    "sha256": "f38266d04e522512af022ed39552a0dca86fffede43381d455dd18c9a2822bd2"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame.json.ps.meta",
+    "sha256": "c03dce8fc4a9c5b4010f6b1713755fc3a370585efa132d1a43c845ac4f01f1e7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_bg.png",
+    "sha256": "edeec6615d02e6f518ab4535a878e26f65a260f2f01e774102c2a01b0b82e48b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_bg.png.meta",
+    "sha256": "dacdc3646b40eda45faf9ec44547f732a33f9c4343ea218e963b02ebd1384c8f"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_demo.png",
+    "sha256": "f7216d36ac750a6242c858f737f33c2fe2f63cada93651f576f6387831977da0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_demo.png.meta",
+    "sha256": "e375c779a912fda4bb9e81bccdf99fb65363cb7016f08c6c888230b14e841492"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_demoshadow.png",
+    "sha256": "223eb1e08800d17813224d6144d4f7bd6fb9784b0041defbb3f659e1c25bba28"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_demoshadow.png.meta",
+    "sha256": "068d0697f82cb9fa4589c8ebb02e6e6997643b4c323c60617b3f1d98654dbbb6"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_exit_off.png",
+    "sha256": "e4a087f5229e3cb45110d30c72d792e50b120dd3fde2520746635b0f83f764c0"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_exit_off.png.meta",
+    "sha256": "d2d7e84b152fa011b58ef59a55efe8b3173c6562e1966446ca2f456b42660131"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_exit_on.png",
+    "sha256": "44b431965a21d56c7606fd88c473a491d18d3547099e5bb13c1e8c24f60fe213"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_exit_on.png.meta",
+    "sha256": "29627d1f555f39d66f330bc8b9082525356cdd805631fdf44fa39e7b7eb1c516"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_light.png",
+    "sha256": "60656503f0024db8516e8f9b19df1a6dca8455a47ba8113f03967bcce482ce7d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_light.png.meta",
+    "sha256": "9a123583527bea3c5b0a79c6a540afbb3d367576be395aea274ef7ef8019a945"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_line.png",
+    "sha256": "866ef572ff07d1d930212aa20d06dd0c3c14d7f5c93520bbb2169e56b2a2ff40"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_line.png.meta",
+    "sha256": "bad310961faacc9a4008ca333c7f7098c8cf4960d8ff79d471efaacfdd169893"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_logo.png",
+    "sha256": "b83a8c426f706dd04d26bb06db52aaa006f7c737d3070ba8fe1442e5da7beff8"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_logo.png.meta",
+    "sha256": "10be8f62c12873625854469b49e74ee01bf0efe972aee08c682f61042bab748b"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_mb.png",
+    "sha256": "248bde5ca06a03a20f153c318b45135c8c28c8a99770b1f4d21bf4c1dad27dd3"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_mb.png.meta",
+    "sha256": "93f3d7ffe5728b0b59fe9bff60da80fa4dedfe80e309f5ea5def4ccb877d712a"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_ring.png",
+    "sha256": "99d28f0e2392e0b7bd05d6150df16f56f06a9ff9c3e67e9584d7b2a3a2727fe5"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_ring.png.meta",
+    "sha256": "28d125607b151130564dc5a60b0aa5aa9f512847047f1bb4bfae5f15883d4830"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_set_off.png",
+    "sha256": "8ff1f921ccca850e3b47fb2061f1d47996e912e00d10745f43aeaed67daf2bd7"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_set_off.png.meta",
+    "sha256": "30630561b7c4c95f0328aa71fa0a94a5dbb28e4c32249ba5c9519f33cac17716"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_set_on.png",
+    "sha256": "da31dc3820ccbdaaad447de9cca20aed68de8a36ae262fec5c238dcd8cb45d86"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_set_on.png.meta",
+    "sha256": "b7c3b2261d133668e687b5ecada5c13aec07c88bb5e062e5a657cefaba2ff23c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_start_off.png",
+    "sha256": "6ccaba4d19444c608d81ce9658d6201b98af08225c12856bbffc5f06f6ac93bb"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_start_off.png.meta",
+    "sha256": "c0d88301f90097a6426a4a5490a536e6640e542c007f634845314a9905b273e8"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_start_on.png",
+    "sha256": "3da5178f4474c2abd761ec87649579ac8a1430fd14d1073fd459fb2d65841e5d"
+  },
+  {
+    "path": "Project6.4\\Assets\\Art\\startgame\\startgame_start_on.png.meta",
+    "sha256": "13eb135539bdcaeef18bfac80ecc3495bda3211a2378a4587ebaeb4b641ab8eb"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\Build Profiles\\Windows.asset",
+    "sha256": "9e31e62f050cdcc0bce425edd5a2943ac3059f9e690b06281c37b49cb36ad23c"
+  },
+  {
+    "path": "Project6.4\\Assets\\Settings\\Build Profiles\\Windows.asset.meta",
+    "sha256": "11da4872580d2dedebf52c6b76a2bb64499b517183b8ec99ae9a57bc2601f245"
+  },
+  {
+    "path": "maps\\森林地图.xlsx",
+    "sha256": "aba7648201d440e96b2bdc52fab1499900ffe7e4f5e4829b0cb86e7bbb59d3c1"
+  },
+  {
+    "path": "maps\\海边地图.xlsx",
+    "sha256": "6dd4a9ba0edf0bf1194a4c34baf0eb4e9fd7da34b46373954520b7496fd23bf5"
+  },
+  {
+    "path": "maps\\矿洞地图.xlsx",
+    "sha256": "17b5425c1e39dc5c10692629874eb8ca201a2c9c70b5fc72615a70e08ec3cb0c"
+  },
+  {
+    "path": "Project6.4\\ProjectSettings\\EditorBuildSettings.asset",
+    "sha256": "72cc77a000a176e0fa294c72c4b17900a7bbade76882d0694048522e6692a808"
+  }
+]

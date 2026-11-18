@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "file": "Forest-Unity64-Whitebox-Windows.zip",
+      "bytes": 34214728,
+      "sha256": "1ec6dd9a47f147e80eb8254f857b60532806d55abf0d4ad283e88143e5bade53",
+      "crcFailure": null,
+      "forbiddenEntries": [],
+      "workspaceHashesMatch": {
+        "Play64/Forest/ForestWhitebox.exe": true,
+        "Play64/Forest/ForestWhitebox_Data/Managed/Assembly-CSharp.dll": true,
+        "Play64/Forest/ForestWhitebox_Data/level0": true,
+        "forest.cmd": true,
+        "Docs/ForestWhitebox.md": true
+      }
+    },
+    {
+      "file": "Forest-Unity64-Whitebox-Project.zip",
+      "bytes": 123672716,
+      "sha256": "8e173db99446bae4b760a631af86112feb7ca62ff49558c079b291d9c5f10022",
+      "crcFailure": null,
+      "forbiddenEntries": [],
+      "workspaceHashesMatch": {
+        "Project6.4/Assets/Scenes/ForestWhitebox.unity": true,
+        "Project6.4/Assets/Scenes/ForestWhitebox.unity.meta": true,
+        "Project6.4/Assets/Scripts/SeasideSession.cs": true,
+        "Project6.4/Assets/Scripts/ForestPlayer.cs": true,
+        "Project6.4/Assets/Scripts/ForestZipline.cs": true,
+        "Project6.4/Assets/Scripts/ForestSettings.cs": true,
+        "Project6.4/Assets/Scripts/ForestWaterfall.cs": true,
+        "Project6.4/Assets/Scripts/ForestRuntimeChecks.cs": true,
+        "Project6.4/Assets/Editor/ForestTraversalRevision.cs": true,
+        "Project6.4/Assets/Editor/ForestTraversalRevision.cs.meta": true,
+        "Project6.4/Assets/Editor/ForestBuilder.cs": true,
+        "Project6.4/Assets/Editor/ForestEditorChecks.cs": true,
+        "Docs/ForestWhitebox.md": true,
+        "Docs/CHANGELOG.md": true
+      }
+    }
+  ],
+  "sceneSha256": "07e15afc9ac7b3caffd9184ecaf060fe9a5c6b7c4c5350040ea63f538764c3f9",
+  "protectedFilesUnchanged": 224,
+  "status": "PASS"
+}

@@ -1,0 +1,20 @@
+--- before-task
++++ current
+@@ -116839,7 +116839,7 @@
+   m_GameObject: {fileID: 1227016748}
+   serializedVersion: 2
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+-  m_LocalPosition: {x: 4.2, y: 5.2, z: 0}
++  m_LocalPosition: {x: 3.2, y: 5.1, z: 0}
+   m_LocalScale: {x: 1, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children: []
+@@ -179308,7 +179308,7 @@
+   overview: 0
+   mapSize: {x: 313, y: 122}
+   tuning:
+-    followSize: 14
++    followSize: 18
+     horizontalSmooth: 0.22
+     verticalSmooth: 0.3
+     fastVerticalSmooth: 0.12

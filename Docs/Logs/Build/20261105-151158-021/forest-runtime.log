@@ -1,0 +1,84 @@
+Mono path[0] = 'D:/UnityProjects/Demo/Play64/Forest/ForestWhitebox_Data/Managed'
+Mono config path = 'D:/UnityProjects/Demo/Play64/Forest/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Play64/Forest/ForestWhitebox_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.002 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+UnloadTime: 0.317500 ms
+PASS Forest starts with independent teleport charge
+PASS Saved left-hand start is stable above workbook floor
+PASS Forest ordinary locomotion uses original ground probe
+PASS Forest tap jump remains 4 cells: 3.999975
+PASS Forest hold jump remains 8 cells: 7.999607
+PASS Original dash remains 8 cells
+PASS Dash does not consume teleport charge
+PASS First right click emits small fast beacon and spends charge
+PASS Beacon is smaller than player and faster than dash
+PASS Teleport launch does not consume dash
+PASS Second right click teleports to current beacon
+PASS No second teleport before renewed terrain contact
+PASS Range expiry automatically teleports at 10-cell ruler distance
+PASS Maximum-distance landing and charge remain correct
+PASS Terrain impact resolves full-body safe landing
+PASS Player never embeds in hit wall
+PASS Narrow-beacon passage cannot embed larger player; travelled samples fall back safely
+PASS Pause blocks beacon progress and second-click teleport
+PASS Resume continues existing beacon flight
+PASS New black-wall contact restores teleport and original wall hover
+PASS Gray wall forbids attachment without changing Seaside wall behaviour
+PASS W catches an actually contacted cable
+PASS Zipline resets both dash and teleport
+PASS Zipline moves uphill in facing direction without gravity
+PASS Space detaches rail with original full jump launch
+PASS Jump detach cooldown prevents immediate W recatch
+PASS Facing left reverses sloped rail travel and allows downhill riding
+PASS Cable endpoint releases the character rather than trapping it pos=(-119.31, 44.18) rail=False
+PASS Respawn clears all Forest transient traversal state
+PASS Respawn removes beacon and trail
+PASS Original red-cell hazard kills Forest player through the existing trigger
+PASS Left approach shows left side
+PASS Entering or mostly crossing waterfall retains left origin scene
+PASS Right scene is physically covered at far waterfall edge
+PASS Right scene revealed only after full 2-cell body exits
+PASS Reverse passage retains right origin scene until fully crossed
+PASS Full reverse crossing switches back to left
+PASS Overview does not bypass waterfall concealment
+PASS Wheel remains still with no locks
+PASS One lock cannot start wheel
+PASS Revisiting same lock does not count twice
+PASS Top goal cannot complete before both locks
+PASS Both actual unlock triggers start wheel
+PASS Ordinary respawn preserves puzzle progress
+PASS Standing on active real wheel platform boards passenger ride
+PASS Wheel lifts rider on upper arc without dropping into buried lower rim
+PASS Real wheel safely delivers to saved upper platform
+PASS Delivered body is not embedded in final deck
+PASS Walk from wheel arrival into top platform goal completes Forest
+PASS Full restart resets win, both switches and wheel
+PASS Restart restores independent Forest spawn and charge
+PASS Right-side passenger reverses wheel to ascend instead of travelling through buried lower rim
+PASS Right-side boarding also reaches the same upper platform pos=(176.50, 99.25) angle=55.61986 rider=False
+FOREST_RUNTIME_PASS assertions=53
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed

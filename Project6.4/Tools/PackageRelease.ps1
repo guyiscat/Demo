@@ -1,4 +1,4 @@
-param([switch]$StartupPage)
+param([switch]$StartupPage,[switch]$ForestWhitebox)
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -57,10 +57,14 @@ function Pack([string]$name,[string[]]$parts) {
     Write-Output $path
 }
 $projectName=Split-Path (Split-Path $PSScriptRoot -Parent) -Leaf
-if($StartupPage){
-    # Current checkout intentionally removed the legacy launcher .cmd files.
-    Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','README.md','CONTRIBUTING.md','Docs')
-    Pack 'Seaside-Unity64-Startup-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs')
+if($ForestWhitebox -and $StartupPage){throw 'Choose ForestWhitebox or StartupPage.'}
+if($ForestWhitebox){
+    Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md')
+    Pack 'Forest-Unity64-Whitebox-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs','forest.cmd')
+}elseif($StartupPage){
+    # Both launchers stay independent; this does not connect level progression.
+    Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','statgame.cmd','forest.cmd','README.md','CONTRIBUTING.md','Docs')
+    Pack 'Seaside-Unity64-Startup-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs','statgame.cmd','forest.cmd')
 }else{
     Pack 'Seaside-Unity64-Hierarchy-Windows.zip' @('Play64','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
     Pack 'Seaside-Unity64-Hierarchy-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','Figures','maps','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')

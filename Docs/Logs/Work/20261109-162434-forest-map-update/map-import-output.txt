@@ -1,0 +1,59 @@
+{
+  "sourceSha256": "aba7648201d440e96b2bdc52fab1499900ffe7e4f5e4829b0cb86e7bbb59d3c1",
+  "width": 313,
+  "height": 106,
+  "bounds": [
+    27,
+    23,
+    339,
+    128
+  ],
+  "teleportDistance": 10.0,
+  "counts": {
+    "ground": 4400,
+    "noGrip": 70,
+    "zipline": 361,
+    "spike": 620,
+    "unlock": 24,
+    "route": 40
+  },
+  "drawings": [
+    {
+      "kind": "rect",
+      "start": {
+        "x": 173.88621,
+        "y": 94.03571
+      },
+      "end": {
+        "x": 184.00345,
+        "y": -16.38214
+      }
+    },
+    {
+      "kind": "rightArrow",
+      "start": {
+        "x": -13.62069,
+        "y": 123.32143
+      },
+      "end": {
+        "x": -6.44828,
+        "y": 122.67857
+      }
+    },
+    {
+      "kind": "ellipse",
+      "start": {
+        "x": 78.61379,
+        "y": 110.48571
+      },
+      "end": {
+        "x": 194.34483,
+        "y": -10.75
+      }
+    }
+  ]
+}
+zipline [{"count": 51, "first": "AS31", "minX": 17, "maxX": 68, "minY": 98, "maxY": 99}, {"count": 29, "first": "BM43", "minX": 37, "maxX": 66, "minY": 86, "maxY": 87}, {"count": 22, "first": "BM57", "minX": 37, "maxX": 59, "minY": 72, "maxY": 73}, {"count": 24, "first": "IE58", "minX": 211, "maxX": 235, "minY": 71, "maxY": 72}, {"count": 30, "first": "JK69", "minX": 243, "maxX": 273, "minY": 60, "maxY": 61}, {"count": 32, "first": "BD74", "minX": 28, "maxX": 60, "minY": 55, "maxY": 56}, {"count": 30, "first": "JK79", "minX": 243, "maxX": 273, "minY": 50, "maxY": 51}, {"count": 29, "first": "KV93", "minX": 280, "maxX": 309, "minY": 36, "maxY": 37}, {"count": 20, "first": "AV99", "minX": 20, "maxX": 40, "minY": 30, "maxY": 31}, {"count": 15, "first": "CB100", "minX": 52, "maxX": 67, "minY": 29, "maxY": 30}, {"count": 20, "first": "LE103", "minX": 289, "maxX": 309, "minY": 26, "maxY": 27}, {"count": 28, "first": "JR111", "minX": 250, "maxX": 278, "minY": 18, "maxY": 19}, {"count": 31, "first": "HZ118", "minX": 206, "maxX": 237, "minY": 11, "maxY": 12}]
+route [{"count": 4, "first": "AU62", "minX": 19, "maxX": 21, "minY": 66, "maxY": 68}, {"count": 4, "first": "BG72", "minX": 31, "maxX": 33, "minY": 56, "maxY": 58}, {"count": 4, "first": "AF89", "minX": 4, "maxX": 6, "minY": 39, "maxY": 41}, {"count": 4, "first": "AP89", "minX": 14, "maxX": 16, "minY": 39, "maxY": 41}, {"count": 4, "first": "AX89", "minX": 22, "maxX": 24, "minY": 39, "maxY": 41}, {"count": 4, "first": "JQ92", "minX": 249, "maxX": 251, "minY": 36, "maxY": 38}, {"count": 4, "first": "BO93", "minX": 39, "maxX": 41, "minY": 35, "maxY": 37}, {"count": 4, "first": "BY93", "minX": 49, "maxX": 51, "minY": 35, "maxY": 37}, {"count": 4, "first": "AD124", "minX": 2, "maxX": 4, "minY": 4, "maxY": 6}, {"count": 4, "first": "HU124", "minX": 201, "maxX": 203, "minY": 4, "maxY": 6}]
+unlock [{"count": 12, "first": "CO59", "minX": 65, "maxX": 68, "minY": 67, "maxY": 71}, {"count": 12, "first": "HR61", "minX": 198, "maxX": 201, "minY": 65, "maxY": 69}]
+noGrip [{"count": 29, "first": "CV24", "minX": 72, "maxX": 73, "minY": 77, "maxY": 106}, {"count": 4, "first": "HQ49", "minX": 197, "maxX": 198, "minY": 77, "maxY": 81}, {"count": 30, "first": "CV80", "minX": 72, "maxX": 73, "minY": 20, "maxY": 50}, {"count": 7, "first": "JJ90", "minX": 242, "maxX": 246, "minY": 36, "maxY": 40}]

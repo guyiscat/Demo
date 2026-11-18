@@ -1,0 +1,27 @@
+{
+  "sourceWasUnchangedSinceBackup": true,
+  "originalSceneGuidUnchanged": true,
+  "missingExistingObjectBlocks": [],
+  "changedExistingGeometryBlocks": [],
+  "changedOtherBlocks": [
+    [
+      "212",
+      "72138921"
+    ],
+    [
+      "114",
+      "150630348"
+    ],
+    [
+      "114",
+      "939143365"
+    ],
+    [
+      "4",
+      "1539424585"
+    ]
+  ],
+  "newBlocks": 37,
+  "beforeSha256": "ba595b10be61add917bd878039f5aa0847262f7e51575b8e6aee305185a25f14",
+  "afterSha256": "39d430bb2396b1ef8307d3dc218bd57703ec45b3dfcf7fd9d65e397ceb1f470a"
+}

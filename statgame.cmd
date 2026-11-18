@@ -1,17 +1,17 @@
 @echo off
 setlocal DisableDelayedExpansion
-set "seaside_build_dir=%~dp0build\FirstScene_Seaside"
-set "seaside_game_exe=%seaside_build_dir%\Seaside Whitebox.exe"
+set "seaside_build_dir=%~dp0Play64"
+set "seaside_game_exe=%seaside_build_dir%\SeasideWhitebox.exe"
 
 if not exist "%seaside_game_exe%" (
     echo Game executable not found:
     echo "%seaside_game_exe%"
-    echo Build the game into build\FirstScene_Seaside and try again.
+    echo Build with Project6.4\Tools\BuildAndTest.ps1 -StartupPage and try again.
     pause
     exit /b 1
 )
 
-if not exist "%seaside_build_dir%\Seaside Whitebox_Data\globalgamemanagers" (
+if not exist "%seaside_build_dir%\SeasideWhitebox_Data\globalgamemanagers" (
     echo Game data is missing. Keep the complete Unity build folder together.
     pause
     exit /b 1

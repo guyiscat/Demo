@@ -1,0 +1,317 @@
+[
+  {
+    "path": "Project6.4/Assets/Scripts/AfterimageChecks.cs",
+    "guid": "54cada734e0a5214db05ae0ec5793214",
+    "hash": "59350DBEBB836211D61BC3DCFCD0F715DA9A191D6C9B27780D0AFE2EDDC08BFE"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/BackgroundCameraFrame.cs",
+    "guid": "8c129d066ad64363bed115379b151985",
+    "hash": "FBA779D3E856EC2CDB47384F04FFF433B294C7F654A318E2F338884C1D6461B4"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/CameraComfortChecks.cs",
+    "guid": "d0b1a6cc9118d5c43b44769cdf6635f4",
+    "hash": "5D9E5CD806081611741549038F0E05433089472BB00F0154E262747BDD17E415"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/CameraMotion.cs",
+    "guid": "e9275010b85c7514ea2cbcca0af3fc46",
+    "hash": "19FF6B776F8C7D03F10701ACB542FBFFF2429B23F8BE2CEC112D980AB9994F5C"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/CameraPreview.cs",
+    "guid": "e92e87152b96e704cb4dc6e5eaa5d773",
+    "hash": "D5F59D7D3E5C596F7CF601893BBE3CF740A8D773845C0D1073B451D7DD860DBA"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/CheckpointVisual.cs",
+    "guid": "b4eb91a5af815214bb9954c76f11712c",
+    "hash": "CE8D7517FAA5C47E781A44BA11A350591864924F502F3718D39D08FA9E483E1E"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/DashAfterimage.cs",
+    "guid": "5a737cdb042db9142953b363727a8df9",
+    "hash": "2A70761E058CC1F6F6406CCC18107602634FF0C6482F82605AB7ECD3A9183BBF"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ExcelMapData.cs",
+    "guid": "0edc8faed270c954ea8d9a9fd8965eef",
+    "hash": "46AF0270B861B65F6A3231066E18E69EE9D18BDA0087D8B5ED376D95F66422B8"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestAimIndicator.cs",
+    "guid": "64cbf05509ea4c528227ea5a5eed1fb7",
+    "hash": "E7E15D547A00E498074F8A52E485D6FC070768CF96718FCD43B852F9F77AE3F3"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestGoal.cs",
+    "guid": "b820aa2e23857ec479b3baf61bd08984",
+    "hash": "33BB6FF8A205AD3211AF1A141166AAA065098798851EAA4008EC7A20DFC48AF2"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestHUD.cs",
+    "guid": "4f15931c3f46ae64686dd019af879111",
+    "hash": "360C2D127348A27ABC7A8367CF53F19EBDA5BB52A597FF8628581746296AB1E0"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestIntroCamera.cs",
+    "guid": "ae12d584cac9466ebe29ec0577600efc",
+    "hash": "38C26791A570CC08F7C7454AD6EB29F43D17D6DC6842316DF7C4CEDA5FBD48A8"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestLevel.cs",
+    "guid": "eb78e412636fc6540a4737820b31d188",
+    "hash": "7F74B47BD26D2967AFCEE11E8487526A5AE11D29CF7EDD702108C6D79D66EFB4"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestMapData.cs",
+    "guid": "d91173de5343f544b9da0542f53b9394",
+    "hash": "7AF8F7CD27FEDC40B1BE48273878CA399CF847486DA2BC9762FD1789DCBAE285"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestPlayer.cs",
+    "guid": "feccdca9a84728349ba03628716d7125",
+    "hash": "633B91E60399E72ABC1AC3E4A28F09A06C9F1B93A49304A890D76EDA59293AAC"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestRuntimeChecks.cs",
+    "guid": "0d98f6489fbfcab4d82b85cb8d0775e7",
+    "hash": "18F9FDE2E45EE2D6E97631BB150E99F969E855C7D3E71CFEB7D6B4D59B8E9EEC"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestSettings.cs",
+    "guid": "8af25b2497c46424ea36a17c02a39bc5",
+    "hash": "41680FAB6DAEAE1FE5065A3C748B103C6B0A16F4BE438F0248FA9BEC5CA96264"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestUnlock.cs",
+    "guid": "5a85a617748bd7e4782687fd5409b874",
+    "hash": "220311CB7B0B235F5445DC20DDBACDE1DAD5A10476CE118DCE72EA585FB5D4A5"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestWaterfall.cs",
+    "guid": "8456836500cb60e4c940565188ae38f3",
+    "hash": "F3103CB8BC2BDC05879A246CE771666715527CCD203E7CE9821DF733B0A9F59F"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestWaterwheel.cs",
+    "guid": "d460a8766fed3764cb49e6d0ccfc8762",
+    "hash": "C6F210BA7A3250D0C2ABECBB2C207E266F6049DBB52FF7EA64A00FEDA981F475"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestWheelPlatform.cs",
+    "guid": "88dc152243f1f31468f753b28321f957",
+    "hash": "3D859C1397E4F05F09A2227E856D67686E4F5D3C47D8473911DB31B17945BBB4"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/ForestZipline.cs",
+    "guid": "de34bbae6d4d3e848b96b6c98432cfd1",
+    "hash": "096D118695A2480BEC5B37A0FBD5C33AD5C6A0D32E26C43FB447522312C0C51D"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/MovementGraceChecks.cs",
+    "guid": "8084471eb41acee479356933b5b07108",
+    "hash": "9E3B108D6A122A4971ACAE4799D3E5429BEEFF0A44F1AF17AE2597D0F2195F5C"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/PlaytestRuntimeChecks.cs",
+    "guid": "1b5be9b45ea9a5f4a8ce79a0605a07ee",
+    "hash": "D40DC85644417346DA1FE69E61B1D77C1B84FC34780F29354EE1C0E10928B044"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/PreviousCameraMotion.cs",
+    "guid": "0f4444fe8d9d1e84db924572443be102",
+    "hash": "3007B97B4744DD86C712DF7B45D1AAFD1EBF73BF14D5ABD4800FC3E3E23A016B"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/RouteDisplay.cs",
+    "guid": "3b17ec51d9cd27e4fb408083d82c18fe",
+    "hash": "FAA2668CF85BB76565C1736EF978984AE4FB1EE4FA8D54195915D50D2B169845"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideArtAlignment.cs",
+    "guid": "d42c14a8ab193fc4f84a41056255a339",
+    "hash": "F60FBDC2A484DED74AFBE7E1E5BC1373DB1923158B681BA45C5087AD7456EC0C"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideArtPreviewLaunch.cs",
+    "guid": "f05deb61c5090a446afd1c355e34ef2e",
+    "hash": "1397C8806E6E7849D0ADA4126190D17F89FEBBB615AE4A2AF0F67D49CF30BD99"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideArtRoot.cs",
+    "guid": "ebcc48ca1b1c7de49b6fc8fa3edd82c2",
+    "hash": "38502B47A8602282F8F1F11462249C2888919C118D54229D3A3C934B56CEB2A3"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideCamera.cs",
+    "guid": "3c8c14660c32d4448a0e20f2e18bf227",
+    "hash": "80AE0E3965FF4DD783E086E40736304FCF3E9E99B5955A1952CF8AAAFB1FD01C"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideCell.cs",
+    "guid": "dcca9e53dbd9b3a4c968e97230f543e4",
+    "hash": "BC215D5002D054E5B41DC32FA58D998EDA620D53F7B64F1BF57C2A329AA3749A"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideHUD.cs",
+    "guid": "27f6f9cff98ee4243aac8b9caa04638d",
+    "hash": "90231C54E92B916323443629752C2E216CC52FD0681158EC98FEF4E154D56713"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideInputLatch.cs",
+    "guid": "535fb7a00f7852c409f808493d36b4d1",
+    "hash": "CAA278602A722375E2B99CBA007D63B9DF603F0FD54B7A4AF411B91C881A2E58"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideLog.cs",
+    "guid": "5705e5ff94a59ae438593b1c0395825b",
+    "hash": "DE86C6A7A1664E0AC6483FB12C2B7448EA159EEEE70AC648D5AC68FB266229C6"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideMapRoot.cs",
+    "guid": "c62e5f84d1b9bf046a46ea417be20b8a",
+    "hash": "DD7D43B5DC7369CDD2680E4C95E0DC5B29C81D747F06B67EFF7BA6D39F05CC1C"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideMotor.cs",
+    "guid": "39a32d35258d1be48bbae948b84b54b5",
+    "hash": "1791FEF7CE9EC92E8CA385FC266C20167612DE0C308E2E28BEEC4BE7FB163445"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideSession.cs",
+    "guid": "2c36d20ea011b0749900555d83a4a02e",
+    "hash": "4DD080FA4304E7BCBEC54012079C332BD3FACF0E448DE30D2C75D78C9B556571"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/SeasideSettings.cs",
+    "guid": "b2412a95ad918164192ecf3372803567",
+    "hash": "788D5971D40349094052603422048B62E4B66FC02270AB0BD270BFCE978B5BCA"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/StandaloneCalibration.cs",
+    "guid": "038138066002b3647bece64299c0f8ef",
+    "hash": "91DFD537DD71EF4193B9F3DBD77DFD4EEB5DD6617D790F2518FB47B67C9C9690"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/StartGameButton.cs",
+    "guid": "aeb2bed944c10d54e858048371a1837a",
+    "hash": "8A0CB53D28607FF2B18E7032101BB1D21C2AF3389C622F168B613214D8D07D0B"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/StartGameMenu.cs",
+    "guid": "78641da822438554dba019324b3d2763",
+    "hash": "9BA30A75F51027A66DA69435AFDD689970C3B4EB94C071C75B5CA014C5A16DCF"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/StartGameMenuSmoke.cs",
+    "guid": "405180319fb96ae4a9fae4c58ed2d108",
+    "hash": "98E71C24EC946E24B699DA8C7C1C073AAF8F11180FD64BC24C5127CE2164D028"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/TrailVisualPreview.cs",
+    "guid": "623da44df5cf59c41884b4f117a27b2a",
+    "hash": "27714F9D78037E455A0248895B1CD5AD60A92D2B7FD302E9B60BCCC96C384888"
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/WallJumpRegression.cs",
+    "guid": "4ba97e9868580f14b8defeff29ddf4f1",
+    "hash": "B8AD30C99B507C16D3B5782FD98927DD0FE645F1F9724CA0860AB6A38F9EA774"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/CameraBackgroundBoundsChecks.cs",
+    "guid": "5da6f8661d3b4bd4aee58f658572d302",
+    "hash": "8E84589F83195B272FD66CC76F3D05AA5B98C63AD54B744AA297A0149777A605"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/ForestBuilder.cs",
+    "guid": "44e53bda7b3f6474b9f3ab3d63de6a5e",
+    "hash": "DAD6417D53FA4F489BB7B522F1EDC8BCF85C780533E7B1A9190321D56FBE3C70"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/ForestEditorChecks.cs",
+    "guid": "af905ee29f2745d4db6120c966779bfa",
+    "hash": "322FF4AAEFF99751853CCA18DC4A16D181292E32B8CBB6F7E155FCF171875C66"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/ForestMapRevision.cs",
+    "guid": "52c824f340b540141847a318ab3db374",
+    "hash": "5B4B444B166A9DE8CDB1AF06E208BF584D4381A1801FBED63E943573DF00E2D6"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/ForestRevisionSetup.cs",
+    "guid": "e26c90c928c94615a8f2a6bdff093538",
+    "hash": "0CEFC122842D517F74A7BF9F7C8900AF93F805510A775B2011C018B3B8004C85"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/ForestTraversalRevision.cs",
+    "guid": "aada2cfda888fbf4fafe13915a35586a",
+    "hash": "F63A780681D3E5C675FB16A9B881EF4EF3AB4DBB95B24085D19AE8FBF0BAF556"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/PlaytestFixBuild.cs",
+    "guid": "564aabd351f7aa749820608231e6467b",
+    "hash": "BC73D0BBD2EE94E1F4C2E0AD4F0ED39BF087E3CE59D47A463C7001E8B3FF5B3F"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/PlaytestRegression.cs",
+    "guid": "bc01bb228febc7a408407130e6ccdc54",
+    "hash": "5EEB369E4F9230AA31C8BB31D7D7940250E821B02897832A3035A23403FBF9FB"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideArtSetup.cs",
+    "guid": "8bf4f3dc725f2364fb7a4c7194b49937",
+    "hash": "C055EB7B1262719E113891CD590D874EB421C7454845C86295E418CD24B8B61D"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideBuilder.cs",
+    "guid": "dd0e7b552ec50b74796a61b63bc15b1c",
+    "hash": "96C270FCF8351B8F86F2A1A7CE24453B396F16AAC4AE3E2E3E581C52A2ADBD87"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideFeelUpgrade.cs",
+    "guid": "af438fce71243604d957acf2aa708829",
+    "hash": "056C9FBA48682CE44088B76CD3D19DA9B069AA7B8F4CFED923669067FEE453C1"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideHierarchyRefactor.cs",
+    "guid": "e9394704efb970442b59e085c034b9d9",
+    "hash": "C019FA25519F4666F817C419F53AB8D7E7C8BCBDB23653F5A2E35D430DDD93DB"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasidePart1Backgrounds.cs",
+    "guid": "0f2437359ce440f4ea3450c20e7910fc",
+    "hash": "A4A52CD339DD77DB33D8F2E89AB60A456A4A12FC8012F400EB3190D3CA27B568"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasidePaths.cs",
+    "guid": "fb822ed3094ae4943b452107af9fac5d",
+    "hash": "6C8BB04B13227EE0BBBCE7B811BE1AB13B4FD83B69EC2B97FA10D792DF6C7E60"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideSceneGeometry.cs",
+    "guid": "18f13f45ce2036e4ea9431f1c55ebbf2",
+    "hash": "25EC626ECF8413BB1F9ADFB14C356BA44F872B34EDC06A5C9D2830DDD70EBDB7"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideTests.cs",
+    "guid": "c42e7e2c9e0908747a51ed9315c76edf",
+    "hash": "899E613D518F503E4E968B89748AF937DF3C48D84AD0D3C3ED7117706218F5B4"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/SeasideTools.cs",
+    "guid": "002ab81c85bbaad47b5645c74c8e9cbf",
+    "hash": "F90D0D60D688B4CA62AF95A1A048692F18180CFA8693A8CAC98C4890DA051953"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/StartGameSetup.cs",
+    "guid": "c757bacde02a0e64aaa6cb8dc175d020",
+    "hash": "337C198DD18E7B92CA9D3F0E63E07C18580A6E1263936377277869A84F3D18DB"
+  },
+  {
+    "path": "Project6.4/Assets/Editor/WallJumpEditorChecks.cs",
+    "guid": "4e5ddf57c51aa164e821e8c2c37d33f2",
+    "hash": "0F87B14BB0D601F7AE3189B09A4AA613698B2DCEFACEF2CF038020D74D04B6B6"
+  }
+]

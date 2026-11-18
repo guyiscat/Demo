@@ -21,8 +21,11 @@ namespace Seaside
         public float releasedSlideSpeed=3.5f,releasedSlideBlend=.28f;
         public bool DashReady{get;private set;}=true;
         public bool TeleportReady{get;private set;}=true;
+        // Optional traversal hooks. Seaside never calls these; its Tick and settings stay unchanged.
+        public event System.Action ResetPerformed;
         public bool Dashing=>dashRemaining>0;
         public Vector2 BodySize=>GetComponent<BoxCollider2D>().size;
+        public Vector2 AimDirection{get;private set;}=Vector2.right;
         public int WallSide{get;private set;}
         public int DashUses{get;private set;}
         public int WallKicks{get;private set;}
@@ -38,13 +41,32 @@ namespace Seaside
         Vector2 dashDirection;
         SpriteRenderer picture;
         SeasideSession session;
-        void Awake(){Body=GetComponent<Rigidbody2D>();picture=GetComponent<SpriteRenderer>();session=FindAnyObjectByType<SeasideSession>();}
+        void Awake()
+        {
+            Body=GetComponent<Rigidbody2D>();picture=GetComponent<SpriteRenderer>();session=FindAnyObjectByType<SeasideSession>();
+            ApplySystemSettings();
+        }
+        public void ApplySystemSettings()
+        {
+            var common=GameSystemSettings.Current;
+            if(common==null)return;
+            settings=common.movement;releasedSlideSpeed=common.releasedSlideSpeed;releasedSlideBlend=common.releasedSlideBlend;
+        }
+        public Vector2 ReadAimDirection()
+        {
+            var camera=Camera.main;
+            if(camera!=null)
+            {
+                Vector2 aim=(Vector2)camera.ScreenToWorldPoint(Input.mousePosition)-(Vector2)transform.position;
+                if(aim.sqrMagnitude>.001f)AimDirection=aim.normalized;
+            }
+            return AimDirection;
+        }
         void Update()
         {
             if(!externalInput)
             {
-                Vector3 mouse=Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector2 aim=((Vector2)mouse-(Vector2)transform.position).normalized;
+                Vector2 aim=ReadAimDirection();
                 controls.Sample(Input.GetKey(KeyCode.A),Input.GetKey(KeyCode.D),Input.GetKeyDown(KeyCode.Space),
                     Input.GetKey(KeyCode.Space),Input.GetMouseButtonDown(0),aim,Attached,WallSide);
             }
@@ -59,6 +81,7 @@ namespace Seaside
         {
             if(Body==null)Body=GetComponent<Rigidbody2D>();
             if(frozen||(session!=null&&session.InputBlocked)){Body.linearVelocity=Vector2.zero;return;}
+            if(c.aim.sqrMagnitude>.001f)AimDirection=c.aim.normalized;
             Vector2 p=Body.position;int mask=1<<6;
             Vector2 size=BodySize;
             var floor=Physics2D.BoxCast(p+Vector2.down*(size.y*.5f-.02f),new Vector2(size.x-.12f,.02f),0,Vector2.down,.055f,mask);
@@ -186,6 +209,29 @@ namespace Seaside
             releasedWallSide=0;separationTime=slideVelocity=0;WallSliding=DashStoppedByTerrain=false;
             groundJumpAvailable=requireGroundExit=false;
             wallGrace=0;graceWallSide=0;
+            ResetPerformed?.Invoke();
+        }
+        public void SetTeleportCharge(bool ready){TeleportReady=ready;}
+        public void RefillTraversalAbilities(){DashReady=TeleportReady=true;}
+        public void BeginTraversal()
+        {
+            if(Body==null)Body=GetComponent<Rigidbody2D>();
+            Body.linearVelocity=Vector2.zero;
+            dashRemaining=hover=fallAge=wallLock=coyote=buffer=0;
+            variableJump=brakePending=groundJumpAvailable=requireGroundExit=false;
+            Attached=Grounded=WallSliding=DashStoppedByTerrain=false;WallSide=0;
+            releasedWallSide=0;separationTime=slideVelocity=wallGrace=0;graceWallSide=0;
+            controls.Clear();GetComponent<DashAfterimage>()?.Clear();
+        }
+        public void WarpForTraversal(Vector2 point)
+        {
+            BeginTraversal();Body.position=point;transform.position=new Vector3(point.x,point.y,0);
+        }
+        public void JumpFromTraversal(float direction)
+        {
+            BeginTraversal();jumpOrigin=Body.position.y;variableJump=true;requireGroundExit=true;
+            Body.linearVelocity=new Vector2(direction*settings.moveSpeed,
+                Mathf.Sqrt(2*settings.ascentGravity*settings.longJumpHeight)-.5f*settings.ascentGravity*Time.fixedDeltaTime);
         }
     }
 }

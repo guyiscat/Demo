@@ -1,0 +1,187 @@
+[
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\ForestWhitebox.unity",
+    "sha256": "c96b51760e0504694038fd7d7a3b9a07dfa89158b1e6952e04b1ac46db6c0f1a",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\ForestWhitebox.unity.meta",
+    "sha256": "ba64c7264514fe7e534da1a07429675d92ec7d5b0e5948d038936559993ba898",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\Seaside01.unity",
+    "sha256": "bc4e59b2cafc9550a6f0554e4c01044d60dae10d97f0898438a2609cf3a3e8a3",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\Seaside01.unity.meta",
+    "sha256": "fe1cb734e6faf8be226831ac029c7259ed807638b75bcaf7df34f5c182ffc536",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\SeasideArtPreview_Recovered_20261031_1058.unity",
+    "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\SeasideArtPreview_Recovered_20261031_1058.unity.meta",
+    "sha256": "4e0f1c3c5157f0c7e2afd9bd877340a38771f85d38f8bbaf7893fb6be4e66da6",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\SeasideArtPreview.unity",
+    "sha256": "c8fe9353dcbf6b7414c4456db485e65a81558fbaae93d8590dbf8e048568e814",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\SeasideArtPreview.unity.meta",
+    "sha256": "ae25902d5af419bfb41603403efb5094b21bf3383b494068611969c4ff97f885",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\StartGame.unity",
+    "sha256": "f5d941ab2c41f8e83ed6faa953c7d686d2c99d083c01af339b10b851f269407e",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\StartGame.unity.meta",
+    "sha256": "edede2d7b683b8201384dfb8bbd1bb919cfdeb190c48c9f9ee80a712fb043654",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\TheFirstScene_Seaside.unity",
+    "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scenes\\TheFirstScene_Seaside.unity.meta",
+    "sha256": "c339fd4b7385a6627e1be8101a41243998d8b21747b58896970b7aa062b6eb25",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Build Profiles.meta",
+    "sha256": "6be16296c329003496abebf80800b4ba0db7a2519ef50623462777571f703c38",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Forest.asset",
+    "sha256": "75bdf211c2de729c62eafe504da2b3b71a4e5028528bf066446e02b8d4af07ab",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Forest.asset.meta",
+    "sha256": "6ada044f98a7e7c14882dc3a3d1d610a0ae6940faac79722f1f39891e4021fd1",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Movement.asset",
+    "sha256": "83cd54b2c4dd85630a362fd4be864390e618e872e821ca5c325b096c2019a402",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Movement.asset.meta",
+    "sha256": "77f617e8ebbeee21cfa3ec927e783381787ae4210a2f436027c5719869debf8b",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\NoFriction.physicsMaterial2D",
+    "sha256": "6ca766e106e5b6237c0ddbb1796c9097042ae766a0b7a48ad6f18733f1749931",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\NoFriction.physicsMaterial2D.meta",
+    "sha256": "ee3c9e4928c477c954c34d77b81da1be8a644e574e0d27fc1d9039fc58749416",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Build Profiles\\Windows.asset",
+    "sha256": "9e31e62f050cdcc0bce425edd5a2943ac3059f9e690b06281c37b49cb36ad23c",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Settings\\Build Profiles\\Windows.asset.meta",
+    "sha256": "11da4872580d2dedebf52c6b76a2bb64499b517183b8ec99ae9a57bc2601f245",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\maps\\海边地图.xlsx",
+    "sha256": "6dd4a9ba0edf0bf1194a4c34baf0eb4e9fd7da34b46373954520b7496fd23bf5",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\maps\\矿洞地图.xlsx",
+    "sha256": "17b5425c1e39dc5c10692629874eb8ca201a2c9c70b5fc72615a70e08ec3cb0c",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\maps\\森林地图.xlsx",
+    "sha256": "e684aa5c696d7299de07e1a30ad7b329e82058d162c5220f1fdb7ba725e56c0e",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideArtAlignment.cs",
+    "sha256": "f60fbdc2a484ded74afbe7e1e5bc1373db1923158b681ba45c5087ad7456ec0c",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideArtPreviewLaunch.cs",
+    "sha256": "1397c8806e6e7849d0ada4126190d17f89febbb615ae4a2af0f67d49cf30bd99",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideArtRoot.cs",
+    "sha256": "38502b47a8602282f8f1f11462249c2888919c118d54229d3a3c934b56ceb2a3",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCamera.cs",
+    "sha256": "80ae0e3965ff4dd783e086e40736304fcf3e9e99b5955a1952cf8aaafb1fd01c",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideCell.cs",
+    "sha256": "bc215d5002d054e5b41dc32fa58d998eda620d53f7b64f1bf57c2a329aa3749a",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideHUD.cs",
+    "sha256": "90231c54e92b916323443629752c2e216cc52fd0681158ec98fef4e154d56713",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideInputLatch.cs",
+    "sha256": "caa278602a722375e2b99cba007d63b9df603f0fd54b7a4af411b91c881a2e58",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideLog.cs",
+    "sha256": "de86c6a7a1664e0ac6483fb12c2b7448ea159eeee70ac648d5ac68fb266229c6",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideMapRoot.cs",
+    "sha256": "dd7d43b5dc7369cdd2680e4c95e0dc5b29c81d747f06b67eff7ba6d39f05cc1c",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideMotor.cs",
+    "sha256": "1791fef7ce9ec92e8ca385fc266c20167612de0c308e2e28beec4be7fb163445",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideSession.cs",
+    "sha256": "b3dc86d67aee3c8a671bdb68156b08976c8bb5125e05450327e7d7bfc1d859be",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\Assets\\Scripts\\SeasideSettings.cs",
+    "sha256": "788d5971d40349094052603422048b62e4b66fc02270ab0bd270bfce978b5bca",
+    "unchanged": true
+  },
+  {
+    "path": "D:\\UnityProjects\\Demo\\Project6.4\\ProjectSettings\\EditorBuildSettings.asset",
+    "sha256": "72cc77a000a176e0fa294c72c4b17900a7bbade76882d0694048522e6692a808",
+    "unchanged": true
+  }
+]

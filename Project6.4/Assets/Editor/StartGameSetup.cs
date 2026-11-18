@@ -123,6 +123,7 @@ public static class StartGameSetup
     public static void ValidateAndBuild()
     {
         RequireBatch(); Directory.CreateDirectory(Output);
+        SystemContractChecks.Run();
         EditorSceneManager.OpenScene(MenuScene);
         var menu = UnityEngine.Object.FindAnyObjectByType<StartGameMenu>();
         if (menu == null || menu.buttons.Length != 3 || menu.menuCamera == null) throw new Exception("Menu wiring incomplete");

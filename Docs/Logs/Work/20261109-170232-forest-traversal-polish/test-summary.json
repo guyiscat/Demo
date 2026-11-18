@@ -1,0 +1,35 @@
+{
+  "finalBuild": "20261109-171004-093",
+  "status": {
+    "started": "2026-11-09T17:10:04.0969695+08:00",
+    "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261109-170232-forest-traversal-polish\\Validation\\Project6.4",
+    "phase": "forest-runtime",
+    "result": "PASS",
+    "editorExit": 0,
+    "forestExit": 0,
+    "finished": "2026-11-09T17:10:10.6843664+08:00"
+  },
+  "reports": {
+    "forestEditor": {
+      "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261109-170232-forest-traversal-polish\\Validation\\Docs\\Logs\\Build\\20261109-171004-093\\editor-reports\\forest-editor-checks.txt",
+      "passed": 1752,
+      "failed": 0
+    },
+    "seasideBasics": {
+      "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261109-170232-forest-traversal-polish\\Validation\\Docs\\Logs\\Build\\20261109-171004-093\\editor-reports\\physics-tests.txt",
+      "passed": 40,
+      "failed": 0
+    },
+    "seasideRegression": {
+      "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261109-170232-forest-traversal-polish\\Validation\\Docs\\Logs\\Build\\20261109-171004-093\\editor-reports\\playtest-regression.txt",
+      "passed": 203,
+      "failed": 0
+    },
+    "forestRuntime": {
+      "file": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261109-170232-forest-traversal-polish\\Validation\\Docs\\Logs\\Build\\20261109-171004-093\\forest-runtime-checks.txt",
+      "passed": 148,
+      "failed": 0
+    }
+  }
+}

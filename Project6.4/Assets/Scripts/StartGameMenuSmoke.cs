@@ -53,12 +53,14 @@ namespace Seaside
             float deadline = Time.realtimeSinceStartup + 25;
             while (SceneManager.GetActiveScene().path != targetScene && Time.realtimeSinceStartup < deadline) yield return null;
             yield return null;
+            yield return null;
             try
             {
                 Check(SceneManager.GetActiveScene().path == "Assets/Scenes/TheFirstScene_Seaside.unity", "Start loads authored level");
                 Check(FindAnyObjectByType<SeasideSession>() != null && FindAnyObjectByType<SeasideMotor>() != null, "Playable session and player");
                 Check(FindAnyObjectByType<StartGameMenu>() == null, "Menu is unloaded");
                 Check(Mathf.Approximately(Time.timeScale, 1), "Gameplay time restored");
+                SystemRuntimeChecks.Run(FindAnyObjectByType<SeasideSession>(),CheckSystem);
                 complete = true;
                 File.WriteAllText(Path.Combine(folder, "runtime-result.txt"), "PASS assertions=" + assertions + " target=" + SceneManager.GetActiveScene().path);
                 Debug.Log("START_MENU_RUNTIME_PASS assertions=" + assertions);
@@ -68,6 +70,7 @@ namespace Seaside
         }
 
         void Check(bool condition, string message) { assertions++; if (!condition) throw new Exception(message); }
+        void CheckSystem(bool condition,string message){Check(condition,message);Debug.Log("PASS "+message);}
         void CaptureArtwork(StartGameMenu menu)
         {
             var target = new RenderTexture(1280, 720, 24);

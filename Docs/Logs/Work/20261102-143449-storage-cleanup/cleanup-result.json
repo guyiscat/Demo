@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "completed": "2026-11-02T14:37:51.1372144+08:00",
+  "removedTargets": 54,
+  "removedFiles": 12193,
+  "removedBytes": 15085642200,
+  "totalBytesBefore": 18253383874,
+  "totalBytesAfter": 3171482959,
+  "protectedFilesVerified": 2416,
+  "protectedFileFailures": [],
+  "mainProjectAndLatestGameUnchanged": true,
+  "mainProjectLibraryRetained": true,
+  "latestBuildZipRetained": true,
+  "gitHead": "435f952a65ef20a08b007944bcf3845763cfa145"
+}

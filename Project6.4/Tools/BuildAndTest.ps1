@@ -1,4 +1,4 @@
-param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe',[switch]$StartupPage,[switch]$GenerateStartupScene)
+param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe',[switch]$StartupPage,[switch]$GenerateStartupScene,[switch]$ForestWhitebox)
 $ErrorActionPreference='Stop'
 $release=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $project=Split-Path $PSScriptRoot -Parent
@@ -21,14 +21,25 @@ function Snapshot([string]$name) {
 }
 try {
     if(!(Test-Path -LiteralPath $Unity)){throw "Unity editor not found; supply -Unity with the installed Unity.exe path: $Unity"}
+    if($ForestWhitebox -and ($StartupPage -or $GenerateStartupScene)){throw 'ForestWhitebox is an independent build; do not combine it with StartupPage.'}
     if($GenerateStartupScene -and !$StartupPage){throw 'GenerateStartupScene requires StartupPage and an isolated project.'}
-    $method=if($GenerateStartupScene){'StartGameSetup.GenerateAndBuild'}elseif($StartupPage){'StartGameSetup.ValidateAndBuild'}else{'PlaytestFixBuild.Build'}
+    $method=if($ForestWhitebox){'ForestBuilder.Build'}elseif($GenerateStartupScene){'StartGameSetup.GenerateAndBuild'}elseif($StartupPage){'StartGameSetup.ValidateAndBuild'}else{'PlaytestFixBuild.Build'}
     $editorArguments=@('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod',$method,'-logFile',('"'+(Join-Path $run 'editor-build.log')+'"'))
     if(!$StartupPage){$editorArguments+='-nographics'}
     $editorExit=RunProcess $Unity $editorArguments
     $status.editorExit=$editorExit
     Snapshot 'editor-reports'
     if($editorExit -ne 0){throw 'Editor build/tests failed'}
+    if($ForestWhitebox){
+        $status.phase='forest-runtime'
+        $forestReport=Join-Path $run 'forest-runtime-checks.txt'
+        $forestExit=RunProcess (Join-Path $release 'Play64\Forest\ForestWhitebox.exe') @('-batchmode','-nographics','-forestChecks','-forestReport',('"'+$forestReport+'"'),'-logFile',('"'+(Join-Path $run 'forest-runtime.log')+'"'))
+        $status.forestExit=$forestExit
+        if($forestExit -ne 0){throw 'Forest runtime checks failed'}
+        if(!(Test-Path -LiteralPath $forestReport)){throw 'Forest player exited without a runtime report'}
+        $status.result='PASS'
+        return
+    }
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'StartWithLogs.ps1') -Destination (Join-Path $release 'Play64\StartWithLogs.ps1') -Force
     if($StartupPage){
         $status.phase='startup-runtime'

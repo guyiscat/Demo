@@ -1,0 +1,21 @@
+{
+  "build": "20261106-133427-951",
+  "executedThisRun": {
+    "forest-editor-checks.txt": {
+      "pass": 1874,
+      "fail": 0
+    },
+    "physics-tests.txt": {
+      "pass": 40,
+      "fail": 0
+    },
+    "playtest-regression.txt": {
+      "pass": 203,
+      "fail": 0
+    },
+    "forest-runtime-checks.txt": {
+      "pass": 93,
+      "fail": 0
+    }
+  }
+}
