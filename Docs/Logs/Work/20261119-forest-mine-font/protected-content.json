@@ -1,0 +1,19 @@
+{
+  "Project6.4\\Assets\\Scenes\\TheFirstScene_Seaside.unity": {
+    "unchanged": true,
+    "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1"
+  },
+  "Project6.4\\Assets\\Settings\\Movement.asset": {
+    "unchanged": true,
+    "sha256": "83cd54b2c4dd85630a362fd4be864390e618e872e821ca5c325b096c2019a402"
+  },
+  "Project6.4\\ProjectSettings\\EditorBuildSettings.asset": {
+    "unchanged": true,
+    "sha256": "72cc77a000a176e0fa294c72c4b17900a7bbade76882d0694048522e6692a808"
+  },
+  "font": {
+    "bytesIdentical": true
+  },
+  "森林地图.xlsx": "720838dc5a33b6ef79c9948c28d20cfe244e1a203703b31f50510a1044d064a6",
+  "矿洞地图.xlsx": "fe9adad962ca919274f9cc95bb5798c0dbbe5ea14516c2424a73c150c8358b93"
+}

@@ -1,4 +1,4 @@
-param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe',[switch]$StartupPage,[switch]$GenerateStartupScene,[switch]$ForestWhitebox)
+param([string]$Unity='D:\Development\Unity\6000.4.12f1\Editor\Unity.exe',[switch]$StartupPage,[switch]$GenerateStartupScene,[switch]$ForestWhitebox,[switch]$MineWhitebox,[switch]$SnowWhitebox,[switch]$LighthouseWhitebox)
 $ErrorActionPreference='Stop'
 $release=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $project=Split-Path $PSScriptRoot -Parent
@@ -20,16 +20,41 @@ function Snapshot([string]$name) {
         Where-Object {$_.Extension -in @('.txt','.csv')} | Copy-Item -Destination $target
 }
 try {
+    # The retired whitebox is a test fixture now. Default builds use the real menu/first level.
+    if(!$StartupPage -and !$ForestWhitebox -and !$MineWhitebox -and !$SnowWhitebox -and !$LighthouseWhitebox){$StartupPage=$true}
     if(!(Test-Path -LiteralPath $Unity)){throw "Unity editor not found; supply -Unity with the installed Unity.exe path: $Unity"}
+    if((@($StartupPage,$ForestWhitebox,$MineWhitebox,$SnowWhitebox,$LighthouseWhitebox) | Where-Object {$_}).Count -gt 1){throw 'Choose one independent build target.'}
     if($ForestWhitebox -and ($StartupPage -or $GenerateStartupScene)){throw 'ForestWhitebox is an independent build; do not combine it with StartupPage.'}
+    if($MineWhitebox -and ($ForestWhitebox -or $StartupPage -or $GenerateStartupScene)){throw 'MineWhitebox is an independent build; choose one target.'}
     if($GenerateStartupScene -and !$StartupPage){throw 'GenerateStartupScene requires StartupPage and an isolated project.'}
-    $method=if($ForestWhitebox){'ForestBuilder.Build'}elseif($GenerateStartupScene){'StartGameSetup.GenerateAndBuild'}elseif($StartupPage){'StartGameSetup.ValidateAndBuild'}else{'PlaytestFixBuild.Build'}
+    $method=if($SnowWhitebox){'SnowBuilder.Build'}elseif($LighthouseWhitebox){'LighthouseBuilder.Build'}elseif($MineWhitebox){'MineBuilder.Build'}elseif($ForestWhitebox){'ForestBuilder.Build'}elseif($GenerateStartupScene){'StartGameSetup.GenerateAndBuild'}else{'StartGameSetup.ValidateAndBuild'}
     $editorArguments=@('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod',$method,'-logFile',('"'+(Join-Path $run 'editor-build.log')+'"'))
     if(!$StartupPage){$editorArguments+='-nographics'}
     $editorExit=RunProcess $Unity $editorArguments
     $status.editorExit=$editorExit
     Snapshot 'editor-reports'
     if($editorExit -ne 0){throw 'Editor build/tests failed'}
+    if($SnowWhitebox -or $LighthouseWhitebox){
+        $levelName=if($SnowWhitebox){'Snow'}else{'Lighthouse'}
+        $status.phase=$levelName.ToLowerInvariant()+'-runtime'
+        $thermalReport=Join-Path $run ($levelName.ToLowerInvariant()+'-runtime-checks.txt')
+        $thermalExit=RunProcess (Join-Path $release ('Play64\'+$levelName+'\'+$levelName+'Whitebox.exe')) @('-batchmode','-nographics','-thermalChecks','-thermalReport',('"'+$thermalReport+'"'),'-logFile',('"'+(Join-Path $run 'thermal-runtime.log')+'"'))
+        $status.thermalExit=$thermalExit
+        if($thermalExit -ne 0){throw ($levelName+' runtime checks failed')}
+        if(!(Test-Path -LiteralPath $thermalReport)){throw 'Player exited without a thermal runtime report'}
+        $status.result='PASS'
+        return
+    }
+    if($MineWhitebox){
+        $status.phase='mine-runtime'
+        $mineReport=Join-Path $run 'mine-runtime-checks.txt'
+        $mineExit=RunProcess (Join-Path $release 'Play64\Mine\MineWhitebox.exe') @('-batchmode','-nographics','-mineChecks','-mineReport',('"'+$mineReport+'"'),'-logFile',('"'+(Join-Path $run 'mine-runtime.log')+'"'))
+        $status.mineExit=$mineExit
+        if($mineExit -ne 0){throw 'Mine runtime checks failed'}
+        if(!(Test-Path -LiteralPath $mineReport)){throw 'Mine player exited without a runtime report'}
+        $status.result='PASS'
+        return
+    }
     if($ForestWhitebox){
         $status.phase='forest-runtime'
         $forestReport=Join-Path $run 'forest-runtime-checks.txt'
@@ -49,17 +74,6 @@ try {
         $status.result='PASS'
         return
     }
-    $status.phase='runtime-regression'
-    $runtimeExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-regression','-logFile',('"'+(Join-Path $run 'runtime-regression.log')+'"'))
-    $status.regressionExit=$runtimeExit
-    Snapshot 'runtime-reports'
-    if($runtimeExit -ne 0){throw 'Runtime regressions failed'}
-    $status.phase='runtime-calibration'
-    $calibrationExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-calibrate','-logFile',('"'+(Join-Path $run 'runtime-calibration.log')+'"'))
-    $status.calibrationExit=$calibrationExit
-    Snapshot 'runtime-reports'
-    if($calibrationExit -ne 0){throw 'Runtime calibration failed'}
-    $status.result='PASS'
 } catch {$status.result='FAIL';$status.error=$_.Exception.Message;throw}
 finally {
     $status.finished=Get-Date -Format o

@@ -1,0 +1,147 @@
+{
+  "scenes": [
+    {
+      "path": "Project6.4/Assets/_Recovery/0.unity",
+      "bytes": 1702842,
+      "sha256": "0526b502024c61f8857341f0928837dfb8218c68e6c98901102f3f201423523c",
+      "guid": "7ee1be81546a87149bcf8575ce39012e",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/ForestWhitebox.unity",
+      "bytes": 4867975,
+      "sha256": "3d28d31d599b0bcd2c8c45ed8a55af1ffd8d80acdfd345effbb2fa8f0d82857d",
+      "guid": "6bd2e02781545ed47b335dfcb3475e3c",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/LighthouseWhitebox.unity",
+      "bytes": 7183205,
+      "sha256": "656bb7025e29fa47810f851df1d71a457fee143191e4226b534ba7bfa625141d",
+      "guid": "c6bc87de89f01e04291d26489fe6a890",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/MineWhitebox.unity",
+      "bytes": 7657932,
+      "sha256": "22c0837d6aa9d44ef863e9686d720d894da0d5178d4a59099e69592d31cc44a6",
+      "guid": "ee25dc1d3ac3bff479b6d883115deb88",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/Seaside01.unity",
+      "bytes": 1703863,
+      "sha256": "bc4e59b2cafc9550a6f0554e4c01044d60dae10d97f0898438a2609cf3a3e8a3",
+      "guid": "ea091664a40a02b4f92eb8e06bde00c1",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/SeasideArtPreview.unity",
+      "bytes": 1799837,
+      "sha256": "c8fe9353dcbf6b7414c4456db485e65a81558fbaae93d8590dbf8e048568e814",
+      "guid": "5996f87f9713fcf43b8dca78b2d112e4",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/SeasideArtPreview_Recovered_20261031_1058.unity",
+      "bytes": 1901574,
+      "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1",
+      "guid": "d43af23eee984324900d45b092e6f82d",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/SnowWhitebox.unity",
+      "bytes": 7918838,
+      "sha256": "2bb1a7cd20a76e7db68c840550cbd2f2772ca83f7682d6354e5470430796e1c5",
+      "guid": "3da826081adb7af41809d9038dce4ee4",
+      "referencedBy": []
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/StartGame.unity",
+      "bytes": 51062,
+      "sha256": "f5d941ab2c41f8e83ed6faa953c7d686d2c99d083c01af339b10b851f269407e",
+      "guid": "61487174df004cb4ba80e1daccaf41be",
+      "referencedBy": [
+        "Project6.4/Assets/Settings/Build Profiles/Windows.asset"
+      ]
+    },
+    {
+      "path": "Project6.4/Assets/Scenes/TheFirstScene_Seaside.unity",
+      "bytes": 1901574,
+      "sha256": "e4f2b1a54af39bccad99b26e84ad87cf3401c1b04700f2fca7c7bdf615bc0ac1",
+      "guid": "233395dd5cbf27b448e2e99d6ef5b716",
+      "referencedBy": []
+    }
+  ],
+  "noSerializedIncomingReference": [
+    {
+      "path": "Project6.4/Assets/Art/Player.png",
+      "bytes": 112
+    },
+    {
+      "path": "Project6.4/Assets/Prefabs/Checkpoint.prefab",
+      "bytes": 5303
+    },
+    {
+      "path": "Project6.4/Assets/Prefabs/Ground.prefab",
+      "bytes": 4339
+    },
+    {
+      "path": "Project6.4/Assets/Prefabs/Spike.prefab",
+      "bytes": 4343
+    },
+    {
+      "path": "Project6.4/Assets/Resources/ForestMap.json",
+      "bytes": 377950
+    },
+    {
+      "path": "Project6.4/Assets/Resources/GameSystems.asset",
+      "bytes": 1222
+    },
+    {
+      "path": "Project6.4/Assets/Resources/LighthouseMap.json",
+      "bytes": 237627
+    },
+    {
+      "path": "Project6.4/Assets/Resources/MineMap.json",
+      "bytes": 492035
+    },
+    {
+      "path": "Project6.4/Assets/Resources/SeasideMap.json",
+      "bytes": 528609
+    },
+    {
+      "path": "Project6.4/Assets/Resources/SnowMap.json",
+      "bytes": 1002046
+    },
+    {
+      "path": "Project6.4/Assets/Roles/Role1.jpg",
+      "bytes": 126279
+    },
+    {
+      "path": "Project6.4/Assets/Roles/Role2.jpg",
+      "bytes": 109636
+    },
+    {
+      "path": "Project6.4/Assets/Art/Backgrounds/Seaside.png",
+      "bytes": 31953570
+    },
+    {
+      "path": "Project6.4/Assets/Art/Seasidepart1/bg0.png",
+      "bytes": 10083886
+    },
+    {
+      "path": "Project6.4/Assets/Art/Seasidepart1/part1.json.ps",
+      "bytes": 5220
+    },
+    {
+      "path": "Project6.4/Assets/Art/startgame/startgame.json.ps",
+      "bytes": 3776
+    },
+    {
+      "path": "Project6.4/Assets/Settings/Build Profiles/Windows.asset",
+      "bytes": 1765
+    }
+  ],
+  "notes": "No serialized reference alone does not prove unused: Resources.Load, editor asset paths, source art, and manual work must also be inspected."
+}

@@ -15,6 +15,7 @@ MonoBehaviour:
   teleportDistance: 10
   beaconSpeed: 45
   beaconRadius: 0.12
+  teleportInterruptsDash: 1
   ziplineSpeed: 12
   ziplineCatchDistance: 2.1
   ziplineContactPadding: 0.55

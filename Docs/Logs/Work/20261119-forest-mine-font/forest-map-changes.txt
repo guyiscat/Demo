@@ -1,0 +1,53 @@
+ADD terrain=ground:AB38:AT38 position=(9.50, 91.50) size=(19.00, 1.00)
+ADD terrain=ground:JF65:JK65 position=(241.00, 64.50) size=(6.00, 1.00)
+ADD terrain=ground:JP65:KR65 position=(262.50, 64.50) size=(29.00, 1.00)
+ADD terrain=ground:AM95:AR95 position=(14.00, 34.50) size=(6.00, 1.00)
+ADD terrain=ground:LS97:MB97 position=(308.00, 32.50) size=(10.00, 1.00)
+ADD terrain=ground:LS98:MB98 position=(308.00, 31.50) size=(10.00, 1.00)
+REMOVE terrain=ground:AB38:AE38
+REMOVE terrain=ground:AS38:AT38
+REMOVE terrain=ground:JF65:JL65
+REMOVE terrain=ground:JQ65:KR65
+REMOVE terrain=ground:LY97:MB97
+REMOVE terrain=ground:LY98:MB98
+KEEP terrainRows=453
+ADD spike=JL65
+ADD spike=JO65
+ADD spike=KC74
+ADD spike=KF74
+ADD spike=JP84
+ADD spike=JS84
+REMOVE spike=AI38
+REMOVE spike=AK38
+REMOVE spike=AM38
+REMOVE spike=AR38
+REMOVE spike=KC75
+REMOVE spike=AL38
+REMOVE spike=JM65
+REMOVE spike=AQ95
+REMOVE spike=AN95
+REMOVE spike=JP85
+REMOVE spike=AJ38
+REMOVE spike=AQ38
+REMOVE spike=AP38
+REMOVE spike=AO95
+REMOVE spike=AG38
+REMOVE spike=AF38
+REMOVE spike=AH38
+REMOVE spike=JP65
+REMOVE spike=AP95
+REMOVE spike=JS85
+REMOVE spike=KF75
+REMOVE spike=AO38
+REMOVE spike=AN38
+REMOVE spike=AM95
+REMOVE spike=AR95
+KEEP spikes=595
+KEEP routes=10
+ZIPLINES count=13
+KEEP checkpoint=3 position=(202.00, 5.05)
+KEEP checkpoint=1 position=(5.15, 50.05)
+KEEP checkpoint=6 position=(242.00, 66.05)
+KEEP checkpoint=5 position=(202.00, 66.05)
+KEEP checkpoint=2 position=(64.00, 68.05)
+KEEP checkpoint=4 position=(247.15, 37.05)

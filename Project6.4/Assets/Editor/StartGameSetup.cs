@@ -124,6 +124,7 @@ public static class StartGameSetup
     {
         RequireBatch(); Directory.CreateDirectory(Output);
         SystemContractChecks.Run();
+        SeasideTestScenes.RunMovementRegression();
         EditorSceneManager.OpenScene(MenuScene);
         var menu = UnityEngine.Object.FindAnyObjectByType<StartGameMenu>();
         if (menu == null || menu.buttons.Length != 3 || menu.menuCamera == null) throw new Exception("Menu wiring incomplete");

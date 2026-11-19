@@ -4,7 +4,7 @@ namespace Seaside
 {
     public struct GameHUDContent
     {
-        public string title,controls,statistics,status,help,completion;
+        public string title,controls,statistics,status,help,completion,prompt,dialogueTitle,dialogue,choice1,choice2,completionTitle;
     }
     public abstract class GameHUD : MonoBehaviour
     {
@@ -15,6 +15,8 @@ namespace Seaside
         protected abstract SeasideSession Session{get;}
         public abstract GameHUDContent Content{get;}
         protected virtual void Replay(){Session.Restart();}
+        protected virtual void AdvanceDialogue(){ }
+        protected virtual void ChooseDialogue(int choice){ }
         public static string Statistics(SeasideSession session)=>"复活点 "+session.CheckpointId+"   时间 "+session.Timer.ToString("F1")+"   死亡 "+session.Deaths;
         public static string DashStatus(SeasideMotor motor)=>"冲刺 "+(motor.DashReady?"就绪":"已用");
         public static string MotorState(SeasideMotor motor)=>motor.frozen?"停止":motor.Dashing?"冲刺中":motor.Attached?"贴墙悬停":motor.WallSliding?"沿墙下滑":motor.Grounded?"地面":motor.Body.linearVelocity.y>0?"上升":"下落";
@@ -34,10 +36,30 @@ namespace Seaside
             GameUIStyles.Panel(new Rect(16,825,1408,60));
             GUI.Label(new Rect(30,831,1370,28),content.status,styles.text);
             GUI.Label(new Rect(30,857,1370,25),CommonFooter,styles.text);
+            if(!Session.InputBlocked&&!Session.ShowHelp)
+            {
+                if(!string.IsNullOrEmpty(content.dialogue))
+                {
+                    GameUIStyles.Panel(new Rect(350,270,740,330),true);
+                    GUI.Label(new Rect(380,290,680,40),content.dialogueTitle,styles.title);
+                    GUI.Label(new Rect(380,345,680,160),content.dialogue,styles.text);
+                    if(!string.IsNullOrEmpty(content.choice1))
+                    {
+                        if(GUI.Button(new Rect(380,480,680,42),content.choice1,styles.button))ChooseDialogue(0);
+                        if(GUI.Button(new Rect(380,535,680,42),content.choice2,styles.button))ChooseDialogue(1);
+                    }
+                    else if(GUI.Button(new Rect(620,535,200,38),"继续 / E",styles.button))AdvanceDialogue();
+                }
+                else if(!string.IsNullOrEmpty(content.prompt))
+                {
+                    GameUIStyles.Panel(new Rect(470,745,500,50));
+                    GUI.Label(new Rect(495,755,450,32),content.prompt,styles.text);
+                }
+            }
             if(Session.Paused||Session.ShowHelp||Session.Won)
             {
                 GameUIStyles.Panel(new Rect(350,190,740,500),true);
-                GUI.Label(new Rect(380,210,680,40),Session.Won?"本关通关 / COMPLETE":Session.Paused?"暂停 / PAUSED":"玩法说明",styles.title);
+                GUI.Label(new Rect(380,210,680,40),Session.Won?(string.IsNullOrEmpty(content.completionTitle)?"本关通关 / COMPLETE":content.completionTitle):Session.Paused?"暂停 / PAUSED":"玩法说明",styles.title);
                 string message=Session.Won?content.completion+"\n时间 "+Session.Timer.ToString("F2")+" 秒；死亡 "+Session.Deaths+" 次。\n按 R 重新挑战本关。":content.help;
                 GUI.Label(new Rect(380,260,680,345),message,styles.text);
                 if(GUI.Button(new Rect(630,625,180,38),Session.Won?"再玩一次":"继续",styles.button))

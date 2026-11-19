@@ -1,4 +1,4 @@
-param([switch]$StartupPage,[switch]$ForestWhitebox)
+param([switch]$StartupPage,[switch]$ForestWhitebox,[switch]$MineWhitebox,[switch]$SnowWhitebox,[switch]$LighthouseWhitebox)
 $ErrorActionPreference='Stop'
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -57,15 +57,24 @@ function Pack([string]$name,[string[]]$parts) {
     Write-Output $path
 }
 $projectName=Split-Path (Split-Path $PSScriptRoot -Parent) -Leaf
+if(!$StartupPage -and !$ForestWhitebox -and !$MineWhitebox -and !$SnowWhitebox -and !$LighthouseWhitebox){$StartupPage=$true}
+if((@($StartupPage,$ForestWhitebox,$MineWhitebox,$SnowWhitebox,$LighthouseWhitebox) | Where-Object {$_}).Count -gt 1){throw 'Choose one independent build target.'}
+$projectParts=@("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','Assets','README.md','CONTRIBUTING.md','Docs','statgame.cmd','forest.cmd','mine.cmd','snow.cmd','lighthouse.cmd')
 if($ForestWhitebox -and $StartupPage){throw 'Choose ForestWhitebox or StartupPage.'}
-if($ForestWhitebox){
+if($MineWhitebox -and ($ForestWhitebox -or $StartupPage)){throw 'Choose one independent build target.'}
+if($SnowWhitebox -or $LighthouseWhitebox){
+    $levelName=if($SnowWhitebox){'Snow'}else{'Lighthouse'}
+    $launcher=$levelName.ToLowerInvariant()+'.cmd'
+    Pack ($levelName+'-Unity64-Whitebox-Windows.zip') @(('Play64\'+$levelName),$launcher,'Docs\SnowLighthouse.md','Docs\ScriptLayout.md')
+    Pack ($levelName+'-Unity64-Whitebox-Project.zip') $projectParts
+}elseif($MineWhitebox){
+    Pack 'Mine-Unity64-Whitebox-Windows.zip' @('Play64\Mine','mine.cmd','Docs\MineWhitebox.md','Docs\ScriptLayout.md')
+    Pack 'Mine-Unity64-Whitebox-Project.zip' $projectParts
+}elseif($ForestWhitebox){
     Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md')
-    Pack 'Forest-Unity64-Whitebox-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs','forest.cmd')
+    Pack 'Forest-Unity64-Whitebox-Project.zip' $projectParts
 }elseif($StartupPage){
-    # Both launchers stay independent; this does not connect level progression.
-    Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','statgame.cmd','forest.cmd','README.md','CONTRIBUTING.md','Docs')
-    Pack 'Seaside-Unity64-Startup-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','maps','README.md','CONTRIBUTING.md','Docs','statgame.cmd','forest.cmd')
-}else{
-    Pack 'Seaside-Unity64-Hierarchy-Windows.zip' @('Play64','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
-    Pack 'Seaside-Unity64-Hierarchy-Project.zip' @("$projectName\Assets","$projectName\Packages","$projectName\ProjectSettings","$projectName\Tools","$projectName\AGENTS.md","$projectName\.gitignore",'AGENTS.md','.gitignore','.gitattributes','Figures','maps','StartGame64.cmd','ArtPreview64.cmd','CameraPreview64.cmd','README.md','README-Unity64.md','CONTRIBUTING.md','Docs')
+    # All five launchers remain independent; no level progression is connected.
+    Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','statgame.cmd','forest.cmd','mine.cmd','snow.cmd','lighthouse.cmd','README.md','CONTRIBUTING.md','Docs')
+    Pack 'Seaside-Unity64-Startup-Project.zip' $projectParts
 }

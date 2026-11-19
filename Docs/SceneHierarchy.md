@@ -1,5 +1,7 @@
 # SeasideArtPreview 场景层级与命名
 
+2026-11-19当前入口：第一关为Assets/Scenes/TheFirstScene_Seaside.unity，沿用下述层级规范。旧SeasideArtPreview及恢复副本已移出工程；原Seaside01仅以Editor/Tests/Fixtures/SeasideMovementBaseline.unity保留为动作回归夹具。旧创建/迁移菜单已移除，编辑当前场景使用Seaside > Map editing palette。本文件下文是历史实施记录，旧打开和打包路径不作为当前操作入口，最新参见[README](../README.md)与[清理日志](Logs/Work/20261119-project-cleanup/work-log.md)。
+
 2026-10-29开始，2026-10-30完成验证。适用工程：Demo/Project6.4，Unity6000.4.12f1。本次原地整理SeasideArtPreview.unity，保留场景GUID和用户保存的Part1Art/bg3，没有另建平行关卡。
 
 ```text

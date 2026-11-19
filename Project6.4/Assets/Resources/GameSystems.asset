@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GameSystems
   m_EditorClassIdentifier: Assembly-CSharp::Seaside.GameSystemSettings
   movement: {fileID: 11400000, guid: 5032a02bcdef9934dbac1a99073e9f81, type: 2}
+  systemFont: {fileID: 12800000, guid: 53b29c6f67db408aa06c277932b8eaf4, type: 3}
   releasedSlideSpeed: 3.5
   releasedSlideBlend: 0.28
   cameraTuning:

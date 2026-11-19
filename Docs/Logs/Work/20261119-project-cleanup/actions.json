@@ -1,0 +1,224 @@
+[
+  {
+    "path": "Project6.4/Assets/Scenes/SeasideArtPreview.unity",
+    "action": "removed-from-active-tree",
+    "reason": "Replaced by the saved TheFirstScene_Seaside scene",
+    "files": 1,
+    "bytes": 1799837.0
+  },
+  {
+    "path": "Project6.4/Assets/Scenes/SeasideArtPreview.unity.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Replaced by the saved TheFirstScene_Seaside scene",
+    "files": 1,
+    "bytes": 155.0
+  },
+  {
+    "path": "Project6.4/Assets/Scenes/SeasideArtPreview_Recovered_20261031_1058.unity",
+    "action": "removed-from-active-tree",
+    "reason": "Byte-identical to current saved first level; redundant recovery scene",
+    "files": 1,
+    "bytes": 1901574.0
+  },
+  {
+    "path": "Project6.4/Assets/Scenes/SeasideArtPreview_Recovered_20261031_1058.unity.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Byte-identical to current saved first level; redundant recovery scene",
+    "files": 1,
+    "bytes": 62.0
+  },
+  {
+    "path": "Project6.4/Assets/_Recovery",
+    "action": "removed-from-active-tree",
+    "reason": "Old Unity recovery scene; archive outside imported Assets",
+    "files": 2,
+    "bytes": 1702997.0
+  },
+  {
+    "path": "Project6.4/Assets/_Recovery.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Old Unity recovery scene; archive outside imported Assets",
+    "files": 1,
+    "bytes": 172.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideBuilder.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Retired initial whitebox generator; not current manual map workflow",
+    "files": 1,
+    "bytes": 15899.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideBuilder.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Retired initial whitebox generator; not current manual map workflow",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideArtSetup.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Retired preview creation and comparison tools",
+    "files": 1,
+    "bytes": 5473.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideArtSetup.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Retired preview creation and comparison tools",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideFeelUpgrade.cs",
+    "action": "removed-from-active-tree",
+    "reason": "One-time historical parameter upgrade",
+    "files": 1,
+    "bytes": 1576.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideFeelUpgrade.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "One-time historical parameter upgrade",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideHierarchyRefactor.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Completed one-time preview hierarchy migration",
+    "files": 1,
+    "bytes": 11577.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideHierarchyRefactor.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Completed one-time preview hierarchy migration",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasidePart1Backgrounds.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Completed one-time preview background import",
+    "files": 1,
+    "bytes": 8237.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasidePart1Backgrounds.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Completed one-time preview background import",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideSceneGeometry.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Used only by retired preview migration tools",
+    "files": 1,
+    "bytes": 1826.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/SeasideSceneGeometry.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Used only by retired preview migration tools",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/PlaytestFixBuild.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Old build entry targeting retired game scene paths",
+    "files": 1,
+    "bytes": 1708.0
+  },
+  {
+    "path": "Project6.4/Assets/Editor/seaside/PlaytestFixBuild.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Old build entry targeting retired game scene paths",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/seaside/SeasideArtPreviewLaunch.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Loads a retired preview scene through an obsolete launcher flag",
+    "files": 1,
+    "bytes": 435.0
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/seaside/SeasideArtPreviewLaunch.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Loads a retired preview scene through an obsolete launcher flag",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/seaside/SeasideArtAlignment.cs",
+    "action": "removed-from-active-tree",
+    "reason": "Old combined-art component absent from current saved scenes",
+    "files": 1,
+    "bytes": 5486.0
+  },
+  {
+    "path": "Project6.4/Assets/Scripts/seaside/SeasideArtAlignment.cs.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Old combined-art component absent from current saved scenes",
+    "files": 1,
+    "bytes": 59.0
+  },
+  {
+    "path": "Project6.4/Assets/Art/Player.png",
+    "action": "removed-from-active-tree",
+    "reason": "Obsolete generated player sprite; all current scenes/tests use Player2x2",
+    "files": 1,
+    "bytes": 112.0
+  },
+  {
+    "path": "Project6.4/Assets/Art/Player.png.meta",
+    "action": "removed-from-active-tree",
+    "reason": "Obsolete generated player sprite; all current scenes/tests use Player2x2",
+    "files": 1,
+    "bytes": 3656.0
+  },
+  {
+    "path": "build",
+    "action": "removed-from-active-tree",
+    "reason": "Old manual first-level output superseded by current validated Play64",
+    "files": 153,
+    "bytes": 505105949.0
+  },
+  {
+    "path": "森林独立试玩",
+    "action": "removed-from-active-tree",
+    "reason": "Duplicate unpacked Forest delivery; current launcher and ZIP remain",
+    "files": 148,
+    "bytes": 102114483.0
+  },
+  {
+    "path": "Forest-Unity64-Whitebox-Windows",
+    "action": "removed-from-active-tree",
+    "reason": "Second duplicate unpacked Forest delivery",
+    "files": 148,
+    "bytes": 102105630.0
+  },
+  {
+    "path": "README-Unity64.md",
+    "action": "removed-from-active-tree",
+    "reason": "Obsolete compatibility guide listing retired scenes and missing launchers",
+    "files": 1,
+    "bytes": 643.0
+  },
+  {
+    "path": "Project6.4/Assets/Scenes/Seaside01.unity",
+    "destination": "Project6.4/Assets/Editor/Tests/Fixtures/SeasideMovementBaseline.unity",
+    "action": "relocated-test-fixture",
+    "reason": "Still required for movement/import regression; isolate as an editor test fixture while preserving scene bytes and GUID"
+  },
+  {
+    "path": "Project6.4/Assets/Scenes/Seaside01.unity.meta",
+    "destination": "Project6.4/Assets/Editor/Tests/Fixtures/SeasideMovementBaseline.unity.meta",
+    "action": "relocated-test-fixture",
+    "reason": "Still required for movement/import regression; isolate as an editor test fixture while preserving scene bytes and GUID"
+  }
+]

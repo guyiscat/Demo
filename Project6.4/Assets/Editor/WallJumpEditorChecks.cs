@@ -9,7 +9,7 @@ public static class WallJumpEditorChecks
 {
     public static void Run()
     {
-        EditorSceneManager.OpenScene("Assets/Scenes/Seaside01.unity");
+        EditorSceneManager.OpenScene(SeasideTestScenes.Movement);
         var player=UnityEngine.Object.FindAnyObjectByType<SeasideMotor>();player.externalInput=true;
         var old=Physics2D.simulationMode;Physics2D.simulationMode=SimulationMode2D.Script;
         var lines=new List<string>();
@@ -18,7 +18,7 @@ public static class WallJumpEditorChecks
         {
             Physics2D.simulationMode=old;
             string tag=Environment.GetCommandLineArgs().Contains("-baseline")?"before":"after";
-            string folder=PlaytestFixBuild.Root+"/Docs/Logs/Work/20261020-wall-jump";
+            string folder=SeasidePaths.ReleaseRoot+"/Docs/Logs/Work/20261020-wall-jump";
             Directory.CreateDirectory(folder);File.WriteAllLines(folder+"/wall-jump-"+tag+".txt",lines);
         }
         Debug.Log("WALL_SWITCH_CHECKS pass="+lines.Count(x=>x.StartsWith("PASS"))+" fail="+lines.Count(x=>x.StartsWith("FAIL")));

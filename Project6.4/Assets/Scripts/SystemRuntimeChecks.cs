@@ -10,6 +10,11 @@ namespace Seaside
             var common=GameSystemSettings.Current;var motor=session.player;
             var camera=UnityEngine.Object.FindAnyObjectByType<SeasideCamera>();
             check(common!=null&&motor.settings==common.movement,"Shared movement resource is active in "+session.gameObject.scene.name);
+            check(common.systemFont!=null&&GameTypography.SystemFont==common.systemFont,"All levels load the bundled Alibaba PuHuiTi system font");
+            GameTypography.SystemFont.RequestCharactersInTexture("海边森林矿洞冲刺传送暂停复活获得比特币",20);
+            check(GameTypography.SystemFont.HasCharacter('矿')&&GameTypography.SystemFont.HasCharacter('传'),"Bundled font contains Chinese system glyphs");
+            foreach(var label in UnityEngine.Object.FindObjectsByType<TextMesh>(FindObjectsInactive.Include))
+                check(label.font==common.systemFont,"World label uses shared font: "+label.name);
             check(motor.releasedSlideSpeed==common.releasedSlideSpeed&&motor.releasedSlideBlend==common.releasedSlideBlend,"Wall slide parameters come from shared settings");
             check(JsonUtility.ToJson(camera.tuning)==JsonUtility.ToJson(common.cameraTuning),"All follow camera parameters use the Forest baseline");
             check(session.latestCheckpointWins&&session.latestCheckpointWins==common.latestCheckpointWins,"Both levels use latest-contact checkpoint policy");

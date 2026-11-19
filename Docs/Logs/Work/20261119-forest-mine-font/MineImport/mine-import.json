@@ -1,0 +1,799 @@
+{
+  "sourceSha256": "fe9adad962ca919274f9cc95bb5798c0dbbe5ea14516c2424a73c150c8358b93",
+  "width": 170,
+  "height": 272,
+  "counts": {
+    "ground": 5546,
+    "workbench": 6,
+    "route": 28,
+    "spike": 585,
+    "lift": 14,
+    "noGrip": 580,
+    "zipline": 230,
+    "checkpoint": 18,
+    "marker": 4,
+    "relic": 24
+  },
+  "groups": {
+    "checkpoint": [
+      {
+        "first": "AP69",
+        "count": 6,
+        "minX": 10,
+        "maxX": 12,
+        "minY": 216,
+        "maxY": 219
+      },
+      {
+        "first": "DQ120",
+        "count": 12,
+        "minX": 89,
+        "maxX": 91,
+        "minY": 162,
+        "maxY": 168
+      }
+    ],
+    "ground": [
+      {
+        "first": "DH16",
+        "count": 2290,
+        "minX": 0,
+        "maxX": 84,
+        "minY": 158,
+        "maxY": 272
+      },
+      {
+        "first": "DP16",
+        "count": 2975,
+        "minX": 88,
+        "maxX": 152,
+        "minY": 0,
+        "maxY": 272
+      },
+      {
+        "first": "BA33",
+        "count": 10,
+        "minX": 21,
+        "maxX": 23,
+        "minY": 250,
+        "maxY": 255
+      },
+      {
+        "first": "CG33",
+        "count": 10,
+        "minX": 53,
+        "maxX": 55,
+        "minY": 250,
+        "maxY": 255
+      },
+      {
+        "first": "BH70",
+        "count": 12,
+        "minX": 28,
+        "maxX": 30,
+        "minY": 212,
+        "maxY": 218
+      },
+      {
+        "first": "CG75",
+        "count": 12,
+        "minX": 53,
+        "maxX": 55,
+        "minY": 207,
+        "maxY": 213
+      },
+      {
+        "first": "CG94",
+        "count": 15,
+        "minX": 53,
+        "maxX": 56,
+        "minY": 189,
+        "maxY": 194
+      },
+      {
+        "first": "BL97",
+        "count": 15,
+        "minX": 32,
+        "maxX": 35,
+        "minY": 186,
+        "maxY": 191
+      },
+      {
+        "first": "BW99",
+        "count": 15,
+        "minX": 43,
+        "maxX": 46,
+        "minY": 184,
+        "maxY": 189
+      },
+      {
+        "first": "AZ100",
+        "count": 15,
+        "minX": 20,
+        "maxX": 23,
+        "minY": 183,
+        "maxY": 188
+      },
+      {
+        "first": "AN107",
+        "count": 30,
+        "minX": 8,
+        "maxX": 13,
+        "minY": 175,
+        "maxY": 181
+      },
+      {
+        "first": "DZ127",
+        "count": 18,
+        "minX": 98,
+        "maxX": 101,
+        "minY": 155,
+        "maxY": 161
+      },
+      {
+        "first": "EI131",
+        "count": 12,
+        "minX": 107,
+        "maxX": 109,
+        "minY": 151,
+        "maxY": 157
+      },
+      {
+        "first": "ET133",
+        "count": 15,
+        "minX": 118,
+        "maxX": 121,
+        "minY": 150,
+        "maxY": 155
+      },
+      {
+        "first": "FU136",
+        "count": 15,
+        "minX": 145,
+        "maxX": 148,
+        "minY": 147,
+        "maxY": 152
+      },
+      {
+        "first": "FN145",
+        "count": 15,
+        "minX": 138,
+        "maxX": 141,
+        "minY": 138,
+        "maxY": 143
+      },
+      {
+        "first": "FR156",
+        "count": 18,
+        "minX": 142,
+        "maxX": 145,
+        "minY": 126,
+        "maxY": 132
+      },
+      {
+        "first": "DT169",
+        "count": 24,
+        "minX": 92,
+        "maxX": 96,
+        "minY": 113,
+        "maxY": 119
+      },
+      {
+        "first": "DY179",
+        "count": 15,
+        "minX": 97,
+        "maxX": 100,
+        "minY": 104,
+        "maxY": 109
+      },
+      {
+        "first": "EE185",
+        "count": 15,
+        "minX": 103,
+        "maxX": 106,
+        "minY": 98,
+        "maxY": 103
+      }
+    ],
+    "lift": [
+      {
+        "first": "DL33",
+        "count": 4,
+        "minX": 84,
+        "maxX": 88,
+        "minY": 254,
+        "maxY": 255
+      },
+      {
+        "first": "DD54",
+        "count": 6,
+        "minX": 76,
+        "maxX": 78,
+        "minY": 231,
+        "maxY": 234
+      },
+      {
+        "first": "DL126",
+        "count": 4,
+        "minX": 84,
+        "maxX": 88,
+        "minY": 161,
+        "maxY": 162
+      }
+    ],
+    "marker": [
+      {
+        "first": "DE124",
+        "count": 4,
+        "minX": 77,
+        "maxX": 79,
+        "minY": 162,
+        "maxY": 164
+      }
+    ],
+    "noGrip": [
+      {
+        "first": "BV34",
+        "count": 12,
+        "minX": 42,
+        "maxX": 48,
+        "minY": 252,
+        "maxY": 254
+      },
+      {
+        "first": "CW36",
+        "count": 12,
+        "minX": 69,
+        "maxX": 75,
+        "minY": 250,
+        "maxY": 252
+      },
+      {
+        "first": "CL37",
+        "count": 12,
+        "minX": 58,
+        "maxX": 64,
+        "minY": 249,
+        "maxY": 251
+      },
+      {
+        "first": "BK39",
+        "count": 12,
+        "minX": 31,
+        "maxX": 37,
+        "minY": 247,
+        "maxY": 249
+      },
+      {
+        "first": "AP40",
+        "count": 12,
+        "minX": 10,
+        "maxX": 16,
+        "minY": 246,
+        "maxY": 248
+      },
+      {
+        "first": "AJ54",
+        "count": 12,
+        "minX": 4,
+        "maxX": 10,
+        "minY": 232,
+        "maxY": 234
+      },
+      {
+        "first": "AM67",
+        "count": 111,
+        "minX": 7,
+        "maxX": 21,
+        "minY": 162,
+        "maxY": 221
+      },
+      {
+        "first": "DH67",
+        "count": 125,
+        "minX": 62,
+        "maxX": 81,
+        "minY": 168,
+        "maxY": 221
+      },
+      {
+        "first": "FX120",
+        "count": 48,
+        "minX": 148,
+        "maxX": 149,
+        "minY": 120,
+        "maxY": 168
+      },
+      {
+        "first": "DS126",
+        "count": 10,
+        "minX": 91,
+        "maxX": 92,
+        "minY": 152,
+        "maxY": 162
+      },
+      {
+        "first": "DS159",
+        "count": 43,
+        "minX": 91,
+        "maxX": 92,
+        "minY": 86,
+        "maxY": 129
+      },
+      {
+        "first": "FX189",
+        "count": 13,
+        "minX": 148,
+        "maxX": 149,
+        "minY": 86,
+        "maxY": 99
+      },
+      {
+        "first": "ER202",
+        "count": 79,
+        "minX": 116,
+        "maxX": 117,
+        "minY": 7,
+        "maxY": 86
+      },
+      {
+        "first": "EY202",
+        "count": 79,
+        "minX": 123,
+        "maxX": 124,
+        "minY": 7,
+        "maxY": 86
+      }
+    ],
+    "relic": [
+      {
+        "first": "EU199",
+        "count": 12,
+        "minX": 117,
+        "maxX": 123,
+        "minY": 85,
+        "maxY": 89
+      },
+      {
+        "first": "EU283",
+        "count": 12,
+        "minX": 117,
+        "maxX": 123,
+        "minY": 1,
+        "maxY": 5
+      }
+    ],
+    "route": [
+      {
+        "first": "DM31",
+        "count": 4,
+        "minX": 85,
+        "maxX": 87,
+        "minY": 255,
+        "maxY": 257
+      },
+      {
+        "first": "CY34",
+        "count": 4,
+        "minX": 71,
+        "maxX": 73,
+        "minY": 252,
+        "maxY": 254
+      },
+      {
+        "first": "CE51",
+        "count": 4,
+        "minX": 51,
+        "maxX": 53,
+        "minY": 235,
+        "maxY": 237
+      },
+      {
+        "first": "BO99",
+        "count": 4,
+        "minX": 35,
+        "maxX": 37,
+        "minY": 187,
+        "maxY": 189
+      },
+      {
+        "first": "BC102",
+        "count": 4,
+        "minX": 23,
+        "maxX": 25,
+        "minY": 184,
+        "maxY": 186
+      },
+      {
+        "first": "DM124",
+        "count": 4,
+        "minX": 85,
+        "maxX": 87,
+        "minY": 162,
+        "maxY": 164
+      },
+      {
+        "first": "DU167",
+        "count": 4,
+        "minX": 93,
+        "maxX": 95,
+        "minY": 119,
+        "maxY": 121
+      }
+    ],
+    "spike": [
+      {
+        "first": "BA32",
+        "count": 2,
+        "minX": 21,
+        "maxX": 23,
+        "minY": 255,
+        "maxY": 256
+      },
+      {
+        "first": "CG32",
+        "count": 2,
+        "minX": 53,
+        "maxX": 55,
+        "minY": 255,
+        "maxY": 256
+      },
+      {
+        "first": "AP43",
+        "count": 70,
+        "minX": 10,
+        "maxX": 80,
+        "minY": 244,
+        "maxY": 245
+      },
+      {
+        "first": "AJ60",
+        "count": 66,
+        "minX": 4,
+        "maxX": 70,
+        "minY": 227,
+        "maxY": 228
+      },
+      {
+        "first": "BH69",
+        "count": 9,
+        "minX": 28,
+        "maxX": 31,
+        "minY": 212,
+        "maxY": 219
+      },
+      {
+        "first": "CG74",
+        "count": 9,
+        "minX": 53,
+        "maxX": 56,
+        "minY": 207,
+        "maxY": 214
+      },
+      {
+        "first": "CG93",
+        "count": 3,
+        "minX": 53,
+        "maxX": 56,
+        "minY": 194,
+        "maxY": 195
+      },
+      {
+        "first": "BL96",
+        "count": 3,
+        "minX": 32,
+        "maxX": 35,
+        "minY": 191,
+        "maxY": 192
+      },
+      {
+        "first": "BW98",
+        "count": 3,
+        "minX": 43,
+        "maxX": 46,
+        "minY": 189,
+        "maxY": 190
+      },
+      {
+        "first": "AZ99",
+        "count": 3,
+        "minX": 20,
+        "maxX": 23,
+        "minY": 188,
+        "maxY": 189
+      },
+      {
+        "first": "AN106",
+        "count": 5,
+        "minX": 8,
+        "maxX": 13,
+        "minY": 181,
+        "maxY": 182
+      },
+      {
+        "first": "EH130",
+        "count": 9,
+        "minX": 106,
+        "maxX": 109,
+        "minY": 151,
+        "maxY": 158
+      },
+      {
+        "first": "ET132",
+        "count": 3,
+        "minX": 118,
+        "maxX": 121,
+        "minY": 155,
+        "maxY": 156
+      },
+      {
+        "first": "FU135",
+        "count": 3,
+        "minX": 145,
+        "maxX": 148,
+        "minY": 152,
+        "maxY": 153
+      },
+      {
+        "first": "DT136",
+        "count": 64,
+        "minX": 92,
+        "maxX": 134,
+        "minY": 129,
+        "maxY": 152
+      },
+      {
+        "first": "FN144",
+        "count": 3,
+        "minX": 138,
+        "maxX": 141,
+        "minY": 143,
+        "maxY": 144
+      },
+      {
+        "first": "EI159",
+        "count": 6,
+        "minX": 107,
+        "maxX": 108,
+        "minY": 123,
+        "maxY": 129
+      },
+      {
+        "first": "EL159",
+        "count": 6,
+        "minX": 110,
+        "maxX": 111,
+        "minY": 123,
+        "maxY": 129
+      },
+      {
+        "first": "EV159",
+        "count": 3,
+        "minX": 120,
+        "maxX": 121,
+        "minY": 126,
+        "maxY": 129
+      },
+      {
+        "first": "EY159",
+        "count": 3,
+        "minX": 123,
+        "maxX": 124,
+        "minY": 126,
+        "maxY": 129
+      },
+      {
+        "first": "EW162",
+        "count": 2,
+        "minX": 121,
+        "maxX": 123,
+        "minY": 125,
+        "maxY": 126
+      },
+      {
+        "first": "EJ165",
+        "count": 2,
+        "minX": 108,
+        "maxX": 110,
+        "minY": 122,
+        "maxY": 123
+      },
+      {
+        "first": "EW165",
+        "count": 2,
+        "minX": 121,
+        "maxX": 123,
+        "minY": 122,
+        "maxY": 123
+      },
+      {
+        "first": "EV166",
+        "count": 36,
+        "minX": 110,
+        "maxX": 121,
+        "minY": 102,
+        "maxY": 122
+      },
+      {
+        "first": "EY166",
+        "count": 47,
+        "minX": 123,
+        "maxX": 148,
+        "minY": 109,
+        "maxY": 122
+      },
+      {
+        "first": "DY178",
+        "count": 3,
+        "minX": 97,
+        "maxX": 100,
+        "minY": 109,
+        "maxY": 110
+      },
+      {
+        "first": "EK178",
+        "count": 1,
+        "minX": 109,
+        "maxX": 110,
+        "minY": 109,
+        "maxY": 110
+      },
+      {
+        "first": "EJ179",
+        "count": 10,
+        "minX": 108,
+        "maxX": 109,
+        "minY": 99,
+        "maxY": 109
+      },
+      {
+        "first": "EE184",
+        "count": 3,
+        "minX": 103,
+        "maxX": 106,
+        "minY": 103,
+        "maxY": 104
+      },
+      {
+        "first": "DT202",
+        "count": 8,
+        "minX": 92,
+        "maxX": 100,
+        "minY": 85,
+        "maxY": 86
+      },
+      {
+        "first": "FP202",
+        "count": 8,
+        "minX": 140,
+        "maxX": 148,
+        "minY": 85,
+        "maxY": 86
+      },
+      {
+        "first": "CT244",
+        "count": 98,
+        "minX": 66,
+        "maxX": 115,
+        "minY": 42,
+        "maxY": 44
+      },
+      {
+        "first": "FA244",
+        "count": 90,
+        "minX": 125,
+        "maxX": 170,
+        "minY": 42,
+        "maxY": 44
+      }
+    ],
+    "workbench": [
+      {
+        "first": "EK30",
+        "count": 6,
+        "minX": 109,
+        "maxX": 111,
+        "minY": 255,
+        "maxY": 258
+      }
+    ],
+    "zipline": [
+      {
+        "first": "CC50",
+        "count": 20,
+        "minX": 49,
+        "maxX": 69,
+        "minY": 237,
+        "maxY": 238
+      },
+      {
+        "first": "AS51",
+        "count": 17,
+        "minX": 13,
+        "maxX": 30,
+        "minY": 236,
+        "maxY": 237
+      },
+      {
+        "first": "BM56",
+        "count": 20,
+        "minX": 33,
+        "maxX": 53,
+        "minY": 231,
+        "maxY": 232
+      },
+      {
+        "first": "BM78",
+        "count": 16,
+        "minX": 33,
+        "maxX": 49,
+        "minY": 209,
+        "maxY": 210
+      },
+      {
+        "first": "CL84",
+        "count": 17,
+        "minX": 58,
+        "maxX": 75,
+        "minY": 203,
+        "maxY": 204
+      },
+      {
+        "first": "CV89",
+        "count": 12,
+        "minX": 68,
+        "maxX": 80,
+        "minY": 198,
+        "maxY": 199
+      },
+      {
+        "first": "AV111",
+        "count": 18,
+        "minX": 16,
+        "maxX": 34,
+        "minY": 176,
+        "maxY": 177
+      },
+      {
+        "first": "BQ114",
+        "count": 21,
+        "minX": 37,
+        "maxX": 58,
+        "minY": 173,
+        "maxY": 174
+      },
+      {
+        "first": "CI118",
+        "count": 20,
+        "minX": 55,
+        "maxX": 75,
+        "minY": 169,
+        "maxY": 170
+      },
+      {
+        "first": "EZ132",
+        "count": 24,
+        "minX": 124,
+        "maxX": 148,
+        "minY": 155,
+        "maxY": 156
+      },
+      {
+        "first": "FA163",
+        "count": 23,
+        "minX": 125,
+        "maxX": 148,
+        "minY": 124,
+        "maxY": 125
+      },
+      {
+        "first": "DY169",
+        "count": 22,
+        "minX": 97,
+        "maxX": 119,
+        "minY": 118,
+        "maxY": 119
+      }
+    ]
+  }
+}

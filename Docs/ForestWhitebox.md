@@ -1,5 +1,15 @@
 # 森林第二关白盒
 
+## 2026-11-19 当前更新
+
+按本次磁盘保存的maps/森林地图.xlsx增量更新原场景：43格内容变化，黑色地形4431格、灰色70格、尖刺601格。新增/替换6条地形行块，保留未变化对象、水车、瀑布与6个检查点。该保存版本的绿色滑索仍为13条、361格，与旧版位置相同。用户已确认按当前磁盘版本继续，因此保留这13条滑索。来源SHA256为720838dc5a33b6ef79c9948c28d20cfe244e1a203703b31f50510a1044d064a6。
+
+传送可立即打断进行中的冲刺，清除水平/竖直冲刺速度，随后按A/D正常移动，消耗传送次数且不返还已消耗的冲刺。Assets/Settings/Forest.asset的“允许传送打断冲刺”（teleportInterruptsDash）默认开启；未充能时不会打断冲刺。信标飞行与传送后滞空行为保持。
+
+脚本目录第一关/第二关改名为seaside/forest，矿洞复用的传送/滑索类型移到Scripts公共根目录，原GUID和类型名保持。所有系统提示与世界文本共用GameSystems.systemFont引用的阿里巴巴普惠体；箭头参数入口为GameSystems。独立矿洞入口mine.cmd，不连接关卡跳转。
+
+本轮验证与限制见[工作日志](Logs/Work/20261119-forest-mine-font/work-log.md)，下文旧日期内容保留为历史说明。
+
 当前森林是独立关卡，未接入海边启动菜单或通关进度。使用 Unity 6000.4.12f1，打开 `Project6.4/Assets/Scenes/ForestWhitebox.unity`，直接 Play；Windows 试玩双击 Demo 根目录 `forest.cmd`，或运行 `Play64/Forest/ForestWhitebox.exe`。原 `statgame.cmd` 仍启动原有海边成品。
 
 ## 地图来源与白盒

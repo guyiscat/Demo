@@ -1,0 +1,392 @@
+{
+  "checkedAtUtc": "2026-11-19T13:43:39.032619+00:00",
+  "checks": {
+    "assetsMatchBuiltSources": {
+      "filesChecked": 377,
+      "missing": [],
+      "changed": [],
+      "excludedAppendOnlyRuntimeLogs": []
+    },
+    "mainBuildsMatchValidatedBuilds": {
+      "filesChecked": 724,
+      "missing": [],
+      "changed": [],
+      "excludedAppendOnlyRuntimeLogs": [
+        "Docs/Logs/Runtime/20261118-162006-929-e97fe7.log",
+        "Docs/Logs/Runtime/20261118-162125-361-ce27a5.log",
+        "Docs/Logs/Runtime/20261118-162928-414-e87cd0.log",
+        "Docs/Logs/Runtime/20261118-163258-423-a174d5.log",
+        "Docs/Logs/Runtime/20261119-124012-581-63a953.log",
+        "Docs/Logs/Runtime/20261119-124458-503-6b961b.log",
+        "Docs/Logs/Runtime/20261119-124701-127-3092a9.log",
+        "Docs/Logs/Runtime/20261119-124812-301-8d007e.log",
+        "Docs/Logs/Runtime/20261119-124928-535-d64c1e.log",
+        "Docs/Logs/Runtime/20261119-125014-697-dcd86d.log",
+        "Docs/Logs/Runtime/20261119-125138-585-5f6618.log",
+        "Docs/Logs/Runtime/20261119-125252-489-57c8cf.log",
+        "Docs/Logs/Runtime/20261119-205538-070-11a2ff.log",
+        "Docs/Logs/Runtime/20261119-205844-126-94e314.log",
+        "Docs/Logs/Runtime/20261119-210108-649-cb3bea.log",
+        "Docs/Logs/Runtime/20261119-210318-077-c97793.log",
+        "Docs/Logs/Runtime/20261119-210418-898-b2c230.log",
+        "Docs/Logs/Runtime/20261119-210613-747-e2128b.log",
+        "Docs/Logs/Runtime/20261119-210641-094-be8da8.log",
+        "Docs/Logs/Runtime/20261119-210648-370-d579df.log",
+        "Docs/Logs/Runtime/20261119-210740-398-b1b947.log",
+        "Docs/Logs/Runtime/20261119-210829-344-f6d62a.log",
+        "Docs/Logs/Runtime/20261119-210957-664-1e0763.log",
+        "Docs/Logs/Runtime/20261119-211109-898-627bfb.log",
+        "Docs/Logs/Runtime/20261119-211123-237-004ab8.log",
+        "Docs/Logs/Runtime/20261119-211140-145-6cf085.log",
+        "Docs/Logs/Runtime/20261119-211143-334-9f218f.log",
+        "Docs/Logs/Runtime/20261119-211426-247-80415b.log",
+        "Docs/Logs/Runtime/20261119-211439-851-8ebb81.log",
+        "Docs/Logs/Runtime/20261119-211453-346-beb0ba.log",
+        "Docs/Logs/Runtime/20261119-211506-890-01dc43.log",
+        "Docs/Logs/Runtime/20261119-211544-271-3d6cd9.log",
+        "Docs/Logs/Runtime/20261119-212016-824-7a879b.log",
+        "Docs/Logs/Runtime/20261119-212606-226-b82786.log",
+        "Docs/Logs/Runtime/20261119-212621-726-ef28f7.log",
+        "Docs/Logs/Runtime/20261119-212758-442-f26756.log",
+        "Docs/Logs/Runtime/20261119-212812-680-68148e.log",
+        "Docs/Logs/Runtime/20261119-213254-123-6ed1a0.log"
+      ]
+    },
+    "toolsMatchBuildTools": {
+      "filesChecked": 7,
+      "missing": [],
+      "changed": [],
+      "excludedAppendOnlyRuntimeLogs": []
+    },
+    "originalScenesAndSharedParametersUnchanged": {
+      "files": 17,
+      "changed": []
+    },
+    "allPreexistingScriptGuidsPreserved": {
+      "scripts": 79,
+      "errors": []
+    },
+    "allScriptsHaveMetadata": {
+      "missing": []
+    },
+    "SnowSourceUnchanged": {
+      "sourceSha256": "8af55737c9f63eb59218da1f6442cf43883a67b51ce15871899ee2182ad3fd33",
+      "importedSha256": "8af55737c9f63eb59218da1f6442cf43883a67b51ce15871899ee2182ad3fd33"
+    },
+    "LighthouseSourceUnchanged": {
+      "sourceSha256": "f909b82037ae24f85777d0c67cb02f8209fc613de7f5e0ae3697c5dd264c389f",
+      "importedSha256": "f909b82037ae24f85777d0c67cb02f8209fc613de7f5e0ae3697c5dd264c389f"
+    },
+    "bundledFontUnchanged": {
+      "sha256": "0d0b12d1ea1cbbc0bf152da7a39f2b02a385a6c3ee8b78475e50f1f31379a364"
+    },
+    "finalBuild_Snow": {
+      "run": "20261119-212540-178",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 6940,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "editor-reports/snow-editor-checks.txt": {
+          "passed": 3742,
+          "failed": 0
+        },
+        "snow-runtime-checks.txt": {
+          "passed": 186,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "finalBuild_Lighthouse": {
+      "run": "20261119-212608-599",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 8676,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "editor-reports/lighthouse-editor-checks.txt": {
+          "passed": 3401,
+          "failed": 0
+        },
+        "lighthouse-runtime-checks.txt": {
+          "passed": 202,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "finalBuild_Forest": {
+      "run": "20261119-212746-874",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 8676,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "editor-reports/forest-editor-checks.txt": {
+          "passed": 1733,
+          "failed": 0
+        },
+        "forest-runtime-checks.txt": {
+          "passed": 301,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "finalBuild_Mine": {
+      "run": "20261119-212800-825",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 8676,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "editor-reports/mine-editor-checks.txt": {
+          "passed": 3635,
+          "failed": 0
+        },
+        "mine-runtime-checks.txt": {
+          "passed": 112,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "finalBuild_Seaside": {
+      "run": "20261119-212815-293",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 8676,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "Snow-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcVerified": 147,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [],
+      "sha256": "b56872007dff896ed90db7a415e7f8bc8e2babff1113c4bc33bc03874d855433"
+    },
+    "Snow-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcVerified": 2131,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "89a8c3537ec6a04657b1a91d60576556aae70474afb9ade89d70bb49cdeb5171"
+    },
+    "Lighthouse-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcVerified": 147,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [],
+      "sha256": "514913f3b15efffe17665eb3605c16934ab58d8072c29b6da46e6c60e41d9ed8"
+    },
+    "Lighthouse-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcVerified": 2131,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "5d565860210d5f286effb198a2475815495c62cdf3e418b7726007d782cb4831"
+    },
+    "Forest-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcVerified": 147,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [],
+      "sha256": "011fa3059d001929a104aca4740f22bbaf24188586d90ec09f57df77682b88e4"
+    },
+    "Forest-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcVerified": 2131,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "1606cc82a8028216c1f257e963365d94e057d8d4fe0814e3a7e20401b6348127"
+    },
+    "Mine-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcVerified": 147,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [],
+      "sha256": "a25a7e6ff751bc569ecb6e850d0e2bd81248b974e26f7ec36273bbdd6c7ed43a"
+    },
+    "Mine-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcVerified": 2131,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "7691cf6ed767b66a9bdf6d2173bb96e90d58d59455c5ec1d6c7e076fc462677e"
+    },
+    "Seaside-Unity64-Startup-Windows.zip": {
+      "entriesReadAndCrcVerified": 2484,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Play64/Docs/Logs/Runtime/20261105-145512-949-d43f5f.log",
+        "Play64/Docs/Logs/Runtime/20261105-145624-243-cc3be3.log",
+        "Play64/Docs/Logs/Runtime/20261105-145927-048-b852fe.log",
+        "Play64/Docs/Logs/Runtime/20261105-150102-463-83d3a4.log",
+        "Play64/Docs/Logs/Runtime/20261105-150210-282-5e539c.log",
+        "Play64/Docs/Logs/Runtime/20261105-150247-459-16df23.log",
+        "Play64/Docs/Logs/Runtime/20261105-150436-088-50f534.log",
+        "Play64/Docs/Logs/Runtime/20261105-150656-166-4f718c.log",
+        "Play64/Docs/Logs/Runtime/20261105-150659-853-7ce93e.log",
+        "Play64/Docs/Logs/Runtime/20261105-151226-766-1ed345.log",
+        "Play64/Docs/Logs/Runtime/20261105-151356-252-70f9b2.log",
+        "Play64/Docs/Logs/Runtime/20261105-151503-447-eac003.log",
+        "Play64/Docs/Logs/Runtime/20261106-112722-742-4a28e4.log",
+        "Play64/Docs/Logs/Runtime/20261106-190725-751-5a046a.log",
+        "Play64/Docs/Logs/Runtime/20261117-231121-912-a44aaa.log",
+        "Play64/Docs/Logs/Runtime/20261118-162006-929-e97fe7.log",
+        "Play64/Docs/Logs/Runtime/20261118-162125-361-ce27a5.log",
+        "Play64/Docs/Logs/Runtime/20261118-162928-414-e87cd0.log",
+        "Play64/Docs/Logs/Runtime/20261118-163258-423-a174d5.log",
+        "Play64/Docs/Logs/Runtime/20261119-124012-581-63a953.log",
+        "Play64/Docs/Logs/Runtime/20261119-124458-503-6b961b.log",
+        "Play64/Docs/Logs/Runtime/20261119-124701-127-3092a9.log",
+        "Play64/Docs/Logs/Runtime/20261119-124812-301-8d007e.log",
+        "Play64/Docs/Logs/Runtime/20261119-124928-535-d64c1e.log",
+        "Play64/Docs/Logs/Runtime/20261119-125014-697-dcd86d.log",
+        "Play64/Docs/Logs/Runtime/20261119-125138-585-5f6618.log",
+        "Play64/Docs/Logs/Runtime/20261119-125252-489-57c8cf.log",
+        "Play64/Docs/Logs/Runtime/20261119-205538-070-11a2ff.log",
+        "Play64/Docs/Logs/Runtime/20261119-205844-126-94e314.log",
+        "Play64/Docs/Logs/Runtime/20261119-210108-649-cb3bea.log",
+        "Play64/Docs/Logs/Runtime/20261119-210318-077-c97793.log",
+        "Play64/Docs/Logs/Runtime/20261119-210418-898-b2c230.log",
+        "Play64/Docs/Logs/Runtime/20261119-210613-747-e2128b.log",
+        "Play64/Docs/Logs/Runtime/20261119-210641-094-be8da8.log",
+        "Play64/Docs/Logs/Runtime/20261119-210648-370-d579df.log",
+        "Play64/Docs/Logs/Runtime/20261119-210740-398-b1b947.log",
+        "Play64/Docs/Logs/Runtime/20261119-210829-344-f6d62a.log",
+        "Play64/Docs/Logs/Runtime/20261119-210957-664-1e0763.log",
+        "Play64/Docs/Logs/Runtime/20261119-211109-898-627bfb.log",
+        "Play64/Docs/Logs/Runtime/20261119-211123-237-004ab8.log",
+        "Play64/Docs/Logs/Runtime/20261119-211140-145-6cf085.log",
+        "Play64/Docs/Logs/Runtime/20261119-211143-334-9f218f.log",
+        "Play64/Docs/Logs/Runtime/20261119-211426-247-80415b.log",
+        "Play64/Docs/Logs/Runtime/20261119-211439-851-8ebb81.log",
+        "Play64/Docs/Logs/Runtime/20261119-211453-346-beb0ba.log",
+        "Play64/Docs/Logs/Runtime/20261119-211506-890-01dc43.log",
+        "Play64/Docs/Logs/Runtime/20261119-211544-271-3d6cd9.log",
+        "Play64/Docs/Logs/Runtime/20261119-212016-824-7a879b.log",
+        "Play64/Docs/Logs/Runtime/20261119-212606-226-b82786.log",
+        "Play64/Docs/Logs/Runtime/20261119-212621-726-ef28f7.log",
+        "Play64/Docs/Logs/Runtime/20261119-212758-442-f26756.log",
+        "Play64/Docs/Logs/Runtime/20261119-212812-680-68148e.log",
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "d583ea9f64118c0dbc124dd82354c252035fb01cdef89133f26890f3e97997d3"
+    },
+    "Seaside-Unity64-Startup-Project.zip": {
+      "entriesReadAndCrcVerified": 2131,
+      "missingRequired": [],
+      "sourceMismatches": [],
+      "excludedMutableReports": [
+        "Docs/Logs/Work/20261119-forest-mine-font/delivery-verification.json",
+        "Docs/Logs/Work/20261119-forest-mine-font/final-test-summary.json",
+        "Docs/Logs/Work/20261119-snow-lighthouse/final-test-summary.json"
+      ],
+      "sha256": "5991caf89a51e6504c923bd93415493f223a12f1fdb240faf63f7fa60696e67a"
+    },
+    "雪山独立试玩.zip": {
+      "source": "Snow-Unity64-Whitebox-Windows.zip",
+      "sha256": "b56872007dff896ed90db7a415e7f8bc8e2babff1113c4bc33bc03874d855433"
+    },
+    "灯塔独立试玩.zip": {
+      "source": "Lighthouse-Unity64-Whitebox-Windows.zip",
+      "sha256": "514913f3b15efffe17665eb3605c16934ab58d8072c29b6da46e6c60e41d9ed8"
+    },
+    "森林独立试玩.zip": {
+      "source": "Forest-Unity64-Whitebox-Windows.zip",
+      "sha256": "011fa3059d001929a104aca4740f22bbaf24188586d90ec09f57df77682b88e4"
+    },
+    "矿洞独立试玩.zip": {
+      "source": "Mine-Unity64-Whitebox-Windows.zip",
+      "sha256": "a25a7e6ff751bc569ecb6e850d0e2bd81248b974e26f7ec36273bbdd6c7ed43a"
+    },
+    "unpacked_森林独立试玩": {
+      "filesChecked": 144,
+      "missing": [],
+      "changed": [],
+      "excludedAppendOnlyRuntimeLogs": []
+    },
+    "unpacked_Forest-Unity64-Whitebox-Windows": {
+      "filesChecked": 144,
+      "missing": [],
+      "changed": [],
+      "excludedAppendOnlyRuntimeLogs": []
+    }
+  },
+  "failures": [],
+  "sources": {
+    "fullDesignPath": "C:\\Users\\user\\Desktop\\maker games\\demo\\DEMO游戏策划案.pdf",
+    "fullDesignSha256": "7c07b1eb06da7cb9568c6f74a6dd965bfcd86d213e9f77dd47d7df0a7c690c0e",
+    "dialogueSha256": "9bb170c44820b198f22b095515ebf18d1f68ca671afaf96e70d09d96323b6248"
+  },
+  "result": "PASS"
+}

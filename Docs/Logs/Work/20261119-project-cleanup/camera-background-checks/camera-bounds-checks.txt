@@ -1,0 +1,9 @@
+PASS Existing camera comfort checks
+PASS Projection at (800, 600), corners/outside targets, translated/scaled/tiny background, transitions and pause
+PASS Projection at (1280, 720), corners/outside targets, translated/scaled/tiny background, transitions and pause
+PASS Projection at (2520, 1080), corners/outside targets, translated/scaled/tiny background, transitions and pause
+PASS Projection at (900, 1600), corners/outside targets, translated/scaled/tiny background, transitions and pause
+PASS Projection at (1000, 1000), corners/outside targets, translated/scaled/tiny background, transitions and pause
+PASS Feature can be disabled and full viewport is restored
+PASS Scene without bg3 keeps original camera behavior
+PASS Assertions=41143

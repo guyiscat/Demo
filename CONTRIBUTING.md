@@ -35,7 +35,7 @@ git lfs pull
 2. 替换已有图片保留原文件名和 .meta，保留 GUID、导入设置及切片定义。
 3. 新资源放入指定 Assets 目录，让 Unity 生成 .meta；资源和 .meta 一起提交。
 4. 在 Unity Project 窗口中移动、重命名资源，避免丢失引用。
-5. 使用 SeasideArtPreview 摆放美术。现有 Collider、触发器、检查点和复活锚点不随装饰移动。
+5. 使用TheFirstScene_Seaside摆放第一关美术。现有Collider、触发器、检查点和复活锚点不随装饰移动；Scenes只存放当前五关及启动页，Editor/Tests/Fixtures是独立回归夹具。
 6. 检查 Console、透明边缘、遮挡和人物脚下接触面，保存实际修改的场景。
 
 图片改名需同步布局 JSON 的 texture.uri。修改切片图片的尺寸或内部排版会影响切片坐标，需要同步调整引用。bg0 与 Seaside_Terrain_Modules 目前像素相同，但 Single/Multiple 用途不同，应分别保留。
@@ -52,7 +52,7 @@ git lfs pull
 - 尽量由一人修改同一个场景或二进制美术文件。当前只配置文本属性，未自动配置 UnityYAMLMerge 驱动。
 - 提交前查看差异，只提交本次工作；不要提交 Library、Temp、UserSettings、Play64、恢复场景、ZIP 和完整备份。
 - 不要全局忽略所有 .log：Docs/Logs 的历史记录和失败日志需要保留。
-- 地图源数据不能覆盖场景手动修改。SeasideBuilder、历史升级和旧整图创建工具不是日常打开或构建入口。
+- 地图源数据不能覆盖场景手动修改。旧第一关生成/升级/预览工具已归档移出Assets，日常编辑使用当前保存场景和Seaside地图编辑面板。
 
 选择性添加本次文件：
 

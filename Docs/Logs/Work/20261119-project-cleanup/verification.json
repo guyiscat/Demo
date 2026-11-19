@@ -1,0 +1,252 @@
+{
+  "checkedAtUtc": "2026-11-19T15:36:19.036689+00:00",
+  "checks": {
+    "retiredPathsRemoved": {
+      "remaining": []
+    },
+    "recoverableArchiveExists": {
+      "missing": []
+    },
+    "onlyCurrentSixScenes": {
+      "scenes": [
+        "ForestWhitebox.unity",
+        "LighthouseWhitebox.unity",
+        "MineWhitebox.unity",
+        "SnowWhitebox.unity",
+        "StartGame.unity",
+        "TheFirstScene_Seaside.unity"
+      ]
+    },
+    "gameScenesAndParametersUnchanged": {
+      "changed": []
+    },
+    "fixtureBytesAndGuidPreserved": {
+      "destination": "Project6.4/Assets/Editor/Tests/Fixtures/SeasideMovementBaseline.unity",
+      "errors": []
+    },
+    "assetsMatchBuiltSources": {
+      "filesChecked": 354,
+      "errors": []
+    },
+    "buildsMatchValidatedOutputs": {
+      "filesChecked": 724,
+      "errors": []
+    },
+    "assetMetadataAndSerializedReferences": {
+      "missingMeta": [],
+      "missingGuidReferences": []
+    },
+    "removedScriptsNotReferenced": {
+      "retiredScriptCount": 9
+    },
+    "build_Seaside": {
+      "run": "20261119-232524-143",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 7261,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "build_Forest": {
+      "run": "20261119-232654-870",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 7261,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "forest-runtime-checks.txt": {
+          "passed": 301,
+          "failed": 0
+        },
+        "editor-reports/forest-editor-checks.txt": {
+          "passed": 1733,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "build_Mine": {
+      "run": "20261119-232711-773",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 7261,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "mine-runtime-checks.txt": {
+          "passed": 112,
+          "failed": 0
+        },
+        "editor-reports/mine-editor-checks.txt": {
+          "passed": 3635,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "build_Snow": {
+      "run": "20261119-232725-788",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 7261,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "snow-runtime-checks.txt": {
+          "passed": 186,
+          "failed": 0
+        },
+        "editor-reports/snow-editor-checks.txt": {
+          "passed": 3742,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "build_Lighthouse": {
+      "run": "20261119-232739-496",
+      "result": "PASS",
+      "reports": {
+        "editor-reports/system-editor-checks.txt": {
+          "passed": 7261,
+          "failed": 0
+        },
+        "editor-reports/physics-tests.txt": {
+          "passed": 40,
+          "failed": 0
+        },
+        "editor-reports/playtest-regression.txt": {
+          "passed": 203,
+          "failed": 0
+        },
+        "lighthouse-runtime-checks.txt": {
+          "passed": 202,
+          "failed": 0
+        },
+        "editor-reports/lighthouse-editor-checks.txt": {
+          "passed": 3401,
+          "failed": 0
+        }
+      },
+      "csharpDiagnostics": []
+    },
+    "cameraChecksUseCurrentScene": {
+      "log": "camera-checks.log"
+    },
+    "Seaside-Unity64-Startup-Windows.zip": {
+      "entriesReadAndCrcChecked": 2567,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "ff761ceea523bf95c8d0ee008286ff226a2e9465992bc556f913cb2f646fb796"
+    },
+    "Seaside-Unity64-Startup-Project.zip": {
+      "entriesReadAndCrcChecked": 2189,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "86a49d4d160e76cb87b4e6f253c4ae23992eba0565c31428a464e43ab85e2a97"
+    },
+    "Forest-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcChecked": 147,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "6cdcd8f304f31b0b097125d6eb2b48862f5ff050d16cceea271c03eb3743f8eb"
+    },
+    "Forest-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcChecked": 2189,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "d29c18ef15db9179aefd5754aec451ecd4c11307143adea688aa1ee1d6ed529b"
+    },
+    "Mine-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcChecked": 147,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "71d45b549bbef3b157626e46c5399a9de6a4327fc7670a852e97292c7a3e9d8b"
+    },
+    "Mine-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcChecked": 2189,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "62bc701833bd96a7c46527176604744ea423ae988e713a796dc2ec77674a213e"
+    },
+    "Snow-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcChecked": 147,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "9c263b908eb0c1290ac3a03673de8911458b2952e3020d1a24ad0da9004ed7f8"
+    },
+    "Snow-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcChecked": 2189,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "6e48029d225a26d6b4e04086a2c85a37feffd6de5385abf0c1dab739c1c696cf"
+    },
+    "Lighthouse-Unity64-Whitebox-Windows.zip": {
+      "entriesReadAndCrcChecked": 147,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "9d4ceacc2ff98869d1bf268a0aecb2f22144d937593967d10fc9313f4b741be1"
+    },
+    "Lighthouse-Unity64-Whitebox-Project.zip": {
+      "entriesReadAndCrcChecked": 2189,
+      "errors": [],
+      "retiredEntries": [],
+      "sha256": "7535f2efd929f002956f6954680613f8fe33f2235430bd07d7be7ae1ca612c9e"
+    },
+    "森林试玩别名": {
+      "target": "Forest"
+    },
+    "矿洞试玩别名": {
+      "target": "Mine"
+    },
+    "雪山试玩别名": {
+      "target": "Snow"
+    },
+    "灯塔试玩别名": {
+      "target": "Lighthouse"
+    }
+  },
+  "failures": [],
+  "cleanupTotals": {
+    "removedFiles": 477,
+    "removedBytes": 714788018.0,
+    "backupPath": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261119-project-cleanup"
+  },
+  "result": "PASS"
+}
