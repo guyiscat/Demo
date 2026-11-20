@@ -24,14 +24,14 @@ namespace Seaside
             {
                 Check(menu != null && menu.SelectedIndex == 0 && !menu.SettingsOpen, "Initial selection");
                 Check(!menu.SelectAtScreenPoint(Vector2.zero), "Background does not activate buttons");
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < menu.buttons.Length; i++)
                 {
                     Vector3 pointer = menu.menuCamera.WorldToScreenPoint(menu.buttons[i].transform.position);
                     Check(menu.SelectAtScreenPoint(pointer) && menu.SelectedIndex == i, "Pointer selection " + i);
-                    for (int j = 0; j < 3; j++) Check(menu.buttons[j].highlightedVisual.activeSelf == (i == j), "Exclusive highlight");
+                    for (int j = 0; j < menu.buttons.Length; j++) Check(menu.buttons[j].highlightedVisual.activeSelf == (i == j&&menu.buttons[j].Available), "Exclusive highlight");
                 }
                 menu.SelectNext(1); Check(menu.SelectedIndex == 0, "Keyboard wrap forward");
-                menu.SelectNext(-1); Check(menu.SelectedIndex == 2, "Keyboard wrap backward");
+                menu.SelectNext(-1); Check(menu.SelectedIndex == 3, "Keyboard wrap backward");
                 menu.SelectNext(-1); menu.ActivateSelection(); Check(menu.SettingsOpen, "Settings action");
                 Check(!menu.SelectAtScreenPoint(menu.menuCamera.WorldToScreenPoint(menu.buttons[0].transform.position)), "Modal blocks underlying menu");
                 bool hadVolume = PlayerPrefs.HasKey("Seaside.MasterVolume");
@@ -44,12 +44,12 @@ namespace Seaside
                 }
             }
             catch (Exception ex) { Fail(ex.ToString()); yield break; }
-            menu.CloseSettings(); menu.SelectNext(-1);
+            menu.CloseSettings();
             // Hidden Windows players have no reliable back buffer. Render the artwork explicitly.
             try { CaptureArtwork(menu); }
             catch (Exception ex) { Fail(ex.ToString()); yield break; }
             string targetScene = menu.gameScenePath;
-            menu.ActivateSelection();
+            menu.StartGame();
             float deadline = Time.realtimeSinceStartup + 25;
             while (SceneManager.GetActiveScene().path != targetScene && Time.realtimeSinceStartup < deadline) yield return null;
             yield return null;

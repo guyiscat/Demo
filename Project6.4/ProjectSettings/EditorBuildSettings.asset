@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheFirstScene_Seaside.unity
     guid: 233395dd5cbf27b448e2e99d6ef5b716
+  - enabled: 1
+    path: Assets/Scenes/ForestWhitebox.unity
+    guid: 6bd2e02781545ed47b335dfcb3475e3c
+  - enabled: 1
+    path: Assets/Scenes/MineWhitebox.unity
+    guid: ee25dc1d3ac3bff479b6d883115deb88
+  - enabled: 1
+    path: Assets/Scenes/SnowWhitebox.unity
+    guid: 3da826081adb7af41809d9038dce4ee4
+  - enabled: 1
+    path: Assets/Scenes/LighthouseWhitebox.unity
+    guid: c6bc87de89f01e04291d26489fe6a890
   m_configObjects: {}

@@ -27,6 +27,7 @@ namespace Seaside
         [Min(0),InspectorName("死亡复活等待秒数")] public float respawnDelay=.2f;
         [InspectorName("使用最后接触的复活点")] public bool latestCheckpointWins=true;
         [InspectorName("默认显示路线")] public bool showRoute=true;
+        [Min(0),InspectorName("通关后自动进入下一关等待秒数")] public float nextLevelDelay=.8f;
         [Header("所有关卡共用方向箭头")]
         [Min(0),InspectorName("箭头距身体边缘距离")] public float aimArrowPadding=.35f;
         [Min(.1f),InspectorName("方向箭头长度")] public float aimArrowLength=.8f;

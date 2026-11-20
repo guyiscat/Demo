@@ -1,6 +1,6 @@
 # 雷火游戏创作 Demo
 
-当前唯一主工程是 **Project6.4/**，使用 **Unity 6000.4.12f1**。海边 Seaside 已有玩法与美术场景；森林 Forest、矿洞 Mine、雪山 Snow 和灯塔 Lighthouse 为独立白盒关卡，尚未连接关卡进度，尚未制作对应主题贴图。
+当前唯一主工程是 **Project6.4/**，使用 **Unity 6000.4.12f1**。海边Seaside已有玩法与美术场景；森林Forest、矿洞Mine、雪山Snow和灯塔Lighthouse为白盒关卡。当前按海边→森林→矿洞→雪山→灯塔自动跳关，支持自动存档及开始页“继续游戏”；后四关尚未制作主题贴图。
 
 ## 开始开发
 
@@ -12,7 +12,9 @@
 6. 独立矿洞打开 **Assets/Scenes/MineWhitebox.unity** 直接 Play；Windows 入口 **mine.cmd**。交互、电梯、参数及地图解释见 [矿洞说明](Docs/MineWhitebox.md)。
 7. 独立雪山/灯塔打开 **Assets/Scenes/SnowWhitebox.unity** 或 **Assets/Scenes/LighthouseWhitebox.unity**；Windows入口 **snow.cmd**、**lighthouse.cmd**。冷热切换、攀岩补跳、雪山残章选择及塔顶灯台见 [雪山与灯塔说明](Docs/SnowLighthouse.md)。
 
-场景保留后续手工修改，是当前关卡的依据。不要重新运行 Excel/JSON 场景生成工具覆盖已有场景。
+场景保留后续手工修改，是当前关卡的依据。不要重新运行Excel/JSON场景生成工具覆盖已有场景。自动流程、存档点和四项菜单见[流程与存档说明](Docs/CampaignAndSaves.md)。
+
+村庄以外的教学提示与故事交互已按文案核对配置；海边灯塔须按E读完两页才前往森林。触发位置及可调字段见[关卡文案](Docs/LevelCopy.md)。
 
 ## 目录与分工
 
@@ -49,7 +51,7 @@ PNG 的统一入口是 **Project6.4/Assets/Art/**。整图参考在Backgrounds/S
 
 ## 构建与试玩
 
-第一关启动入口为 **statgame.cmd**，从启动页进入海边；其余独立入口为 **forest.cmd**、**mine.cmd**、**snow.cmd**、**lighthouse.cmd**，均运行Play64中的当前成品。暂不设置关卡跳转。请保留完整构建目录中的_Data、DLL和运行库。旧build输出和两份重复解压森林试玩已移出工作目录，当前ZIP和启动入口保留。
+完整游戏入口为 **statgame.cmd**，开始页提供开始游戏、继续游戏、游戏选项、退出游戏。其余入口 **forest.cmd**、**mine.cmd**、**snow.cmd**、**lighthouse.cmd**从对应关卡开始，也支持后续自动跳关。请保留完整构建目录中的_Data、DLL和运行库。旧build和重复解压试玩已移出工作目录，当前ZIP和入口保留。
 
 在 Demo 根目录执行：
 
@@ -59,7 +61,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\Build
 
 脚本默认使用本机 D:/Development/Unity/6000.4.12f1/Editor/Unity.exe；其他电脑请传入自己的路径。构建和自动检查输出到 Play64/ 与 Docs/Logs/Build/时间戳/。不要在编辑器正在打开同一工程时同时运行批处理构建。
 
-构建成功后运行 **Play64/SeasideWhitebox.exe**，从启动页点击开始游戏进入 TheFirstScene_Seaside。启动页支持鼠标与方向键/W/S、Enter/空格，选项页提供主音量和全屏。Git 克隆不附带 Play64，需自行构建或下载另行发布的完整试玩包。
+构建成功后运行 **Play64/SeasideWhitebox.exe**，从开始游戏进入海边，或继续最近存档。启动页支持鼠标与方向键/W/S、Enter/空格，选项页提供主音量和全屏。Git克隆不附带Play64，需自行构建或获取完整试玩包。
 
 StartupPage模式验证已保存的启动场景和第一关；省略关卡参数也默认构建这个当前入口。-ForestWhitebox、-MineWhitebox、-SnowWhitebox、-LighthouseWhitebox分别验证并构建其他独立关卡。所有入口仍执行公共动作回归，使用Editor/Tests/Fixtures中的测试场景，不依赖旧游戏场景，不重建手工地图。
 

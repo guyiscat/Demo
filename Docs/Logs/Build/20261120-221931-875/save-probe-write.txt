@@ -1,0 +1,3 @@
+PASS Actual scene load: Assets/Scenes/MineWhitebox.unity
+PASS Scene initialized and save restore completed
+PASS First process writes a durable Mine checkpoint

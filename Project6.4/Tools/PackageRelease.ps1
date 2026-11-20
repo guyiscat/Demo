@@ -65,16 +65,16 @@ if($MineWhitebox -and ($ForestWhitebox -or $StartupPage)){throw 'Choose one inde
 if($SnowWhitebox -or $LighthouseWhitebox){
     $levelName=if($SnowWhitebox){'Snow'}else{'Lighthouse'}
     $launcher=$levelName.ToLowerInvariant()+'.cmd'
-    Pack ($levelName+'-Unity64-Whitebox-Windows.zip') @(('Play64\'+$levelName),$launcher,'Docs\SnowLighthouse.md','Docs\ScriptLayout.md')
+    Pack ($levelName+'-Unity64-Whitebox-Windows.zip') @(('Play64\'+$levelName),$launcher,'Docs\SnowLighthouse.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
     Pack ($levelName+'-Unity64-Whitebox-Project.zip') $projectParts
 }elseif($MineWhitebox){
-    Pack 'Mine-Unity64-Whitebox-Windows.zip' @('Play64\Mine','mine.cmd','Docs\MineWhitebox.md','Docs\ScriptLayout.md')
+    Pack 'Mine-Unity64-Whitebox-Windows.zip' @('Play64\Mine','mine.cmd','Docs\MineWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
     Pack 'Mine-Unity64-Whitebox-Project.zip' $projectParts
 }elseif($ForestWhitebox){
-    Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md')
+    Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
     Pack 'Forest-Unity64-Whitebox-Project.zip' $projectParts
 }elseif($StartupPage){
-    # All five launchers remain independent; no level progression is connected.
+    # The menu entry contains all five launchers and the connected campaign.
     Pack 'Seaside-Unity64-Startup-Windows.zip' @('Play64','statgame.cmd','forest.cmd','mine.cmd','snow.cmd','lighthouse.cmd','README.md','CONTRIBUTING.md','Docs')
     Pack 'Seaside-Unity64-Startup-Project.zip' $projectParts
 }

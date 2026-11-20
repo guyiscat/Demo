@@ -1,0 +1,7 @@
+Seaside lighthouse artwork anchor: (144.60, 46.30, 0.00); interactionDistance=4
+Assets/Scenes/TheFirstScene_Seaside.unity Tutorial_Dash Center: (17.00, 8.50, 0.00), Extents: (10.00, 7.50, 0.00) -> 鼠标左键进行冲刺
+Assets/Scenes/TheFirstScene_Seaside.unity Tutorial_Wall Center: (37.00, 8.50, 0.00), Extents: (7.00, 6.50, 0.00) -> 部分墙壁紧贴按住方向键可攀附
+Assets/Scenes/ForestWhitebox.unity Tutorial_Zipline Center: (7.50, 54.00, 0.00), Extents: (7.50, 6.00, 0.00) -> 按 w 在绳索上滑行
+Assets/Scenes/SnowWhitebox.unity Tutorial_Cold Center: (13.00, 27.50, 0.00), Extents: (11.00, 6.50, 0.00) -> 冻僵的地形需要防寒措施才能接触
+Assets/Scenes/SnowWhitebox.unity Tutorial_Heat Center: (198.00, 125.50, 0.00), Extents: (14.00, 9.50, 0.00) -> 灼烧的地形需要隔热措施才能接触
+Assets/Scenes/SnowWhitebox.unity Tutorial_Climb Center: (107.00, 110.00, 0.00), Extents: (13.00, 10.00, 0.00) -> 在攀岩点周围可以二次跳跃

@@ -16,7 +16,8 @@ namespace Seaside
             var game=FindAnyObjectByType<SeasideSession>();if(game==null)return;
             if(kind==CellKind.Spike)game.Die();
             if(kind==CellKind.Checkpoint)game.Checkpoint(this);
-            if(kind==CellKind.Finish)game.Complete();
+            // Seaside's authored lighthouse requires E and its two story pages.
+            if(kind==CellKind.Finish&&game.GetComponent<SeasideStory>()==null)game.Complete();
         }
     }
 }

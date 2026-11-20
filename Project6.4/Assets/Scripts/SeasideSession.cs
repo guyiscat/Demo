@@ -30,6 +30,7 @@ namespace Seaside
         {
             SeasideLog.Begin();
             RespawnPoint=startPoint;
+            CampaignFlow.Attach(this);
             if(!player.externalInput&&player.GetComponent<PlayerAimIndicator>()==null)
                 player.gameObject.AddComponent<PlayerAimIndicator>();
             var args=System.Environment.GetCommandLineArgs();
@@ -56,6 +57,7 @@ namespace Seaside
             activeCheckpoint=cell;
             CheckpointId=cell.checkpointId;RespawnPoint=cell.respawnAnchor==null?cell.respawn:(Vector2)cell.respawnAnchor.position;
             SeasideLog.Event("CHECKPOINT","id="+CheckpointId+" spawn="+RespawnPoint);
+            CampaignFlow.SaveCheckpoint(this);
             foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
             {
                 var sr=marker.GetComponent<SpriteRenderer>();if(sr!=null)sr.color=marker==cell?new Color(.3f,1,.65f):new Color(1,.78f,.2f);
@@ -70,9 +72,16 @@ namespace Seaside
             activeCheckpoint=null;
             foreach(var marker in FindObjectsByType<SeasideCell>())if(marker.kind==CellKind.Checkpoint)
             {var sr=marker.GetComponent<SpriteRenderer>();if(sr!=null)sr.color=new Color(1,.78f,.2f);}
+            Respawn();CampaignFlow.SaveCheckpoint(this);
+        }
+        public void Complete(){if(Won)return;Won=true;player.frozen=true;CampaignFlow.Complete(this);}
+        public void RestoreCheckpoint(int checkpointId,float timer,int deaths)
+        {
+            Timer=Mathf.Max(0,timer);Deaths=Mathf.Max(0,deaths);
+            foreach(var cell in FindObjectsByType<SeasideCell>(FindObjectsInactive.Include))
+                if(cell.kind==CellKind.Checkpoint&&cell.checkpointId==checkpointId){Checkpoint(cell);break;}
             Respawn();
         }
-        public void Complete(){Won=true;player.frozen=true;}
         public void Resume(){Paused=false;Time.timeScale=1;}
         IEnumerator Smoke(){yield return new WaitForSeconds(3);Debug.Log("SEASIDE_SMOKE_PASS player="+player.State+" ground="+player.Grounded);Application.Quit(0);}
         IEnumerator Capture(string path,bool map)

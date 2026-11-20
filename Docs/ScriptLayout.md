@@ -4,6 +4,8 @@
 
 ## 参数与提示入口
 
+2026-11-20新增公共CampaignFlow/CampaignSave/CampaignCheckpointPersistence，负责五关顺序、结束分支和磁盘进度；CampaignRuntimeChecks为独立存档测试入口。Editor根目录CampaignSetup/CampaignBuild维护增量存档点、四项菜单及构建场景列表。Assets/Resources/GameSystems.asset增加nextLevelDelay，默认0.8秒。开始页现有四项，五关均接入自动跳转，详见[流程与存档](CampaignAndSaves.md)。下文历史“独立/不跳转”记录保留原轮含义。
+
 所有关卡运行时读取 `Assets/Resources/GameSystems.asset`，引用原来的 `Assets/Settings/Movement.asset`。公共跟随镜头完整采用森林配置：近景大小18，其余平滑、死区、前瞻等值一致。松墙下滑3.5/平滑0.28秒、目标帧率120、复活等待0.2秒、默认显示路线也集中在GameSystems。所有关卡都使用最后实际接触的复活点，回头接触小编号也可更新。
 
 GameSystems.systemFont引用Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf，所有现有及后续关卡的GameHUD/GameUIStyles自动共用阿里巴巴普惠体。GameTypography在场景加载时统一TextMesh标签字体。原主题图片内文字保持图片原样。
@@ -47,6 +49,8 @@ GameSystems.systemFont引用Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf，
 2026-11-19将四个第一关/第二关目录改名为seaside/forest，并将矿洞复用的五个原森林类型移回公共根目录。69个原C#的GUID保持，不改程序集、类名或命名空间；编辑器菜单和executeMethod调用名保持。目录原.meta保留，详细迁移记录见本轮日志目录script-guids.json。森林只按新旧工作簿差异更新原场景；矿洞为首次独立创建。
 
 ## 运行与回滚
+
+2026-11-20文案补齐：公共LevelTutorials、TutorialZone、LevelCopyVisualChecks留在Scripts根目录；仅海边使用的SeasideStory放在Scripts/seaside。LevelCopySetup/LevelCopyEditorChecks在Editor根目录，负责跨关增量配置/检查，不重建地图；实际场景对象通过组件引用关联，改显示名/父路径不影响文案。配置说明见[关卡文案](LevelCopy.md)。
 
 五个独立入口为statgame.cmd（启动页进入海边）、forest.cmd、mine.cmd、snow.cmd、lighthouse.cmd。当前Assets/Scenes只包含StartGame、TheFirstScene_Seaside、ForestWhitebox、MineWhitebox、SnowWhitebox、LighthouseWhitebox；旧预览/恢复场景、旧第一关生成与迁移工具、旧手动输出build及重复解压试玩已移出工作目录。BuildAndTest和PackageRelease无参数时默认当前启动页版本，不再调用旧白盒构建入口。清理明细及回滚见[清理日志](Logs/Work/20261119-project-cleanup/work-log.md)。
 

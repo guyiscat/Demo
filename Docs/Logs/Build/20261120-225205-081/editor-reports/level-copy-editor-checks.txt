@@ -1,0 +1,29 @@
+PASS Document tutorial count/references: Assets/Scenes/TheFirstScene_Seaside.unity
+PASS Tutorial adds no terrain/hazard: Tutorial_Dash
+PASS Inside zone shows original top text: Tutorial_Dash
+PASS Outside zone clears: Tutorial_Dash
+PASS Tutorial adds no terrain/hazard: Tutorial_Wall
+PASS Inside zone shows original top text: Tutorial_Wall
+PASS Outside zone clears: Tutorial_Wall
+PASS No permanent tutorial outside marked areas: Assets/Scenes/TheFirstScene_Seaside.unity
+PASS Seaside story bound to current lighthouse artwork
+PASS Both seaside pages preserve PDF wording/order
+PASS Existing seaside finish preserved
+PASS Document tutorial count/references: Assets/Scenes/ForestWhitebox.unity
+PASS Tutorial adds no terrain/hazard: Tutorial_Zipline
+PASS Inside zone shows original top text: Tutorial_Zipline
+PASS Outside zone clears: Tutorial_Zipline
+PASS No permanent tutorial outside marked areas: Assets/Scenes/ForestWhitebox.unity
+PASS Document tutorial count/references: Assets/Scenes/MineWhitebox.unity
+PASS Document tutorial count/references: Assets/Scenes/SnowWhitebox.unity
+PASS Tutorial adds no terrain/hazard: Tutorial_Cold
+PASS Inside zone shows original top text: Tutorial_Cold
+PASS Outside zone clears: Tutorial_Cold
+PASS Tutorial adds no terrain/hazard: Tutorial_Heat
+PASS Inside zone shows original top text: Tutorial_Heat
+PASS Outside zone clears: Tutorial_Heat
+PASS Tutorial adds no terrain/hazard: Tutorial_Climb
+PASS Inside zone shows original top text: Tutorial_Climb
+PASS Outside zone clears: Tutorial_Climb
+PASS No permanent tutorial outside marked areas: Assets/Scenes/SnowWhitebox.unity
+PASS Document tutorial count/references: Assets/Scenes/LighthouseWhitebox.unity

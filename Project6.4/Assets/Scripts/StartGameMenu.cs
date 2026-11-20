@@ -9,7 +9,7 @@ namespace Seaside
         const string FullscreenKey = "Seaside.Fullscreen";
         [Header("Scene loaded by Start Game (include it in the Build Scene List)")]
         public string gameScenePath = "Assets/Scenes/TheFirstScene_Seaside.unity";
-        [Header("Ordered: Start, Settings, Exit")]
+        [Header("Ordered: Start, Continue, Settings, Exit")]
         public StartGameButton[] buttons;
         public Camera menuCamera;
         public Vector2 designSize = new Vector2(960, 540);
@@ -17,6 +17,8 @@ namespace Seaside
         public int SelectedIndex { get; private set; }
         public bool SettingsOpen { get; private set; }
         public bool IsLoading { get; private set; }
+        public bool NewGamePrompt {get;private set;}
+        public bool CanContinue=>CampaignFlow.HasSave;
         string loadError;
         Vector2 previousPointer;
         GUIStyle heading, label;
@@ -24,12 +26,13 @@ namespace Seaside
 
         void Awake()
         {
+            CampaignFlow.MenuReady();
             Time.timeScale = 1;
             AudioListener.volume = Mathf.Clamp01(PlayerPrefs.GetFloat(VolumeKey, 1));
             if (PlayerPrefs.HasKey(FullscreenKey)) Screen.fullScreen = PlayerPrefs.GetInt(FullscreenKey) != 0;
             SelectedIndex = 0;
             previousPointer = Input.mousePosition;
-            RefreshHighlights();
+            RefreshAvailability();
             FitCamera();
             SeasideLog.Begin();
             SeasideLog.Event("START_MENU", "target=" + gameScenePath);
@@ -45,6 +48,7 @@ namespace Seaside
         {
             FitCamera();
             if (IsLoading) return;
+            if(NewGamePrompt){if(Input.GetKeyDown(KeyCode.Escape))NewGamePrompt=false;return;}
             if (SettingsOpen)
             {
                 if (Input.GetKeyDown(KeyCode.Escape)) CloseSettings();
@@ -70,14 +74,14 @@ namespace Seaside
 
         public void SelectNext(int direction)
         {
-            if (SettingsOpen || IsLoading || buttons == null || buttons.Length == 0) return;
+            if (NewGamePrompt || SettingsOpen || IsLoading || buttons == null || buttons.Length == 0) return;
             SelectedIndex = (SelectedIndex + direction % buttons.Length + buttons.Length) % buttons.Length;
             RefreshHighlights();
         }
 
         public bool SelectAtScreenPoint(Vector2 pointer)
         {
-            if (SettingsOpen || IsLoading || menuCamera == null || buttons == null ||
+            if (NewGamePrompt || SettingsOpen || IsLoading || menuCamera == null || buttons == null ||
                 !menuCamera.pixelRect.Contains(pointer)) return false;
             Vector3 world = menuCamera.ScreenToWorldPoint(new Vector3(pointer.x, pointer.y, -menuCamera.transform.position.z));
             for (int i = 0; i < buttons.Length; i++)
@@ -99,28 +103,37 @@ namespace Seaside
         public void ActivateSelection()
         {
             if (IsLoading || SettingsOpen) return;
-            switch (SelectedIndex)
+            if(buttons==null||SelectedIndex>=buttons.Length||!buttons[SelectedIndex].Available)return;
+            switch (buttons[SelectedIndex].action)
             {
-                case 0: StartGame(); break;
-                case 1: OpenSettings(); break;
-                case 2: QuitGame(); break;
+                case StartMenuAction.NewGame: StartGame(); break;
+                case StartMenuAction.Continue: ContinueGame(); break;
+                case StartMenuAction.Settings: OpenSettings(); break;
+                case StartMenuAction.Exit: QuitGame(); break;
             }
         }
 
         public void StartGame()
         {
             if (IsLoading) return;
+            if(CanContinue&&!CampaignFlow.IsLegacyCheck){NewGamePrompt=true;return;}
+            ConfirmNewGame();
+        }
+        public void ConfirmNewGame()
+        {
+            NewGamePrompt=false;
             if (SceneUtility.GetBuildIndexByScenePath(gameScenePath) < 0)
             {
                 loadError = "关卡暂时无法加载，请重新启动游戏。";
                 Debug.LogError(loadError + " " + gameScenePath, this);
                 return;
             }
-            IsLoading = true;
             Time.timeScale = 1;
             SeasideLog.Event("START_GAME", "target=" + gameScenePath);
-            SceneManager.LoadSceneAsync(gameScenePath, LoadSceneMode.Single);
+            if(CampaignFlow.IsLegacyCheck){IsLoading=true;SceneManager.LoadSceneAsync(gameScenePath,LoadSceneMode.Single);}
+            else {IsLoading=CampaignFlow.StartNew();loadError=CampaignFlow.LoadError;}
         }
+        public void ContinueGame(){if(!CanContinue||IsLoading)return;IsLoading=CampaignFlow.Continue();loadError=CampaignFlow.LoadError;}
 
         public void OpenSettings() { SettingsOpen = true; SeasideLog.Event("MENU_SETTINGS", "open"); }
         public void CloseSettings() { SettingsOpen = false; }
@@ -151,7 +164,6 @@ namespace Seaside
 
         void OnGUI()
         {
-            if (!SettingsOpen && !IsLoading && string.IsNullOrEmpty(loadError)) return;
             Matrix4x4 oldMatrix = GUI.matrix;
             Color oldColor = GUI.color;
             float scale = Mathf.Min(Screen.width / 960f, Screen.height / 540f);
@@ -164,8 +176,21 @@ namespace Seaside
                 label = new GUIStyle(sharedStyles.text) { alignment = TextAnchor.MiddleLeft };
             }
             GUI.color = Color.white;
+            if(!SettingsOpen&&!IsLoading&&!NewGamePrompt&&string.IsNullOrEmpty(loadError))
+            {
+                var small=new GUIStyle(label){fontSize=12,alignment=TextAnchor.MiddleCenter};
+                GUI.Label(new Rect(270,516,420,20),CampaignFlow.SaveDescription,small);
+                GUI.matrix=oldMatrix;GUI.color=oldColor;return;
+            }
             GameUIStyles.Panel(new Rect(255,145,450,270),true);
-            if (SettingsOpen)
+            if(NewGamePrompt)
+            {
+                GUI.Label(new Rect(280,160,400,45),"开始新游戏",heading);
+                GUI.Label(new Rect(290,220,380,70),"开始新游戏会替换当前继续进度。\n要保留进度，请选择返回并继续游戏。",label);
+                if(GUI.Button(new Rect(305,347,160,40),"开始新游戏",sharedStyles.button))ConfirmNewGame();
+                if(GUI.Button(new Rect(495,347,160,40),"返回",sharedStyles.button))NewGamePrompt=false;
+            }
+            else if (SettingsOpen)
             {
                 GUI.Label(new Rect(280, 160, 400, 45), "设置 / SETTINGS", heading);
                 GUI.Label(new Rect(290, 222, 165, 30), "主音量", label);
@@ -190,6 +215,12 @@ namespace Seaside
         {
             sharedStyles?.Dispose();
             SeasideLog.End();
+        }
+        public void RefreshAvailability()
+        {
+            if(buttons==null)return;
+            foreach(var button in buttons)if(button!=null)button.Available=button.action!=StartMenuAction.Continue||CanContinue;
+            RefreshHighlights();
         }
     }
 }

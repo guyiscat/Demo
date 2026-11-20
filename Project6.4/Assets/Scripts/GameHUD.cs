@@ -4,7 +4,7 @@ namespace Seaside
 {
     public struct GameHUDContent
     {
-        public string title,controls,statistics,status,help,completion,prompt,dialogueTitle,dialogue,choice1,choice2,completionTitle;
+        public string title,controls,statistics,status,help,completion,prompt,dialogueTitle,dialogue,choice1,choice2,completionTitle,tutorial;
     }
     public abstract class GameHUD : MonoBehaviour
     {
@@ -38,6 +38,12 @@ namespace Seaside
             GUI.Label(new Rect(30,857,1370,25),CommonFooter,styles.text);
             if(!Session.InputBlocked&&!Session.ShowHelp)
             {
+                string tutorial=Session.GetComponent<LevelTutorials>()?.Current??content.tutorial;
+                if(string.IsNullOrEmpty(content.dialogue)&&!string.IsNullOrEmpty(tutorial))
+                {
+                    GameUIStyles.Panel(new Rect(300,100,840,66));
+                    GUI.Label(new Rect(325,119,790,35),tutorial,styles.text);
+                }
                 if(!string.IsNullOrEmpty(content.dialogue))
                 {
                     GameUIStyles.Panel(new Rect(350,270,740,330),true);
@@ -58,12 +64,14 @@ namespace Seaside
             }
             if(Session.Paused||Session.ShowHelp||Session.Won)
             {
+                string transition=Session.Won?CampaignFlow.TransitionMessage(Session):null;
                 GameUIStyles.Panel(new Rect(350,190,740,500),true);
                 GUI.Label(new Rect(380,210,680,40),Session.Won?(string.IsNullOrEmpty(content.completionTitle)?"本关通关 / COMPLETE":content.completionTitle):Session.Paused?"暂停 / PAUSED":"玩法说明",styles.title);
-                string message=Session.Won?content.completion+"\n时间 "+Session.Timer.ToString("F2")+" 秒；死亡 "+Session.Deaths+" 次。\n按 R 重新挑战本关。":content.help;
+                string message=Session.Won?content.completion+"\n时间 "+Session.Timer.ToString("F2")+" 秒；死亡 "+Session.Deaths+" 次。\n"+(transition??"按 R 重新挑战本关。"):content.help;
                 GUI.Label(new Rect(380,260,680,345),message,styles.text);
-                if(GUI.Button(new Rect(630,625,180,38),Session.Won?"再玩一次":"继续",styles.button))
+                if(transition==null&&GUI.Button(new Rect(630,625,180,38),Session.Won?"再玩一次":"继续",styles.button))
                 {Session.ShowHelp=false;if(Session.Won)Replay();else Session.Resume();}
+                if(CampaignFlow.Enabled&&(Session.Paused||Session.Won)&&transition==null&&GUI.Button(new Rect(835,625,220,38),"返回开始页",styles.button))CampaignFlow.ReturnToMenu(Session);
             }
             GUI.matrix=oldMatrix;GUI.color=oldColor;
         }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7afe1ae69f541bd93edc1ead4bccb4a, type: 3}
   m_Name: GameSystems
   m_EditorClassIdentifier: Assembly-CSharp::Seaside.GameSystemSettings
-  movement: {fileID: 11400000, guid: 5032a02bcdef9934dbac1a99073e9f81, type: 2}
   systemFont: {fileID: 12800000, guid: 53b29c6f67db408aa06c277932b8eaf4, type: 3}
+  movement: {fileID: 11400000, guid: 5032a02bcdef9934dbac1a99073e9f81, type: 2}
   releasedSlideSpeed: 3.5
   releasedSlideBlend: 0.28
   cameraTuning:
@@ -38,5 +38,6 @@ MonoBehaviour:
   respawnDelay: 0.2
   latestCheckpointWins: 1
   showRoute: 1
+  nextLevelDelay: 0.8
   aimArrowPadding: 0.35
   aimArrowLength: 0.8

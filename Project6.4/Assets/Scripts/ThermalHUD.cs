@@ -13,13 +13,12 @@ namespace Expedition
             get
             {
                 var p=Level.player;var t=Level.thermal;var ready=t.NearestReadyPoint();
-                string tutorial="冻僵地形需防寒，灼烧地形需隔热；按 S 切换。";
                 string race=Level is Lighthouse.LighthouseLevel tower&&tower.collapse!=null?"   坍塌限时 "+tower.collapse.Remaining.ToString("F0")+"秒":"";
-                string prompt=Level.CanInteract?"按 E 交互："+Level.GoalName:ready!=null?"攀岩点范围内：按空格二次跳跃":tutorial;
+                string prompt=Level.CanInteract?"按 E 交互："+Level.GoalName:ready!=null?"攀岩点范围内：按空格二次跳跃":null;
                 return new GameHUDContent{
                     title=Level.Title,controls=CommonControls+"   右键 信标/传送   S 防寒/隔热   W 滑索   E 交互",
                     statistics=Statistics(Level.session),status=DashStatus(p.motor)+"   传送 "+(p.TeleportCharged?"就绪":"已用")+"   核心："+t.ModeName+"   "+MotorState(p.motor)+race,
-                    prompt=prompt,dialogueTitle=Level.GoalName,dialogue=Level.Dialogue,
+                    prompt=prompt,tutorial=ready!=null?"在攀岩点周围可以二次跳跃":null,dialogueTitle=Level.GoalName,dialogue=Level.Dialogue,
                     choice1=Level.Choosing?"1  留下吧，我属于这个即将消失的世界":null,
                     choice2=Level.Choosing?"2  不，还没有结束，一切都还来得及":null,
                     completion=Level.Completion,completionTitle=Level.CompletionTitle,

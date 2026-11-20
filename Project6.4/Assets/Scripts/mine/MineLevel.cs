@@ -73,5 +73,15 @@ namespace Mine
         public void CloseDialogue(){pages=null;page=0;active=null;if(player!=null&&player.motor!=null&&!session.InputBlocked)player.motor.frozen=false;}
         void ResetProgress(){CloseDialogue();WorkbenchRead=HasBitcoin=false;foreach(var item in interactions)item.Used=false;lift.ResetLift();}
         public void Restart(){ResetProgress();session.Restart();}
+        public void RestoreProgress(bool workbenchRead,bool liftActivated)
+        {
+            WorkbenchRead=workbenchRead;
+            foreach(var item in interactions)
+            {
+                if(item.kind==MineInteractionKind.Workbench)item.Used=workbenchRead;
+                if(item.kind==MineInteractionKind.LiftSwitch)item.Used=liftActivated;
+            }
+            if(liftActivated)lift.Activate();
+        }
     }
 }

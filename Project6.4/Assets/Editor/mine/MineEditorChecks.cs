@@ -46,7 +46,7 @@ public static class MineEditorChecks
         check(level.interactions.Count(i=>i.kind==MineInteractionKind.Relic)==2&&level.interactions.Count(i=>i.completesLevel)==1,"Two cyan points; only deepest relic completes Mine");
         check(level.lift.lowerStop==new Vector2(86,161.5f)&&level.lift.upperStop==new Vector2(86,254.5f),"Lift stops match orange workbook bars");
         check(level.lift.body.bodyType==RigidbodyType2D.Kinematic&&level.lift.Collider.gameObject.layer==6,"Lift is a physical kinematic Ground support");
-        var checkpoints=cells.Where(c=>c.kind==CellKind.Checkpoint).ToArray();check(checkpoints.Length==2,"Two purple regions become checkpoints");
+        var checkpoints=cells.Where(c=>c.kind==CellKind.Checkpoint).ToArray();check(checkpoints.Length>=5,"Authored and added safe checkpoints cover Mine route");
         foreach(var cp in checkpoints)
         {
             var p=(Vector2)cp.respawnAnchor.position;
@@ -55,7 +55,7 @@ public static class MineEditorChecks
         }
         var start=level.session.startPoint;
         check(!Physics2D.OverlapBoxAll(start,new Vector2(2.02f,2.02f),0,(1<<6)|(1<<7)).Any(),"Entrance spawn is clear of terrain and spikes");
-        check(!EditorBuildSettings.scenes.Any(s=>s.path==MineBuilder.ScenePath),"Mine is independent of current start menu and progression");
+        check(EditorBuildSettings.scenes.Any(s=>s.enabled&&s.path==MineBuilder.ScenePath),"Mine included in sequential campaign");
         foreach(var t in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))check(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject)==0,"No missing script: "+t.name);
         string path=Path.Combine(SeasidePaths.ReleaseRoot,"Docs/mine-editor-checks.txt");Directory.CreateDirectory(Path.GetDirectoryName(path));File.WriteAllLines(path,log);
         if(log.Any(s=>s.StartsWith("FAIL")))throw new Exception("Mine editor checks failed; see "+path);

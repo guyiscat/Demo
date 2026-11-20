@@ -19,7 +19,7 @@ public static class SystemContractChecks
         check(settings!=null&&settings.movement==AssetDatabase.LoadAssetAtPath<SeasideSettings>("Assets/Settings/Movement.asset"),"Shared system asset references canonical Movement.asset");
         check(settings.systemFont!=null&&settings.systemFont==AssetDatabase.LoadAssetAtPath<Font>("Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf"),"Shared system font references the bundled Alibaba PuHuiTi asset");
         check(settings.cameraTuning.followSize==18,"Common camera uses Forest followSize 18");
-        check(!EditorBuildSettings.scenes.Any(s=>s.path==ForestBuilder.ScenePath),"Forest remains independent from first-level progression");
+        check(EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).SequenceEqual(new[]{CampaignFlow.MenuScene}.Concat(CampaignFlow.Scenes)),"Campaign scene order is menu, seaside, forest, mine, snow, lighthouse");
         foreach(string guid in AssetDatabase.FindAssets("t:Scene",new[]{"Assets/Scenes"}))
         {
             string path=AssetDatabase.GUIDToAssetPath(guid);EditorSceneManager.OpenScene(path);
@@ -37,5 +37,6 @@ public static class SystemContractChecks
         Directory.CreateDirectory(Path.GetDirectoryName(output));File.WriteAllLines(output,log);
         if(log.Any(line=>line.StartsWith("FAIL")))throw new Exception("System contract checks failed; see "+output);
         Debug.Log("SYSTEM_EDITOR_CHECKS_PASS assertions="+log.Count);
+        LevelCopyEditorChecks.Run();
     }
 }

@@ -71,6 +71,18 @@ try {
         $startupExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-force-d3d11','-screen-fullscreen','0','-screen-width','1280','-screen-height','720','-startupSmoke','-logFile',('"'+(Join-Path $run 'startup-runtime.log')+'"'))
         $status.startupExit=$startupExit
         if($startupExit -ne 0){throw 'Startup runtime checks failed'}
+        $status.phase='campaign-runtime'
+        $campaignReport=Join-Path $run 'campaign-runtime-checks.txt'
+        $testSave=Join-Path $run 'test-save.json'
+        $campaignExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-campaignChecks','-campaignSavePath',('"'+$testSave+'"'),'-campaignReport',('"'+$campaignReport+'"'),'-logFile',('"'+(Join-Path $run 'campaign-runtime.log')+'"'))
+        $status.campaignExit=$campaignExit
+        if($campaignExit -ne 0 -or !(Test-Path -LiteralPath $campaignReport)){throw 'Campaign progression or checkpoint persistence checks failed'}
+        foreach($phase in @('write','read')){
+            $probeReport=Join-Path $run ('save-probe-'+$phase+'.txt')
+            $probeExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-saveProbe',$phase,'-campaignSavePath',('"'+$testSave+'"'),'-campaignReport',('"'+$probeReport+'"'),'-logFile',('"'+(Join-Path $run ('save-probe-'+$phase+'.log'))+'"'))
+            $status[('saveProbe'+$phase+'Exit')]=$probeExit
+            if($probeExit -ne 0 -or !(Test-Path -LiteralPath $probeReport)){throw 'Cross-process Continue checks failed'}
+        }
         $status.result='PASS'
         return
     }

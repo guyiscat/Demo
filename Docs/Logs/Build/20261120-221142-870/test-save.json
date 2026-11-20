@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "scene": "Assets/Scenes/MineWhitebox.unity",
+    "savedAt": "2026-11-20T14:12:08.3862972Z",
+    "checkpointId": 7,
+    "deaths": 0,
+    "timer": 0.04001998156309128,
+    "mineLift": true,
+    "workbench": true,
+    "forestLeft": false,
+    "forestRight": false,
+    "ended": false
+}

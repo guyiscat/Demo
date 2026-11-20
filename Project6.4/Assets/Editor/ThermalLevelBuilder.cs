@@ -179,7 +179,7 @@ public static class ThermalLevelBuilder
         SeasideTestScenes.RunMovementRegression();
         EditorSceneManager.OpenScene(ScenePath(snow));string key=snow?"Snow":"Lighthouse";
         string output=Path.Combine(SeasidePaths.ReleaseRoot,"Play64/"+key+"/"+key+"Whitebox.exe");Directory.CreateDirectory(Path.GetDirectoryName(output));
-        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{ScenePath(snow)},locationPathName=output,target=BuildTarget.StandaloneWindows64,options=BuildOptions.None});
+        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=CampaignBuild.ScenesFrom(ScenePath(snow)),locationPathName=output,target=BuildTarget.StandaloneWindows64,options=BuildOptions.None});
         if(report.summary.result!=BuildResult.Succeeded)throw new Exception(key+" build failed: "+report.summary.result);
         Debug.Log(key.ToUpperInvariant()+"_BUILD_PASS bytes="+report.summary.totalSize+" errors="+report.summary.totalErrors);
     }

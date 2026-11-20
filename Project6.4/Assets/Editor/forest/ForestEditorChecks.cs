@@ -92,7 +92,7 @@ public static class ForestEditorChecks
         }
         check(level.player.waterfall.curtainBounds.isTrigger,"Waterfall is passable; occlusion is visual only");
         check(UnityEngine.Object.FindObjectsByType<SeasideHUD>().Length==0,"Forest owns its help and completion UI");
-        check(!EditorBuildSettings.scenes.Any(s=>s.path==ForestBuilder.ScenePath),"Forest not connected to existing start menu or progression");
+        check(EditorBuildSettings.scenes.Any(s=>s.enabled&&s.path==ForestBuilder.ScenePath),"Forest included in sequential campaign");
         foreach(var c in imported.Where(c=>c.kind==CellKind.Ground))check(c.gameObject.layer==6,"Ground layer "+c.excelAddress);
         foreach(var t in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))
             check(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject)==0,"No missing script: "+t.name);

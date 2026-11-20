@@ -1,0 +1,4 @@
+PASS Fresh process discovers previous process save
+PASS Actual scene load: Assets/Scenes/MineWhitebox.unity
+PASS Scene initialized and save restore completed
+PASS Fresh process restores checkpoint and lift/workbench

@@ -1,0 +1,156 @@
+{
+  "Seaside": {
+    "run": "20261120-224917-525",
+    "result": "PASS",
+    "reports": {
+      "editor-reports/system-editor-checks.txt": {
+        "passed": 7306,
+        "failed": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "passed": 29,
+        "failed": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "passed": 40,
+        "failed": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "passed": 203,
+        "failed": 0
+      },
+      "campaign-runtime-checks.txt": {
+        "passed": 225,
+        "failed": 0
+      },
+      "save-probe-write.txt": {
+        "passed": 3,
+        "failed": 0
+      },
+      "save-probe-read.txt": {
+        "passed": 4,
+        "failed": 0
+      }
+    }
+  },
+  "Forest": {
+    "run": "20261120-225113-585",
+    "result": "PASS",
+    "reports": {
+      "editor-reports/system-editor-checks.txt": {
+        "passed": 7306,
+        "failed": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "passed": 29,
+        "failed": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "passed": 40,
+        "failed": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "passed": 203,
+        "failed": 0
+      },
+      "forest-runtime-checks.txt": {
+        "passed": 301,
+        "failed": 0
+      },
+      "editor-reports/forest-editor-checks.txt": {
+        "passed": 1735,
+        "failed": 0
+      }
+    }
+  },
+  "Mine": {
+    "run": "20261120-225130-420",
+    "result": "PASS",
+    "reports": {
+      "editor-reports/system-editor-checks.txt": {
+        "passed": 7306,
+        "failed": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "passed": 29,
+        "failed": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "passed": 40,
+        "failed": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "passed": 203,
+        "failed": 0
+      },
+      "mine-runtime-checks.txt": {
+        "passed": 127,
+        "failed": 0
+      },
+      "editor-reports/mine-editor-checks.txt": {
+        "passed": 3660,
+        "failed": 0
+      }
+    }
+  },
+  "Snow": {
+    "run": "20261120-225149-182",
+    "result": "PASS",
+    "reports": {
+      "editor-reports/system-editor-checks.txt": {
+        "passed": 7306,
+        "failed": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "passed": 29,
+        "failed": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "passed": 40,
+        "failed": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "passed": 203,
+        "failed": 0
+      },
+      "snow-runtime-checks.txt": {
+        "passed": 189,
+        "failed": 0
+      },
+      "editor-reports/snow-editor-checks.txt": {
+        "passed": 3751,
+        "failed": 0
+      }
+    }
+  },
+  "Lighthouse": {
+    "run": "20261120-225205-081",
+    "result": "PASS",
+    "reports": {
+      "editor-reports/system-editor-checks.txt": {
+        "passed": 7306,
+        "failed": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "passed": 29,
+        "failed": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "passed": 40,
+        "failed": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "passed": 203,
+        "failed": 0
+      },
+      "lighthouse-runtime-checks.txt": {
+        "passed": 205,
+        "failed": 0
+      },
+      "editor-reports/lighthouse-editor-checks.txt": {
+        "passed": 3406,
+        "failed": 0
+      }
+    }
+  }
+}

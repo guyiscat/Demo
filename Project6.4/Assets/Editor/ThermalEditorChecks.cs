@@ -68,7 +68,7 @@ public static class ThermalEditorChecks
         check(level.goal!=null&&level.goal.isTrigger&&level.goal.GetComponent<SeasideCell>()==null,"Goal requires authored E interaction, not incidental overlap");
         check(snow?level is Snow.SnowLevel:level is Lighthouse.LighthouseLevel,"Scene has its independent level controller");
         if(!snow){var collapse=((Lighthouse.LighthouseLevel)level).collapse;check(collapse!=null&&collapse.mapRoot!=null&&collapse.front!=null&&collapse.speed>0&&collapse.segmentTimeLimit>0,"Tower timed road collapse is wired with adjustable chase parameters");}
-        check(!EditorBuildSettings.scenes.Any(s=>s.path==ThermalLevelBuilder.ScenePath(snow)),"No cross-level progression configured");
+        check(EditorBuildSettings.scenes.Any(s=>s.enabled&&s.path==ThermalLevelBuilder.ScenePath(snow)),"Thermal scene included in sequential campaign");
         foreach(var t in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include))check(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject)==0,"No missing component: "+t.name);
         string output=Path.Combine(SeasidePaths.ReleaseRoot,"Docs/"+key.ToLowerInvariant()+"-editor-checks.txt");Directory.CreateDirectory(Path.GetDirectoryName(output));File.WriteAllLines(output,log);
         if(log.Any(s=>s.StartsWith("FAIL")))throw new Exception(key+" scene checks failed: "+output);

@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "scene": "Assets/Scenes/SnowWhitebox.unity",
+    "savedAt": "2026-11-20T14:19:57.8614244Z",
+    "checkpointId": 1,
+    "deaths": 0,
+    "timer": 0.03666799142956734,
+    "mineLift": false,
+    "workbench": false,
+    "forestLeft": false,
+    "forestRight": false,
+    "ended": true
+}

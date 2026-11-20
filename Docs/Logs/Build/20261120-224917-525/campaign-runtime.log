@@ -1,0 +1,316 @@
+Mono path[0] = 'D:/UnityProjects/Demo/Docs/Backups/20261118-shared-systems-script-folders/Validation/Play64/SeasideWhitebox_Data/Managed'
+Mono config path = 'D:/UnityProjects/Demo/Docs/Backups/20261118-shared-systems-script-folders/Validation/Play64/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.4.12f1 (3ca267ce8005)
+[Subsystems] Discovering subsystems at path D:/UnityProjects/Demo/Docs/Backups/20261118-shared-systems-script-folders/Validation/Play64/SeasideWhitebox_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.002 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+UnloadTime: 0.303100 ms
+PASS Four menu actions wired by action, not three hardcoded indexes
+PASS No save disables Continue
+PASS Disabled Continue does not load or erase data
+PASS Settings remains correct fourth-row action mapping
+PASS Disk save roundtrip retains checkpoint and mechanism state
+PASS Corrupt primary save recovers from previous complete file
+PASS Unrecognized scene cannot become a load target
+PASS New Game asks before replacing an existing progress slot
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.610200 ms
+PASS Actual scene load: Assets/Scenes/TheFirstScene_Seaside.unity
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2573.
+Total: 0.629500 ms (FindLiveObjects: 0.054400 ms CreateObjectMapping: 0.010200 ms MarkObjects: 0.540700 ms  DeleteObjects: 0.024200 ms)
+
+PASS Scene initialized and save restore completed
+PASS Campaign order stage 0
+PASS Real player position enters tutorial: Tutorial_Dash
+PASS Real player position enters tutorial: Tutorial_Wall
+PASS Leaving all areas clears top tutorial
+PASS Entry save targets the actual current stage
+PASS Checkpoint IDs unique in 海边
+PASS Actual checkpoint restore: Checkpoint_12_HJ77_HJ78_HK77_HK78
+PASS Respawn clears spikes: Checkpoint_12_HJ77_HJ78_HK77_HK78
+PASS Checkpoint contact commits disk progress: Checkpoint_12_HJ77_HJ78_HK77_HK78
+PASS Actual checkpoint restore: Checkpoint_11_GP80_GP81_GQ80_GQ81
+PASS Respawn clears spikes: Checkpoint_11_GP80_GP81_GQ80_GQ81
+PASS Checkpoint contact commits disk progress: Checkpoint_11_GP80_GP81_GQ80_GQ81
+PASS Actual checkpoint restore: Checkpoint_10_FX80_FX81_FY80_FY81
+PASS Respawn clears spikes: Checkpoint_10_FX80_FX81_FY80_FY81
+PASS Checkpoint contact commits disk progress: Checkpoint_10_FX80_FX81_FY80_FY81
+PASS Actual checkpoint restore: Checkpoint_09_FH54_FH55_FI54_FI55
+PASS Respawn clears spikes: Checkpoint_09_FH54_FH55_FI54_FI55
+PASS Checkpoint contact commits disk progress: Checkpoint_09_FH54_FH55_FI54_FI55
+PASS Actual checkpoint restore: Checkpoint_08_EV81_EV82_EW81_EW82
+PASS Respawn clears spikes: Checkpoint_08_EV81_EV82_EW81_EW82
+PASS Checkpoint contact commits disk progress: Checkpoint_08_EV81_EV82_EW81_EW82
+PASS Actual checkpoint restore: Checkpoint_07_EO106_EO107_EP106_EP107
+PASS Respawn clears spikes: Checkpoint_07_EO106_EO107_EP106_EP107
+PASS Checkpoint contact commits disk progress: Checkpoint_07_EO106_EO107_EP106_EP107
+PASS Actual checkpoint restore: Checkpoint_06_EK83_EK84_EL83_EL84
+PASS Respawn clears spikes: Checkpoint_06_EK83_EK84_EL83_EL84
+PASS Checkpoint contact commits disk progress: Checkpoint_06_EK83_EK84_EL83_EL84
+PASS Actual checkpoint restore: Checkpoint_05_EA98_EA99_EB98_EB99
+PASS Respawn clears spikes: Checkpoint_05_EA98_EA99_EB98_EB99
+PASS Checkpoint contact commits disk progress: Checkpoint_05_EA98_EA99_EB98_EB99
+PASS Actual checkpoint restore: Checkpoint_04_DQ99_DQ100_DR99_DR100
+PASS Respawn clears spikes: Checkpoint_04_DQ99_DQ100_DR99_DR100
+PASS Checkpoint contact commits disk progress: Checkpoint_04_DQ99_DQ100_DR99_DR100
+PASS Actual checkpoint restore: Checkpoint_03_DQ117_DQ118_DR117_DR118
+PASS Respawn clears spikes: Checkpoint_03_DQ117_DQ118_DR117_DR118
+PASS Checkpoint contact commits disk progress: Checkpoint_03_DQ117_DQ118_DR117_DR118
+PASS Actual checkpoint restore: Checkpoint_02_DF109_DF110_DG109_DG110
+PASS Respawn clears spikes: Checkpoint_02_DF109_DF110_DG109_DG110
+PASS Checkpoint contact commits disk progress: Checkpoint_02_DF109_DF110_DG109_DG110
+PASS Actual checkpoint restore: Checkpoint_01_CX113_CX114_CY113_CY114
+PASS Respawn clears spikes: Checkpoint_01_CX113_CX114_CY113_CY114
+PASS Checkpoint contact commits disk progress: Checkpoint_01_CX113_CX114_CY113_CY114
+PASS Seaside lighthouse cannot be read remotely
+PASS Touching seaside finish cannot skip its narrative
+PASS E interaction available beside current seaside lighthouse artwork
+PASS First seaside page freezes movement and defers progression
+PASS Help overlay cannot advance seaside dialogue
+PASS Respawning cancels dialogue safely without completing or skipping it
+PASS Seaside story can be reopened after respawn
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.721200 ms
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 321.
+Total: 0.460800 ms (FindLiveObjects: 0.011900 ms CreateObjectMapping: 0.003400 ms MarkObjects: 0.404300 ms  DeleteObjects: 0.041100 ms)
+
+PASS Actual scene load: Assets/Scenes/StartGame.unity
+PASS Returning to menu enables Continue
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.574400 ms
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2564.
+Total: 0.610800 ms (FindLiveObjects: 0.045900 ms CreateObjectMapping: 0.011400 ms MarkObjects: 0.528400 ms  DeleteObjects: 0.024800 ms)
+
+PASS Actual scene load: Assets/Scenes/TheFirstScene_Seaside.unity
+PASS Scene initialized and save restore completed
+PASS Continue resumes last checkpoint, not entrance
+PASS Continue restores safe checkpoint, not a frozen mid-dialogue state
+PASS Second seaside page grants next-stage teleport before completion
+PASS Finishing seaside story triggers normal campaign transition
+PASS Completion saves next entrance before automatic transition
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.415900 ms
+PASS Actual scene load: Assets/Scenes/ForestWhitebox.unity
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 6021.
+Total: 0.690400 ms (FindLiveObjects: 0.079200 ms CreateObjectMapping: 0.016300 ms MarkObjects: 0.549000 ms  DeleteObjects: 0.045700 ms)
+
+PASS Scene initialized and save restore completed
+PASS Campaign order stage 1
+PASS Real player position enters tutorial: Tutorial_Zipline
+PASS Leaving all areas clears top tutorial
+PASS Entry save targets the actual current stage
+PASS Checkpoint IDs unique in 森林
+PASS Actual checkpoint restore: Checkpoint_06_RightUpperLip
+PASS Respawn clears spikes: Checkpoint_06_RightUpperLip
+PASS Checkpoint contact commits disk progress: Checkpoint_06_RightUpperLip
+PASS Actual checkpoint restore: Checkpoint_05
+PASS Respawn clears spikes: Checkpoint_05
+PASS Checkpoint contact commits disk progress: Checkpoint_05
+PASS Actual checkpoint restore: Checkpoint_04
+PASS Respawn clears spikes: Checkpoint_04
+PASS Checkpoint contact commits disk progress: Checkpoint_04
+PASS Actual checkpoint restore: Checkpoint_03
+PASS Respawn clears spikes: Checkpoint_03
+PASS Checkpoint contact commits disk progress: Checkpoint_03
+PASS Actual checkpoint restore: Checkpoint_02
+PASS Respawn clears spikes: Checkpoint_02
+PASS Checkpoint contact commits disk progress: Checkpoint_02
+PASS Actual checkpoint restore: Checkpoint_01
+PASS Respawn clears spikes: Checkpoint_01
+PASS Checkpoint contact commits disk progress: Checkpoint_01
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.798500 ms
+PASS Actual scene load: Assets/Scenes/StartGame.unity
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 325.
+Total: 0.458200 ms (FindLiveObjects: 0.013600 ms CreateObjectMapping: 0.002500 ms MarkObjects: 0.420600 ms  DeleteObjects: 0.021200 ms)
+
+PASS Returning to menu enables Continue
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.541600 ms
+PASS Actual scene load: Assets/Scenes/ForestWhitebox.unity
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 6021.
+Total: 0.795700 ms (FindLiveObjects: 0.177100 ms CreateObjectMapping: 0.027200 ms MarkObjects: 0.566900 ms  DeleteObjects: 0.024200 ms)
+
+PASS Scene initialized and save restore completed
+PASS Continue resumes last checkpoint, not entrance
+PASS Continue restores both Forest wheel locks
+PASS Completion saves next entrance before automatic transition
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.759200 ms
+PASS Actual scene load: Assets/Scenes/MineWhitebox.unity
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 9320.
+Total: 0.811900 ms (FindLiveObjects: 0.159600 ms CreateObjectMapping: 0.030900 ms MarkObjects: 0.611900 ms  DeleteObjects: 0.009200 ms)
+
+PASS Scene initialized and save restore completed
+PASS Campaign order stage 2
+PASS No unrelated tutorial areas added to stage 2
+PASS Entry save targets the actual current stage
+PASS Checkpoint IDs unique in 矿洞
+PASS New map has route rest points beyond original markings
+PASS Actual checkpoint restore: CampaignCheckpoint_07
+PASS Respawn clears spikes: CampaignCheckpoint_07
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_07
+PASS Added rest has clear body: CampaignCheckpoint_07
+PASS Added save rests on neutral static support: CampaignCheckpoint_07
+PASS Added checkpoint settles physically: CampaignCheckpoint_07
+PASS Actual checkpoint restore: CampaignCheckpoint_06
+PASS Respawn clears spikes: CampaignCheckpoint_06
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_06
+PASS Added rest has clear body: CampaignCheckpoint_06
+PASS Added save rests on neutral static support: CampaignCheckpoint_06
+PASS Added checkpoint settles physically: CampaignCheckpoint_06
+PASS Actual checkpoint restore: CampaignCheckpoint_05
+PASS Respawn clears spikes: CampaignCheckpoint_05
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_05
+PASS Added rest has clear body: CampaignCheckpoint_05
+PASS Added save rests on neutral static support: CampaignCheckpoint_05
+PASS Added checkpoint settles physically: CampaignCheckpoint_05
+PASS Actual checkpoint restore: CampaignCheckpoint_04
+PASS Respawn clears spikes: CampaignCheckpoint_04
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_04
+PASS Added rest has clear body: CampaignCheckpoint_04
+PASS Added save rests on neutral static support: CampaignCheckpoint_04
+PASS Added checkpoint settles physically: CampaignCheckpoint_04
+PASS Actual checkpoint restore: CampaignCheckpoint_03
+PASS Respawn clears spikes: CampaignCheckpoint_03
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_03
+PASS Added rest has clear body: CampaignCheckpoint_03
+PASS Added save rests on neutral static support: CampaignCheckpoint_03
+PASS Added checkpoint settles physically: CampaignCheckpoint_03
+PASS Actual checkpoint restore: Checkpoint_02
+PASS Respawn clears spikes: Checkpoint_02
+PASS Checkpoint contact commits disk progress: Checkpoint_02
+PASS Actual checkpoint restore: Checkpoint_01
+PASS Respawn clears spikes: Checkpoint_01
+PASS Checkpoint contact commits disk progress: Checkpoint_01
+PASS Workbench interaction physically reachable at its map marker
+PASS Workbench PDF page: 开发进行还不到一半，团队的资金已经轮转不过来了，再这样下去项目会被叫停。
+PASS Workbench PDF page: 团队人员陆陆续续离职，剩下的人也不看好这个项目，我也得另外找份工作维持生计了。
+PASS Workbench PDF page: 团队解散，项目停工。
+PASS Switch displays its PDF line before activation
+PASS Mine checkpoint captures activated lift and workbench
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.177300 ms
+PASS Actual scene load: Assets/Scenes/StartGame.unity
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 325.
+Total: 0.771100 ms (FindLiveObjects: 0.018400 ms CreateObjectMapping: 0.004500 ms MarkObjects: 0.725700 ms  DeleteObjects: 0.022500 ms)
+
+PASS Returning to menu enables Continue
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.282600 ms
+PASS Actual scene load: Assets/Scenes/MineWhitebox.unity
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 9320.
+Total: 1.032900 ms (FindLiveObjects: 0.252600 ms CreateObjectMapping: 0.066300 ms MarkObjects: 0.691200 ms  DeleteObjects: 0.022400 ms)
+
+PASS Scene initialized and save restore completed
+PASS Continue resumes last checkpoint, not entrance
+PASS Menu Continue restores Mine mechanism progress
+PASS Mine relic displays first PDF page
+PASS Mine relic displays second page before leaving
+PASS Completion saves next entrance before automatic transition
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.493300 ms
+PASS Actual scene load: Assets/Scenes/SnowWhitebox.unity
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 9575.
+Total: 0.864800 ms (FindLiveObjects: 0.180400 ms CreateObjectMapping: 0.028700 ms MarkObjects: 0.639500 ms  DeleteObjects: 0.016100 ms)
+
+PASS Scene initialized and save restore completed
+PASS Campaign order stage 3
+PASS Real player position enters tutorial: Tutorial_Cold
+PASS Real player position enters tutorial: Tutorial_Heat
+PASS Real player position enters tutorial: Tutorial_Climb
+PASS Leaving all areas clears top tutorial
+PASS Entry save targets the actual current stage
+PASS Checkpoint IDs unique in 雪山
+PASS New map has route rest points beyond original markings
+PASS Actual checkpoint restore: CampaignCheckpoint_06
+PASS Respawn clears spikes: CampaignCheckpoint_06
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_06
+PASS Added rest has clear body: CampaignCheckpoint_06
+PASS Added save rests on neutral static support: CampaignCheckpoint_06
+PASS Added checkpoint settles physically: CampaignCheckpoint_06
+PASS Actual checkpoint restore: Checkpoint_05
+PASS Respawn clears spikes: Checkpoint_05
+PASS Checkpoint contact commits disk progress: Checkpoint_05
+PASS Actual checkpoint restore: Checkpoint_04
+PASS Respawn clears spikes: Checkpoint_04
+PASS Checkpoint contact commits disk progress: Checkpoint_04
+PASS Actual checkpoint restore: Checkpoint_03
+PASS Respawn clears spikes: Checkpoint_03
+PASS Checkpoint contact commits disk progress: Checkpoint_03
+PASS Actual checkpoint restore: Checkpoint_02
+PASS Respawn clears spikes: Checkpoint_02
+PASS Checkpoint contact commits disk progress: Checkpoint_02
+PASS Actual checkpoint restore: Checkpoint_01
+PASS Respawn clears spikes: Checkpoint_01
+PASS Checkpoint contact commits disk progress: Checkpoint_01
+PASS Snow fragment first PDF page
+PASS Snow fragment second PDF page
+PASS Snow choices wait for explicit selection
+PASS Carry choice displays follow-up before continuing
+PASS Completion saves next entrance before automatic transition
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.425300 ms
+PASS Actual scene load: Assets/Scenes/LighthouseWhitebox.unity
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 8709.
+Total: 1.336000 ms (FindLiveObjects: 0.376400 ms CreateObjectMapping: 0.038400 ms MarkObjects: 0.907300 ms  DeleteObjects: 0.013800 ms)
+
+PASS Scene initialized and save restore completed
+PASS Campaign order stage 4
+PASS No unrelated tutorial areas added to stage 4
+PASS Entry save targets the actual current stage
+PASS Checkpoint IDs unique in 灯塔
+PASS New map has route rest points beyond original markings
+PASS Actual checkpoint restore: CampaignCheckpoint_05
+PASS Respawn clears spikes: CampaignCheckpoint_05
+PASS Checkpoint contact commits disk progress: CampaignCheckpoint_05
+PASS Added rest has clear body: CampaignCheckpoint_05
+PASS Added save rests on neutral static support: CampaignCheckpoint_05
+PASS Added checkpoint settles physically: CampaignCheckpoint_05
+PASS Actual checkpoint restore: Checkpoint_04
+PASS Respawn clears spikes: Checkpoint_04
+PASS Checkpoint contact commits disk progress: Checkpoint_04
+PASS Actual checkpoint restore: Checkpoint_03
+PASS Respawn clears spikes: Checkpoint_03
+PASS Checkpoint contact commits disk progress: Checkpoint_03
+PASS Actual checkpoint restore: Checkpoint_02
+PASS Respawn clears spikes: Checkpoint_02
+PASS Checkpoint contact commits disk progress: Checkpoint_02
+PASS Actual checkpoint restore: Checkpoint_01
+PASS Respawn clears spikes: Checkpoint_01
+PASS Checkpoint contact commits disk progress: Checkpoint_01
+PASS Tower actual final lamp interaction
+PASS Final stage ends campaign without trying a sixth stage
+PASS Final ending remains on tower
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.572300 ms
+PASS Actual scene load: Assets/Scenes/SnowWhitebox.unity
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 9575.
+Total: 1.223000 ms (FindLiveObjects: 0.316400 ms CreateObjectMapping: 0.051100 ms MarkObjects: 0.844100 ms  DeleteObjects: 0.011300 ms)
+
+PASS Scene initialized and save restore completed
+PASS Stay choice remains an ending and disables continuing past it
+CAMPAIGN_RUNTIME_PASS assertions=225
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+CodeReloadManager destroyed

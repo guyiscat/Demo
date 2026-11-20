@@ -95,6 +95,7 @@ public static class StartGameSetup
         existing.Insert(0, new EditorBuildSettingsScene(MenuScene, true));
         EditorBuildSettings.scenes = existing.ToArray();
         AssetDatabase.SaveAssets();
+        CampaignSetup.UpgradeMenu();
         ValidateAndBuild();
     }
 
@@ -124,15 +125,21 @@ public static class StartGameSetup
     {
         RequireBatch(); Directory.CreateDirectory(Output);
         SystemContractChecks.Run();
+        CampaignBuild.ValidateSceneList();
         SeasideTestScenes.RunMovementRegression();
         EditorSceneManager.OpenScene(MenuScene);
         var menu = UnityEngine.Object.FindAnyObjectByType<StartGameMenu>();
-        if (menu == null || menu.buttons.Length != 3 || menu.menuCamera == null) throw new Exception("Menu wiring incomplete");
+        if (menu == null || menu.buttons.Length != 4 || menu.menuCamera == null) throw new Exception("Four-button menu wiring incomplete");
         if (menu.gameScenePath != GameScene || !File.Exists(menu.gameScenePath)) throw new Exception("Invalid game target");
         var renderers = menu.GetComponentsInChildren<SpriteRenderer>(true);
-        if (renderers.Length != 14 || renderers.Any(r => r.sprite == null)) throw new Exception("Expected 14 valid artwork layers");
+        if (renderers.Any(r => r.sprite == null)||menu.buttons.Any(b=>b.GetComponentsInChildren<TextMesh>(true).Any(t=>t.font!=GameTypography.SystemFont))) throw new Exception("Menu artwork or shared font missing");
         if (menu.GetComponentsInChildren<Collider2D>(true).Length != 0) throw new Exception("Menu should not contain game collisions");
         if (menu.buttons.Any(b => b == null || b.normalVisual == null || b.highlightedVisual == null)) throw new Exception("Button references incomplete");
+        foreach(var button in menu.buttons)foreach(var text in button.GetComponentsInChildren<TextMesh>(true))
+        {
+            text.gameObject.SetActive(true);var size=text.GetComponent<MeshRenderer>().bounds.size;
+            if(size.x>button.hitSize.x*.95f||size.y>button.hitSize.y*.95f)throw new Exception("Menu label exceeds button: "+text.text+" size="+size);
+        }
         foreach (var scene in EditorBuildSettings.scenes.Where(s => s.enabled))
         {
             EditorSceneManager.OpenScene(scene.path);
@@ -156,7 +163,7 @@ public static class StartGameSetup
             errors = (int)report.summary.totalErrors, scenes = scenes
         }, true));
         if (report.summary.result != BuildResult.Succeeded) throw new Exception("Startup build failed: " + report.summary.result);
-        Debug.Log("START_GAME_BUILD_PASS layers=14 buttons=3 target=" + GameScene);
+        Debug.Log("START_GAME_BUILD_PASS buttons=4 target=" + GameScene);
     }
 
     [Serializable] class Result { public string result; public long bytes; public int errors; public string[] scenes; }
