@@ -40,3 +40,7 @@
 /Docs/Logs/History/
 /Docs/Logs/VisualPreview/
 /Docs/StartupValidation/
+
+# Editor verification reports regenerated in Docs root
+/Docs/*.txt
+/Docs/*.csv

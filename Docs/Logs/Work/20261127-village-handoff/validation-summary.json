@@ -138,7 +138,118 @@
     "Resources": [],
     "Settings": []
   },
-  "cleanClone": "pending",
+  "cleanClone": {
+    "result": "PASS",
+    "source": "https://github.com/guyiscat/Demo.git",
+    "commit": "97b037e880a2c4dec2bc75b91a389b9df0573393",
+    "freshLibrary": true,
+    "lfsObjectAndPointerFsck": "PASS",
+    "build": {
+      "started": "2026-11-27T16:44:25.1124885+08:00",
+      "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+      "project": "D:\\UnityProjects\\Demo-handoff-verification-20261127\\Project6.4",
+      "phase": "campaign-runtime",
+      "result": "PASS",
+      "editorExit": 0,
+      "startupExit": 0,
+      "campaignExit": 0,
+      "saveProbewriteExit": 0,
+      "saveProbereadExit": 0,
+      "mediaExit": 0,
+      "checkpointExit": 0,
+      "respawnExit": 0,
+      "settingsExit": 0,
+      "menuExit": 0,
+      "newArtExit": 0,
+      "slotswriteExit": 0,
+      "slotsreadExit": 0,
+      "finished": "2026-11-27T16:47:50.5183451+08:00"
+    },
+    "reports": {
+      "campaign-runtime-checks.txt": {
+        "PASS": 352,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "checkpoint-runtime-checks.txt": {
+        "PASS": 198,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "editor-reports/level-copy-editor-checks.txt": {
+        "PASS": 30,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "editor-reports/physics-tests.txt": {
+        "PASS": 40,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "editor-reports/playtest-regression.txt": {
+        "PASS": 203,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "editor-reports/system-editor-checks.txt": {
+        "PASS": 7346,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "editor-reports/world-region-editor-checks.txt": {
+        "PASS": 7426,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "media-runtime-checks.txt": {
+        "PASS": 63,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "menus/menu-runtime-checks.txt": {
+        "PASS": 162,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "new-art/new-art-runtime-checks.txt": {
+        "PASS": 90,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "respawn/respawn-runtime-checks.txt": {
+        "PASS": 63,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "save-probe-read.txt": {
+        "PASS": 7,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "save-probe-write.txt": {
+        "PASS": 6,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "settings/settings-runtime-checks.txt": {
+        "PASS": 13,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "slots-read/slot-runtime-checks.txt": {
+        "PASS": 4,
+        "FAIL": 0,
+        "WARN": 0
+      },
+      "slots-write/slot-runtime-checks.txt": {
+        "PASS": 43,
+        "FAIL": 0,
+        "WARN": 0
+      }
+    },
+    "csharpDiagnostics": [],
+    "trackedFilesChangedByImport": []
+  },
   "csharpDiagnostics": [],
   "validatedSourceEquality": {
     "differences": []
