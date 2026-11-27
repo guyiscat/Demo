@@ -1,0 +1,895 @@
+{
+  "result": "PASS",
+  "method": "Windows Recycle Bin; permanent deletion command rejected by execution policy",
+  "removedTargets": 146,
+  "removedFiles": 56559,
+  "removedBytes": 135838184596,
+  "removedGiB": 126.509,
+  "separateRecycledSample": "Seaside-Unity64-Startup-Windows",
+  "preserved": [
+    "Project6.4/Assets with .meta",
+    "Packages and ProjectSettings",
+    "maps and unique original art/design",
+    "single Play64 full game",
+    "running Unity caches",
+    "Git history"
+  ],
+  "targets": [
+    {
+      "path": "Docs/Backups",
+      "reason": "Retired full backups and isolated validation after delivery verification",
+      "files": 49534,
+      "bytes": 57210949881
+    },
+    {
+      "path": "Docs/Logs/Build",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 4089,
+      "bytes": 395951946
+    },
+    {
+      "path": "Docs/Logs/History",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 144,
+      "bytes": 2473090
+    },
+    {
+      "path": "Docs/Logs/Packaging",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 551,
+      "bytes": 70006191497
+    },
+    {
+      "path": "Docs/Logs/README.md",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 1,
+      "bytes": 3877
+    },
+    {
+      "path": "Docs/Logs/Runtime",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 299,
+      "bytes": 879869
+    },
+    {
+      "path": "Docs/Logs/VisualPreview",
+      "reason": "Regenerated history/build/packaging/runtime logs",
+      "files": 2,
+      "bytes": 107894
+    },
+    {
+      "path": "Docs/Logs/Work/20261020-camera-motion-v2",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 7,
+      "bytes": 76009
+    },
+    {
+      "path": "Docs/Logs/Work/20261020-camera-summary",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 8196
+    },
+    {
+      "path": "Docs/Logs/Work/20261020-wall-jump",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 5,
+      "bytes": 87206
+    },
+    {
+      "path": "Docs/Logs/Work/20261020-wall-jump-followup",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1648
+    },
+    {
+      "path": "Docs/Logs/Work/20261027-demo-migration-seaside-art",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 23,
+      "bytes": 6061043
+    },
+    {
+      "path": "Docs/Logs/Work/20261028-part1-layer-review",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 3,
+      "bytes": 15078
+    },
+    {
+      "path": "Docs/Logs/Work/20261028-render-pipeline-warning",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1868
+    },
+    {
+      "path": "Docs/Logs/Work/20261028-unity64-install-discovery",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1012
+    },
+    {
+      "path": "Docs/Logs/Work/20261028-urp-versus-64",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 2595
+    },
+    {
+      "path": "Docs/Logs/Work/20261029-hierarchy-refactor",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 26,
+      "bytes": 4427794
+    },
+    {
+      "path": "Docs/Logs/Work/20261029-object-renaming-review",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1497
+    },
+    {
+      "path": "Docs/Logs/Work/20261029-part1-unity64-guide",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 2,
+      "bytes": 4345
+    },
+    {
+      "path": "Docs/Logs/Work/20261029-unity64-package-diagnosis",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 3,
+      "bytes": 3522
+    },
+    {
+      "path": "Docs/Logs/Work/20261029-windows-build-guide",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 2017
+    },
+    {
+      "path": "Docs/Logs/Work/20261030-170137-github-handoff",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 10,
+      "bytes": 197183
+    },
+    {
+      "path": "Docs/Logs/Work/20261030-222238-bg3-camera-bounds",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 30,
+      "bytes": 3343981
+    },
+    {
+      "path": "Docs/Logs/Work/20261030-background-outline-explanation",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1390
+    },
+    {
+      "path": "Docs/Logs/Work/20261030-part1-backgrounds",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 10,
+      "bytes": 2444027
+    },
+    {
+      "path": "Docs/Logs/Work/20261030-scene-recovery-prompt",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 3,
+      "bytes": 2753
+    },
+    {
+      "path": "Docs/Logs/Work/20261031-110419-camera-follow-size",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 18,
+      "bytes": 2909170
+    },
+    {
+      "path": "Docs/Logs/Work/20261031-111631-recover-unsaved-scene",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 12,
+      "bytes": 3593709
+    },
+    {
+      "path": "Docs/Logs/Work/20261031-161909-startup-page",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 33,
+      "bytes": 3690936
+    },
+    {
+      "path": "Docs/Logs/Work/20261031-163523-api-deprecation-cleanup",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 46,
+      "bytes": 6400173
+    },
+    {
+      "path": "Docs/Logs/Work/20261031-170614-statgame-launcher",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 2083
+    },
+    {
+      "path": "Docs/Logs/Work/20261101-121507-exclude-build-push",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 2,
+      "bytes": 4745
+    },
+    {
+      "path": "Docs/Logs/Work/20261102-143449-storage-cleanup",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 9,
+      "bytes": 3752181
+    },
+    {
+      "path": "Docs/Logs/Work/20261104-234656-project-understanding",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 4486
+    },
+    {
+      "path": "Docs/Logs/Work/20261105-143800-forest-whitebox",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 36,
+      "bytes": 434178
+    },
+    {
+      "path": "Docs/Logs/Work/20261106-132006-forest-wheel-camera-checkpoints",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 20,
+      "bytes": 347404
+    },
+    {
+      "path": "Docs/Logs/Work/20261106-183239-forest-overview-goal",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 29,
+      "bytes": 521605
+    },
+    {
+      "path": "Docs/Logs/Work/20261106-190444-forest-build-project-lock",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 1,
+      "bytes": 1362
+    },
+    {
+      "path": "Docs/Logs/Work/20261109-162434-forest-map-update",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 25,
+      "bytes": 682947
+    },
+    {
+      "path": "Docs/Logs/Work/20261109-170232-forest-traversal-polish",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 34,
+      "bytes": 1064865
+    },
+    {
+      "path": "Docs/Logs/Work/20261109-173259-forest-teleport-hover",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 5,
+      "bytes": 59202
+    },
+    {
+      "path": "Docs/Logs/Work/20261109-174756-forest-share-zip",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 2,
+      "bytes": 1317
+    },
+    {
+      "path": "Docs/Logs/Work/20261117-forest-camera-traversal",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 26,
+      "bytes": 688051
+    },
+    {
+      "path": "Docs/Logs/Work/20261118-shared-systems-script-folders",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 14,
+      "bytes": 433694
+    },
+    {
+      "path": "Docs/Logs/Work/20261119-forest-mine-font",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 21,
+      "bytes": 825191
+    },
+    {
+      "path": "Docs/Logs/Work/20261119-project-cleanup",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 14,
+      "bytes": 3175014
+    },
+    {
+      "path": "Docs/Logs/Work/20261119-push",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 2,
+      "bytes": 1721
+    },
+    {
+      "path": "Docs/Logs/Work/20261119-snow-lighthouse",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 39,
+      "bytes": 4131753
+    },
+    {
+      "path": "Docs/Logs/Work/20261120-campaign-saves",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 9,
+      "bytes": 78816
+    },
+    {
+      "path": "Docs/Logs/Work/20261120-level-copy",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 66,
+      "bytes": 16034313
+    },
+    {
+      "path": "Docs/Logs/Work/20261121-push",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 3,
+      "bytes": 2259
+    },
+    {
+      "path": "Docs/Logs/Work/20261124-world-regions",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 68,
+      "bytes": 9229381
+    },
+    {
+      "path": "Docs/Logs/Work/20261126-assets-music",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 48,
+      "bytes": 6712825
+    },
+    {
+      "path": "Docs/Logs/Work/20261126-manual-save-arrival",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 38,
+      "bytes": 1644882
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-forest-art-teleport-pause",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 42,
+      "bytes": 27412004
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-menu-input-village-return",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 88,
+      "bytes": 15347902
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-region-mechanics",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 48,
+      "bytes": 4201888
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-settings-save-slots",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 66,
+      "bytes": 6006885
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-thorn-respawn",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 13,
+      "bytes": 1306965
+    },
+    {
+      "path": "Docs/Logs/Work/20261127-transfer-aura",
+      "reason": "Historical duplicate work and validation artifacts",
+      "files": 42,
+      "bytes": 21114989
+    },
+    {
+      "path": "Docs/StartupValidation",
+      "reason": "Regenerable old startup previews",
+      "files": 6,
+      "bytes": 3183321
+    },
+    {
+      "path": "Forest-Unity64-Whitebox-Project.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 529260957
+    },
+    {
+      "path": "Forest-Unity64-Whitebox-Windows.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153221810
+    },
+    {
+      "path": "Lighthouse-Unity64-Whitebox-Project.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 529260957
+    },
+    {
+      "path": "Lighthouse-Unity64-Whitebox-Windows.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153215850
+    },
+    {
+      "path": "Mine-Unity64-Whitebox-Project.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 529260957
+    },
+    {
+      "path": "Mine-Unity64-Whitebox-Windows.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153211898
+    },
+    {
+      "path": "Seaside-Unity64-Startup-Project.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 529260957
+    },
+    {
+      "path": "Seaside-Unity64-Startup-Windows.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 941607617
+    },
+    {
+      "path": "Snow-Unity64-Whitebox-Project.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 529260957
+    },
+    {
+      "path": "Snow-Unity64-Whitebox-Windows.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153214289
+    },
+    {
+      "path": "森林独立试玩.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153221810
+    },
+    {
+      "path": "灯塔独立试玩.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153215850
+    },
+    {
+      "path": "矿洞独立试玩.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153211898
+    },
+    {
+      "path": "雪山独立试玩.zip",
+      "reason": "Redundant delivery ZIP; source is Git, keep single local Play64",
+      "files": 1,
+      "bytes": 153214289
+    },
+    {
+      "path": "Play64/Forest",
+      "reason": "Duplicate independent builds or generated runtime logs",
+      "files": 160,
+      "bytes": 779501447
+    },
+    {
+      "path": "Play64/Mine",
+      "reason": "Duplicate independent builds or generated runtime logs",
+      "files": 160,
+      "bytes": 779501055
+    },
+    {
+      "path": "Play64/Snow",
+      "reason": "Duplicate independent builds or generated runtime logs",
+      "files": 160,
+      "bytes": 779501287
+    },
+    {
+      "path": "Play64/Lighthouse",
+      "reason": "Duplicate independent builds or generated runtime logs",
+      "files": 160,
+      "bytes": 779501435
+    },
+    {
+      "path": "Play64/Docs",
+      "reason": "Duplicate independent builds or generated runtime logs",
+      "files": 162,
+      "bytes": 4011107
+    },
+    {
+      "path": "Docs/art-preview-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 180
+    },
+    {
+      "path": "Docs/camera-comfort-comparison.csv",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 1013
+    },
+    {
+      "path": "Docs/camera-framerate-traces.csv",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 4357
+    },
+    {
+      "path": "Docs/forest-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 65522
+    },
+    {
+      "path": "Docs/hierarchy-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 214
+    },
+    {
+      "path": "Docs/level-copy-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 1788
+    },
+    {
+      "path": "Docs/lighthouse-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 122021
+    },
+    {
+      "path": "Docs/mine-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 139723
+    },
+    {
+      "path": "Docs/OriginalDeliveryREADME.md",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 4056
+    },
+    {
+      "path": "Docs/physics-tests.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 2125
+    },
+    {
+      "path": "Docs/playtest-regression.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 12809
+    },
+    {
+      "path": "Docs/runtime-camera-comfort.csv",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 1013
+    },
+    {
+      "path": "Docs/Seaside分层素材方案.md",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 6446
+    },
+    {
+      "path": "Docs/Seaside背景图接入说明.md",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 5511
+    },
+    {
+      "path": "Docs/snow-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 132117
+    },
+    {
+      "path": "Docs/standalone-calibration.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 385
+    },
+    {
+      "path": "Docs/standalone-playtest-regression.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 9987
+    },
+    {
+      "path": "Docs/system-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 652135
+    },
+    {
+      "path": "Docs/world-region-editor-checks.txt",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 547310
+    },
+    {
+      "path": "Docs/工程导览.md",
+      "reason": "Obsolete report / superseded historical guide",
+      "files": 1,
+      "bytes": 3746
+    },
+    {
+      "path": "Assets/AlibabaPuHuiTi-3-55-Regular.otf",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf",
+      "files": 1,
+      "bytes": 7366576
+    },
+    {
+      "path": "Assets/forest/part2/part2_bg_1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_bg_1.png",
+      "files": 1,
+      "bytes": 6591774
+    },
+    {
+      "path": "Assets/forest/part2/part2_bg_2.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_bg_2.png",
+      "files": 1,
+      "bytes": 31782710
+    },
+    {
+      "path": "Assets/forest/part2/part2_strop.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_strop.png",
+      "files": 1,
+      "bytes": 229619
+    },
+    {
+      "path": "Assets/forest/part2/part2_thorn_l.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_thorn_l.png",
+      "files": 1,
+      "bytes": 41798
+    },
+    {
+      "path": "Assets/forest/part2/part2_thorn_m.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_thorn_m.png",
+      "files": 1,
+      "bytes": 12794
+    },
+    {
+      "path": "Assets/forest/part2/part2_thorn_s.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_thorn_s.png",
+      "files": 1,
+      "bytes": 5669
+    },
+    {
+      "path": "Assets/forest/part2/part2_water_1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_water_1.png",
+      "files": 1,
+      "bytes": 10299
+    },
+    {
+      "path": "Assets/forest/part2/part2_water_2.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_water_2.png",
+      "files": 1,
+      "bytes": 8065
+    },
+    {
+      "path": "Assets/forest/part2/part2_wheel_1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_wheel_1.png",
+      "files": 1,
+      "bytes": 584902
+    },
+    {
+      "path": "Assets/forest/part2/part2_wheel_2.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_wheel_2.png",
+      "files": 1,
+      "bytes": 1703933
+    },
+    {
+      "path": "Assets/forest/part2/part2_wheel_3.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/ForestArt/part2_wheel_3.png",
+      "files": 1,
+      "bytes": 1520
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_bg.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_bg.png",
+      "files": 1,
+      "bytes": 135919
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_continue_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_continue_off.png",
+      "files": 1,
+      "bytes": 4861
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_continue_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_continue_on.png",
+      "files": 1,
+      "bytes": 32620
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_save_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_save_off.png",
+      "files": 1,
+      "bytes": 4335
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_save_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_save_on.png",
+      "files": 1,
+      "bytes": 32360
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_set_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_set_off.png",
+      "files": 1,
+      "bytes": 4504
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_set_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_set_on.png",
+      "files": 1,
+      "bytes": 32267
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_tuceng 1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_tuceng 1.png",
+      "files": 1,
+      "bytes": 4669696
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend_tuceng-1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Suspend/suspend_tuceng-1.png",
+      "files": 1,
+      "bytes": 7931
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_bg.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_bg.png",
+      "files": 1,
+      "bytes": 187534
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_continue_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_continue_off.png",
+      "files": 1,
+      "bytes": 4869
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_continue_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_continue_on.png",
+      "files": 1,
+      "bytes": 32635
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_forest_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_forest_off.png",
+      "files": 1,
+      "bytes": 2657
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_forest_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_forest_on.png",
+      "files": 1,
+      "bytes": 14453
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_mines_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_mines_off.png",
+      "files": 1,
+      "bytes": 2410
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_mines_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_mines_on.png",
+      "files": 1,
+      "bytes": 13875
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_sea_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_sea_off.png",
+      "files": 1,
+      "bytes": 2668
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_sea_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_sea_on.png",
+      "files": 1,
+      "bytes": 15180
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_snow_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_snow_off.png",
+      "files": 1,
+      "bytes": 2079
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_snow_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_snow_on.png",
+      "files": 1,
+      "bytes": 13645
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_villages_off.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_villages_off.png",
+      "files": 1,
+      "bytes": 2353
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_villages_on.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_villages_on.png",
+      "files": 1,
+      "bytes": 13400
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer_zz.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/Transfer/transfer_zz.png",
+      "files": 1,
+      "bytes": 8017
+    },
+    {
+      "path": "Assets/village/part3/part3_bg_1.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/VillageArt/part3_bg_1.png",
+      "files": 1,
+      "bytes": 2821493
+    },
+    {
+      "path": "Assets/village/part3/part3_bg_2.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/VillageArt/part3_bg_2.png",
+      "files": 1,
+      "bytes": 5089348
+    },
+    {
+      "path": "Assets/village/part3/part3_bg_3.png",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Art/Resources/VillageArt/part3_bg_3.png",
+      "files": 1,
+      "bytes": 36462870
+    },
+    {
+      "path": "Assets/背景音乐/背景音乐/村庄和矿洞.mp3",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Audio/Music/VillageMine.mp3",
+      "files": 1,
+      "bytes": 14448025
+    },
+    {
+      "path": "Assets/背景音乐/背景音乐/森林.ogg",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Audio/Music/Forest.ogg",
+      "files": 1,
+      "bytes": 5647142
+    },
+    {
+      "path": "Assets/背景音乐/背景音乐/雪山.ogg",
+      "reason": "Byte-identical source export retained at Project6.4/Assets/Audio/Music/Snow.ogg",
+      "files": 1,
+      "bytes": 4103560
+    },
+    {
+      "path": "Assets/村庄.png",
+      "reason": "Duplicate overview; keep Assets/village/village.png",
+      "files": 1,
+      "bytes": 409205
+    },
+    {
+      "path": "Assets/forest/part2/part2.json.ps",
+      "reason": "Same original layout retained in canonical artwork directory",
+      "files": 1,
+      "bytes": 2985
+    },
+    {
+      "path": "Assets/suspend/suspend/suspend.json.ps",
+      "reason": "Same original layout retained in canonical artwork directory",
+      "files": 1,
+      "bytes": 2222
+    },
+    {
+      "path": "Assets/transfer/transfer/transfer.json.ps",
+      "reason": "Same original layout retained in canonical artwork directory",
+      "files": 1,
+      "bytes": 4620
+    },
+    {
+      "path": "Assets/village/part3/part3.json.ps",
+      "reason": "Same original layout retained in canonical artwork directory",
+      "files": 1,
+      "bytes": 879
+    }
+  ]
+}

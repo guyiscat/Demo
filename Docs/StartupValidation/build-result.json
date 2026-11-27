@@ -1,9 +1,0 @@
-{
-    "result": "Succeeded",
-    "bytes": 430635222,
-    "errors": 0,
-    "scenes": [
-        "Assets/Scenes/StartGame.unity",
-        "Assets/Scenes/TheFirstScene_Seaside.unity"
-    ]
-}

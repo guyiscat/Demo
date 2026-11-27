@@ -1,76 +1,57 @@
 # 雷火游戏创作 Demo
 
-当前唯一主工程是 **Project6.4/**，使用 **Unity 6000.4.12f1**。海边Seaside已有玩法与美术场景；森林Forest、矿洞Mine、雪山Snow和灯塔Lighthouse为白盒关卡。当前按海边→森林→矿洞→雪山→灯塔自动跳关，支持自动存档及开始页“继续游戏”；后四关尚未制作主题贴图。
+Unity 2D 横版游戏；唯一主工程是 **Project6.4/**，版本 **Unity 6000.4.12f1**。当前保存场景是地图依据，不能用旧 Excel 或生成工具覆盖手工修改。
 
-## 开始开发
+## 获取并运行
 
-1. 安装 Git、Git LFS 和 Unity 6000.4.12f1。首次使用 LFS 执行 git lfs install。
-2. 克隆仓库后执行 git lfs pull，确保图片是真实文件，而不是 LFS 指针文本。见 [协作指南](CONTRIBUTING.md)。
-3. Unity Hub → Add project from disk → 选择仓库内的 **Project6.4**，不要选择 Demo 根目录。
-4. 编辑当前第一关打开 **Assets/Scenes/TheFirstScene_Seaside.unity**；编辑启动页打开 **Assets/Scenes/StartGame.unity**。切换前先自行保存当前未保存的编辑。Scenes目录只保留启动页和五个当前关卡；旧预览/恢复场景已移出工程。动作测试夹具单独位于Assets/Editor/Tests/Fixtures，不作为游戏场景。
-5. 单独编辑或试玩森林白盒打开 **Assets/Scenes/ForestWhitebox.unity** 直接 Play；Windows 入口为根目录 **forest.cmd**。森林的地图解释、新操作、构建与测试见 [森林白盒说明](Docs/ForestWhitebox.md)。
-6. 独立矿洞打开 **Assets/Scenes/MineWhitebox.unity** 直接 Play；Windows 入口 **mine.cmd**。交互、电梯、参数及地图解释见 [矿洞说明](Docs/MineWhitebox.md)。
-7. 独立雪山/灯塔打开 **Assets/Scenes/SnowWhitebox.unity** 或 **Assets/Scenes/LighthouseWhitebox.unity**；Windows入口 **snow.cmd**、**lighthouse.cmd**。冷热切换、攀岩补跳、雪山残章选择及塔顶灯台见 [雪山与灯塔说明](Docs/SnowLighthouse.md)。
+```powershell
+git lfs install
+git clone https://github.com/guyiscat/Demo.git
+cd Demo
+git lfs pull
+```
 
-场景保留后续手工修改，是当前关卡的依据。不要重新运行Excel/JSON场景生成工具覆盖已有场景。自动流程、存档点和四项菜单见[流程与存档说明](Docs/CampaignAndSaves.md)。
+Unity Hub 添加 **Project6.4**（不是仓库根目录），首次导入完成后打开 `Assets/Scenes/StartGame.unity`，按 Play 体验完整流程。无需 Python、Excel、Photoshop、旧备份或原作者电脑上的文件。图片打不开时执行 `git lfs pull`；GitHub 网页下载 ZIP 不作为默认开发交接方式。
 
-村庄以外的教学提示与故事交互已按文案核对配置；海边灯塔须按E读完两页才前往森林。触发位置及可调字段见[关卡文案](Docs/LevelCopy.md)。
-
-## 目录与分工
-
-| 目录 | 内容 |
+| 场景 | 内容 |
 |---|---|
-| Project6.4/Assets | 场景、脚本、预制件、运行时美术及其 .meta |
-| Project6.4/Assets/Scripts | 公共系统留根目录，seaside/、forest/、mine/、snow/、lighthouse/存放关卡脚本；Editor目录同样分类 |
-| Project6.4/Packages | 包清单与依赖锁文件 |
-| Project6.4/ProjectSettings | Unity 版本和工程配置 |
-| Project6.4/Tools | 构建、验证、日志收集和打包脚本 |
-| Assets（仓库根目录） | 用户提供的PSD、字体、文案等原始素材，保留用于后续开发 |
-| maps | 海边、森林、矿洞、雪山、灯塔的 Excel 原稿 |
-| Docs | 工程导览、场景规范、CHANGELOG 和历史工作/验证日志 |
-| Play64 | 本地游戏构建输出，不提交 Git |
-| Docs/Backups | 本地备份和旧版本归档，不提交 Git |
+| StartGame.unity | 开始、继续、设置、退出 |
+| TheFirstScene_Seaside.unity | 海边，灯塔交互获得信标传送 |
+| ForestWhitebox.unity | 森林，已接入分层美术、水车与滑索 |
+| Village.unity | 村庄，已接入分层美术；机器人、矿洞坑口 |
+| MineWhitebox.unity | 矿洞，电梯、开关、大门、比特币、照明 |
+| SnowWhitebox.unity | 雪山，冷热切换、攀岩点与残章选择 |
+| LighthouseWhitebox.unity | 灯塔，最终追逐与灯台 |
 
-PNG 的统一入口是 **Project6.4/Assets/Art/**。整图参考在Backgrounds/Seaside.png，拆分素材及布局JSON在Seasidepart1/。原始素材、未实例化的后续美术和编辑器动态加载的预制件仍有用途，不因当前无场景引用而删除。
+表中场景均在 `Project6.4/Assets/Scenes/`，可单独打开编辑或 Play。海边↔森林↔村庄↔雪山通过地图边缘往返；村庄坑口进矿洞，矿洞上方跳回村庄。雪山选择继续后，从海边左侧或与 lighthouse 按 E 交互进入灯塔。区域传送面板只包含已探索的海边、森林、村庄、矿洞、雪山，灯塔不参与传送。
 
-所有关卡系统字体统一使用 `Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf`，入口为GameSystems.systemFont；字体来自仓库根Assets中的阿里巴巴普惠体。根Assets的两个IMG PSD是角色动作帧源图，说明见 [素材识别](Docs/ImportedAssets.md)。
+## 操作与存档
 
-## 当前美术状态
+A/D 移动，空格跳跃，左键冲刺，右键信标／传送，W 滑索，E 交互，S 防寒／隔热，Esc 暂停，H 基本帮助。可改键动作在游戏设置调整；Tab 镜头、B 路线、R 复活、Ctrl+R 重开为固定快捷键。
 
-当前第一关已接入分层美术和手工碰撞。Seaside_Terrain_Modules.png是继续切分bg0的Multiple副本，应保留它的.meta。其余拆分图作为资源导入，不代表都已实例化或绑定玩法。
+安全地面按 F5 或 Esc → 保存游戏选择 5 个槽位。开始页“继续游戏”自主选档；地图存档点只负责本次游玩的自动复活。真实玩家存档位于 `Application.persistentDataPath`，不纳入仓库。
 
-美术稿与现有碰撞存在局部差异，仍需分区域对齐并实际测试。图片不自带可靠碰撞，也不会自动实现检查点状态切换。当前分层场景没有旧整图组件提供的 F6/F7 开关。
+矿洞比特币交给村庄机器人取得核心后，才能使用冷热防护。角色身后蓝色代表防寒、红色代表隔热；S 切换。具体参数和场景组件见下列文档。
 
-- [工程导览](Docs/工程导览.md)
-- [公共参数、统一提示与脚本分类](Docs/ScriptLayout.md)
-- [场景层级与命名](Docs/SceneHierarchy.md)
-- [bg3 镜头边界与全图黑边](Docs/CameraBounds.md)
-- [启动页布局、按钮及构建](Docs/StartupPage.md)
-- [美术上传与开发协作](CONTRIBUTING.md)
-- [变更记录](Docs/CHANGELOG.md)
+## 接续开发入口
 
-## 构建与试玩
+- [开发交接与验证](Docs/Handoff.md)：工程依赖、场景与脚本职责、构建、已知限制。
+- [脚本分类与参数](Docs/ScriptLayout.md)、[场景层级](Docs/SceneHierarchy.md)。
+- [区域连接与矿洞机制](Docs/WorldRegions.md)、[机制修订](Docs/RegionMechanics.md)。
+- [设置和存档](Docs/SettingsAndSaves.md)、[文案](Docs/LevelCopy.md)。
+- [村庄美术](Docs/VillageArtwork.md)、[森林美术](Docs/ForestArtAndTravel.md)、[区域传送与核心光效](Docs/TransferAndProtection.md)。
+- [协作指南](CONTRIBUTING.md)、[变更记录](Docs/CHANGELOG.md)。
 
-完整游戏入口为 **statgame.cmd**，开始页提供开始游戏、继续游戏、游戏选项、退出游戏。其余入口 **forest.cmd**、**mine.cmd**、**snow.cmd**、**lighthouse.cmd**从对应关卡开始，也支持后续自动跳关。请保留完整构建目录中的_Data、DLL和运行库。旧build和重复解压试玩已移出工作目录，当前ZIP和入口保留。
+`Project6.4/Assets` 保留源码、美术、音频、字体、场景、预制件与 .meta；`Packages` 和 `ProjectSettings` 保留包锁文件与工程配置；`maps` 保留地图原稿。根 `Assets` 仅作为原始素材/策划资料入口，已导入的完全相同副本不重复保留，替代路径见 [原稿目录](Assets/README.md)。
 
-在 Demo 根目录执行：
+## Windows 构建
 
-~~~powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\BuildAndTest.ps1 -StartupPage -Unity '你的Unity.exe完整路径'
-~~~
+关闭**将要构建的那份工程**的编辑器，或复制 Assets、Packages、ProjectSettings、Tools 到隔离工程。仓库根执行：
 
-脚本默认使用本机 D:/Development/Unity/6000.4.12f1/Editor/Unity.exe；其他电脑请传入自己的路径。构建和自动检查输出到 Play64/ 与 Docs/Logs/Build/时间戳/。不要在编辑器正在打开同一工程时同时运行批处理构建。
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\BuildAndTest.ps1 -StartupPage -Unity 'C:\你的安装目录\Editor\Unity.exe'
+```
 
-构建成功后运行 **Play64/SeasideWhitebox.exe**，从开始游戏进入海边，或继续最近存档。启动页支持鼠标与方向键/W/S、Enter/空格，选项页提供主音量和全屏。Git克隆不附带Play64，需自行构建或获取完整试玩包。
+它验证当前保存场景，构建包含六区域的 `Play64/SeasideWhitebox.exe`，执行动作、流程、存档、菜单与美术回归。`statgame.cmd` 启动本地完整试玩。GitHub 不存游戏二进制、ZIP、缓存或历史备份，克隆后需要自行构建；无需独立关卡包也能体验完整游戏。
 
-StartupPage模式验证已保存的启动场景和第一关；省略关卡参数也默认构建这个当前入口。-ForestWhitebox、-MineWhitebox、-SnowWhitebox、-LighthouseWhitebox分别验证并构建其他独立关卡。所有入口仍执行公共动作回归，使用Editor/Tests/Fixtures中的测试场景，不依赖旧游戏场景，不重建手工地图。
-
-A/D 移动，空格短跳/长跳，鼠标左键冲刺，Tab 全图，B 路线，R 复活，H 帮助。自动检查通过不等同于人工全关通关。
-
-公共镜头、松墙下滑、会话和方向箭头在 `Assets/Resources/GameSystems.asset` 调整，公共动作使用其引用的 `Assets/Settings/Movement.asset`。各关专属参数位于Settings对应资源。详见[脚本分类与参数入口](Docs/ScriptLayout.md)。
-
-启动页版本交付打包使用 Project6.4/Tools/PackageRelease.ps1 -StartupPage，生成名称带 Startup 的工程及 Windows 包。ZIP、游戏成品、缓存和完整备份不提交源码仓库；试玩包可另行上传 GitHub Releases。
-
-## 记录与版本
-
-每次工作保留日志并更新 CHANGELOG，遵循 [开发约定](AGENTS.md)。旧 6.6 工程及重复素材已作本地归档，清单和回滚方法见 [本次整理记录](Docs/Logs/Work/20261030-170137-github-handoff/work-log.md)。历史日志中的旧目录和测试结论保留原样，只用于追溯。
+独立调试仍可用 `-ForestWhitebox`、`-MineWhitebox`、`-SnowWhitebox`、`-LighthouseWhitebox` 构建；对应 `.cmd` 会检查是否已有构建。打包工具保留供需要时使用，不常驻维护重复工程ZIP。

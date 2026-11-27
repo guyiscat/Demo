@@ -27,4 +27,4 @@ CameraBackgroundBoundsChecks 仅允许批处理执行，会打开场景，应在
 
 现有 BuildAndTest 的历史几何检查仍要求 SeasideArtPreview 和 Seaside01 完全一致。当前用户已独立编辑预览地图，该检查会失败；本次保留失败记录，没有改图或放宽该检查。新增专项入口 CameraBackgroundBoundsChecks.RunAndBuildSavedScenes 在隔离副本验证镜头后，直接构建两份已保存场景；它不代表旧地图一致性检查通过。
 
-完整结果、首轮失败、渲染截图、备份及回滚方法见 [本次日志](Logs/Work/20261030-222238-bg3-camera-bounds/work-log.md)。构建不包含编辑器内尚未保存的场景修改。
+完整结果、首轮失败、渲染截图、备份及回滚方法见 [当前交接与验证](Handoff.md)。构建不包含编辑器内尚未保存的场景修改。

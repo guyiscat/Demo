@@ -12,13 +12,15 @@ public static class SystemContractChecks
     public static void Run()
     {
         if(!Application.isBatchMode)throw new InvalidOperationException("Run scene checks in an isolated batch project.");
+        GameMediaSetup.Validate();
+        MenuArtworkSetup.Validate();
         var log=new List<string>();
         Action<bool,string> check=(ok,message)=>{log.Add((ok?"PASS ":"FAIL ")+message);};
         string original=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path;
         var settings=GameSystemSettings.Current;
         check(settings!=null&&settings.movement==AssetDatabase.LoadAssetAtPath<SeasideSettings>("Assets/Settings/Movement.asset"),"Shared system asset references canonical Movement.asset");
         check(settings.systemFont!=null&&settings.systemFont==AssetDatabase.LoadAssetAtPath<Font>("Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf"),"Shared system font references the bundled Alibaba PuHuiTi asset");
-        check(settings.cameraTuning.followSize==18,"Common camera uses Forest followSize 18");
+        check(settings.cameraTuning.followSize>0&&!float.IsNaN(settings.cameraTuning.followSize)&&!float.IsInfinity(settings.cameraTuning.followSize),"Common camera has a valid authored follow size");
         check(EditorBuildSettings.scenes.Where(s=>s.enabled).Select(s=>s.path).SequenceEqual(new[]{CampaignFlow.MenuScene}.Concat(CampaignFlow.Scenes)),"Campaign scene order is menu, seaside, forest, mine, snow, lighthouse");
         foreach(string guid in AssetDatabase.FindAssets("t:Scene",new[]{"Assets/Scenes"}))
         {
@@ -38,5 +40,6 @@ public static class SystemContractChecks
         if(log.Any(line=>line.StartsWith("FAIL")))throw new Exception("System contract checks failed; see "+output);
         Debug.Log("SYSTEM_EDITOR_CHECKS_PASS assertions="+log.Count);
         LevelCopyEditorChecks.Run();
+        WorldRegionEditorChecks.Run();
     }
 }

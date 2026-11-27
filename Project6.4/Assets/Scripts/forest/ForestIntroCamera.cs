@@ -22,7 +22,7 @@ namespace Forest
         }
         void LateUpdate()
         {
-            if(level.player.manualInput)return;
+            if(level.player.manualInput||level.session.Travelling)return;
             Tick(Time.deltaTime);
         }
         void OnRespawn()

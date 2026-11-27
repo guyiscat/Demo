@@ -16,6 +16,8 @@ namespace Seaside
         }
         [Header("所有关卡共用系统字体")]
         public Font systemFont;
+        [Header("暂停界面")]
+        [InspectorName("使用新版 suspend 暂停界面（关闭可回退）")] public bool useSuspendArtwork=true;
         [Header("所有关卡共用动作参数")]
         public SeasideSettings movement;
         [Min(0),InspectorName("松墙下滑速度")] public float releasedSlideSpeed=3.5f;
@@ -24,10 +26,13 @@ namespace Seaside
         public CameraTuning cameraTuning=new CameraTuning{followSize=18};
         [Header("所有关卡共用会话")]
         [Min(1),InspectorName("目标帧率")] public int targetFrameRate=120;
-        [Min(0),InspectorName("死亡复活等待秒数")] public float respawnDelay=.2f;
+        [Min(0),InspectorName("死亡僵直秒数")] public float respawnDelay=.5f;
         [InspectorName("使用最后接触的复活点")] public bool latestCheckpointWins=true;
         [InspectorName("默认显示路线")] public bool showRoute=true;
-        [Min(0),InspectorName("通关后自动进入下一关等待秒数")] public float nextLevelDelay=.8f;
+        [Header("区域切换")]
+        [Min(0),InspectorName("黑屏停留秒数")] public float regionBlackDuration=1.5f;
+        [Min(.01f),InspectorName("转场淡入淡出秒数")] public float regionFadeDuration=.25f;
+        [Min(.1f),InspectorName("入场自动移动速度")] public float regionEntrySpeed=12;
         [Header("所有关卡共用方向箭头")]
         [Min(0),InspectorName("箭头距身体边缘距离")] public float aimArrowPadding=.35f;
         [Min(.1f),InspectorName("方向箭头长度")] public float aimArrowLength=.8f;

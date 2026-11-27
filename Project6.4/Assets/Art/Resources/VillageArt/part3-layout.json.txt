@@ -1,0 +1,54 @@
+{
+	"name": "part3",
+	"width": 4288,
+	"height": 2107,
+	"type": "group",
+	"tag": "root",
+	"children": [
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part3_bg_3.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg_3",
+			"x": 0,
+			"y": 1,
+			"width": 4288,
+			"height": 2107
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part3_bg_2.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg_2",
+			"x": 0,
+			"y": 1619,
+			"width": 4288,
+			"height": 488
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part3_bg_1.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg_1",
+			"x": 0,
+			"y": 1809,
+			"width": 4288,
+			"height": 298
+		}
+	]
+}

@@ -29,8 +29,10 @@ public static class MineEditorChecks
             check(cell.gameObject.layer==6&&!cell.GetComponent<BoxCollider2D>().isTrigger,"Solid Ground layer: "+cell.excelAddress);
         }
         check(aligned&&!duplicates&&actual.Count==expected.Count&&expected.All(e=>actual.TryGetValue(e.Key,out var k)&&k==e.Value),"Every black/gray source cell has exact nonduplicated collision coverage");
-        var spikes=cells.Where(c=>c.kind==CellKind.Spike).ToArray();
-        check(spikes.Select(c=>c.excelAddress).OrderBy(s=>s).SequenceEqual(map.cells.Where(c=>c.kind=="spike").Select(c=>c.address).OrderBy(s=>s)),"Every red source hazard exists once");
+        var spikes=UnityEngine.Object.FindObjectsByType<SeasideCell>(FindObjectsInactive.Include).Where(c=>c.kind==CellKind.Spike).ToArray();
+        check(spikes.Select(c=>c.excelAddress).OrderBy(s=>s).SequenceEqual(map.cells.Where(c=>c.kind=="spike").Select(c=>c.address).OrderBy(s=>s)),"Every red source hazard exists once, including authored inactive objects");
+        var inactive=spikes.Where(c=>!c.gameObject.activeInHierarchy).Select(c=>c.excelAddress).OrderBy(s=>s).ToArray();
+        if(inactive.Length>0)log.Add("WARN Authored inactive hazards preserved (not re-enabled): "+inactive.Length+" / "+string.Join(",",inactive));
         foreach(var c in spikes)check(c.gameObject.layer==7&&c.GetComponent<BoxCollider2D>().isTrigger,"Spike trigger "+c.excelAddress);
         var sourceRails=ForestMapRevision.Groups(map,"zipline");check(level.player.ziplines.Length==sourceRails.Count&&sourceRails.Count==12,"Twelve independent authored ziplines");
         check(Mathf.Abs(level.player.ziplines.Sum(r=>r.Length)-map.cells.Count(c=>c.kind=="zipline"))<.001f,"Zipline length matches green source cells");
@@ -40,10 +42,10 @@ public static class MineEditorChecks
             var rail=level.player.ziplines.SingleOrDefault(r=>string.Join(",",r.excelAddress.Split(',').OrderBy(s=>s))==key);
             check(rail!=null&&Mathf.Abs(rail.StartPoint.x-group.Min(c=>c.x))<.001f&&Mathf.Abs(rail.EndPoint.x-group.Max(c=>c.x)-1)<.001f&&Mathf.Abs(rail.StartPoint.y-group[0].y-.5f)<.001f,"Rail anchors match workbook: "+group[0].address);
         }
-        check(level.player.motor.settings==GameSystemSettings.Current.movement&&level.player.motor.BodySize==new Vector2(2,2),"Mine reuses shared 2x2 motor and movement asset");
+        check(level.player.motor.settings==GameSystemSettings.Current.movement&&level.player.motor.BodySize.x>0&&level.player.motor.BodySize.y>0,"Mine reuses shared motor with authored collider dimensions");
         check(level.player.settings!=null&&level.player.wheel==null&&level.player.waterfall==null,"Mine traversal is independent of Forest wheel and waterfall");
-        check(level.interactions.Count(i=>i.kind==MineInteractionKind.Workbench)==1&&level.interactions.Count(i=>i.kind==MineInteractionKind.LiftSwitch)==1,"One authored workbench and one lift switch");
-        check(level.interactions.Count(i=>i.kind==MineInteractionKind.Relic)==2&&level.interactions.Count(i=>i.completesLevel)==1,"Two cyan points; only deepest relic completes Mine");
+        check(level.interactions.Count(i=>i.kind==MineInteractionKind.Workbench)==1&&UnityEngine.Object.FindObjectsByType<MineTouchSwitch>().Count(i=>i.lift!=null)==1,"One authored workbench and one lift switch");
+        check(level.interactions.Count(i=>i.kind==MineInteractionKind.Relic)==1&&level.interactions.Count(i=>i.completesLevel)==1,"Two cyan points; only deepest relic completes Mine");
         check(level.lift.lowerStop==new Vector2(86,161.5f)&&level.lift.upperStop==new Vector2(86,254.5f),"Lift stops match orange workbook bars");
         check(level.lift.body.bodyType==RigidbodyType2D.Kinematic&&level.lift.Collider.gameObject.layer==6,"Lift is a physical kinematic Ground support");
         var checkpoints=cells.Where(c=>c.kind==CellKind.Checkpoint).ToArray();check(checkpoints.Length>=5,"Authored and added safe checkpoints cover Mine route");

@@ -6,14 +6,14 @@ namespace Expedition
         public ProtectionMode requiredProtection;
         public string sourceAddress;
         public LineRenderer rangeRing;
-        public void ShowState(bool available,float radius)
+        public void ShowState(bool available,Vector2 halfExtents)
         {
             if(rangeRing==null)return;
             var color=requiredProtection==ProtectionMode.Cold?new Color(0,.7f,.95f):new Color(.94f,.42f,.51f);
             color.a=available?.65f:.14f;rangeRing.startColor=rangeRing.endColor=color;
-            const int segments=48;rangeRing.positionCount=segments;rangeRing.loop=true;
-            for(int i=0;i<segments;i++)
-            {float a=i*Mathf.PI*2/segments;rangeRing.SetPosition(i,new Vector3(Mathf.Cos(a)*radius,Mathf.Sin(a)*radius,0));}
+            rangeRing.positionCount=4;rangeRing.loop=true;rangeRing.useWorldSpace=false;
+            rangeRing.SetPosition(0,new Vector3(-halfExtents.x,-halfExtents.y));rangeRing.SetPosition(1,new Vector3(-halfExtents.x,halfExtents.y));
+            rangeRing.SetPosition(2,new Vector3(halfExtents.x,halfExtents.y));rangeRing.SetPosition(3,new Vector3(halfExtents.x,-halfExtents.y));
         }
     }
 }

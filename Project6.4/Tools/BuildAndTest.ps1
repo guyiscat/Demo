@@ -83,6 +83,38 @@ try {
             $status[('saveProbe'+$phase+'Exit')]=$probeExit
             if($probeExit -ne 0 -or !(Test-Path -LiteralPath $probeReport)){throw 'Cross-process Continue checks failed'}
         }
+        $mediaReport=Join-Path $run 'media-runtime-checks.txt'
+        $mediaExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-mediaChecks','-mediaReport',('"'+$mediaReport+'"'),'-logFile',('"'+(Join-Path $run 'media-runtime.log')+'"'))
+        $status.mediaExit=$mediaExit
+        if($mediaExit -ne 0 -or !(Test-Path -LiteralPath $mediaReport)){throw 'Imported artwork or region music checks failed'}
+        $checkpointReport=Join-Path $run 'checkpoint-runtime-checks.txt'
+        $checkpointExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-checkpointChecks','-checkpointReport',('"'+$checkpointReport+'"'),'-logFile',('"'+(Join-Path $run 'checkpoint-runtime.log')+'"'))
+        $status.checkpointExit=$checkpointExit
+        if($checkpointExit -ne 0 -or !(Test-Path -LiteralPath $checkpointReport)){throw 'Automatic checkpoint trigger or safe respawn checks failed'}
+        $respawnFolder=Join-Path $run 'respawn'
+        $respawnExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-respawnChecks','-respawnReport',('"'+$respawnFolder+'"'),'-logFile',('"'+(Join-Path $run 'respawn-runtime.log')+'"'))
+        $status.respawnExit=$respawnExit
+        if($respawnExit -ne 0 -or !(Test-Path -LiteralPath (Join-Path $respawnFolder 'respawn-runtime-checks.txt'))){throw 'Thorn death / timed checkpoint revival checks failed'}
+        $settingsFolder=Join-Path $run 'settings'
+        $settingsExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-settingsChecks','-settingsReport',('"'+$settingsFolder+'"'),'-logFile',('"'+(Join-Path $run 'settings-runtime.log')+'"'))
+        $status.settingsExit=$settingsExit
+        if($settingsExit -ne 0 -or !(Test-Path -LiteralPath (Join-Path $settingsFolder 'settings-runtime-checks.txt'))){throw 'Settings artwork, bindings, brightness or sound checks failed'}
+        $menuFolder=Join-Path $run 'menus'
+        $menuExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-menuChecks','-campaignSavePath',('"'+(Join-Path $run 'menus-save.json')+'"'),'-menuReport',('"'+$menuFolder+'"'),'-logFile',('"'+(Join-Path $run 'menus-runtime.log')+'"'))
+        $status.menuExit=$menuExit
+        if($menuExit -ne 0 -or !(Test-Path -LiteralPath (Join-Path $menuFolder 'menu-runtime-checks.txt'))){throw 'Pause/help UI input isolation checks failed'}
+        $newArtFolder=Join-Path $run 'new-art'
+        $newArtExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') @('-batchmode','-nographics','-newArtChecks','-campaignSavePath',('"'+(Join-Path $run 'new-art-save.json')+'"'),'-newArtReport',('"'+$newArtFolder+'"'),'-logFile',('"'+(Join-Path $run 'new-art-runtime.log')+'"'))
+        $status.newArtExit=$newArtExit
+        if($newArtExit -ne 0 -or !(Test-Path -LiteralPath (Join-Path $newArtFolder 'new-art-runtime-checks.txt'))){throw 'New pause / artwork / portal / seaside skill checks failed'}
+        foreach($phase in @('write','read')){
+            $slotFolder=Join-Path $run ('slots-'+$phase)
+            $slotArgs=@('-batchmode','-nographics','-campaignSavePath',('"'+(Join-Path $run 'slots-save.json')+'"'),'-slotReport',('"'+$slotFolder+'"'),'-logFile',('"'+(Join-Path $run ('slots-'+$phase+'.log'))+'"'))
+            if($phase -eq 'write'){$slotArgs+='-slotChecks'}else{$slotArgs+=@('-slotProbe','read')}
+            $slotExit=RunProcess (Join-Path $release 'Play64\SeasideWhitebox.exe') $slotArgs
+            $status[('slots'+$phase+'Exit')]=$slotExit
+            if($slotExit -ne 0 -or !(Test-Path -LiteralPath (Join-Path $slotFolder 'slot-runtime-checks.txt'))){throw ('Multi-slot save/load '+$phase+' checks failed')}
+        }
         $status.result='PASS'
         return
     }

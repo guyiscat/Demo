@@ -20,7 +20,7 @@ namespace Forest
         bool hasDisplayedPosition;
         float transitionRemaining;
         void Awake(){ResolveCamera();HideMask();}
-        void LateUpdate(){Refresh(Time.deltaTime);}
+        void LateUpdate(){if(player!=null&&player.GetComponent<RegionArrival>()?.Walking==true)return;Refresh(Time.deltaTime);}
         void OnDisable(){HideMask();hasDisplayedPosition=false;IsTransitioning=false;}
         void ResolveCamera(){if(cameraRig==null)cameraRig=FindAnyObjectByType<SeasideCamera>();}
         void HideMask(){if(occlusion!=null)occlusion.enabled=false;}

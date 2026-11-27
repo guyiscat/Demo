@@ -12,6 +12,8 @@ namespace Mine
         public SeasideCamera cameraRig;
         public MineSettings settings;
         public MineLift lift;
+        public MineLift deepLift;
+        public MineGate gate;
         public MineInteraction[] interactions;
         public string sourceSha256;
         public bool HasBitcoin{get;private set;}
@@ -26,29 +28,32 @@ namespace Mine
         void OnDisable(){if(player!=null)player.motor.ResetPerformed-=CloseDialogue;}
         void Start()
         {
+            if(session.GetComponent<MinePassage>()==null)session.gameObject.AddComponent<MinePassage>();
+            foreach(var item in interactions)if(item!=null&&item.completesLevel&&item.GetComponent<BitcoinGlow>()==null)item.gameObject.AddComponent<BitcoinGlow>();
             if(Array.IndexOf(Environment.GetCommandLineArgs(),"-mineChecks")>=0)gameObject.AddComponent<MineRuntimeChecks>();
         }
         void Update()
         {
-            if(Input.GetKeyDown(KeyCode.R)&&(Input.GetKey(KeyCode.LeftControl)||HasBitcoin))ResetProgress();
+            if(!session.InputBlocked&&Input.GetKeyDown(KeyCode.R)&&Input.GetKey(KeyCode.LeftControl))ResetProgress();
             if(session.InputBlocked)return;
-            if(pages!=null){if(Input.GetKeyDown(KeyCode.E))AdvanceDialogue();return;}
+            if(pages!=null){if(GameBindings.Pressed(GameAction.Interact))AdvanceDialogue();return;}
             RefreshNearby();
-            if(Input.GetKeyDown(KeyCode.E)&&Nearby!=null)BeginInteraction(Nearby);
+            if(GameBindings.Pressed(GameAction.Interact)&&Nearby!=null)BeginInteraction(Nearby);
+            else if(GameBindings.Pressed(GameAction.Interact)&&!player.motor.frozen){if(!lift.Use(player.motor))deepLift?.Use(player.motor);}
         }
         public void RefreshNearby()
         {
             Nearby=null;float distance=settings.interactionDistance;
             foreach(var item in interactions)
             {
-                if(item==null||item.Used)continue;
+                if(item==null||item.Used||!item.isActiveAndEnabled||item.kind==MineInteractionKind.LiftSwitch)continue;
                 float d=item.Distance(player.motor.Body.position);
                 if(d<distance){Nearby=item;distance=d;}
             }
         }
         public bool BeginInteraction(MineInteraction item)
         {
-            if(item==null||item.Used||pages!=null||session.InputBlocked||item.Distance(player.motor.Body.position)>settings.interactionDistance)return false;
+            if(item==null||item.Used||item.kind==MineInteractionKind.LiftSwitch||!item.isActiveAndEnabled||pages!=null||session.InputBlocked||item.Distance(player.motor.Body.position)>settings.interactionDistance)return false;
             active=item;page=0;player.CancelSpecial();player.motor.BeginTraversal();player.motor.frozen=true;
             if(item.kind==MineInteractionKind.Workbench)
             {
@@ -68,10 +73,10 @@ namespace Mine
             var item=active;CloseDialogue();item.Used=true;
             if(item.kind==MineInteractionKind.Workbench)WorkbenchRead=true;
             else if(item.kind==MineInteractionKind.LiftSwitch)lift.Activate();
-            else if(item.completesLevel){HasBitcoin=true;session.Complete();}
+            else if(item.completesLevel){HasBitcoin=true;item.GetComponent<SpriteRenderer>().enabled=false;CampaignFlow.GrantBitcoin(session);}
         }
-        public void CloseDialogue(){pages=null;page=0;active=null;if(player!=null&&player.motor!=null&&!session.InputBlocked)player.motor.frozen=false;}
-        void ResetProgress(){CloseDialogue();WorkbenchRead=HasBitcoin=false;foreach(var item in interactions)item.Used=false;lift.ResetLift();}
+        public void CloseDialogue(){if(pages!=null)GameBindings.BlockFrame();pages=null;page=0;active=null;if(player!=null&&player.motor!=null&&!session.InputBlocked)player.motor.frozen=false;}
+        void ResetProgress(){CloseDialogue();WorkbenchRead=HasBitcoin=false;foreach(var item in interactions){item.Used=false;item.GetComponent<SpriteRenderer>().enabled=true;}lift.ResetLift();deepLift?.ResetLift();deepLift?.Activate();gate?.ResetGate();cameraRig.GetComponent<MineCorruption>()?.ResetCorruption();}
         public void Restart(){ResetProgress();session.Restart();}
         public void RestoreProgress(bool workbenchRead,bool liftActivated)
         {
@@ -82,6 +87,11 @@ namespace Mine
                 if(item.kind==MineInteractionKind.LiftSwitch)item.Used=liftActivated;
             }
             if(liftActivated)lift.Activate();
+        }
+        public void RestoreWorld(bool gateOpened,bool bitcoin)
+        {
+            if(gateOpened)gate?.Open();HasBitcoin=bitcoin;
+            foreach(var item in interactions)if(item.completesLevel){item.Used=bitcoin;item.GetComponent<SpriteRenderer>().enabled=!bitcoin;}
         }
     }
 }

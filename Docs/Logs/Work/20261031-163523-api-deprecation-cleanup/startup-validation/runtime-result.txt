@@ -1,1 +1,0 @@
-PASS assertions=24 target=Assets/Scenes/TheFirstScene_Seaside.unity

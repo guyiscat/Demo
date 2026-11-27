@@ -44,7 +44,7 @@ namespace Seaside
                 }
             }
             catch (Exception ex) { Fail(ex.ToString()); yield break; }
-            menu.CloseSettings();
+            GameSettingsScreen.Close();menu.CloseSettings();
             // Hidden Windows players have no reliable back buffer. Render the artwork explicitly.
             try { CaptureArtwork(menu); }
             catch (Exception ex) { Fail(ex.ToString()); yield break; }

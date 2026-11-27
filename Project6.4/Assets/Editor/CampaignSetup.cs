@@ -20,7 +20,7 @@ public static class CampaignSetup
         PatchCheckpoints("Assets/Scenes/LighthouseWhitebox.unity",new[]{new Vector2(32,142),new Vector2(49,228)});
         UpgradeMenu();
         EditorBuildSettings.scenes=new[]{CampaignFlow.MenuScene}.Concat(CampaignFlow.Scenes).Select(p=>new EditorBuildSettingsScene(p,true)).ToArray();
-        var settings=GameSystemSettings.Current;settings.nextLevelDelay=.8f;EditorUtility.SetDirty(settings);AssetDatabase.SaveAssets();
+        var settings=GameSystemSettings.Current;EditorUtility.SetDirty(settings);AssetDatabase.SaveAssets();
         CampaignBuild.ValidateSceneList();
         string folder=Path.Combine(SeasidePaths.ReleaseRoot,"Docs/Logs/Work/20261120-campaign-saves");Directory.CreateDirectory(folder);File.WriteAllLines(Path.Combine(folder,"setup-report.txt"),report);
         Debug.Log("CAMPAIGN_SETUP_PASS "+string.Join("; ",report));

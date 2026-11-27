@@ -21,7 +21,7 @@ namespace Seaside
             check(Application.targetFrameRate==common.targetFrameRate,"Target frame rate uses shared settings");
             var hud=UnityEngine.Object.FindAnyObjectByType<GameHUD>();
             check(hud!=null&&hud.Content.controls.StartsWith(GameHUD.CommonControls),"HUD uses shared Chinese action hints");
-            check(hud.Content.help.StartsWith(GameHUD.CommonHelp),"Both help panels include the same basic controls");
+            check(!string.IsNullOrEmpty(GameHUD.CommonHelp)&&!string.IsNullOrEmpty(hud.Content.help)&&!hud.Content.help.Contains(GameHUD.CommonHelp),"Shared basic help and concise region help are separate pages");
             check(hud.Content.status.StartsWith(GameHUD.DashStatus(motor)),"Both HUDs use identical dash readiness wording");
             var arrows=motor.GetComponents<PlayerAimIndicator>();
             check(arrows.Length==1&&arrows[0].Arrow!=null,"Exactly one shared arrow renderer is initialized");

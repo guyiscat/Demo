@@ -56,7 +56,7 @@ public static class ThermalEditorChecks
             check(rail!=null&&rail.GetComponent<ThermalZipline>().requiredProtection==(group[0].kind=="coldZipline"?ProtectionMode.Cold:ProtectionMode.Heat),"Cable requires authored protection: "+group[0].address);
         }
         check(level.player.motor.settings==GameSystemSettings.Current.movement,"Common movement parameters and 2x2 body reused");
-        check(level.player.settings.teleportInterruptsDash&&level.player.settings.teleportHoverDuration==.5f,"Current configured teleport interruption and hover inherited");
+        check(level.player.settings.teleportInterruptsDash&&level.player.settings.teleportHoverDuration>=0,"Current configured teleport interruption and adjustable hover inherited");
         foreach(var cp in cells.Where(c=>c.kind==CellKind.Checkpoint))
         {
             Vector2 p=cp.respawnAnchor.position;

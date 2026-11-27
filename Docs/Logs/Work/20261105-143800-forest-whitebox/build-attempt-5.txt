@@ -1,8 +1,0 @@
-LOG_FOLDER=D:\UnityProjects\Demo\Docs\Logs\Build\20261105-145856-414
-Forest runtime checks failed
-At D:\UnityProjects\Demo\Project6.4\Tools\BuildAndTest.ps1:38 char:31
-+         if($forestExit -ne 0){throw 'Forest runtime checks failed'}
-+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Forest runtime checks failed:String) [], RuntimeException
-    + FullyQualifiedErrorId : Forest runtime checks failed
- 

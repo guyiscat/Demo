@@ -7,8 +7,11 @@ namespace Seaside
         SeasideInput current;
         bool previousLeft,previousRight;
         int lastDirection;
+        int epoch;
+        void Synchronize(){if(epoch!=GameBindings.InputEpoch){Clear();epoch=GameBindings.InputEpoch;}}
         public void Sample(bool left,bool right,bool jumpDown,bool jumpHeld,bool dashDown,Vector2 aim,bool attached,int wallSide)
         {
+            Synchronize();
             if(left&&!previousLeft)lastDirection=-1;
             if(right&&!previousRight)lastDirection=1;
             float next=left&&right?lastDirection:left?-1:right?1:0;
@@ -19,6 +22,7 @@ namespace Seaside
         }
         public SeasideInput Consume()
         {
+            Synchronize();
             var result=current;
             current.jumpDown=current.dashDown=current.wallReleased=false;
             return result;

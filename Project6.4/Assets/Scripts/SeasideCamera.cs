@@ -25,7 +25,7 @@ namespace Seaside
             if(GameSystemSettings.Current!=null)tuning=GameSystemSettings.Current.CopyCameraTuning();
         }
         void Start(){Snap();}
-        void LateUpdate(){UpdateView(Time.deltaTime);}
+        void LateUpdate(){if(player!=null&&player.GetComponent<RegionArrival>()?.Walking==true)return;UpdateView(Time.deltaTime);}
         public void UpdateView(float deltaTime)
         {
             if(player==null)return;

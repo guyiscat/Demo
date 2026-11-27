@@ -11,6 +11,7 @@ namespace Seaside
         readonly Vector3[] points=new Vector3[5];
         LineRenderer outline;
         Material material;
+        SpriteRenderer artwork;
         protected virtual bool CanDisplay=>motor!=null&&motor.enabled&&!motor.frozen;
         protected virtual Vector2 ResolveDirection()=>motor.externalInput?motor.AimDirection:motor.ReadAimDirection();
         protected virtual void Start()
@@ -19,6 +20,9 @@ namespace Seaside
             material=new Material(Shader.Find("Sprites/Default"));
             outline=CreateLine("AimArrowOutline",.20f,49,new Color(.025f,.06f,.05f));
             Arrow=CreateLine("AimArrow",.10f,50,new Color(1,.87f,.25f));
+            var sprite=GameMediaSettings.Current?.aimArrow;
+            if(sprite!=null)
+            {var go=new GameObject("AimArrowArtwork");go.transform.SetParent(transform,false);artwork=go.AddComponent<SpriteRenderer>();artwork.sprite=sprite;artwork.sortingOrder=51;}
         }
         LineRenderer CreateLine(string name,float width,int order,Color color)
         {
@@ -32,7 +36,7 @@ namespace Seaside
         public void Refresh()
         {
             if(Arrow==null||motor==null)return;
-            Arrow.enabled=outline.enabled=CanDisplay;if(!CanDisplay)return;
+            Arrow.enabled=outline.enabled=CanDisplay;if(artwork!=null)artwork.enabled=CanDisplay;if(!CanDisplay)return;
             DisplayedDirection=ResolveDirection();
             Vector2 d=DisplayedDirection,n=new Vector2(-d.y,d.x),half=motor.BodySize*.5f;
             float radius=Mathf.Min(Mathf.Abs(d.x)>.001f?half.x/Mathf.Abs(d.x):float.PositiveInfinity,
@@ -44,8 +48,15 @@ namespace Seaside
             points[0]=root;points[1]=points[3]=tip;
             points[2]=back+n*length*.28f;points[4]=back-n*length*.28f;
             Arrow.SetPositions(points);outline.SetPositions(points);
+            if(artwork!=null)
+            {
+                Arrow.enabled=outline.enabled=false;
+                artwork.transform.position=root+d*length*.5f;
+                artwork.transform.rotation=Quaternion.Euler(0,0,Mathf.Atan2(d.y,d.x)*Mathf.Rad2Deg-90);
+                artwork.transform.localScale=Vector3.one*(length/Mathf.Max(.01f,artwork.sprite.bounds.size.y));
+            }
         }
-        protected virtual void OnDisable(){if(Arrow!=null)Arrow.enabled=false;if(outline!=null)outline.enabled=false;}
+        protected virtual void OnDisable(){if(Arrow!=null)Arrow.enabled=false;if(outline!=null)outline.enabled=false;if(artwork!=null)artwork.enabled=false;}
         protected virtual void OnDestroy(){if(material!=null)Destroy(material);}
     }
 }

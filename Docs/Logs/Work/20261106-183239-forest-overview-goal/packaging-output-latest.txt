@@ -1,2 +1,0 @@
-D:\UnityProjects\Demo\Docs\Logs\Packaging\20261106-184209-381\Forest-Unity64-Whitebox-Windows.zip
-D:\UnityProjects\Demo\Docs\Logs\Packaging\20261106-184209-381\Forest-Unity64-Whitebox-Project.zip

@@ -66,9 +66,10 @@ namespace Seaside
         {
             if(!externalInput)
             {
+                if(frozen||session!=null&&session.InputBlocked){controls.Clear();return;}
                 Vector2 aim=ReadAimDirection();
-                controls.Sample(Input.GetKey(KeyCode.A),Input.GetKey(KeyCode.D),Input.GetKeyDown(KeyCode.Space),
-                    Input.GetKey(KeyCode.Space),Input.GetMouseButtonDown(0),aim,Attached,WallSide);
+                controls.Sample(GameBindings.Held(GameAction.Left),GameBindings.Held(GameAction.Right),GameBindings.Pressed(GameAction.Jump),
+                    GameBindings.Held(GameAction.Jump),GameBindings.Pressed(GameAction.Dash),aim,Attached,WallSide);
             }
             if(picture!=null)picture.color=Attached?new Color(1,.77f,.23f):WallSliding?new Color(.35f,.65f,1f):DashReady?new Color(.15f,.82f,.8f):new Color(.43f,.52f,.6f);
         }
@@ -112,13 +113,14 @@ namespace Seaside
                 releasedWallSide=WallSide;separationTime=0;slideVelocity=0;
             }
             var wall=right?rightHit:leftHit;var cell=wall==null?null:wall.GetComponent<SeasideCell>();
+            bool grippable=WallSide!=0&&(cell==null||cell.attachable);
             wallGrace=Mathf.Max(0,wallGrace-dt);
-            if(Grounded){wallGrace=0;graceWallSide=0;}
-            else if(WallSide!=0&&wallLock<=0&&!Dashing)
+            if(Grounded||WallSide!=0&&!grippable){wallGrace=0;graceWallSide=0;}
+            else if(grippable&&wallLock<=0&&!Dashing)
             {wallGrace=settings.wallCoyoteTime;graceWallSide=WallSide;}
             // Current held direction wins, including release/repress between two physics ticks.
-            Attached=!Grounded&&WallSide!=0&&(cell==null||cell.attachable)&&c.horizontal*WallSide>.1f&&wallLock<=0&&!Dashing;
-            WallSliding=!Grounded&&!Attached&&WallSide!=0&&releasedWallSide==WallSide&&c.horizontal*WallSide>=-.1f&&wallLock<=0&&!Dashing;
+            Attached=!Grounded&&grippable&&c.horizontal*WallSide>.1f&&wallLock<=0&&!Dashing;
+            WallSliding=!Grounded&&!Attached&&grippable&&releasedWallSide==WallSide&&c.horizontal*WallSide>=-.1f&&wallLock<=0&&!Dashing;
             if(Attached)
             {
                 DashReady=TeleportReady=true;Body.linearVelocity=Vector2.zero;fallAge=0;hover=0;variableJump=false;
@@ -185,7 +187,7 @@ namespace Seaside
             }
             bool groundJump=groundJumpAvailable&&(Grounded||coyote>0);
             int kickSide=WallSide!=0?WallSide:graceWallSide;
-            bool wallJump=!Grounded&&wallLock<=0&&(WallSide!=0||wallGrace>0);
+            bool wallJump=!Grounded&&wallLock<=0&&(grippable||wallGrace>0);
             if(buffer>0&&(groundJump||wallJump))
             {
                 bool kick=!groundJump&&wallJump;

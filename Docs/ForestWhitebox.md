@@ -1,3 +1,15 @@
+# 2026-11-27 森林美术更新
+
+森林现在接入根Assets/forest的part2分层美术；地图碰撞、机关和危险位置保持手工场景。三尺寸荆棘按活跃危险区复用，水车和平台美术跟随原物理运动。完整导览、暂停回退、传送点互传和跳跃缓冲参数见[本轮说明](ForestArtAndTravel.md)。下文白盒说明保留为机制/源表历史。
+
+---
+
+# 2026-11-24区域连接更新
+
+传送滞空0.5秒，信标与传送后悬停期间A/D不移动。旧终点不触发通关/切图，水车上方平台继续向右到村庄，入口向左返回海边。入口标志按E打开已探索区域传送。参见[区域玩法](WorldRegions.md)，下文旧A/D滞空移动和顺序跳关描述不再适用。
+
+---
+
 # 森林第二关白盒
 
 2026-11-20更新：森林现连接海边→森林→矿洞。完成终点后自动进入矿洞，存档和继续会恢复最近复活点及两侧水车解锁状态；forest.cmd可从森林入口测试。当前规则见[流程与存档](CampaignAndSaves.md)，下文独立构建描述为历史基线。
@@ -10,7 +22,7 @@
 
 脚本目录第一关/第二关改名为seaside/forest，矿洞复用的传送/滑索类型移到Scripts公共根目录，原GUID和类型名保持。所有系统提示与世界文本共用GameSystems.systemFont引用的阿里巴巴普惠体；箭头参数入口为GameSystems。独立矿洞入口mine.cmd，不连接关卡跳转。
 
-本轮验证与限制见[工作日志](Logs/Work/20261119-forest-mine-font/work-log.md)，下文旧日期内容保留为历史说明。
+本轮验证与限制见[当前交接与验证](Handoff.md)，下文旧日期内容保留为历史说明。
 
 当前森林是独立关卡，未接入海边启动菜单或通关进度。使用 Unity 6000.4.12f1，打开 `Project6.4/Assets/Scenes/ForestWhitebox.unity`，直接 Play；Windows 试玩双击 Demo 根目录 `forest.cmd`，或运行 `Play64/Forest/ForestWhitebox.exe`。原 `statgame.cmd` 仍启动原有海边成品。
 
@@ -104,9 +116,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\Packa
 
 **尚未进行真人从出生点完整走完两侧全部路线的通关测试；自动机制通过不代表全路线可达性或难度已经验收。** 当前为玩法白盒，未开始森林美术贴图。
 
-上一轮修订过程、失败记录、报告和回滚位置见 `Docs/Logs/Work/20261106-132006-forest-wheel-camera-checkpoints/work-log.md`。首次森林制作历史保留在 `Docs/Logs/Work/20261105-143800-forest-whitebox/work-log.md`。
 
-2026-11-06 后续修正：全景恢复另一侧黑布，近景保持摄像头边界；绿色终点到达即通关，移除额外的水车双解锁通关门槛。详情与本轮实际验证见 `Docs/Logs/Work/20261106-183239-forest-overview-goal/work-log.md`。原场景文件及其 GUID 均无需改写，继续使用已有遮罩与终点组件。
 
 后续修正本轮构建通过：森林编辑器1874项、海边基础40项/回归203项、森林运行106项，均0失败。已核对全景双向黑布及近景镜头边界的实际画面；本轮不改写原场景，保留用户期间另存的角色位置与近景缩放；地图/海边动作与参数哈希未变。未进行人工全路线通关。
 
@@ -114,7 +124,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\Packa
 
 按新版工作簿在原ForestWhitebox.unity中增量同步985个格子的布局变化。范围仍为313×106，传送标尺仍为10；水车、瀑布和双解锁位置不变。原5个复活点仍安全，位置未动。保留当前forceRotation=false、近景followSize=18，以及顺时针/平台有限摩擦、近景相机边界/全景黑布、到达绿色终点即通关等机制。
 
-本轮场景逐格覆盖检查及真实13条滑索抓取/滑行验证，结果与限制详见 `Docs/Logs/Work/20261109-162434-forest-map-update/work-log.md`。Windows应用控制拦截新独立程序启动，本轮Play Mode物理验证在Unity编辑器内运行，不作为独立程序试玩验收；未更改系统策略。
 
 本轮实际结果：场景逐格检查1747项、海边基础40项/回归203项、Unity编辑器Play Mode物理检查132项，全部通过。Windows构建成功并更新双ZIP；独立程序启动被系统应用控制拦截，尚未验证新EXE运行。
 
@@ -122,13 +131,11 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\Packa
 
 森林改为最后接触的检查点优先，新增截图右上通道平台的6号检查点，水车平台改为12块、每30度一块。扩大身体抓索接触，速度在Forest.asset的“滑索滑动速度”调整（默认16）。瀑布换侧镜头改为平滑移动，速度在Waterfall组件的“瀑布换侧镜头移动速度”调整（默认40），移动中两侧无遮罩，到位后再恢复全景另一侧遮挡。仅解释“传送发射信标至完成期间暂停下落”的含义，本轮未启用传送滞空。
 
-最终Windows构建与独立EXE运行成功：场景1752项、海边基础40项/回归203项、森林运行148项全部通过。原场景GUID、地形/荆棘/滑索布局及海边动作参数保留。截图和回滚见 `Docs/Logs/Work/20261109-170232-forest-traversal-polish/work-log.md`。未进行人工完整路线通关。
 
 ## 2026-11-09 传送滞空
 
 用户后续明确要求启用传送滞空，现已加入：信标飞行期间暂停竖直运动，保留A/D与实体碰撞，传送结束恢复重力；发射时退出滑索/水车并终止当前冲刺。此期间空格/左键/W不执行、不延后缓存，完成后可正常使用。现有距离、信标速度和普通动作参数不变，原ForestWhitebox.unity无需改写。
 
-本轮Windows构建及独立EXE真实物理检查通过：场景1752项、海边基础40项/回归203项、森林173项，全部0失败。新增25项覆盖上升/下落中立即滞空、横向移动/碰撞、冲刺与乘坐状态切换、三种传送结束、取消/死亡/复活/暂停/组件禁用恢复。更新森林试玩与双ZIP，原场景与地图等292个受保护文件哈希不变；未人工全路线通关。完整记录及回滚见 `Docs/Logs/Work/20261109-173259-forest-teleport-hover/work-log.md`。
 
 ## 2026-11-17 参数入口
 
@@ -147,7 +154,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Project6.4\Tools\Packa
 |箭头距身体边缘距离 / aimArrowPadding|0.35|已迁移至Assets/Resources/GameSystems.asset|
 |方向箭头长度 / aimArrowLength|0.8|已迁移至Assets/Resources/GameSystems.asset|
 
-镜头与箭头由已有 ForestLevel/ForestPlayer 在运行时创建组件，保持原场景、手动地图布局、角色预览位置与 GUID。源码及最新试玩验证详见 `Logs/Work/20261117-forest-camera-traversal/work-log.md`。历史日期章节保留当时结果，以本节和当前操作说明为准。
 
 
 ## 2026-11-18 两关公共系统与脚本分类

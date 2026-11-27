@@ -99,7 +99,7 @@ public static class ThermalLevelBuilder
             var sr=Picture("Climb_"+group[0].address,p,size,cold?new Color(0,.69f,.94f):new Color(.94f,.56f,.62f),nodes,null,4);
             var node=sr.gameObject.AddComponent<ClimbPoint>();node.requiredProtection=cold?ProtectionMode.Cold:ProtectionMode.Heat;node.sourceAddress=string.Join(",",group.Select(c=>c.address));
             var ring=Child("Range",sr.transform).gameObject.AddComponent<LineRenderer>();ring.useWorldSpace=false;ring.sharedMaterial=lines;ring.startWidth=ring.endWidth=.055f;ring.sortingOrder=3;
-            node.rangeRing=ring;node.ShowState(cold,settings.climbRadius);pointList.Add(node);Label(cold?"寒":"热",p,sr.transform);
+            node.rangeRing=ring;node.ShowState(cold,Vector2.one*(1+settings.climbPadding));pointList.Add(node);Label(cold?"寒":"热",p,sr.transform);
         }
         var authoredPoints=Groups("checkpoint").OrderBy(g=>g.Min(c=>c.y)).ToArray();
         Bounds(authoredPoints[0],out var entry,out _);Physics2D.SyncTransforms();entry=SafePoint(entry,18);

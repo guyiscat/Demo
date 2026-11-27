@@ -20,10 +20,10 @@ MonoBehaviour:
   ziplineCatchDistance: 2.1
   ziplineContactPadding: 0.55
   ziplineCoyoteTime: 0.18
-  teleportHoverDuration: 0.5
+  teleportHoverDuration: 0.2
   introWalkDistance: 3
   introZoomSpeed: 0.5
-  introHoldDuration: 3
+  introHoldDuration: 1.5
   wheelDegreesPerSecond: 12
   wheelCarryMaxSpeed: 3
   wheelCarryAcceleration: 20

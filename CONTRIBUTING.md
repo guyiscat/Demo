@@ -1,74 +1,20 @@
 # 开发与美术协作
 
-## 第一次获取项目
+先读 [README](README.md) 和 [开发交接](Docs/Handoff.md)。使用 Unity 6000.4.12f1、Git、Git LFS，克隆后 `git lfs pull`，再在 Hub 添加 Project6.4。
 
-安装 Git、Git LFS 后配置并克隆：
+## 修改原则
 
-~~~powershell
-git lfs install
-git clone https://github.com/guyiscat/Demo.git
-cd Demo
-git lfs pull
-~~~
+- 编辑保存的场景，不运行旧生成器覆盖手工地图。避免多人同时修改同一场景或二进制原画。
+- 替换图片保留文件名与 .meta。新增素材与 .meta 一起提交；在 Unity 移动资源，保留 GUID、切片和导入配置。
+- 正式运行图片放 Project6.4/Assets/Art，音频在 Assets/Audio，字体在 Assets/Resources/Fonts。根 Assets 保留唯一原稿、PSD、策划和参考图，不重复维护已经导入的同一批导出PNG。
+- 修改分层图名称同步其布局引用；保留比例和轴心，检查白盒碰撞、脚下接触、透明边缘、前后遮挡和场景出口。
+- 脚本分类与职责见 Docs/ScriptLayout.md；层级约定见 Docs/SceneHierarchy.md。
 
-已有克隆先同步当前分支，再执行 git lfs pull。LFS 指针是几行文本，不是真实 PNG；图片导入失败时先检查 LFS 下载。不要把网页 Download ZIP 作为默认开发交接方式。
+## 验证与提交
 
-安装 Unity 6000.4.12f1，通过 Hub 添加 Project6.4。首次导入会生成 Library。工程已启用文本序列化和 Visible Meta Files。
+运行时逻辑、美术或场景变动按需运行 Tools/BuildAndTest.ps1，并检查实际画面。已打开的同一工程不能同时批处理构建，使用隔离副本。测试存档必须指向独立路径，不上传玩家进度。
 
-## 美术资源入口
+每次只保留必要的精简工作记录和最终验证摘要；缓存、原始构建日志、重复ZIP与完整备份不进仓库。当前源码和原画已经足够继续开发，无需历史备份。
 
-| 资源 | 位置 |
-|---|---|
-| 游戏实际使用的 PNG | Project6.4/Assets/Art/ 下对应目录 |
-| Seaside 拆分图与布局 | Project6.4/Assets/Art/Seasidepart1/ |
-| 整图参考 | Project6.4/Assets/Art/Backgrounds/Seaside.png |
-| PSD、PSB 等分层源稿 | Figures/Source/ 下按关卡分类 |
-| 导出说明 | 随源稿提供 README，或补充 Docs 中的素材说明 |
+建议使用 feature/主题、art/关卡 分支，经评审合并。提交前检查 `git status`、`git diff --cached --stat`、`git lfs status`；不要提交密钥、Library、Temp、UserSettings、Play64 或压缩包。GitHub 的源码依靠 LFS 下载真实图像，不能只交几行 LFS 指针文本。全新克隆的导入与构建应可复现。
 
-不要在 Figures 和 Assets 同时维护同一批导出 PNG。源稿和 PNG 各有职责；不要为了填目录再复制一遍 PNG。
-
-源稿说明包括用途、作者及可用授权、版本、画布尺寸、图层关系、导出倍率、轴心、预期世界尺寸，以及影响碰撞的轮廓变化。part1.json.ps 是 JSON 布局数据，不是可执行脚本；PNG 与逻辑布局存在约 1.5 倍导出比例。
-
-## 有 Unity 的美术人员
-
-1. 开始前同步分支，与开发约定负责的资源或场景。
-2. 替换已有图片保留原文件名和 .meta，保留 GUID、导入设置及切片定义。
-3. 新资源放入指定 Assets 目录，让 Unity 生成 .meta；资源和 .meta 一起提交。
-4. 在 Unity Project 窗口中移动、重命名资源，避免丢失引用。
-5. 使用TheFirstScene_Seaside摆放第一关美术。现有Collider、触发器、检查点和复活锚点不随装饰移动；Scenes只存放当前五关及启动页，Editor/Tests/Fixtures是独立回归夹具。
-6. 检查 Console、透明边缘、遮挡和人物脚下接触面，保存实际修改的场景。
-
-图片改名需同步布局 JSON 的 texture.uri。修改切片图片的尺寸或内部排版会影响切片坐标，需要同步调整引用。bg0 与 Seaside_Terrain_Modules 目前像素相同，但 Single/Multiple 用途不同，应分别保留。
-
-## 没有 Unity 的美术人员
-
-可以提交源稿和约定的导出 PNG。新增 PNG 尚无 .meta 时，由开发者拉取后导入并补交 .meta；导入验收前不作为接入完成。
-
-替换已有 PNG 时保留原 .meta，不要删除后重新创建整个文件夹。Multiple 素材优先保持画布尺寸和排版，避免切片失效。大图片使用 Git 客户端上传，PNG/PSD 等已通过 .gitattributes 配置 LFS。
-
-## 分支和提交
-
-- 按任务建立 feature/主题 或 art/关卡-主题 分支，经 Pull Request 合并。
-- 尽量由一人修改同一个场景或二进制美术文件。当前只配置文本属性，未自动配置 UnityYAMLMerge 驱动。
-- 提交前查看差异，只提交本次工作；不要提交 Library、Temp、UserSettings、Play64、恢复场景、ZIP 和完整备份。
-- 不要全局忽略所有 .log：Docs/Logs 的历史记录和失败日志需要保留。
-- 地图源数据不能覆盖场景手动修改。旧第一关生成/升级/预览工具已归档移出Assets，日常编辑使用当前保存场景和Seaside地图编辑面板。
-
-选择性添加本次文件：
-
-~~~powershell
-git status --short
-git add <本次修改的文件或目录>
-git diff --cached --stat
-git lfs status
-~~~
-
-## 日志与验证
-
-每次建立 Docs/Logs/Work/日期时间-主题/work-log.md，记录需求、改动、参数、验证、限制和回滚位置，并更新 Docs/CHANGELOG.md。旧记录保留原日期，不把旧 PASS 当作本次结果。
-
-运行时代码或场景变化按需执行 Project6.4/Tools/BuildAndTest.ps1 并人工试玩。纯文档和仓库整理检查路径、Git 规则、资源完整性。未执行的构建或人工通关必须明确注明。
-
-本地单仓库启用 LFS 可执行 git lfs install --local。图片提交后用 git lfs ls-files 核对。远端发布由负责人执行，本次整理不自动提交或推送。
-
-参考：[GitHub Git LFS 配置](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage)、[Unity 资源工作流](https://docs.unity3d.com/es/current/Manual/AssetWorkflow.html)。

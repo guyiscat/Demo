@@ -19,7 +19,7 @@ namespace Forest
                     controls=CommonControls+"   右键 发射信标/传送   W 抓住滑索   空格 跳离滑索",
                     statistics="水车解锁 "+level.wheel.UnlockCount+"/2"+(level.wheel.forceRotation?"（预览转动）":"")+"   "+Statistics(Session),
                     status=DashStatus(actor.motor)+"    传送 "+(actor.BeaconActive?"信标飞行中":actor.TeleportCharged?"就绪":"已用")+"    "+state+"    瀑布可见侧 "+(actor.waterfall.VisibleSide<0?"左":"右"),
-                    help=CommonHelp+"\n右键可打断冲刺并发射信标，再次右键或信标停下时传送。\n传送后滞空"+actor.settings.teleportHoverDuration.ToString("0.#")+"秒，可A/D移动或左键冲出。\n靠近滑索按W，A/D换向，空格跳离，离索后短暂可补跳。\n前行几步展示全图，停留"+actor.settings.introHoldDuration.ToString("0.#")+"秒后恢复。\n水车平台可走跳，需要主动跟上；到达上方终点完成本关。\nTab全景遮挡瀑布另一侧；穿过瀑布后镜头平滑换侧。",
+                    help="右键发射信标，再按一次传送；传送可以打断冲刺。\n\n传送后会短暂停在空中，不能左右移动，但可以冲刺。\n\n靠近滑索按W抓住，A/D换向，空格跳离。离开滑索后仍有短暂的起跳机会。\n\n水车平台会转动，注意跟上平台。",
                     completion="已到达水车上方终点平台。"
                 };
             }

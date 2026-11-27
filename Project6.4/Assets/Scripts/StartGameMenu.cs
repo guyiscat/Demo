@@ -47,11 +47,11 @@ namespace Seaside
         void Update()
         {
             FitCamera();
+            if(WorldTransition.Active||SaveSlotScreen.Opened)return;
             if (IsLoading) return;
             if(NewGamePrompt){if(Input.GetKeyDown(KeyCode.Escape))NewGamePrompt=false;return;}
             if (SettingsOpen)
             {
-                if (Input.GetKeyDown(KeyCode.Escape)) CloseSettings();
                 return;
             }
             Vector2 pointer = Input.mousePosition;
@@ -74,14 +74,14 @@ namespace Seaside
 
         public void SelectNext(int direction)
         {
-            if (NewGamePrompt || SettingsOpen || IsLoading || buttons == null || buttons.Length == 0) return;
+            if (NewGamePrompt || SettingsOpen || SaveSlotScreen.Opened || IsLoading || buttons == null || buttons.Length == 0) return;
             SelectedIndex = (SelectedIndex + direction % buttons.Length + buttons.Length) % buttons.Length;
             RefreshHighlights();
         }
 
         public bool SelectAtScreenPoint(Vector2 pointer)
         {
-            if (NewGamePrompt || SettingsOpen || IsLoading || menuCamera == null || buttons == null ||
+            if (NewGamePrompt || SettingsOpen || SaveSlotScreen.Opened || IsLoading || menuCamera == null || buttons == null ||
                 !menuCamera.pixelRect.Contains(pointer)) return false;
             Vector3 world = menuCamera.ScreenToWorldPoint(new Vector3(pointer.x, pointer.y, -menuCamera.transform.position.z));
             for (int i = 0; i < buttons.Length; i++)
@@ -102,7 +102,7 @@ namespace Seaside
 
         public void ActivateSelection()
         {
-            if (IsLoading || SettingsOpen) return;
+            if (IsLoading || SettingsOpen || SaveSlotScreen.Opened) return;
             if(buttons==null||SelectedIndex>=buttons.Length||!buttons[SelectedIndex].Available)return;
             switch (buttons[SelectedIndex].action)
             {
@@ -133,10 +133,10 @@ namespace Seaside
             if(CampaignFlow.IsLegacyCheck){IsLoading=true;SceneManager.LoadSceneAsync(gameScenePath,LoadSceneMode.Single);}
             else {IsLoading=CampaignFlow.StartNew();loadError=CampaignFlow.LoadError;}
         }
-        public void ContinueGame(){if(!CanContinue||IsLoading)return;IsLoading=CampaignFlow.Continue();loadError=CampaignFlow.LoadError;}
+        public void ContinueGame(){if(!CanContinue||IsLoading)return;SaveSlotScreen.Open(SaveSlotScreen.Purpose.Load,null,RefreshAvailability);}
 
-        public void OpenSettings() { SettingsOpen = true; SeasideLog.Event("MENU_SETTINGS", "open"); }
-        public void CloseSettings() { SettingsOpen = false; }
+        public void OpenSettings() { SettingsOpen = true; GameSettingsScreen.Open(CloseSettings); SeasideLog.Event("MENU_SETTINGS", "open"); }
+        public void CloseSettings() { SettingsOpen = false; if(GameSettingsScreen.Opened)GameSettingsScreen.Close(); }
 
         public void SetMasterVolume(float value)
         {
@@ -164,6 +164,7 @@ namespace Seaside
 
         void OnGUI()
         {
+            if(SettingsOpen||SaveSlotScreen.Opened)return;
             Matrix4x4 oldMatrix = GUI.matrix;
             Color oldColor = GUI.color;
             float scale = Mathf.Min(Screen.width / 960f, Screen.height / 540f);
@@ -186,26 +187,14 @@ namespace Seaside
             if(NewGamePrompt)
             {
                 GUI.Label(new Rect(280,160,400,45),"开始新游戏",heading);
-                GUI.Label(new Rect(290,220,380,70),"开始新游戏会替换当前继续进度。\n要保留进度，请选择返回并继续游戏。",label);
-                if(GUI.Button(new Rect(305,347,160,40),"开始新游戏",sharedStyles.button))ConfirmNewGame();
-                if(GUI.Button(new Rect(495,347,160,40),"返回",sharedStyles.button))NewGamePrompt=false;
-            }
-            else if (SettingsOpen)
-            {
-                GUI.Label(new Rect(280, 160, 400, 45), "设置 / SETTINGS", heading);
-                GUI.Label(new Rect(290, 222, 165, 30), "主音量", label);
-                float volume = GUI.HorizontalSlider(new Rect(465, 235, 170, 25), AudioListener.volume, 0, 1);
-                if (!Mathf.Approximately(volume, AudioListener.volume)) SetMasterVolume(volume);
-                GUI.Label(new Rect(640, 219, 55, 30), Mathf.RoundToInt(volume * 100) + "%", label);
-                GUI.Label(new Rect(290, 276, 230, 30), "全屏", label);
-                bool fullscreen = GUI.Toggle(new Rect(545, 280, 80, 30), Screen.fullScreen, "");
-                if (fullscreen != Screen.fullScreen) SetFullscreen(fullscreen);
-                if (GUI.Button(new Rect(405, 347, 150, 40), "返回",sharedStyles.button)) CloseSettings();
+                GUI.Label(new Rect(290,220,380,70),"从海边重新开始，已有存档会保留。\n保存时可自行选择空槽位或覆盖旧存档。",label);
+                if(GameUIStyles.Button(new Rect(305,347,160,40),"开始新游戏",sharedStyles.button))ConfirmNewGame();
+                if(GameUIStyles.Button(new Rect(495,347,160,40),"返回",sharedStyles.button))NewGamePrompt=false;
             }
             else
             {
                 GUI.Label(new Rect(285, 190, 390, 140), IsLoading ? "正在加载 / LOADING..." : loadError, label);
-                if (!IsLoading && GUI.Button(new Rect(405, 347, 150, 40), "返回",sharedStyles.button)) loadError = null;
+                if (!IsLoading && GameUIStyles.Button(new Rect(405, 347, 150, 40), "返回",sharedStyles.button)) loadError = null;
             }
             GUI.matrix = oldMatrix;
             GUI.color = oldColor;
@@ -213,6 +202,7 @@ namespace Seaside
 
         void OnDestroy()
         {
+            if(SettingsOpen)GameSettingsScreen.Close();
             sharedStyles?.Dispose();
             SeasideLog.End();
         }

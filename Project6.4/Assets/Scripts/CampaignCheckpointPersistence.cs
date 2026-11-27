@@ -12,7 +12,10 @@ namespace Seaside
             CampaignFlow.InitializeSession(session);Ready=true;lastState=State();
         }
         string State()
-        {var d=CampaignFlow.Capture(session);return d.checkpointId+"|"+d.mineLift+"|"+d.workbench+"|"+d.forestLeft+"|"+d.forestRight;}
+        {
+            var d=CampaignFlow.Capture(session);var r=CampaignFlow.Record(d,session.gameObject.scene.path);
+            return r.checkpointId+"|"+r.mineLift+"|"+r.workbench+"|"+r.forestLeft+"|"+r.forestRight+"|"+r.gateOpen+"|"+r.seasideRead+"|"+d.bitcoin+"|"+d.snowContinue;
+        }
         void LateUpdate()
         {
             if(!Ready||!CampaignFlow.Enabled||session.InputBlocked)return;

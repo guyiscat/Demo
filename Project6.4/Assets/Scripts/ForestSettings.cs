@@ -13,7 +13,7 @@ namespace Forest
         [Min(0),InspectorName("滑索抓取距离")] public float ziplineCatchDistance=2.1f;
         [Min(0),InspectorName("滑索身体接触容差")] public float ziplineContactPadding=.55f;
         [Min(0),InspectorName("离索土狼时间（秒）")] public float ziplineCoyoteTime=.18f;
-        [Min(0),InspectorName("传送后滞空时间（秒）")] public float teleportHoverDuration=1;
+        [Min(0),InspectorName("传送后滞空时间（秒）")] public float teleportHoverDuration=.5f;
         [Header("开场全图展示")]
         [Min(0),InspectorName("向前行走触发距离")] public float introWalkDistance=3;
         [Min(.01f),InspectorName("全图镜头缩放速度（每秒进度）")] public float introZoomSpeed=.5f;

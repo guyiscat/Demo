@@ -1,3 +1,9 @@
+# 2026-11-24新增区域系统
+
+公共WorldRegion、RegionExit、WorldTransition、RegionArrival、TravelPoint、TravelPointMenu位于Scripts根目录；矿洞专用MineGate、MineTouchSwitch、MineDarkness、MineCorruption放mine/；村庄VillageHUD、VillageRobot放village/。WorldRegionSetup/WorldRegionEditorChecks位于Editor根目录，为跨区域增量安装与验证。原脚本GUID保持，旧CheckpointVisual无场景实例，原素材改作静态入口传送标志。玩法和参数见[区域玩法](WorldRegions.md)。
+
+---
+
 # 各关公共参数、提示与脚本分类
 
 2026-11-19，主工程Project6.4，Unity 6000.4.12f1。
@@ -52,8 +58,8 @@ GameSystems.systemFont引用Assets/Resources/Fonts/AlibabaPuHuiTi-Regular.otf，
 
 2026-11-20文案补齐：公共LevelTutorials、TutorialZone、LevelCopyVisualChecks留在Scripts根目录；仅海边使用的SeasideStory放在Scripts/seaside。LevelCopySetup/LevelCopyEditorChecks在Editor根目录，负责跨关增量配置/检查，不重建地图；实际场景对象通过组件引用关联，改显示名/父路径不影响文案。配置说明见[关卡文案](LevelCopy.md)。
 
-五个独立入口为statgame.cmd（启动页进入海边）、forest.cmd、mine.cmd、snow.cmd、lighthouse.cmd。当前Assets/Scenes只包含StartGame、TheFirstScene_Seaside、ForestWhitebox、MineWhitebox、SnowWhitebox、LighthouseWhitebox；旧预览/恢复场景、旧第一关生成与迁移工具、旧手动输出build及重复解压试玩已移出工作目录。BuildAndTest和PackageRelease无参数时默认当前启动页版本，不再调用旧白盒构建入口。清理明细及回滚见[清理日志](Logs/Work/20261119-project-cleanup/work-log.md)。
+五个独立入口为statgame.cmd（启动页进入海边）、forest.cmd、mine.cmd、snow.cmd、lighthouse.cmd。当前Assets/Scenes只包含StartGame、TheFirstScene_Seaside、ForestWhitebox、MineWhitebox、SnowWhitebox、LighthouseWhitebox；旧预览/恢复场景、旧第一关生成与迁移工具、旧手动输出build及重复解压试玩已移出工作目录。BuildAndTest和PackageRelease无参数时默认当前启动页版本，不再调用旧白盒构建入口。清理明细及回滚见[当前交接与验证](Handoff.md)。
 
-本轮备份：Docs/Backups/20261119-forest-mine-font/，实施记录见[工作日志](Logs/Work/20261119-forest-mine-font/work-log.md)。下段为上轮历史回滚说明。
+本轮备份：Docs/Backups/20261119-forest-mine-font/，实施记录见[当前交接与验证](Handoff.md)。下段为上轮历史回滚说明。
 
-备份：`Docs/Backups/20261118-shared-systems-script-folders/`。回滚时按迁移表移回本次脚本及原.meta、恢复本次修改文件，移除本轮新增的六个系统C#及.meta、GameSystems.asset及.meta、四个分类文件夹.meta。不要整仓重置或覆盖用户地图。验证与限制见 [工作日志](Logs/Work/20261118-shared-systems-script-folders/work-log.md)。
+备份：`Docs/Backups/20261118-shared-systems-script-folders/`。回滚时按迁移表移回本次脚本及原.meta、恢复本次修改文件，移除本轮新增的六个系统C#及.meta、GameSystems.asset及.meta、四个分类文件夹.meta。不要整仓重置或覆盖用户地图。验证与限制见 [当前交接与验证](Handoff.md)。

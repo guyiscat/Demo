@@ -1,1 +1,0 @@
-LOG_FOLDER=D:\UnityProjects\Demo\Docs\Logs\Build\20261105-151329-650

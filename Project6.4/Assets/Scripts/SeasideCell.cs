@@ -10,6 +10,14 @@ namespace Seaside
         public Vector2 respawn;
         public Transform respawnAnchor;
         public int checkpointId;
+        Renderer[] hiddenCheckpointRenderers;
+        void Start()
+        {
+            if(kind!=CellKind.Checkpoint)return;
+            hiddenCheckpointRenderers=GetComponentsInChildren<Renderer>(true);HideCheckpoint();
+        }
+        void LateUpdate(){HideCheckpoint();}
+        void HideCheckpoint(){if(hiddenCheckpointRenderers!=null)foreach(var renderer in hiddenCheckpointRenderers)if(renderer!=null)renderer.enabled=false;}
         void OnTriggerEnter2D(Collider2D c)
         {
             var player=c.GetComponent<SeasideMotor>();if(player==null)return;
@@ -17,7 +25,7 @@ namespace Seaside
             if(kind==CellKind.Spike)game.Die();
             if(kind==CellKind.Checkpoint)game.Checkpoint(this);
             // Seaside's authored lighthouse requires E and its two story pages.
-            if(kind==CellKind.Finish&&game.GetComponent<SeasideStory>()==null)game.Complete();
+            if(kind==CellKind.Finish&&game.GetComponent<WorldRegion>()==null&&game.GetComponent<SeasideStory>()==null)game.Complete();
         }
     }
 }

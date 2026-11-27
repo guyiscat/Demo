@@ -26,7 +26,7 @@
 *.zip
 *.7z
 *.unitypackage
-# Keep historical work/build logs; live play sessions are local.
+# Keep concise work summaries; live play sessions are local.
 /Docs/Logs/Runtime/
 
 # Keep recovery data locally until compared with the saved scenes.
@@ -34,3 +34,9 @@
 /Project6.4/Assets/_Recovery.meta
 **/.DS_Store
 **/Thumbs.db
+
+# Raw regenerated verification / delivery output (keep concise Work summaries)
+/Docs/Logs/Build/
+/Docs/Logs/History/
+/Docs/Logs/VisualPreview/
+/Docs/StartupValidation/

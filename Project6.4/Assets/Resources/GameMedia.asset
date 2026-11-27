@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5645bd09eed775f4fb804676ae8824c3, type: 3}
+  m_Name: GameMedia
+  m_EditorClassIdentifier: Assembly-CSharp::Seaside.GameMediaSettings
+  idle: {fileID: 21300000, guid: c830500a819741e88d0be81f36b69702, type: 3}
+  jumpRise: {fileID: 21300000, guid: 4f314a1ed0344ed1afe9894dd1a5f570, type: 3}
+  jumpApex: {fileID: 21300000, guid: 0d0709fa7c2f481fbcc0f0b71d8f5d38, type: 3}
+  jumpFall: {fileID: 21300000, guid: c8831b04838c43b8bf5ed13f3f91d826, type: 3}
+  dash: {fileID: 21300000, guid: 1d71ec4d93db415aa2cf2664b5841f91, type: 3}
+  aimArrow: {fileID: 21300000, guid: 3b79355dfa794650a83aba012fb3786b, type: 3}
+  jumpTransition: {fileID: 21300000, guid: 2b65c13a51554c03823ede04234179f1, type: 3}
+  run:
+  - {fileID: 21300000, guid: becf1a4db2344c6bb5f4f22aa73bbe97, type: 3}
+  - {fileID: 21300000, guid: 629c050b982448c3b1898dbe02a9ad4f, type: 3}
+  - {fileID: 21300000, guid: 503f8c4dee4f4748904ab040d6dfffbf, type: 3}
+  - {fileID: 21300000, guid: b2ef127eefbc45428ba7d432f17fa3a0, type: 3}
+  - {fileID: 21300000, guid: 5b9d493854f247219166bc973b1678cb, type: 3}
+  - {fileID: 21300000, guid: f19e14a7b2b147799a2c71daea85a4b3, type: 3}
+  teleport:
+  - {fileID: 21300000, guid: 7dbbfe0bcb9d4e88a2bc666e394ce3c0, type: 3}
+  - {fileID: 21300000, guid: 375c00fb3c52431fb7742ea941aa6b34, type: 3}
+  - {fileID: 21300000, guid: ce6f95ed286e48519a269e7dae727b9d, type: 3}
+  - {fileID: 21300000, guid: a74fb92df60847338fa63d149bc93783, type: 3}
+  - {fileID: 21300000, guid: 6e45312bf7b045b98692a1d945728527, type: 3}
+  - {fileID: 21300000, guid: 945de489ffb846deb7affcf328c84cc4, type: 3}
+  runFrameRate: 10
+  teleportFrameRate: 16
+  menu: {fileID: 8300000, guid: 2496324cd6de4f11ac398ae5c30906ed, type: 3}
+  seaside: {fileID: 8300000, guid: 2496324cd6de4f11ac398ae5c30906ed, type: 3}
+  forest: {fileID: 8300000, guid: 2496324cd6de4f11ac398ae5c30906ed, type: 3}
+  village: {fileID: 8300000, guid: 4820433e435c4326ad88688066d837b9, type: 3}
+  mine: {fileID: 8300000, guid: 4820433e435c4326ad88688066d837b9, type: 3}
+  snow: {fileID: 8300000, guid: 65832b77abcf45e1b016aa19ce11158d, type: 3}
+  lighthouse: {fileID: 8300000, guid: adc3d631a6804ed6b7985e6d5fe1e296, type: 3}
+  musicVolume: 0.5
+  musicFadeSeconds: 1.25

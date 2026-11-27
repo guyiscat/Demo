@@ -66,7 +66,7 @@ namespace Mine
                 Step(Input(jump:true));float apex=y;
                 for(int i=0;i<100;i++){Step(Input(jump:false));apex=Mathf.Max(apex,motor.Body.position.y);if(motor.Body.linearVelocity.y<=0)break;}
                 Check(apex>y+3.7f&&apex<y+4.2f,"Mine tap jump shares four-unit height");
-                Place(new Vector2(-91.51f,280));Step(Input(horizontal:1));Check(motor.Attached,"Mine shares wall attachment");
+                Place(new Vector2(-90.51f-motor.BodySize.x*.5f,280));Step(Input(horizontal:1));Check(motor.Attached,"Mine shares wall attachment");
                 Step(Input(horizontal:-1,jump:true));Check(motor.WallKicks==1&&motor.Body.linearVelocity.x<0&&motor.Body.linearVelocity.y>30,"Mine shares wall kick");
                 Place(new Vector2(-110,280));Step(Input(dash:true,aim:Vector2.right));
                 Check(motor.Dashing,"Mine keeps original dash");Step(Input(teleport:true,aim:Vector2.up));
@@ -82,10 +82,10 @@ namespace Mine
                 Check(level.Dialogue.Contains("离职"),"Workbench second page matches supplied design");level.AdvanceDialogue();
                 Check(level.Dialogue.Contains("停工"),"Workbench last page matches supplied design");level.AdvanceDialogue();
                 Check(level.WorkbenchRead&&workbench.Used&&level.Dialogue==null&&!motor.frozen,"Finishing dialogue restores player control");
-                var liftSwitch=level.interactions.Single(i=>i.kind==MineInteractionKind.LiftSwitch);
-                Check(!level.lift.Activated,"Lift remains stopped before switch interaction");
-                Place(liftSwitch.transform.position);Check(level.BeginInteraction(liftSwitch),"Authored orange switch is interactable");level.AdvanceDialogue();
-                Check(level.lift.Activated&&liftSwitch.Used,"Switch dialogue restarts physical lift");
+                var liftSwitch=FindObjectsByType<MineTouchSwitch>().Single(i=>i.lift==level.lift);
+                Check(!level.lift.Activated,"Lift remains locked before touching switch");
+                Place(liftSwitch.transform.position);liftSwitch.Touch(motor);
+                Check(level.lift.Activated&&!level.lift.Moving,"Touch unlocks lift; no automatic departure");
                 TestLift();
                 foreach(var cp in FindObjectsByType<SeasideCell>().Where(c=>c.kind==CellKind.Checkpoint).OrderByDescending(c=>c.checkpointId))
                 {
@@ -100,7 +100,7 @@ namespace Mine
                 Place(relic.transform.position);Check(level.BeginInteraction(relic),"Deepest authored relic is interactable");
                 Check(level.Dialogue.Contains("比特币"),"Relic first page grants Bitcoin");level.AdvanceDialogue();
                 Check(level.Dialogue.Contains("求而不得"),"Relic second page matches supplied design");level.AdvanceDialogue();
-                Check(level.HasBitcoin&&session.Won&&motor.frozen,"Deepest relic completes independent Mine");
+                Check(level.HasBitcoin&&!session.Won&&!motor.frozen,"Deepest relic is collected without automatic region change");
                 level.Restart();Step(count:10);
                 Check(!session.Won&&!level.HasBitcoin&&!level.WorkbenchRead&&!level.lift.Activated&&level.interactions.All(i=>!i.Used),"Restart clears narrative, collectible and lift state");
                 Check(motor.Grounded&&actor.TeleportCharged&&motor.DashReady,"Restart returns to safe entrance with shared abilities ready");
@@ -120,7 +120,7 @@ namespace Mine
             var lift=level.lift;lift.ResetLift();Physics2D.SyncTransforms();
             Place(lift.body.position+Vector2.up*(lift.Collider.bounds.extents.y+1.012f));Step(count:5);
             Check(actor.RidingSurface==lift,"Stationary lift is recognized as shared physical support");
-            lift.Activate();float y=motor.Body.position.y;Step(count:30);
+            lift.Activate();Check(lift.Use(motor),"E dispatches unlocked lift");float y=motor.Body.position.y;Step(count:30);
             Check(actor.RidingSurface==lift&&motor.Body.position.y<y-1,"Active descending lift carries a standing player");
             Check(Mathf.Abs(motor.Body.position.y-lift.body.position.y-lift.Collider.bounds.extents.y-1.012f)<.05f,"Lift preserves feet contact without parenting player");
             Check(motor.transform.parent!=lift.transform,"Lift does not parent-lock the player");
@@ -133,7 +133,8 @@ namespace Mine
             for(int i=0;i<3000&&!top;i++)
             {
                 Step();minimum=Mathf.Min(minimum,lift.body.position.y);maximum=Mathf.Max(maximum,lift.body.position.y);
-                if(Vector2.Distance(lift.body.position,lift.lowerStop)<.01f)bottom=true;
+                if(Vector2.Distance(lift.body.position,lift.lowerStop)<.01f&&!bottom){bottom=true;
+                    Place(lift.lowerStop+Vector2.up*1.52f);Check(!lift.Moving&&lift.Use(motor),"E starts return from lower stop");Place(new Vector2(-110,280));}
                 if(bottom&&Vector2.Distance(lift.body.position,lift.upperStop)<.01f)top=true;
             }
             Check(bottom&&top&&minimum>=lift.lowerStop.y-.01f&&maximum<=lift.upperStop.y+.01f,"Lift travels both actual workbook stops without overshoot");

@@ -1,6 +1,6 @@
 # SeasideArtPreview 场景层级与命名
 
-2026-11-19当前入口：第一关为Assets/Scenes/TheFirstScene_Seaside.unity，沿用下述层级规范。旧SeasideArtPreview及恢复副本已移出工程；原Seaside01仅以Editor/Tests/Fixtures/SeasideMovementBaseline.unity保留为动作回归夹具。旧创建/迁移菜单已移除，编辑当前场景使用Seaside > Map editing palette。本文件下文是历史实施记录，旧打开和打包路径不作为当前操作入口，最新参见[README](../README.md)与[清理日志](Logs/Work/20261119-project-cleanup/work-log.md)。
+2026-11-19当前入口：第一关为Assets/Scenes/TheFirstScene_Seaside.unity，沿用下述层级规范。旧SeasideArtPreview及恢复副本已移出工程；原Seaside01仅以Editor/Tests/Fixtures/SeasideMovementBaseline.unity保留为动作回归夹具。旧创建/迁移菜单已移除，编辑当前场景使用Seaside > Map editing palette。本文件下文是历史实施记录，旧打开和打包路径不作为当前操作入口，最新参见[README](../README.md)与[当前交接与验证](Handoff.md)。
 
 2026-10-29开始，2026-10-30完成验证。适用工程：Demo/Project6.4，Unity6000.4.12f1。本次原地整理SeasideArtPreview.unity，保留场景GUID和用户保存的Part1Art/bg3，没有另建平行关卡。
 
@@ -62,7 +62,6 @@ SeasideArtRoot标识分层美术根；原SeasideArtAlignment方式仍可被预�
 
 检查几何一致性时比较单元身份、实际世界位置/碰撞轮廓、层、活动状态、攀附属性及复活点，忽略显示名称与父级路径。名称变化不会再被当作地图变形；坐标和碰撞变化仍会失败。
 
-本次426个已有对象的世界变换和现有组件序列化快照前后一致。完整路径映射见Logs/Work/20261029-hierarchy-refactor/rename-map.tsv；完整树见同目录hierarchy.txt。Unity内也保留Seaside > Scene > Normalize preview hierarchy菜单，它是一次性迁移命令，已整理的场景会拒绝重复执行，不覆盖后续手动修改。
 
 ## 打开、打包与回滚
 
@@ -70,7 +69,6 @@ SeasideArtRoot标识分层美术根；原SeasideArtAlignment方式仍可被预�
 
 Project6.4/Tools/BuildAndTest.ps1使用6.4并输出Play64，修复了复制工程后脚本误指向Project/和6.6的问题。旧版Play仅在本地归档，不作为构建入口。构建不再强制设置动作预设或保存未编辑的原关卡。
 
-回滚前先保存后续自己的改动，然后从Docs/Backups/20261029-hierarchy-refactor/Project6.4恢复对应场景、脚本与工具；旧副本中的Library/Temp等缓存不需要恢复。备份保留了重构前已保存的bg3，而不是最初的旧合成图版本。脚本改动与场景改动宜一起回滚，防止识别组件缺失。
 
 ## bg3 镜头边界（2026-10-30）
 

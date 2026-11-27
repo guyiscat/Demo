@@ -44,6 +44,7 @@ namespace Forest
         readonly SeasideInputLatch inputLatch=new SeasideInputLatch();
         readonly List<Vector2> beaconPath=new List<Vector2>();
         bool teleportPressed,rideHeld,touchedTerrain;
+        int inputEpoch;
         float railDistance,railDirection,catchCooldown;
         Vector2 beaconDirection,launchPosition;
         float wheelCarrySpeed;
@@ -65,16 +66,18 @@ namespace Forest
         void Update()
         {
             if(manualInput)return;
+            if(inputEpoch!=GameBindings.InputEpoch){ClearInput();inputEpoch=GameBindings.InputEpoch;}
             if(session.Paused||session.InputBlocked||motor.frozen)
             {ClearInput();return;}
             Vector2 aim=ReadAimDirection();
-            inputLatch.Sample(Input.GetKey(KeyCode.A),Input.GetKey(KeyCode.D),Input.GetKeyDown(KeyCode.Space),
-                Input.GetKey(KeyCode.Space),Input.GetMouseButtonDown(0),aim,motor.Attached,motor.WallSide);
-            teleportPressed|=Input.GetMouseButtonDown(1);rideHeld=Input.GetKey(KeyCode.W);
+            inputLatch.Sample(GameBindings.Held(GameAction.Left),GameBindings.Held(GameAction.Right),GameBindings.Pressed(GameAction.Jump),
+                GameBindings.Held(GameAction.Jump),GameBindings.Pressed(GameAction.Dash),aim,motor.Attached,motor.WallSide);
+            teleportPressed|=GameBindings.Pressed(GameAction.Teleport);rideHeld=GameBindings.Held(GameAction.Ride);
         }
         void FixedUpdate()
         {
             if(manualInput)return;
+            if(inputEpoch!=GameBindings.InputEpoch){ClearInput();inputEpoch=GameBindings.InputEpoch;}
             Tick(Time.fixedDeltaTime,new ForestInput{movement=inputLatch.Consume(),teleportDown=teleportPressed,rideHeld=rideHeld});
             teleportPressed=false;
         }
@@ -106,8 +109,8 @@ namespace Forest
         }
         public void Tick(float dt,ForestInput input)
         {
-            if(session.Paused){ClearInput();return;}
-            if(session.InputBlocked||motor.frozen){CancelSpecial();motor.Body.linearVelocity=Vector2.zero;return;}
+            if(session.Paused){environment?.ClearJumpGrace();ClearInput();return;}
+            if(session.InputBlocked||motor.frozen){environment?.ClearJumpGrace();CancelSpecial();motor.Body.linearVelocity=Vector2.zero;return;}
             if(environment!=null&&!environment.ValidateContact())return;
             if(Mathf.Abs(input.movement.horizontal)>.1f)Facing=input.movement.horizontal>0?1:-1;
             if(input.movement.aim.sqrMagnitude>.001f)AimDirection=input.movement.aim.normalized;
@@ -117,6 +120,7 @@ namespace Forest
             touchedTerrain=contact;
             if(input.teleportDown)
             {
+                environment?.ClearJumpGrace();
                 if(BeaconActive){CommitTeleport("MANUAL");return;}
                 if(TeleportCharged&&(!motor.Dashing||settings.teleportInterruptsDash))LaunchBeacon(input.movement.aim);
             }
@@ -127,19 +131,20 @@ namespace Forest
                 motor.SetTeleportCharge(TeleportCharged);
                 return;
             }
-            if(environment!=null&&RidingRail==null&&!motor.Dashing&&environment.TryAirJump(input.movement))
+            if(environment!=null&&RidingRail==null&&!motor.Dashing&&environment.TryAirJump(input.movement,dt))
             {PostTeleportHoverRemaining=RailCoyoteRemaining=0;return;}
             if(PostTeleportHoverRemaining>0)
             {
                 if(input.movement.dashDown&&motor.DashReady)PostTeleportHoverRemaining=0;
                 else
                 {
-                    motor.Body.linearVelocity=new Vector2(motor.Body.linearVelocity.x,0);
-                    motor.Tick(dt,input.movement);
+                    motor.Body.linearVelocity=Vector2.zero;
+                    var hoveringInput=input.movement;hoveringInput.horizontal=0;hoveringInput.wallReleased=false;
+                    motor.Tick(dt,hoveringInput);
                     if(input.movement.jumpDown&&motor.Body.linearVelocity.y>0)PostTeleportHoverRemaining=0;
                     else
                     {
-                        motor.Body.linearVelocity=new Vector2(motor.Body.linearVelocity.x,0);
+                        motor.Body.linearVelocity=Vector2.zero;
                         PostTeleportHoverRemaining=Mathf.Max(0,PostTeleportHoverRemaining-dt);
                         if(input.rideHeld&&catchCooldown<=0&&TryCatchRail())PostTeleportHoverRemaining=0;
                         motor.SetTeleportCharge(TeleportCharged);
@@ -173,7 +178,7 @@ namespace Forest
         bool TouchesTerrain()
         {
             foreach(var hit in Physics2D.OverlapBoxAll(motor.Body.position,motor.BodySize+Vector2.one*.12f,0,1<<6))
-                if(!hit.isTrigger)return true;
+                if(!hit.isTrigger&&(hit.GetComponent<SeasideCell>()?.attachable!=false||motor.Body.position.y-motor.BodySize.y*.5f>=hit.bounds.max.y-.1f))return true;
             return false;
         }
         public bool IsFree(Vector2 point,Collider2D ignore=null)
@@ -190,14 +195,14 @@ namespace Forest
             ResetHoverMotion();
             // Cancel the burst immediately instead of coasting horizontally at
             // dash speed during beacon hover. Normal A/D movement resumes below.
-            if(interruptedDash)motor.Body.linearVelocity=Vector2.zero;
+            motor.Body.linearVelocity=Vector2.zero;
             RidingRail=null;RidingSurface=null;wheelCarrySpeed=0;
             PostTeleportHoverRemaining=RailCoyoteRemaining=0;
             TeleportCharged=false;motor.SetTeleportCharge(false);BeaconActive=true;BeaconDistance=0;
             beaconDirection=aim.sqrMagnitude>.001f?aim.normalized:new Vector2(Facing,0);
             launchPosition=BeaconPosition=motor.Body.position;beaconPath.Clear();beaconPath.Add(BeaconPosition);
             beacon.enabled=true;beacon.transform.position=BeaconPosition;
-            beaconTrail.enabled=true;beaconTrail.SetPosition(0,launchPosition);beaconTrail.SetPosition(1,BeaconPosition);
+            beaconTrail.enabled=false;beaconTrail.SetPosition(0,launchPosition);beaconTrail.SetPosition(1,BeaconPosition);
             SeasideLog.Event("FOREST_BEACON","launch="+launchPosition+" aim="+beaconDirection);
         }
         void ResetHoverMotion()
@@ -208,13 +213,10 @@ namespace Forest
         }
         void TickBeaconHover(float dt,SeasideInput movement)
         {
-            // Reuse normal horizontal acceleration and collision probes. Jump,
-            // dash and W do not interrupt this short beacon-flight window or
-            // queue a vertical launch for its end. Gravity is manual in Tick,
-            // so cancel its vertical result rather than changing gravityScale.
-            motor.Body.linearVelocity=new Vector2(motor.Body.linearVelocity.x,0);
-            motor.Tick(dt,new SeasideInput{horizontal=movement.horizontal,wallReleased=movement.wallReleased});
-            motor.Body.linearVelocity=new Vector2(motor.Body.linearVelocity.x,0);
+            // Both beacon flight and post-teleport suspension reject horizontal motion.
+            motor.Body.linearVelocity=Vector2.zero;
+            motor.Tick(dt,new SeasideInput());
+            motor.Body.linearVelocity=Vector2.zero;
         }
         bool AdvanceBeacon(float dt)
         {

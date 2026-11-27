@@ -65,13 +65,13 @@ if($MineWhitebox -and ($ForestWhitebox -or $StartupPage)){throw 'Choose one inde
 if($SnowWhitebox -or $LighthouseWhitebox){
     $levelName=if($SnowWhitebox){'Snow'}else{'Lighthouse'}
     $launcher=$levelName.ToLowerInvariant()+'.cmd'
-    Pack ($levelName+'-Unity64-Whitebox-Windows.zip') @(('Play64\'+$levelName),$launcher,'Docs\SnowLighthouse.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
+    Pack ($levelName+'-Unity64-Whitebox-Windows.zip') @(('Play64\'+$levelName),$launcher,'Docs\SnowLighthouse.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md','Docs\WorldRegions.md','Docs\ImportedAssets.md','Docs\RegionMechanics.md','Docs\SettingsAndSaves.md','Docs\ForestArtAndTravel.md','Docs\TransferAndProtection.md')
     Pack ($levelName+'-Unity64-Whitebox-Project.zip') $projectParts
 }elseif($MineWhitebox){
-    Pack 'Mine-Unity64-Whitebox-Windows.zip' @('Play64\Mine','mine.cmd','Docs\MineWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
+    Pack 'Mine-Unity64-Whitebox-Windows.zip' @('Play64\Mine','mine.cmd','Docs\MineWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md','Docs\WorldRegions.md','Docs\ImportedAssets.md','Docs\RegionMechanics.md','Docs\SettingsAndSaves.md','Docs\ForestArtAndTravel.md','Docs\TransferAndProtection.md')
     Pack 'Mine-Unity64-Whitebox-Project.zip' $projectParts
 }elseif($ForestWhitebox){
-    Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md')
+    Pack 'Forest-Unity64-Whitebox-Windows.zip' @('Play64\Forest','forest.cmd','Docs\ForestWhitebox.md','Docs\ScriptLayout.md','Docs\CampaignAndSaves.md','Docs\LevelCopy.md','Docs\WorldRegions.md','Docs\ImportedAssets.md','Docs\RegionMechanics.md','Docs\SettingsAndSaves.md','Docs\ForestArtAndTravel.md','Docs\TransferAndProtection.md')
     Pack 'Forest-Unity64-Whitebox-Project.zip' $projectParts
 }elseif($StartupPage){
     # The menu entry contains all five launchers and the connected campaign.

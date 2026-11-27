@@ -1,0 +1,174 @@
+{
+	"name": "part2",
+	"width": 4781,
+	"height": 1878,
+	"type": "group",
+	"tag": "root",
+	"children": [
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_bg_2.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg_2",
+			"x": 0,
+			"y": 0,
+			"width": 4781,
+			"height": 1878
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_wheel_1.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "wheel_1",
+			"x": 1539,
+			"y": 699,
+			"width": 1118,
+			"height": 1179
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_wheel_2.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "wheel_2",
+			"x": 1241,
+			"y": 68,
+			"width": 1716,
+			"height": 1717
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_wheel_3.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "wheel_3",
+			"x": 1367,
+			"y": 1498,
+			"width": 241,
+			"height": 59
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_thorn_l.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "thorn_l",
+			"x": 271,
+			"y": 1189,
+			"width": 23,
+			"height": 326
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_thorn_m.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "thorn_m",
+			"x": 516,
+			"y": 1156,
+			"width": 92,
+			"height": 21
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_thorn_s.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "thorn_s",
+			"x": 372,
+			"y": 317,
+			"width": 32,
+			"height": 21
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_water_1.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "water_1",
+			"x": 1039,
+			"y": 1667,
+			"width": 3641,
+			"height": 211
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_water_2.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "water_2",
+			"x": 2649,
+			"y": 334,
+			"width": 204,
+			"height": 1398
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_bg_1.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg_1",
+			"x": 0,
+			"y": 0,
+			"width": 4781,
+			"height": 1878
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "part2_strop.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "strop",
+			"x": 367,
+			"y": 229,
+			"width": 4250,
+			"height": 1382
+		}
+	]
+}

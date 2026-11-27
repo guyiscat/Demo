@@ -1,0 +1,129 @@
+{
+	"name": "suspend",
+	"width": 960,
+	"height": 540,
+	"type": "group",
+	"tag": "root",
+	"children": [
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_tuceng 1.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "tuceng 1",
+			"x": 0,
+			"y": 0,
+			"width": 960,
+			"height": 540
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_bg.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg",
+			"x": 281,
+			"y": 138,
+			"width": 401,
+			"height": 263
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_continue_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "continue_on",
+			"x": 418,
+			"y": 202,
+			"width": 127,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_continue_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "continue_off",
+			"x": 443,
+			"y": 219,
+			"width": 77,
+			"height": 19
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_set_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "set_on",
+			"x": 418,
+			"y": 244,
+			"width": 127,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_set_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "set_off",
+			"x": 443,
+			"y": 262,
+			"width": 77,
+			"height": 18
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_save_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "save_on",
+			"x": 418,
+			"y": 286,
+			"width": 127,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "suspend_save_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "save_off",
+			"x": 443,
+			"y": 303,
+			"width": 77,
+			"height": 19
+		}
+	]
+}

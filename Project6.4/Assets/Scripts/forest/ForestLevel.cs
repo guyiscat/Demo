@@ -21,6 +21,7 @@ namespace Forest
         }
         void Start()
         {
+            if(GetComponent<ForestArtwork>()==null)gameObject.AddComponent<ForestArtwork>();
             string[] args=Environment.GetCommandLineArgs();
             if(Array.IndexOf(args,"-forestChecks")>=0)gameObject.AddComponent<ForestRuntimeChecks>();
             int i=Array.IndexOf(args,"-forestCapture");
@@ -28,6 +29,7 @@ namespace Forest
         }
         void Update()
         {
+            if(GameSettingsScreen.Opened||SaveSlotScreen.Opened)return;
             if(Input.GetKeyDown(KeyCode.R)&&(Input.GetKey(KeyCode.LeftControl)||session.Won))wheel.ResetWheel();
         }
         public void Restart(){wheel.ResetWheel();session.Restart();}

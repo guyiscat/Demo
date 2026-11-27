@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: GameSystems
   m_EditorClassIdentifier: Assembly-CSharp::Seaside.GameSystemSettings
   systemFont: {fileID: 12800000, guid: 53b29c6f67db408aa06c277932b8eaf4, type: 3}
+  useSuspendArtwork: 1
   movement: {fileID: 11400000, guid: 5032a02bcdef9934dbac1a99073e9f81, type: 2}
   releasedSlideSpeed: 3.5
   releasedSlideBlend: 0.28
   cameraTuning:
-    followSize: 18
+    followSize: 10
     horizontalSmooth: 0.22
     verticalSmooth: 0.3
     fastVerticalSmooth: 0.12
@@ -35,9 +36,11 @@ MonoBehaviour:
     directionHold: 0.2
     zoneSmooth: 0.3
   targetFrameRate: 120
-  respawnDelay: 0.2
+  respawnDelay: 0.5
   latestCheckpointWins: 1
-  showRoute: 1
-  nextLevelDelay: 0.8
+  showRoute: 0
+  regionBlackDuration: 1.5
+  regionFadeDuration: 0.25
+  regionEntrySpeed: 12
   aimArrowPadding: 0.35
   aimArrowLength: 0.8

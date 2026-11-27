@@ -34,7 +34,8 @@ namespace Expedition
                 SystemRuntimeChecks.Run(session,Check);
                 Place(session.startPoint);Step(count:20);
                 Check(motor.Grounded&&!session.Respawning,"Actual authored entry settles safely on neutral ground");
-                Check(actor.environment==level.thermal&&level.thermal.Mode==ProtectionMode.Cold,"Independent entry grants core with cold protection");
+                Check(!level.thermal.HasCore&&!level.thermal.TrySwitchMode(),"Independent entry cannot switch protection before village core");
+                CampaignFlow.GrantCore(session);Check(actor.environment==level.thermal&&level.thermal.HasCore,"Test explicitly acquires core before thermal mechanics");Mode(ProtectionMode.Cold);
                 Check(level.thermal.TrySwitchMode()&&level.thermal.Mode==ProtectionMode.Heat,"S switches to heat protection");
                 Check(level.thermal.TrySwitchMode()&&level.thermal.Mode==ProtectionMode.Cold,"S switches back without charge consumption");
                 Check(actor.TeleportCharged&&motor.DashReady,"Protection mode does not consume dash or teleport");
@@ -48,8 +49,13 @@ namespace Expedition
                 Step(Input(jump:true));float apex=y;
                 for(int i=0;i<120;i++){Step();apex=Mathf.Max(apex,motor.Body.position.y);if(motor.Body.linearVelocity.y<=0)break;}
                 Check(apex>y+3.7f&&apex<y+4.2f,"Shared tap jump remains four units");
-                Place(new Vector2(-81.51f,55));Step(Input(horizontal:1));Check(motor.Attached,"Shared neutral wall suspension remains available");
+                Place(new Vector2(-80.51f-motor.BodySize.x*.5f,55));Step(Input(horizontal:1));Check(motor.Attached,"Shared neutral wall suspension remains available");
                 Step(Input(horizontal:-1,jump:true,held:true));Check(motor.WallKicks==1&&motor.Body.linearVelocity.y>30,"Shared wall kick remains available");
+                wall.GetComponent<SeasideCell>().attachable=false;
+                Place(new Vector2(-80.51f-motor.BodySize.x*.5f,55));for(int n=0;n<12;n++)Step(Input(horizontal:1,jump:n%2==0,held:true));
+                Check(!motor.Attached&&!motor.WallSliding&&motor.WallKicks==0&&motor.Body.linearVelocity.y<0,"No-grip gray wall rejects repeated jumps and attachment");wall.GetComponent<SeasideCell>().attachable=true;
+                Place(new Vector2(-100,60));Mode(ProtectionMode.Heat);session.Die();session.Respawn();
+                Check(level.thermal.Mode==ProtectionMode.Heat,"Death and automatic respawn preserve heat protection");Mode(ProtectionMode.Cold);session.Die();session.Respawn();Check(level.thermal.Mode==ProtectionMode.Cold,"Cold protection also survives respawn");
                 Place(new Vector2(-100,60));Step(Input(dash:true,aim:Vector2.right));Check(motor.Dashing,"Shared dash starts in independent map");
                 Step(Input(teleport:true,aim:Vector2.up));Check(actor.BeaconActive&&!motor.Dashing&&motor.Body.linearVelocity.sqrMagnitude<.001f,"Teleport interrupts dash with no residual burst");
                 Step(Input(teleport:true));float hoverY=motor.Body.position.y;Step(count:10);
@@ -66,7 +72,7 @@ namespace Expedition
                 if(level is Snow.SnowLevel snow)TestSnow(snow);else TestLighthouse((Lighthouse.LighthouseLevel)level);
                 level.Restart();Step(count:10);
                 Check(!session.Won&&motor.Grounded&&actor.TeleportCharged&&motor.DashReady,"Full restart restores safe entrance and all abilities");
-                Check(level.thermal.Mode==ProtectionMode.Cold&&level.thermal.AirJumps==0,"Restart restores protection and clears consumed climb points");
+                Check(level.thermal.AirJumps==0,"Restart clears transient climb statistics without resetting selected mode");
             }
             catch(Exception e){Check(false,e.ToString());Debug.LogException(e);}
             finally
@@ -89,7 +95,8 @@ namespace Expedition
                     var b=surface.GetComponent<BoxCollider2D>().bounds;
                     // Unity expands proximity queries by its contact offset. Keep
                     // the body clear while remaining within the contact probe.
-                    foreach(var p in new[]{new Vector2(b.center.x,b.max.y+1.04f),new Vector2(b.min.x-1.04f,b.center.y),new Vector2(b.max.x+1.04f,b.center.y)})
+                    var half=motor.BodySize*.5f;
+                    foreach(var p in new[]{new Vector2(b.center.x,b.max.y+half.y+.04f),new Vector2(b.min.x-half.x-.04f,b.center.y),new Vector2(b.max.x+half.x+.04f,b.center.y)})
                     {
                         candidates++;
                         if(!actor.IsFree(p)||Physics2D.OverlapBoxAll(p,new Vector2(1.98f,1.98f),0,1<<7).Any())continue;
@@ -107,6 +114,7 @@ namespace Expedition
         }
         void TestPoints()
         {
+            TestPointTiming();
             foreach(var point in level.thermal.points)
             {
                 var p=(Vector2)point.transform.position;
@@ -117,14 +125,41 @@ namespace Expedition
                 Check(level.thermal.NearestReadyPoint()==point,"Matching mode recognizes authored climb ring: "+point.sourceAddress);
                 Step(Input(jump:true,held:true));Check(level.thermal.AirJumps==1&&motor.Body.linearVelocity.y>30,"SPACE performs aerial jump at actual point: "+point.sourceAddress);
                 Check(actor.TeleportCharged&&motor.DashReady,"Authored climb jump restores dash and teleport as full design specifies");
-                motor.WarpForTraversal(p);Step(Input(jump:true,held:true));Check(level.thermal.AirJumps==1&&motor.Body.linearVelocity.y<=0,"Same point cannot be farmed within one aerial sequence");
+                motor.WarpForTraversal(p);Step(Input(jump:true,held:true));Check(level.thermal.AirJumps==2&&motor.Body.linearVelocity.y>30,"Same point allows repeated jump presses while in rectangular range");
                 Place(new Vector2(-100,60));Mode(point.requiredProtection==ProtectionMode.Cold?ProtectionMode.Heat:ProtectionMode.Cold);motor.WarpForTraversal(p);Step(Input(jump:true));
                 Check(level.thermal.AirJumps==0,"Mismatched protection cannot use climb point");
             }
             Place(new Vector2(-100,60));Step(Input(jump:true));Check(level.thermal.AirJumps==0&&motor.Body.linearVelocity.y<0,"No free second jump outside every ring");
             var first=level.thermal.points[0];Place(new Vector2(-100,60));Mode(first.requiredProtection);
-            motor.WarpForTraversal((Vector2)first.transform.position+Vector2.up*(level.settings.climbRadius+.15f));Step(Input(jump:true));
+            motor.WarpForTraversal((Vector2)first.transform.position+Vector2.up*(level.thermal.PointHalfExtents.y+.15f));Step(Input(jump:true));
             Check(level.thermal.AirJumps==0,"Climb radius boundary rejects out-of-range jump");
+            Place(new Vector2(-100,60));Mode(first.requiredProtection);motor.WarpForTraversal((Vector2)first.transform.position+level.thermal.PointHalfExtents*.9f);Physics2D.SyncTransforms();
+            Check(level.thermal.NearestReadyPoint()==first,"Rectangular corner within X/Y extents is available");
+        }
+        void TestPointTiming()
+        {
+            Place(new Vector2(-110,70));Mode(ProtectionMode.Cold);
+            var pointObject=new GameObject("JumpBufferPoint");pointObject.transform.position=new Vector2(-110,70);
+            var point=pointObject.AddComponent<ClimbPoint>();point.requiredProtection=ProtectionMode.Cold;
+            var thermal=level.thermal;var original=thermal.points;thermal.points=new[]{point};
+            var inside=(Vector2)point.transform.position;var outside=inside+Vector2.right*(thermal.PointHalfExtents.x+.1f);
+            try
+            {
+                motor.WarpForTraversal(outside);thermal.ResetState();
+                Check(!thermal.TryAirJump(new SeasideInput{jumpDown=true},Dt),"Early jump press waits outside point range");
+                motor.WarpForTraversal(inside);Physics2D.SyncTransforms();Check(thermal.TryAirJump(default,Dt),"Buffered early press jumps upon entering climb range");
+                Check(!thermal.TryAirJump(default,Dt)&&thermal.AirJumps==1,"Buffered press produces only one jump");
+                motor.WarpForTraversal(outside);thermal.ResetState();thermal.TryAirJump(new SeasideInput{jumpDown=true},Dt);
+                thermal.TryAirJump(default,thermal.settings.climbJumpBuffer+.02f);motor.WarpForTraversal(inside);
+                Check(!thermal.TryAirJump(default,Dt),"Expired early press cannot trigger a late jump");
+                thermal.ResetState();motor.WarpForTraversal(inside);thermal.TryAirJump(default,Dt);motor.WarpForTraversal(outside);
+                Check(thermal.TryAirJump(new SeasideInput{jumpDown=true},Dt),"Leaving point allows short coyote jump");
+                thermal.ResetState();motor.WarpForTraversal(inside);thermal.TryAirJump(default,Dt);motor.WarpForTraversal(outside);thermal.TryAirJump(default,thermal.settings.climbCoyoteTime+.02f);
+                Check(!thermal.TryAirJump(new SeasideInput{jumpDown=true},Dt),"Expired point coyote time rejects remote jump");
+                thermal.ResetState();motor.WarpForTraversal(outside);thermal.TryAirJump(new SeasideInput{jumpDown=true},Dt);thermal.ResetState();motor.WarpForTraversal(inside);
+                Check(!thermal.TryAirJump(default,Dt),"Death/reset removes buffered point jump");
+            }
+            finally{thermal.points=original;Destroy(pointObject);Place(new Vector2(-100,60));}
         }
         void TestRails()
         {
@@ -158,11 +193,10 @@ namespace Expedition
             Check(snow.Dialogue.Contains("策划案"),"Fragment first page matches supplied PDF");snow.AdvanceDialogue();
             Check(snow.Dialogue.Contains("设定描述"),"Fragment second page matches supplied PDF");snow.AdvanceDialogue();
             Check(snow.Choosing&&!session.Won,"Both ending choices await player selection");
-            Check(!level.thermal.TrySwitchMode(),"Dialogue blocks mode switching");snow.Choose(0);
-            Check(session.Won&&snow.Outcome==Snow.SnowOutcome.Stayed&&snow.CompletionTitle.Contains("END"),"Stay choice completes ending with explicit ending title");
+            Check(!level.thermal.TrySwitchMode(),"Dialogue blocks mode switching; give-up scene transition verified in campaign runner");
             snow.Restart();ApproachGoal();snow.BeginInteraction();snow.AdvanceDialogue();snow.AdvanceDialogue();snow.Choose(1);
             Check(!session.Won&&snow.Outcome==Snow.SnowOutcome.CarriedFragment&&snow.Dialogue.Contains("也许还有用"),"Continue choice preserves fragment and original last line");snow.AdvanceDialogue();
-            Check(session.Won&&snow.CompletionTitle.Contains("CONTINUE"),"Continue completes independent snow exploration without ending world");
+            Check(!session.Won&&CampaignFlow.LighthouseUnlocked,"Continue unlocks Lighthouse and keeps Snow explorable");
             snow.Restart();Check(snow.Outcome==Snow.SnowOutcome.Exploring&&!snow.Choosing&&snow.Dialogue==null,"Restart clears both ending branches");
         }
         void TestLighthouse(Lighthouse.LighthouseLevel lighthouse)

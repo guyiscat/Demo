@@ -40,16 +40,16 @@ namespace Expedition
             if(pages!=null)
             {
                 if(Choosing){if(Input.GetKeyDown(KeyCode.Alpha1))Choose(0);else if(Input.GetKeyDown(KeyCode.Alpha2))Choose(1);}
-                else if(Input.GetKeyDown(KeyCode.E))AdvanceDialogue();
+                else if(GameBindings.Pressed(GameAction.Interact))AdvanceDialogue();
             }
-            else if(Input.GetKeyDown(KeyCode.E)&&CanInteract)BeginInteraction();
+            else if(GameBindings.Pressed(GameAction.Interact)&&CanInteract)BeginInteraction();
         }
         protected bool OpenDialogue(string[] content)
         {
             if(!CanInteract||session.InputBlocked||pages!=null)return false;
             player.CancelSpecial();player.motor.BeginTraversal();player.motor.frozen=true;pages=content;page=0;return true;
         }
-        public void CloseDialogue(){pages=null;page=0;if(player!=null&&!session.InputBlocked)player.motor.frozen=false;}
+        public void CloseDialogue(){if(pages!=null)GameBindings.BlockFrame();pages=null;page=0;if(player!=null&&!session.InputBlocked)player.motor.frozen=false;}
         public void Restart(){CloseDialogue();ResetProgress();session.Restart();}
         protected abstract void ResetProgress();
         public abstract bool BeginInteraction();

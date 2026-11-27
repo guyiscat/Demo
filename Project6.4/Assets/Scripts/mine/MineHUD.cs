@@ -20,7 +20,7 @@ namespace Mine
                     controls=CommonControls+"   右键 发射信标/传送   W 抓住滑索   E 交互",
                     statistics="电梯 "+(level.lift.Activated?"已启动":"待启动")+"   "+Statistics(Session),
                     status=DashStatus(p.motor)+"    传送 "+(p.BeaconActive?"信标飞行中":p.TeleportCharged?"就绪":"已用")+"    "+state,
-                    help=CommonHelp+"\n右键可打断冲刺并发射信标，再次右键或信标停下时传送。\n传送后短暂滞空；靠近滑索按W，A/D换向，空格跳离。\n灰色地形可站立与蹬墙，无法贴墙悬停。\n靠近工作台、橙色控制台和浅蓝矿物，按E交互。\n启动电梯后可乘坐往返；可自由走动、跳跃或传送离开。\n探索矿洞最深处，调查遗物后完成本关。",
+                    help="触摸黄色开关后，在电梯旁按 E 乘坐或呼叫。电梯不会自行往返。\n\n触摸紫色开关可打开大门。\n\n移动鼠标可以照亮附近，靠近可调查的物品时按 E。\n\n从入口竖井向上跳，或在返回标志按 E，可回到村庄。",
                     completion="已找到矿洞深处的比特币。",
                     prompt=level.Nearby==null?null:level.Nearby.Prompt,
                     dialogueTitle=level.DialogueTitle,dialogue=level.Dialogue

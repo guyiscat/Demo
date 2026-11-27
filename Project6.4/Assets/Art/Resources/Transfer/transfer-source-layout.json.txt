@@ -1,0 +1,264 @@
+{
+	"name": "transfer",
+	"width": 960,
+	"height": 540,
+	"type": "group",
+	"tag": "root",
+	"children": [
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_zz.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "zz",
+			"x": 0,
+			"y": 0,
+			"width": 960,
+			"height": 540
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_bg.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "bg",
+			"x": 188,
+			"y": 138,
+			"width": 587,
+			"height": 263
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_continue_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "continue_on",
+			"x": 418,
+			"y": 328,
+			"width": 127,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_continue_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "continue_off",
+			"x": 443,
+			"y": 345,
+			"width": 77,
+			"height": 19
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_line.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "line",
+			"x": 256,
+			"y": 181,
+			"width": 446,
+			"height": 130
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_sea_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "sea_on",
+			"x": 236,
+			"y": 201,
+			"width": 42,
+			"height": 72
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_sea_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "sea_off",
+			"x": 250,
+			"y": 220,
+			"width": 14,
+			"height": 54
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_forest_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "forest_on",
+			"x": 326,
+			"y": 224,
+			"width": 40,
+			"height": 71
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_forest_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "forest_off",
+			"x": 339,
+			"y": 224,
+			"width": 15,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_villages_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "villages_on",
+			"x": 417,
+			"y": 208,
+			"width": 38,
+			"height": 69
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_villages_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "villages_off",
+			"x": 428,
+			"y": 224,
+			"width": 14,
+			"height": 54
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_mines_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "mines_on",
+			"x": 503,
+			"y": 248,
+			"width": 42,
+			"height": 66
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_mines_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "mines_off",
+			"x": 517,
+			"y": 263,
+			"width": 15,
+			"height": 51
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_snow_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "snow_on",
+			"x": 594,
+			"y": 227,
+			"width": 40,
+			"height": 70
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_snow_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "snow_off",
+			"x": 607,
+			"y": 227,
+			"width": 13,
+			"height": 53
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_light_on.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "light_on",
+			"x": 683,
+			"y": 177,
+			"width": 37,
+			"height": 66
+		},
+		{
+			"texture": {
+				"isCommon": false,
+				"isS9": false,
+				"type": "simple",
+				"uri": "transfer_light_off.png"
+			},
+			"type": "image",
+			"tag": "image",
+			"name": "light_off",
+			"x": 695,
+			"y": 177,
+			"width": 15,
+			"height": 53
+		}
+	]
+}

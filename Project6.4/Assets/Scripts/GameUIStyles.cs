@@ -9,6 +9,10 @@ namespace Seaside
         public static readonly Color ModalColor=new Color(.025f,.06f,.05f,.98f);
         public readonly GUIStyle text,title,button;
         public static Font SystemFont=>GameTypography.SystemFont;
+        public static bool Button(Rect rect,string label,GUIStyle style)
+        {bool clicked=GUI.Button(rect,label,style);if(clicked)GameBindings.BlockFrame();return clicked;}
+        public static bool Button(Rect rect,GUIContent label,GUIStyle style)
+        {bool clicked=GUI.Button(rect,label,style);if(clicked)GameBindings.BlockFrame();return clicked;}
         public GameUIStyles()
         {
             Font font=SystemFont;

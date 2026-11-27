@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LighthouseWhitebox.unity
     guid: c6bc87de89f01e04291d26489fe6a890
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: cf1b33d5a76747a44828731fac7eb34e
   m_configObjects: {}

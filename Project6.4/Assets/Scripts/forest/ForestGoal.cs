@@ -11,7 +11,7 @@ namespace Forest
         void OnTriggerStay2D(Collider2D other){TryComplete(other);}
         void TryComplete(Collider2D other)
         {
-            if(!session.InputBlocked&&other.GetComponent<SeasideMotor>()==session.player)session.Complete();
+            // Region exits, rather than the old goal, now connect maps.
         }
     }
 }

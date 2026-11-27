@@ -13,26 +13,32 @@ namespace Expedition
         public ProtectionMode Mode{get;private set;}
         public int AirJumps{get;private set;}
         public string LastHazard{get;private set;}
-        readonly HashSet<ClimbPoint> used=new HashSet<ClimbPoint>();
-        public string ModeName=>Mode==ProtectionMode.Cold?"防寒":"隔热";
-        void Awake(){if(player==null)player=GetComponent<ForestPlayer>();ResetState();}
+        public bool HasCore=>CampaignFlow.CoreObtained;
+        public string ModeName=>!HasCore?"未获得核心":Mode==ProtectionMode.Cold?"防寒":"隔热";
+        public Vector2 PointHalfExtents=>player.motor.BodySize*.5f+Vector2.one*settings.climbPadding;
+        float jumpBuffer,climbGrace;ClimbPoint gracePoint;int inputEpoch;
+        void Awake(){if(player==null)player=GetComponent<ForestPlayer>();Mode=CampaignFlow.Progress.protectionSelected?(ProtectionMode)CampaignFlow.Progress.protectionMode:settings.initialProtection;ResetState();}
         void OnEnable(){if(player==null)player=GetComponent<ForestPlayer>();player.motor.ResetPerformed+=ResetState;}
         void OnDisable(){if(player!=null&&player.motor!=null)player.motor.ResetPerformed-=ResetState;}
         void Update()
         {
-            if(!player.manualInput&&Input.GetKeyDown(KeyCode.S))TrySwitchMode();
-            if(points!=null)foreach(var point in points)point.ShowState(Mode==point.requiredProtection&&!used.Contains(point),settings.climbRadius);
+            if(!player.manualInput&&GameBindings.Pressed(GameAction.Protection))TrySwitchMode();
+            if(points!=null)foreach(var point in points)if(point!=null)point.ShowState(HasCore&&Mode==point.requiredProtection,PointHalfExtents);
         }
-        public void ResetState(){Mode=settings==null?ProtectionMode.Cold:settings.initialProtection;AirJumps=0;used.Clear();LastHazard=null;}
+        public void ResetState(){AirJumps=0;LastHazard=null;ClearJumpGrace();}
+        public void ClearJumpGrace(){jumpBuffer=climbGrace=0;gracePoint=null;}
         public bool TrySwitchMode()
         {
             if(player.session.InputBlocked||player.motor.frozen)return false;
+            if(!HasCore){player.session.GetComponent<ManualSaveController>()?.Notify("先带回矿洞比特币，与村庄机器人交互获得核心。");return false;}
             Mode=Mode==ProtectionMode.Cold?ProtectionMode.Heat:ProtectionMode.Cold;
+            ClearJumpGrace();
+            CampaignFlow.Progress.protectionSelected=true;CampaignFlow.Progress.protectionMode=(int)Mode;
             SeasideLog.Event("PROTECTION_SWITCH",ModeName);ValidateContact();return true;
         }
         public bool Touch(ThermalSurface surface)
         {
-            if(surface==null||player.session.InputBlocked||surface.requiredProtection==Mode)return true;
+            if(surface==null||player.session.InputBlocked||HasCore&&surface.requiredProtection==Mode)return true;
             LastHazard=surface.requiredProtection==ProtectionMode.Cold?"冻伤":"灼伤";
             player.CancelSpecial();player.motor.Body.linearVelocity=Vector2.zero;player.session.Die();return false;
         }
@@ -49,7 +55,7 @@ namespace Expedition
         public bool ValidateRail(ForestZipline rail)
         {
             var thermal=rail.GetComponent<ThermalZipline>();
-            if(thermal==null||thermal.requiredProtection==Mode)return true;
+            if(thermal==null||HasCore&&thermal.requiredProtection==Mode)return true;
             LastHazard=thermal.requiredProtection==ProtectionMode.Cold?"冻伤":"灼伤";
             player.CancelSpecial();player.session.Die();return false;
         }
@@ -64,29 +70,33 @@ namespace Expedition
         }
         public ClimbPoint NearestReadyPoint()
         {
-            ClimbPoint result=null;float distance=settings.climbRadius;
+            if(!HasCore)return null;
+            ClimbPoint result=null;float distance=float.PositiveInfinity;var extent=PointHalfExtents;
             foreach(var point in points)
             {
-                if(point==null||!point.isActiveAndEnabled||point.requiredProtection!=Mode||used.Contains(point))continue;
+                if(point==null||!point.isActiveAndEnabled||point.requiredProtection!=Mode)continue;
                 var delta=(Vector2)point.transform.position-player.motor.Body.position;float d=delta.magnitude;
-                if(d>distance)continue;
+                if(Mathf.Abs(delta.x)>extent.x||Mathf.Abs(delta.y)>extent.y||d>distance)continue;
                 if(Physics2D.Linecast(player.motor.Body.position,point.transform.position,1<<6).collider!=null)continue;
                 result=point;distance=d;
             }
             return result;
         }
-        public bool TryAirJump(SeasideInput input)
+        public bool TryAirJump(SeasideInput input,float dt=.02f)
         {
-            if(HasNormalJumpContact())
-            {
-                // A physical landing or wall attachment begins a new aerial sequence.
-                // Merely leaving/re-entering the same ring does not rearm it.
-                if(player.motor.Grounded||player.motor.Attached)used.Clear();
-                return false;
-            }
-            if(!input.jumpDown||player.session.InputBlocked||player.motor.frozen)return false;
-            var point=NearestReadyPoint();if(point==null)return false;
-            used.Add(point);AirJumps++;player.motor.JumpFromTraversal(input.horizontal);
+            if(inputEpoch!=GameBindings.InputEpoch){ClearJumpGrace();inputEpoch=GameBindings.InputEpoch;}
+            if(player.session.InputBlocked||player.motor.frozen||!HasCore){ClearJumpGrace();return false;}
+            jumpBuffer=input.jumpDown?Mathf.Max(.001f,settings.climbJumpBuffer):Mathf.Max(0,jumpBuffer-dt);
+            var point=NearestReadyPoint();
+            if(point!=null){gracePoint=point;climbGrace=Mathf.Max(.001f,settings.climbCoyoteTime);}
+            else climbGrace=Mathf.Max(0,climbGrace-dt);
+            if(input.dashDown){ClearJumpGrace();return false;}
+            if(HasNormalJumpContact()){jumpBuffer=0;return false;}
+            if(jumpBuffer<=0)return false;
+            if(point==null&&climbGrace>0&&gracePoint!=null&&gracePoint.isActiveAndEnabled&&gracePoint.requiredProtection==Mode&&Physics2D.Linecast(player.motor.Body.position,gracePoint.transform.position,1<<6).collider==null)point=gracePoint;
+            if(point==null)return false;
+            jumpBuffer=climbGrace=0;gracePoint=null;
+            AirJumps++;player.motor.JumpFromTraversal(input.horizontal);
             player.Refill();player.motor.RefillTraversalAbilities();
             SeasideLog.Event("CLIMB_AIR_JUMP",point.sourceAddress+" mode="+ModeName);return true;
         }

@@ -93,7 +93,7 @@ namespace Forest
                 Place(new Vector2(-80,30));Step(Input(teleport:true,aim:Vector2.right));
                 for(int i=0;i<60&&actor.BeaconActive;i++)Step();
                 Check(actor.LastTeleportResult=="TERRAIN"&&actor.IsFree(motor.Body.position),"Terrain impact resolves full-body safe landing");
-                Check(motor.Body.position.x<=-76.49f,"Player never embeds in hit wall");
+                Check(motor.Body.position.x<=-75.49f-motor.BodySize.x*.5f,"Player never embeds in hit wall");
                 landingY=motor.Body.position.y;Step(count:5);
                 CheckLandingHover(landingY,"Terrain");
                 // A beacon fits this one-cell passage, while the 2x2 body cannot.
@@ -101,7 +101,7 @@ namespace Forest
                 Box("NarrowFloor",new Vector2(-94,37),new Vector2(12,1));Physics2D.SyncTransforms();
                 Place(new Vector2(-103,38));Step(Input(teleport:true,aim:Vector2.right));
                 for(int i=0;i<60&&actor.BeaconActive;i++)Step();
-                Check(actor.IsFree(motor.Body.position)&&motor.Body.position.x< -100.99f,"Narrow-beacon passage cannot embed larger player; travelled samples fall back safely");
+                Check(actor.IsFree(motor.Body.position)&&motor.Body.position.x< -99.99f-motor.BodySize.x*.5f,"Narrow-beacon passage cannot embed larger player; travelled samples fall back safely");
                 Place(new Vector2(-110,35));Step(Input(teleport:true,aim:Vector2.up));
                 Vector2 pausedBeacon=actor.BeaconPosition,pausedBody=motor.Body.position;
                 typeof(SeasideSession).GetProperty("Paused").SetValue(session,true);Time.timeScale=0;
@@ -110,9 +110,9 @@ namespace Forest
                 session.Resume();Step();Check(actor.BeaconPosition!=pausedBeacon,"Resume continues existing beacon flight");
                 Check(Mathf.Abs(motor.Body.position.y-pausedBody.y)<.005f&&motor.Body.linearVelocity.y==0,"Pause/resume preserves beacon hover altitude");
                 Place(new Vector2(-110,30));Step(Input(teleport:true,aim:Vector2.up));actor.CancelSpecial();
-                motor.WarpForTraversal(new Vector2(-76.51f,30));Physics2D.SyncTransforms();Step(Input(right:true));
+                motor.WarpForTraversal(new Vector2(-75.51f-motor.BodySize.x*.5f,30));Physics2D.SyncTransforms();Step(Input(right:true));
                 Check(motor.Attached&&actor.TeleportCharged,"New black-wall contact restores teleport and original wall hover");
-                wall.GetComponent<SeasideCell>().attachable=false;Place(new Vector2(-76.51f,30));Step(Input(right:true));
+                wall.GetComponent<SeasideCell>().attachable=false;Place(new Vector2(-75.51f-motor.BodySize.x*.5f,30));Step(Input(right:true));
                 Check(!motor.Attached,"Gray wall forbids attachment without changing Seaside wall behaviour");
                 wall.GetComponent<SeasideCell>().attachable=true;
                 var testRail=new GameObject("SlopedFixtureRail").AddComponent<ForestZipline>();testRail.transform.SetParent(fixture.transform);
@@ -120,11 +120,11 @@ namespace Forest
                 testRail.end=new GameObject("End").transform;testRail.end.SetParent(testRail.transform);testRail.end.position=new Vector2(-120,45);
                 var savedRails=actor.ziplines;actor.ziplines=new[]{testRail};
                 Check(testRail.CanCatch(testRail.Point(5)+Vector2.up*.95f,motor.BodySize,.25f),"Full body may catch cable from above, without old center-height rejection");
-                Check(testRail.CanCatch(testRail.StartPoint+Vector2.left*1.20f,motor.BodySize,.25f),"Body edge plus small padding reaches cable endpoint");
+                Check(testRail.CanCatch(testRail.StartPoint+Vector2.left*(motor.BodySize.x*.5f+.20f),motor.BodySize,.25f),"Body edge plus small padding reaches cable endpoint");
                 Check(!testRail.CanCatch(testRail.StartPoint+Vector2.left*1.8f,motor.BodySize,.25f),"Expanded catch does not reach a distant cable");
                 Place(testRail.Point(5)+Vector2.up*.85f);Step(Input(ride:true));
                 Check(actor.RidingRail==testRail,"W grabs when feet/body overlap the cable from above");
-                Place(testRail.StartPoint+Vector2.left*1.15f);Step(Input(ride:true));
+                Place(testRail.StartPoint+Vector2.left*(motor.BodySize.x*.5f+.15f));Step(Input(ride:true));
                 Check(actor.RidingRail==testRail,"W grabs when body side touches a cable endpoint");
                 Place(new Vector2(-127,40.38f));Step(Input(dash:true,aim:Vector2.up));motor.BeginTraversal();
                 Step(Input(teleport:true,aim:Vector2.up));actor.CancelSpecial();
@@ -192,10 +192,10 @@ namespace Forest
                 float y=motor.Body.position.y,x=motor.Body.position.x;
                 Step(Input(teleport:true,aim:Vector2.up));
                 Check(actor.BeaconActive&&Mathf.Abs(motor.Body.position.y-y)<.005f&&motor.Body.linearVelocity.y==0,"Beacon immediately arrests vertical velocity "+vertical);
-                Check(motor.Body.linearVelocity.x>0,"Launch preserves horizontal momentum "+vertical);
+                Check(motor.Body.linearVelocity.x==0,"Launch locks horizontal momentum "+vertical);
                 Step(Input(right:true,jump:true,held:true,dash:true,ride:true,aim:Vector2.up),count:12);
                 Check(actor.BeaconActive&&Mathf.Abs(motor.Body.position.y-y)<.005f,"Hover holds altitude throughout real physics steps "+vertical);
-                Check(motor.Body.position.x>x+.5f,"A/D remains responsive during hover "+vertical);
+                Check(Mathf.Abs(motor.Body.position.x-x)<.005f,"A/D cannot move during hover "+vertical);
                 Check(!motor.Dashing&&motor.DashUses==0&&motor.DashReady,"Hover inputs do not spend dash or queue vertical motion "+vertical);
                 actor.CancelSpecial();y=motor.Body.position.y;Step(count:5);
                 Check(!actor.BeaconActive&&motor.Body.position.y<y-.02f,"Explicit cancellation restores falling "+vertical);
@@ -204,7 +204,7 @@ namespace Forest
             Step(Input(teleport:true,aim:Vector2.right));float altitude=motor.Body.position.y;Step(count:8);
             Check(actor.BeaconActive&&!motor.Dashing&&Mathf.Abs(motor.Body.position.y-altitude)<.005f,"Beacon interrupts an ongoing vertical dash without consuming another dash");
             Place(new Vector2(-76.52f,30));Step(Input(teleport:true,aim:Vector2.up));Step(Input(right:true),count:12);
-            Check(actor.BeaconActive&&actor.IsFree(motor.Body.position)&&motor.Body.position.x<=-76.49f,"Hover horizontal movement retains solid wall collision");
+            Check(actor.BeaconActive&&actor.IsFree(motor.Body.position)&&motor.Body.position.x<=-75.49f-motor.BodySize.x*.5f,"Hover horizontal movement retains solid wall collision");
             Place(new Vector2(-110,35));Step(Input(teleport:true,aim:Vector2.up));session.Die();Step();
             Check(!actor.BeaconActive&&session.Respawning&&!actor.beacon.enabled&&!actor.beaconTrail.enabled,"Death cancels hover and beacon visuals");
             session.Respawn();Place(new Vector2(-110,35));float yAfterRespawn=motor.Body.position.y;Step(count:5);
@@ -293,7 +293,7 @@ namespace Forest
             actor.settings.teleportHoverDuration=.12f;
             Place(new Vector2(-110,35));FinishTeleport();float y=motor.Body.position.y;
             Step(Input(right:true),5);
-            Check(Mathf.Abs(motor.Body.position.y-y)<.005f&&motor.Body.linearVelocity.x>0,"Post-teleport hover preserves A/D motion");
+            Check(Mathf.Abs(motor.Body.position.y-y)<.005f&&motor.Body.linearVelocity.x==0,"Post-teleport hover rejects A/D motion");
             float remaining=actor.PostTeleportHoverRemaining;
             typeof(SeasideSession).GetProperty("Paused").SetValue(session,true);Time.timeScale=0;Step(count:20);
             Check(actor.PostTeleportHoverRemaining==remaining,"Pause preserves remaining post-teleport duration");
@@ -338,10 +338,11 @@ namespace Forest
             var wheelLow=camera.WorldToViewportPoint((Vector3)(level.wheel.center-level.wheel.radius));
             var wheelHigh=camera.WorldToViewportPoint((Vector3)(level.wheel.center+level.wheel.radius));
             Check(wheelLow.x>=0&&wheelLow.y>=.08f&&wheelHigh.x<=1&&wheelHigh.y<=.91f,"Entire waterwheel fits in opening shot");
-            for(int i=0;i<290;i++)IntroStep(Dt);
-            Check(intro.Phase==2,"Full-map hold lasts at least 2.9 seconds after arrival");
+            int holdSteps=Mathf.Max(0,Mathf.FloorToInt((actor.settings.introHoldDuration-.1f)/Dt));
+            for(int i=0;i<holdSteps;i++)IntroStep(Dt);
+            Check(intro.Phase==2,"Full-map hold remains until the configured duration: "+actor.settings.introHoldDuration);
             for(int i=0;i<20&&intro.Phase==2;i++)IntroStep(Dt);
-            Check(intro.Phase==3,"Full-map hold returns after configured three seconds");
+            Check(intro.Phase==3,"Full-map hold returns after the configured duration");
             for(int i=0;i<300&&!intro.Completed;i++)IntroStep(Dt);
             Check(intro.Completed&&!actor.waterfall.FullMapReveal&&camera.orthographicSize<fullSize*.5f,"Opening shot restores normal follow view and waterfall rules");
             for(int i=0;i<100;i++){Step(Input(right:true));IntroStep(Dt);}
@@ -362,7 +363,8 @@ namespace Forest
                 Step(Input(aim:direction));actor.AimIndicator.Refresh();
                 var arrow=actor.AimIndicator.Arrow;var root=(Vector2)arrow.GetPosition(0);var tip=(Vector2)arrow.GetPosition(1);
                 Check(Vector2.Dot((tip-root).normalized,direction)>.999f,"Body arrow matches action direction "+direction);
-                Check(Vector2.Distance(root,actor.transform.position)>1,"Body arrow stays outside the character "+direction);
+                var local=root-(Vector2)actor.transform.position;var half=motor.BodySize*.5f;
+                Check(Mathf.Abs(local.x)>half.x||Mathf.Abs(local.y)>half.y,"Body arrow stays outside the authored collider "+direction);
             }
             Place(new Vector2(-110,35));Step(Input(teleport:true,aim:Vector2.up));actor.AimIndicator.Refresh();
             Check(Vector2.Dot((actor.BeaconPosition-motor.Body.position).normalized,actor.AimIndicator.DisplayedDirection)>.999f,"Beacon launches along the displayed arrow");
@@ -467,7 +469,7 @@ namespace Forest
             Check(wheel.locks[0].Activated&&!wheel.Active,"Saved left unlock collider activates one puzzle lock");
             wheel.locks[0].Activate();Check(wheel.UnlockCount==1,"Same lock is not counted twice");
             var goal=FindAnyObjectByType<ForestGoal>();Place(goal.transform.position);Physics2D.Simulate(Dt);
-            Check(session.Won&&motor.frozen,"Goal contact completes with one lock instead of silently rejecting player");
+            Check(!session.Won&&!motor.frozen,"Old goal permits continued walking with one lock");
             level.Restart();wheel.locks[0].Activate();
             Place(wheel.locks[1].transform.position);Step();
             Check(wheel.Active&&wheel.UnlockCount==2,"Saved right unlock completes puzzle");
@@ -540,12 +542,14 @@ namespace Forest
             }
             bool launchOnWheel=actor.RidingWheel==platform;
             WheelStep(Input(right:true,jump:true,held:true));
-            for(int i=0;i<240&&!session.Won;i++)
+            bool reachedGoal=false;
+            for(int i=0;i<240&&!reachedGoal;i++)
             {
                 float h=Mathf.Clamp((179-motor.Body.position.x)*2,-1,1);
                 WheelStep(new ForestInput{movement=new SeasideInput{horizontal=h,jumpHeld=true}});
+                reachedGoal=goal.GetComponent<Collider2D>().OverlapPoint(motor.Body.position);
             }
-            Check(launchOnWheel&&session.Won,"Ordinary jump from clockwise wheel reaches real final platform without forced transfer pos="+motor.Body.position);
+            Check(launchOnWheel&&reachedGoal&&!session.Won,"Ordinary jump from clockwise wheel reaches real final platform without forced transfer pos="+motor.Body.position);
             level.Restart();wheel.forceRotation=false;
             // Right arc is intentionally descending now; it must not reverse.
             wheel.ResetWheel();wheel.locks[0].Activate();wheel.locks[1].Activate();platform=wheel.platforms[1];
@@ -557,22 +561,22 @@ namespace Forest
             wheel.forceRotation=true;rotation=wheel.Rotation;WheelStep();
             Check(wheel.Rotation<rotation&&wheel.UnlockCount==0,"Inspector preview spins clockwise without faking puzzle switches");
             Place(goal.transform.position);Step();
-            Check(session.Won&&motor.frozen&&wheel.UnlockCount==0,"Preview goal contact completes without requiring puzzle switches");
+            Check(!session.Won&&!motor.frozen&&wheel.UnlockCount==0,"Preview goal remains freely walkable");
             level.Restart();wheel.forceRotation=false;
             typeof(SeasideSession).GetProperty("Paused").SetValue(session,true);Time.timeScale=0;
             Place(goal.transform.position);Physics2D.Simulate(Dt);
             Check(!session.Won,"Paused session cannot complete goal");
             session.Resume();Step();
-            Check(session.Won&&motor.frozen&&wheel.UnlockCount==0,"Resuming inside goal completes through trigger stay even with zero locks");
+            Check(!session.Won&&!motor.frozen&&wheel.UnlockCount==0,"Resuming inside old goal does not complete region");
             level.Restart();
             Place(goal.transform.position);wheel.locks[0].Activate();wheel.locks[1].Activate();Step();
-            Check(session.Won,"Real upper-deck goal completes after both locks");
+            Check(!session.Won,"Old upper-deck goal never changes region");
             level.Restart();wheel.forceRotation=preview;
         }
         void TestCheckpoints()
         {
             var checkpoints=FindObjectsByType<SeasideCell>().Where(c=>c.kind==CellKind.Checkpoint).OrderBy(c=>c.checkpointId).ToArray();
-            Check(checkpoints.Length==6,"Six intermediate checkpoints available");
+            Check(checkpoints.Length>=6,"Authored and manually added intermediate checkpoints available");
             foreach(var checkpoint in checkpoints)
             {
                 Place(checkpoint.transform.position);Step();

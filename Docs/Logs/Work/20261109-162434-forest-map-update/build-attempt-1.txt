@@ -1,9 +1,0 @@
-LOG_FOLDER=D:\UnityProjects\Demo\Docs\Backups\20261109-162434-forest-map-update\Validation\Docs\Logs\Build\20261109-163025-279
-Start-Process : This command cannot be run due to the error: An Application Control policy has blocked this file.
-At D:\UnityProjects\Demo\Docs\Backups\20261109-162434-forest-map-update\Validation\Project6.4\Tools\BuildAndTest.ps1:11
- char:14
-+ ...    $process=Start-Process -FilePath $executable -ArgumentList $argume ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
-    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
- 

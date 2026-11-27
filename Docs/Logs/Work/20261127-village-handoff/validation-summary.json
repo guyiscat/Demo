@@ -1,0 +1,150 @@
+{
+  "result": "PASS",
+  "build": {
+    "started": "2026-11-27T16:20:58.7883623+08:00",
+    "unity": "D:\\Development\\Unity\\6000.4.12f1\\Editor\\Unity.exe",
+    "project": "D:\\UnityProjects\\Demo\\Docs\\Backups\\20261118-shared-systems-script-folders\\Validation\\Project6.4",
+    "phase": "campaign-runtime",
+    "result": "PASS",
+    "editorExit": 0,
+    "startupExit": 0,
+    "campaignExit": 0,
+    "saveProbewriteExit": 0,
+    "saveProbereadExit": 0,
+    "mediaExit": 0,
+    "checkpointExit": 0,
+    "respawnExit": 0,
+    "settingsExit": 0,
+    "menuExit": 0,
+    "newArtExit": 0,
+    "slotswriteExit": 0,
+    "slotsreadExit": 0,
+    "finished": "2026-11-27T16:23:08.1941378+08:00"
+  },
+  "reports": {
+    "campaign-runtime-checks.txt": {
+      "PASS": 355,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "checkpoint-runtime-checks.txt": {
+      "PASS": 198,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/forest-editor-checks.txt": {
+      "PASS": 1763,
+      "FAIL": 0,
+      "WARN": 2
+    },
+    "editor-reports/level-copy-editor-checks.txt": {
+      "PASS": 30,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/lighthouse-editor-checks.txt": {
+      "PASS": 3413,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/mine-editor-checks.txt": {
+      "PASS": 3675,
+      "FAIL": 0,
+      "WARN": 1
+    },
+    "editor-reports/physics-tests.txt": {
+      "PASS": 40,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/playtest-regression.txt": {
+      "PASS": 203,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/snow-editor-checks.txt": {
+      "PASS": 3740,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/system-editor-checks.txt": {
+      "PASS": 7346,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "editor-reports/world-region-editor-checks.txt": {
+      "PASS": 7426,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "media-runtime-checks.txt": {
+      "PASS": 63,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "menus/menu-runtime-checks.txt": {
+      "PASS": 162,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "new-art/new-art-runtime-checks.txt": {
+      "PASS": 90,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "respawn/respawn-runtime-checks.txt": {
+      "PASS": 63,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "save-probe-read.txt": {
+      "PASS": 7,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "save-probe-write.txt": {
+      "PASS": 6,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "settings/settings-runtime-checks.txt": {
+      "PASS": 13,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "slots-read/slot-runtime-checks.txt": {
+      "PASS": 4,
+      "FAIL": 0,
+      "WARN": 0
+    },
+    "slots-write/slot-runtime-checks.txt": {
+      "PASS": 43,
+      "FAIL": 0,
+      "WARN": 0
+    }
+  },
+  "graphics": {
+    "final-visual/new-art-runtime-checks.txt": {
+      "PASS": 90,
+      "FAIL": 0
+    },
+    "menus/menu-runtime-checks.txt": {
+      "PASS": 162,
+      "FAIL": 0
+    }
+  },
+  "preservation": {
+    "Scenes": [],
+    "Resources": [],
+    "Settings": []
+  },
+  "cleanClone": "pending",
+  "csharpDiagnostics": [],
+  "validatedSourceEquality": {
+    "differences": []
+  },
+  "limitations": [
+    "No manual full-route playthrough",
+    "Existing authored Forest workbook mismatch and Mine inactive spikes retained"
+  ]
+}
